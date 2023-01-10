@@ -198,9 +198,9 @@ void waffle_proxy::async_put_batch(const sequence_id &seq_id, int queue_id, cons
 };
 
 std::future<std::string> waffle_proxy::get_future(int queue_id, const std::string &key) {
-    if (key_to_frequency_.find(key) == key_to_frequency_.end()){
-        throw std::logic_error("Key does not exist");
-    }
+    // if (key_to_frequency_.find(key) == key_to_frequency_.end()){
+    //     throw std::logic_error("Key does not exist");
+    // }
     auto prom = std::make_shared<std::promise<std::string>>();
     std::future<std::string> waiter = prom->get_future();
     struct operation operat;
@@ -233,9 +233,9 @@ void waffle_proxy::consumer_thread(int id){
     // for (int i = 1; i < server_count_; i++) {
     //     storage_interface->add_server(server_host_name_, server_port_+i);
     // }
-    // int operations_serviced = 0;
-    // int previous_total_operations = 0;
-    // int total_operations = 0;
+    int operations_serviced = 0;
+    int previous_total_operations = 0;
+    int total_operations = 0;
     std::cout << "Entering here to consumer thread" << std::endl;
     while (!finished_) {
         std::vector <operation> storage_batch;
@@ -272,14 +272,15 @@ void waffle_proxy::responder_thread(){
 }
 
 void waffle_proxy::flush() {
-    for (auto operation_queue : operation_queues_){
-        if (operation_queue->size() != 0) {
-            auto operation_promise_pair = operation_queue->pop();
-            auto read_result = storage_interface_->get(operation_promise_pair.first.key);
-            storage_interface_->put(operation_promise_pair.first.key, read_result);
-            operation_promise_pair.second->set_value(read_result);
-        }
-    }
+    // for (auto operation_queue : operation_queues_){
+    //     if (operation_queue->size() != 0) {
+    //         auto operation_promise_pair = operation_queue->pop();
+    //         auto read_result = storage_interface_->get(operation_promise_pair.first.key);
+    //         storage_interface_->put(operation_promise_pair.first.key, read_result);
+    //         operation_promise_pair.second->set_value(read_result);
+    //     }
+    // }
+    std::cout << "Flushing proxy " << std::endl;
 }
 
 void waffle_proxy::close() {
@@ -287,3 +288,4 @@ void waffle_proxy::close() {
     for (int i = 0; i < threads_.size(); i++)
         threads_[i].join();
 }
+

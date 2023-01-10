@@ -254,6 +254,9 @@ proxy_server_EXTERNAL_OBJECTS =
 ../bin/proxy_server: server/CMakeFiles/proxy_server.dir/build.make
 ../bin/proxy_server: external/thrift_ep/lib/libthriftnb.a
 ../bin/proxy_server: external/thrift_ep/lib/libthrift.a
+../bin/proxy_server: external/libevent_ep/lib/libevent.a
+../bin/proxy_server: external/openssl/lib/libssl.a
+../bin/proxy_server: external/openssl/lib/libcrypto.a
 ../bin/proxy_server: server/CMakeFiles/proxy_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ../../bin/proxy_server"
 	cd /tmp/waffle_test/waffleClient/cmakebuild/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proxy_server.dir/link.txt --verbose=$(VERBOSE)

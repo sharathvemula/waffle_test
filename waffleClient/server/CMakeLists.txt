@@ -41,8 +41,19 @@ target_link_libraries(proxy_server
         Threads::Threads
         ${THRIFTNB_LIBRARY}
         ${THRIFT_LIBRARY}
+        ${LIBEVENT_LIBRARY}
+        ${CPP_REDIS_LIBRARIES}
+        ${OPENSSL_LIBRARIES}
+        ${SSDB_CLIENT_LIBRARY}
+        ${LEVELDB_LIBRARY}
+        ${SNAPPY_LIBRARY}
+        ${JEMALLOC_LIBRARY}
+        ${CMAKE_DL_LIBS}
+        ${ZLIB_LIBRARIES}
+        ${BZIP2_LIBRARIES}
         #${LIBMEMCACHED_LIBRARIES}
         ${PROXY_INCLUDE_LIBRARIES}
+        ${STORAGE_INCLUDE_LIBRARIES}
         ${BENCHMARK_INCLUDE_LIBRARIES}
         ${SERVICE_INCLUDE_LIBRARIES}
         ${CLIENT_INCLUDE_LIBRARIES}
