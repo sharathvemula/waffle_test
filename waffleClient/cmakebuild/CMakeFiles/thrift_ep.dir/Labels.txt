@@ -1,0 +1,13 @@
+# Target labels
+ thrift_ep
+# Source files and their labels
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/thrift_ep
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/thrift_ep.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/thrift_ep-complete.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-build.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-download.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-install.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-mkdir.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-patch.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-update.rule

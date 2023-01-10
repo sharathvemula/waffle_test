@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/openssl_ep"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/openssl_ep.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/openssl_ep-complete.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"openssl_ep"
+		],
+		"name" : "openssl_ep"
+	}
+}

@@ -1,0 +1,10 @@
+In file included from apps/app_rand.c:10:
+In file included from apps/apps.h:13:
+In file included from ./e_os.h:16:
+In file included from include/openssl/e_os2.h:241:
+/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/inttypes.h:21:15: fatal error: 'inttypes.h' file not found
+#include_next <inttypes.h>
+              ^~~~~~~~~~~~
+1 error generated.
+make[4]: *** [apps/app_rand.o] Error 1
+make[3]: *** [all] Error 2

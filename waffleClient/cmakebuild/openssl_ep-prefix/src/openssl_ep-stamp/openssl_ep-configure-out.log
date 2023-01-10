@@ -1,0 +1,14 @@
+Operating system: i686-apple-darwinDarwin Kernel Version 21.5.0: Tue Apr 26 21:08:29 PDT 2022; root:xnu-8020.121.3~4/RELEASE_ARM64_T8101
+Configuring OpenSSL version 1.1.1-pre7 (0x10101007L) for darwin-i386-cc
+Using os-specific seed configuration
+Creating configdata.pm
+Creating Makefile
+
+**********************************************************************
+***                                                                ***
+***   If you want to report a building issue, please include the   ***
+***   output from this command:                                    ***
+***                                                                ***
+***     perl configdata.pm --dump                                  ***
+***                                                                ***
+**********************************************************************

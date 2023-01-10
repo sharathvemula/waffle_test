@@ -1,0 +1,13 @@
+# Target labels
+ boost_ep
+# Source files and their labels
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/boost_ep
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/boost_ep.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/boost_ep-complete.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-install.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-mkdir.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch.rule
+/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-update.rule

@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake;-P;/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/download-thrift_ep.cmake;COMMAND;/opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake;-P;/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/verify-thrift_ep.cmake;COMMAND;/opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake;-P;/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/extract-thrift_ep.cmake
+source_dir=/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep
+work_dir=/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/thrift_ep-prefix/src
+url(s)=http://archive.apache.org/dist/thrift/0.12.0/thrift-0.12.0.tar.gz
+hash=
+no_extract=
+

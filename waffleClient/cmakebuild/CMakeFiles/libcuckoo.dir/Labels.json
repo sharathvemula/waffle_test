@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/libcuckoo"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/libcuckoo.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/libcuckoo-complete.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-mkdir.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-patch.rule"
+		},
+		{
+			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libcuckoo"
+		],
+		"name" : "libcuckoo"
+	}
+}
