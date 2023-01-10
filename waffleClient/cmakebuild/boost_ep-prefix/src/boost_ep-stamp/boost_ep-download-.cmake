@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "/opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake;-Dmake=${make};-Dconfig=${config};-P;/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download--impl.cmake")
+set(command "/usr/bin/cmake;-Dmake=${make};-Dconfig=${config};-P;/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download--impl.cmake")
 set(log_merged "")
 set(log_output_on_failure "")
-set(stdout_log "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-out.log")
-set(stderr_log "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-err.log")
+set(stdout_log "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-out.log")
+set(stderr_log "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  /Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-*.log")
+    set(msg "${msg}\nSee also\n  /tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Unix Makefiles" MATCHES "Ninja")
-    set(msg "boost_ep download command succeeded.  See also /Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-*.log")
+    set(msg "boost_ep download command succeeded.  See also /tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-*.log")
     message(STATUS "${msg}")
   endif()
 endif()

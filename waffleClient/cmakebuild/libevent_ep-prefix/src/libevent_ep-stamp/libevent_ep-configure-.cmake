@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "/opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake;-Wno-dev;-DCMAKE_CXX_COMPILER=/Library/Developer/CommandLineTools/usr/bin/c++;-DCMAKE_C_COMPILER=/Library/Developer/CommandLineTools/usr/bin/cc;-DCMAKE_INSTALL_PREFIX=/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/external/libevent_ep;-DENABLE_TESTING=OFF;-DBUILD_SHARED_LIBS=OFF;-DEVENT__DISABLE_OPENSSL=ON;-DEVENT__DISABLE_BENCHMARK=ON;-DEVENT__DISABLE_TESTS=ON;-GUnix Makefiles;/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep")
+set(command "/usr/bin/cmake;-Wno-dev;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-DCMAKE_C_COMPILER=/usr/bin/cc;-DCMAKE_INSTALL_PREFIX=/tmp/waffle_test/waffleClient/cmakebuild/external/libevent_ep;-DENABLE_TESTING=OFF;-DBUILD_SHARED_LIBS=OFF;-DEVENT__DISABLE_OPENSSL=ON;-DEVENT__DISABLE_BENCHMARK=ON;-DEVENT__DISABLE_TESTS=ON;-GUnix Makefiles;/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep")
 set(log_merged "")
 set(log_output_on_failure "")
-set(stdout_log "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/libevent_ep-configure-out.log")
-set(stderr_log "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/libevent_ep-configure-err.log")
+set(stdout_log "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/libevent_ep-configure-out.log")
+set(stderr_log "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/libevent_ep-configure-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  /Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/libevent_ep-configure-*.log")
+    set(msg "${msg}\nSee also\n  /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/libevent_ep-configure-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Unix Makefiles" MATCHES "Ninja")
-    set(msg "libevent_ep configure command succeeded.  See also /Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/libevent_ep-configure-*.log")
+    set(msg "libevent_ep configure command succeeded.  See also /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/libevent_ep-configure-*.log")
     message(STATUS "${msg}")
   endif()
 endif()

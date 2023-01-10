@@ -2,26 +2,26 @@
 // Created by Lloyd Brown on 9/24/19.
 //
 
-#include "pancake_proxy.h"
+#include "waffle_proxy.h"
 
-void pancake_proxy::init(const std::vector<std::string> &keys, const std::vector<std::string> &values, void ** args){
+void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<std::string> &values, void ** args){
     id_to_client_ = *(static_cast<std::shared_ptr<thrift_response_client_map>*>(args[0]));
     //int num_cores = sysconf(_SC_NPROCESSORS_ONLN);
-    in num_cores = 1;
+    int num_cores = 1;
     std::vector<std::thread> threads;
     for (int i = 0; i < num_cores; i++) {
         auto q = std::make_shared<queue<std::pair<operation, std::shared_ptr<std::promise<std::string>>>>>();
         operation_queues_.push_back(q);
     }
     for (int i = 0; i < num_cores; i++) {
-        threads_.push_back(std::thread(&pancake_proxy::consumer_thread, this, i));
+        threads_.push_back(std::thread(&waffle_proxy::consumer_thread, this, i));
     }
-    if (!is_static_)
-        threads_.push_back(std::thread(&pancake_proxy::distribution_thread, this));
-    threads_.push_back(std::thread(&pancake_proxy::responder_thread, this));
+    //if (!is_static_)
+    //    threads_.push_back(std::thread(&waffle_proxy::distribution_thread, this));
+    threads_.push_back(std::thread(&waffle_proxy::responder_thread, this));
 }
 
-void pancake_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
+void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
                                           std::vector<operation> &storage_batch, std::vector<bool> &is_trues,
                                           std::vector<std::shared_ptr<std::promise<std::string>>> &promises) {
     for (int i = 0; i < security_batch_size_; i++) {
@@ -60,7 +60,7 @@ void pancake_proxy::create_security_batch(std::shared_ptr<queue <std::pair<opera
     }
 };
 
-void pancake_proxy::execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
+void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
                                   std::vector<std::shared_ptr<std::promise<std::string>>> &promises) {
 
     // Store which are real queries so we can return the values
@@ -94,61 +94,61 @@ void pancake_proxy::execute_batch(const std::vector<operation> &operations, std:
     std::cout << "Executing batch " << std::endl;
 }
 
-std::string pancake_proxy::get(const std::string &key) {
+std::string waffle_proxy::get(const std::string &key) {
     return get(rand_uint32(0, RAND_MAX), key);
 };
 
-void pancake_proxy::async_get(const sequence_id &seq_id, const std::string &key) {
+void waffle_proxy::async_get(const sequence_id &seq_id, const std::string &key) {
     async_get(seq_id, rand_uint32(0, RAND_MAX), key);
 };
 
-void pancake_proxy::put(const std::string &key, const std::string &value) {
+void waffle_proxy::put(const std::string &key, const std::string &value) {
     return put(rand_uint32(0, RAND_MAX), key, value);
 };
 
-void pancake_proxy::async_put(const sequence_id &seq_id, const std::string &key, const std::string &value) {
+void waffle_proxy::async_put(const sequence_id &seq_id, const std::string &key, const std::string &value) {
     async_put(seq_id, rand_uint32(0, RAND_MAX), key, value);
 };
 
-std::vector<std::string> pancake_proxy::get_batch(const std::vector<std::string> &keys) {
+std::vector<std::string> waffle_proxy::get_batch(const std::vector<std::string> &keys) {
     return get_batch(rand_uint32(0, RAND_MAX), keys);
 };
 
-void pancake_proxy::async_get_batch(const sequence_id &seq_id, const std::vector<std::string> &keys) {
+void waffle_proxy::async_get_batch(const sequence_id &seq_id, const std::vector<std::string> &keys) {
     async_get_batch(seq_id, rand_uint32(0, RAND_MAX), keys);
 };
 
-void pancake_proxy::put_batch(const std::vector<std::string> &keys, const std::vector<std::string> &values) {
+void waffle_proxy::put_batch(const std::vector<std::string> &keys, const std::vector<std::string> &values) {
     return put_batch(rand_uint32(0, RAND_MAX), keys, values);
 };
 
-void pancake_proxy::async_put_batch(const sequence_id &seq_id, const std::vector<std::string> &keys, const std::vector<std::string> &values) {
+void waffle_proxy::async_put_batch(const sequence_id &seq_id, const std::vector<std::string> &keys, const std::vector<std::string> &values) {
     async_put_batch(seq_id, rand_uint32(0, RAND_MAX), keys, values);
 };
 
-std::string pancake_proxy::get(int queue_id, const std::string &key) {
+std::string waffle_proxy::get(int queue_id, const std::string &key) {
     return get_future(queue_id, key).get();
 };
 
-void pancake_proxy::async_get(const sequence_id &seq_id, int queue_id, const std::string &key) {
+void waffle_proxy::async_get(const sequence_id &seq_id, int queue_id, const std::string &key) {
     // Send to responder thread
     std::vector<std::future<std::string>> waiters;
     waiters.push_back(get_future(queue_id, key));
     respond_queue_.push(std::make_pair(GET, std::make_pair(seq_id, std::move(waiters))));
 };
 
-void pancake_proxy::put(int queue_id, const std::string &key, const std::string &value) {
+void waffle_proxy::put(int queue_id, const std::string &key, const std::string &value) {
     put_future(queue_id, key, value).get();
 };
 
-void pancake_proxy::async_put(const sequence_id &seq_id, int queue_id, const std::string &key, const std::string &value) {
+void waffle_proxy::async_put(const sequence_id &seq_id, int queue_id, const std::string &key, const std::string &value) {
     // Send to responder thread
     std::vector<std::future<std::string>> waiters;
     waiters.push_back(put_future(queue_id, key, value));
     respond_queue_.push(std::make_pair(GET, std::make_pair(seq_id, std::move(waiters))));
 };
 
-std::vector<std::string> pancake_proxy::get_batch(int queue_id, const std::vector<std::string> &keys) {
+std::vector<std::string> waffle_proxy::get_batch(int queue_id, const std::vector<std::string> &keys) {
     std::vector<std::string> _return;
     std::vector<std::future<std::string>> waiters;
     for (const auto &key: keys) {
@@ -160,7 +160,7 @@ std::vector<std::string> pancake_proxy::get_batch(int queue_id, const std::vecto
     return _return;
 };
 
-void pancake_proxy::async_get_batch(const sequence_id &seq_id, int queue_id, const std::vector<std::string> &keys) {
+void waffle_proxy::async_get_batch(const sequence_id &seq_id, int queue_id, const std::vector<std::string> &keys) {
     std::vector<std::string> _return;
     std::vector<std::future<std::string>> waiters;
     for (const auto &key: keys) {
@@ -170,7 +170,7 @@ void pancake_proxy::async_get_batch(const sequence_id &seq_id, int queue_id, con
     sequence_queue_.push(seq_id);
 };
 
-void pancake_proxy::put_batch(int queue_id, const std::vector<std::string> &keys, const std::vector<std::string> &values) {
+void waffle_proxy::put_batch(int queue_id, const std::vector<std::string> &keys, const std::vector<std::string> &values) {
     // Send waiters to responder thread
     std::vector<std::future<std::string>> waiters;
     int i = 0;
@@ -183,7 +183,7 @@ void pancake_proxy::put_batch(int queue_id, const std::vector<std::string> &keys
     }
 };
 
-void pancake_proxy::async_put_batch(const sequence_id &seq_id, int queue_id, const std::vector<std::string> &keys, const std::vector<std::string> &values) {
+void waffle_proxy::async_put_batch(const sequence_id &seq_id, int queue_id, const std::vector<std::string> &keys, const std::vector<std::string> &values) {
     // Send waiters to responder thread
     std::vector<std::future<std::string>> waiters;
     int i = 0;
@@ -197,7 +197,7 @@ void pancake_proxy::async_put_batch(const sequence_id &seq_id, int queue_id, con
     respond_queue_.push(std::make_pair(PUT_BATCH, std::make_pair(seq_id, std::move(waiters))));
 };
 
-std::future<std::string> pancake_proxy::get_future(int queue_id, const std::string &key) {
+std::future<std::string> waffle_proxy::get_future(int queue_id, const std::string &key) {
     if (key_to_frequency_.find(key) == key_to_frequency_.end()){
         throw std::logic_error("Key does not exist");
     }
@@ -210,7 +210,7 @@ std::future<std::string> pancake_proxy::get_future(int queue_id, const std::stri
     return waiter;
 };
 
-std::future<std::string> pancake_proxy::put_future(int queue_id, const std::string &key, const std::string &value) {
+std::future<std::string> waffle_proxy::put_future(int queue_id, const std::string &key, const std::string &value) {
     auto prom = std::make_shared<std::promise<std::string>>();
     std::future<std::string> waiter = prom->get_future();
     struct operation operat;
@@ -220,7 +220,7 @@ std::future<std::string> pancake_proxy::put_future(int queue_id, const std::stri
     return waiter;
 };
 
-void pancake_proxy::consumer_thread(int id){
+void waffle_proxy::consumer_thread(int id){
     // std::shared_ptr<storage_interface> storage_interface;
     // if (server_type_ == "redis") {
     //     storage_interface = std::make_shared<redis>(server_host_name_, server_port_);
@@ -256,7 +256,7 @@ void pancake_proxy::consumer_thread(int id){
 
 };
 
-void pancake_proxy::responder_thread(){
+void waffle_proxy::responder_thread(){
     while (true){
         auto tuple = respond_queue_.pop();
         
@@ -271,7 +271,7 @@ void pancake_proxy::responder_thread(){
     std::cout << "Quitting response thread" << std::endl;
 }
 
-void pancake_proxy::flush() {
+void waffle_proxy::flush() {
     for (auto operation_queue : operation_queues_){
         if (operation_queue->size() != 0) {
             auto operation_promise_pair = operation_queue->pop();
@@ -282,7 +282,7 @@ void pancake_proxy::flush() {
     }
 }
 
-void pancake_proxy::close() {
+void waffle_proxy::close() {
     finished_ = true;
     for (int i = 0; i < threads_.size(); i++)
         threads_[i].join();

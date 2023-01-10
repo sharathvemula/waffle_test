@@ -1,13 +1,13 @@
 # Target labels
  libcuckoo
 # Source files and their labels
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/libcuckoo
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/libcuckoo.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/libcuckoo-complete.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-mkdir.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-patch.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-update.rule
+/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo
+/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo.rule
+/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo-complete.rule
+/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build.rule
+/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure.rule
+/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download.rule
+/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install.rule
+/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-mkdir.rule
+/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-patch.rule
+/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-update.rule

@@ -5,7 +5,7 @@
 #ifndef WAFFLE_THRIFT_HANDLER_H
 #define WAFFLE_THRIFT_HANDLER_H
 #include "waffle_thrift.h"
-#include "waffle.h"
+#include "proxy.h"
 #include "waffle_proxy.h"
 #include <thrift/protocol/TBinaryProtocol.h>
 #include <thrift/server/TSimpleServer.h>

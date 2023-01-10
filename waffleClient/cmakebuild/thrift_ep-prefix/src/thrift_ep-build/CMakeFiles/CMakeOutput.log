@@ -1,0 +1,965 @@
+The system is: Linux - 5.10.47-linuxkit - aarch64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98293/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_98293.dir/build.make CMakeFiles/cmTC_98293.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: aarch64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_98293.dir/'
+ /usr/lib/gcc/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_98293.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cccKwQSp.s
+GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/aarch64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/aarch64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 06562aa9f506efde66562d94abdb9ed5
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_98293.dir/'
+ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o /tmp/cccKwQSp.s
+GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_98293
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98293.dir/link.txt --verbose=1
+/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o -o cmTC_98293 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper
+Target: aarch64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_98293' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_98293.'
+ /usr/lib/gcc/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3EqFU2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_98293 /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_98293' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_98293.'
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/aarch64-linux-gnu/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include/aarch64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/11/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/aarch64-linux-gnu/11/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98293/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_98293.dir/build.make CMakeFiles/cmTC_98293.dir/build]
+  ignore line: [gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: aarch64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_98293.dir/']
+  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_98293.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cccKwQSp.s]
+  ignore line: [GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/aarch64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 06562aa9f506efde66562d94abdb9ed5]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_98293.dir/']
+  ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o /tmp/cccKwQSp.s]
+  ignore line: [GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_98293]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98293.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o -o cmTC_98293 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper]
+  ignore line: [Target: aarch64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_98293' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_98293.']
+  link line: [ /usr/lib/gcc/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3EqFU2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_98293 /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc3EqFU2.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_98293] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib]
+    arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../..]
+    arg [CMakeFiles/cmTC_98293.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11] ==> [/usr/lib/gcc/aarch64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/11;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e843e/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e843e.dir/build.make CMakeFiles/cmTC_e843e.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+Target: aarch64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e843e.dir/'
+ /usr/lib/gcc/aarch64-linux-gnu/11/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e843e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccE4z0mC.s
+GNU C++17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/11"
+ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/11
+ /usr/include/aarch64-linux-gnu/c++/11
+ /usr/include/c++/11/backward
+ /usr/lib/gcc/aarch64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/aarch64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: e47c5262693bacf48cf5a6899df204a1
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e843e.dir/'
+ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccE4z0mC.s
+GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_e843e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e843e.dir/link.txt --verbose=1
+/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e843e 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper
+Target: aarch64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e843e' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e843e.'
+ /usr/lib/gcc/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cckRtOvC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_e843e /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e843e' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e843e.'
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/11]
+    add: [/usr/include/aarch64-linux-gnu/c++/11]
+    add: [/usr/include/c++/11/backward]
+    add: [/usr/lib/gcc/aarch64-linux-gnu/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include/aarch64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
+  collapse include dir [/usr/include/aarch64-linux-gnu/c++/11] ==> [/usr/include/aarch64-linux-gnu/c++/11]
+  collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+  collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/11/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/11;/usr/include/aarch64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/aarch64-linux-gnu/11/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e843e/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e843e.dir/build.make CMakeFiles/cmTC_e843e.dir/build]
+  ignore line: [gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [Target: aarch64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e843e.dir/']
+  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/11/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e843e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccE4z0mC.s]
+  ignore line: [GNU C++17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/11"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/11]
+  ignore line: [ /usr/include/aarch64-linux-gnu/c++/11]
+  ignore line: [ /usr/include/c++/11/backward]
+  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/aarch64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: e47c5262693bacf48cf5a6899df204a1]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e843e.dir/']
+  ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccE4z0mC.s]
+  ignore line: [GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_e843e]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e843e.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e843e ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper]
+  ignore line: [Target: aarch64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e843e' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e843e.']
+  link line: [ /usr/lib/gcc/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cckRtOvC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_e843e /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cckRtOvC.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_e843e] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib]
+    arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../..]
+    arg [CMakeFiles/cmTC_e843e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11] ==> [/usr/lib/gcc/aarch64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/11;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file arpa/inet.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_479cb/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_479cb.dir/build.make CMakeFiles/cmTC_479cb.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_479cb.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_479cb.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_479cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_479cb.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_479cb.dir/CheckIncludeFile.c.o -o cmTC_479cb 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7ab24/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_7ab24.dir/build.make CMakeFiles/cmTC_7ab24.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ab24.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7ab24.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7ab24
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ab24.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_7ab24.dir/CheckIncludeFile.c.o -o cmTC_7ab24 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file getopt.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d918b/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_d918b.dir/build.make CMakeFiles/cmTC_d918b.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d918b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d918b.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d918b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d918b.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_d918b.dir/CheckIncludeFile.c.o -o cmTC_d918b 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed095/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ed095.dir/build.make CMakeFiles/cmTC_ed095.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed095.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ed095.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ed095
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed095.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ed095.dir/CheckIncludeFile.c.o -o cmTC_ed095 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file netdb.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7465c/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_7465c.dir/build.make CMakeFiles/cmTC_7465c.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7465c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7465c.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7465c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7465c.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_7465c.dir/CheckIncludeFile.c.o -o cmTC_7465c 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file netinet/in.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e9086/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e9086.dir/build.make CMakeFiles/cmTC_e9086.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9086.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e9086.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e9086
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9086.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e9086.dir/CheckIncludeFile.c.o -o cmTC_e9086 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed5d8/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ed5d8.dir/build.make CMakeFiles/cmTC_ed5d8.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed5d8.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ed5d8.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ed5d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed5d8.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ed5d8.dir/CheckIncludeFile.c.o -o cmTC_ed5d8 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66ec8/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_66ec8.dir/build.make CMakeFiles/cmTC_66ec8.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66ec8.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_66ec8.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_66ec8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66ec8.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_66ec8.dir/CheckIncludeFile.c.o -o cmTC_66ec8 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2ac03/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_2ac03.dir/build.make CMakeFiles/cmTC_2ac03.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ac03.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2ac03.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2ac03
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ac03.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2ac03.dir/CheckIncludeFile.c.o -o cmTC_2ac03 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cc80b/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_cc80b.dir/build.make CMakeFiles/cmTC_cc80b.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc80b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cc80b.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_cc80b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc80b.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_cc80b.dir/CheckIncludeFile.c.o -o cmTC_cc80b 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/ioctl.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_888a6/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_888a6.dir/build.make CMakeFiles/cmTC_888a6.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_888a6.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_888a6.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_888a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_888a6.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_888a6.dir/CheckIncludeFile.c.o -o cmTC_888a6 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4f446/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_4f446.dir/build.make CMakeFiles/cmTC_4f446.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4f446.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4f446.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4f446
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f446.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_4f446.dir/CheckIncludeFile.c.o -o cmTC_4f446 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_74cfa/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_74cfa.dir/build.make CMakeFiles/cmTC_74cfa.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74cfa.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_74cfa.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_74cfa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74cfa.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_74cfa.dir/CheckIncludeFile.c.o -o cmTC_74cfa 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/socket.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6b0a7/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_6b0a7.dir/build.make CMakeFiles/cmTC_6b0a7.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6b0a7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6b0a7.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6b0a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b0a7.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_6b0a7.dir/CheckIncludeFile.c.o -o cmTC_6b0a7 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fd28c/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_fd28c.dir/build.make CMakeFiles/cmTC_fd28c.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd28c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fd28c.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fd28c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd28c.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_fd28c.dir/CheckIncludeFile.c.o -o cmTC_fd28c 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fd07b/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_fd07b.dir/build.make CMakeFiles/cmTC_fd07b.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd07b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fd07b.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fd07b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd07b.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_fd07b.dir/CheckIncludeFile.c.o -o cmTC_fd07b 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/un.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_72d1d/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_72d1d.dir/build.make CMakeFiles/cmTC_72d1d.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72d1d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_72d1d.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_72d1d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72d1d.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_72d1d.dir/CheckIncludeFile.c.o -o cmTC_72d1d 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file poll.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed53f/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ed53f.dir/build.make CMakeFiles/cmTC_ed53f.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed53f.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ed53f.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ed53f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed53f.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ed53f.dir/CheckIncludeFile.c.o -o cmTC_ed53f 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/poll.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f9787/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_f9787.dir/build.make CMakeFiles/cmTC_f9787.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9787.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f9787.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f9787
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9787.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_f9787.dir/CheckIncludeFile.c.o -o cmTC_f9787 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/select.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0fe32/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_0fe32.dir/build.make CMakeFiles/cmTC_0fe32.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0fe32.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0fe32.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0fe32
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fe32.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_0fe32.dir/CheckIncludeFile.c.o -o cmTC_0fe32 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sched.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0acd8/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_0acd8.dir/build.make CMakeFiles/cmTC_0acd8.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0acd8.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0acd8.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0acd8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0acd8.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_0acd8.dir/CheckIncludeFile.c.o -o cmTC_0acd8 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5ab14/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_5ab14.dir/build.make CMakeFiles/cmTC_5ab14.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ab14.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_5ab14.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5ab14
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ab14.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_5ab14.dir/CheckIncludeFile.c.o -o cmTC_5ab14 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c8f49/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_c8f49.dir/build.make CMakeFiles/cmTC_c8f49.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8f49.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c8f49.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c8f49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8f49.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_c8f49.dir/CheckIncludeFile.c.o -o cmTC_c8f49 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_beee1/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_beee1.dir/build.make CMakeFiles/cmTC_beee1.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_beee1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_beee1.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_beee1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_beee1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -rdynamic CMakeFiles/cmTC_beee1.dir/CheckFunctionExists.c.o -o cmTC_beee1 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname_r exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7e8b4/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_7e8b4.dir/build.make CMakeFiles/cmTC_7e8b4.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e8b4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname_r -o CMakeFiles/cmTC_7e8b4.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7e8b4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e8b4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname_r -rdynamic CMakeFiles/cmTC_7e8b4.dir/CheckFunctionExists.c.o -o cmTC_7e8b4 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strerror_r exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_432d1/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_432d1.dir/build.make CMakeFiles/cmTC_432d1.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_432d1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strerror_r -o CMakeFiles/cmTC_432d1.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_432d1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_432d1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strerror_r -rdynamic CMakeFiles/cmTC_432d1.dir/CheckFunctionExists.c.o -o cmTC_432d1 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sched_get_priority_max exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b1d97/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b1d97.dir/build.make CMakeFiles/cmTC_b1d97.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1d97.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sched_get_priority_max -o CMakeFiles/cmTC_b1d97.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b1d97
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1d97.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sched_get_priority_max -rdynamic CMakeFiles/cmTC_b1d97.dir/CheckFunctionExists.c.o -o cmTC_b1d97 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sched_get_priority_min exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7d99f/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_7d99f.dir/build.make CMakeFiles/cmTC_7d99f.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d99f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sched_get_priority_min -o CMakeFiles/cmTC_7d99f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7d99f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d99f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sched_get_priority_min -rdynamic CMakeFiles/cmTC_7d99f.dir/CheckFunctionExists.c.o -o cmTC_7d99f 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test STRERROR_R_CHAR_P succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0016e/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_0016e.dir/build.make CMakeFiles/cmTC_0016e.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0016e.dir/src.cxx.o
+/usr/bin/c++ -DSTRERROR_R_CHAR_P  -Wno-variadic-macros -Wno-long-long  -o CMakeFiles/cmTC_0016e.dir/src.cxx.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0016e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0016e.dir/link.txt --verbose=1
+/usr/bin/c++  -Wno-variadic-macros -Wno-long-long  -rdynamic CMakeFiles/cmTC_0016e.dir/src.cxx.o -o cmTC_0016e 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+  #include <string.h>
+  int main(){char b;char *a = strerror_r(0, &b, 0); return(0);}
+  
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b5ec1/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b5ec1.dir/build.make CMakeFiles/cmTC_b5ec1.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5ec1.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b5ec1.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b5ec1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5ec1.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b5ec1.dir/CheckIncludeFile.c.o -o cmTC_b5ec1 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bd8b7/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_bd8b7.dir/build.make CMakeFiles/cmTC_bd8b7.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd8b7.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bd8b7.dir/src.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bd8b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd8b7.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_bd8b7.dir/src.c.o -o cmTC_bd8b7 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

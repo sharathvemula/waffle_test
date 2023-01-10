@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/boost_ep"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep"
 		},
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/boost_ep.rule"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep.rule"
 		},
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/boost_ep-complete.rule"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep-complete.rule"
 		},
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build.rule"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build.rule"
 		},
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure.rule"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure.rule"
 		},
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download.rule"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download.rule"
 		},
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-install.rule"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-install.rule"
 		},
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-mkdir.rule"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-mkdir.rule"
 		},
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch.rule"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch.rule"
 		},
 		{
-			"file" : "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-update.rule"
+			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-update.rule"
 		}
 	],
 	"target" : 

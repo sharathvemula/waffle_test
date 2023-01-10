@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'")
+       file='/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'")
 
-  file("" "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2" actual_value)
+  file("" "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS " hash of
-    /Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2
+    /tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2
   does not match expected value
     expected: ''
       actual: '${actual_value}'")
@@ -71,7 +71,7 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if("/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2" STREQUAL "")
+if("/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2" STREQUAL "")
   message(FATAL_ERROR "LOCAL can't be empty")
 endif()
 
@@ -79,32 +79,32 @@ if("https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.ta
   message(FATAL_ERROR "REMOTE can't be empty")
 endif()
 
-if(EXISTS "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2")
+if(EXISTS "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
+  file='/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
   =''"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2")
+      file(REMOVE "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
+  file='/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2")
+    file(REMOVE "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
+   dst='/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -126,7 +126,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2"
+        "${url}" "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -143,7 +143,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2")
+          file(REMOVE "/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2")
         else()
           message(STATUS "Downloading... done")
           return()

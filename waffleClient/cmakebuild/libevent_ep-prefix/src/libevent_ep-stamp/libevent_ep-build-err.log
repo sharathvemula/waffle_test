@@ -1,0 +1,24 @@
+/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil.c:208:21: warning: argument 4 of type 'int[2]' with mismatched bound [-Warray-parameter=]
+  208 |     evutil_socket_t fd[2])
+In file included from /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil.c:80:
+/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/util.h:312:25: note: previously declared as 'int[]'
+  312 | #define evutil_socket_t int
+/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/util-internal.h:268:47: note: in expansion of macro 'evutil_socket_t'
+  268 | int evutil_ersatz_socketpair_(int, int , int, evutil_socket_t[]);
+      |                                               ^~~~~~~~~~~~~~~
+/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil.c:208:21: warning: argument 4 of type 'int[2]' with mismatched bound [-Warray-parameter=]
+  208 |     evutil_socket_t fd[2])
+In file included from /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil.c:80:
+/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/util.h:312:25: note: previously declared as 'int[]'
+  312 | #define evutil_socket_t int
+/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/util-internal.h:268:47: note: in expansion of macro 'evutil_socket_t'
+  268 | int evutil_ersatz_socketpair_(int, int , int, evutil_socket_t[]);
+      |                                               ^~~~~~~~~~~~~~~
+/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil.c:208:21: warning: argument 4 of type 'int[2]' with mismatched bound [-Warray-parameter=]
+  208 |     evutil_socket_t fd[2])
+In file included from /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil.c:80:
+/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/util.h:312:25: note: previously declared as 'int[]'
+  312 | #define evutil_socket_t int
+/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/util-internal.h:268:47: note: in expansion of macro 'evutil_socket_t'
+  268 | int evutil_ersatz_socketpair_(int, int , int, evutil_socket_t[]);
+      |                                               ^~~~~~~~~~~~~~~

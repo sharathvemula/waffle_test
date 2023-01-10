@@ -1,5 +1,5 @@
 #include <thrift/transport/TSocket.h>
-#include "thrift_response_service.h"
+#include "waffle_thrift_response.h"
 
 /* thrift response client */
 class thrift_response_client {

@@ -1,13 +1,13 @@
 # Target labels
  openssl_ep
 # Source files and their labels
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/openssl_ep
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/openssl_ep.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/CMakeFiles/openssl_ep-complete.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch.rule
-/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update.rule
+/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep
+/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep.rule
+/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep-complete.rule
+/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build.rule
+/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure.rule
+/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download.rule
+/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install.rule
+/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir.rule
+/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch.rule
+/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update.rule

@@ -22,7 +22,7 @@ waffle_thriftIf* thrift_handler_factory::getHandler(const ::apache::thrift::TCon
     return new thrift_handler(proxy_, proxy_type_, client_id_gen_, protocol, id_to_client_);
 }
 
-void thrift_handler_factory::releaseHandler(pancake_thriftIf *handler) {
+void thrift_handler_factory::releaseHandler(waffle_thriftIf *handler) {
     auto br_handler = reinterpret_cast<thrift_handler *>(handler);
     delete handler;
 }

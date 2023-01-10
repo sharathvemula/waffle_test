@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -O3 -DNDEBUG -rdynamic CMakeFiles/http-server.dir/sample/http-server.c.o -o bin/http-server  lib/libevent_extra.a -lm 

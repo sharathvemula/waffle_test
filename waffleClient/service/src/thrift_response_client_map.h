@@ -1,6 +1,6 @@
 #include <cstdint>
 #include <libcuckoo/cuckoohash_map.hh>
-#include "waffle_thrift_response.h"
+#include "thrift_response_client.h"
 
 
 /* thrift response client map class

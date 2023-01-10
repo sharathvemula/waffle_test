@@ -1,0 +1,126 @@
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Parsed Thrift package version: 0.12.0
+-- Parsed Thrift version: 0.12.0 (0.2.0)
+-- Setting C++11 as the default language level.
+-- To specify a different C++ language level, set CMAKE_CXX_STANDARD
+-- Could NOT find RUN_HASKELL (missing: RUN_HASKELL) 
+-- Could NOT find CABAL (missing: CABAL) 
+-- Looking for arpa/inet.h
+-- Looking for arpa/inet.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for getopt.h
+-- Looking for getopt.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for netdb.h
+-- Looking for netdb.h - found
+-- Looking for netinet/in.h
+-- Looking for netinet/in.h - found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for sys/ioctl.h
+-- Looking for sys/ioctl.h - found
+-- Looking for sys/param.h
+-- Looking for sys/param.h - found
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - found
+-- Looking for sys/socket.h
+-- Looking for sys/socket.h - found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for sys/un.h
+-- Looking for sys/un.h - found
+-- Looking for poll.h
+-- Looking for poll.h - found
+-- Looking for sys/poll.h
+-- Looking for sys/poll.h - found
+-- Looking for sys/select.h
+-- Looking for sys/select.h - found
+-- Looking for sched.h
+-- Looking for sched.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for gethostbyname_r
+-- Looking for gethostbyname_r - found
+-- Looking for strerror_r
+-- Looking for strerror_r - found
+-- Looking for sched_get_priority_max
+-- Looking for sched_get_priority_max - found
+-- Looking for sched_get_priority_min
+-- Looking for sched_get_priority_min - found
+-- Performing Test STRERROR_R_CHAR_P
+-- Performing Test STRERROR_R_CHAR_P - Success
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Building without tests
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found libevent: /tmp/waffle_test/waffleClient/cmakebuild/external/libevent_ep/lib/libevent.a
+-- ----------------------------------------------------------
+-- Thrift version:                               0.12.0 (0.2.0)
+-- Thrift package version:                       0.12.0
+-- Build configuration Summary
+--   Build Thrift compiler:                      
+--   Build compiler plugin support:              OFF
+--   Build with unit tests:                      OFF
+--    - Disabled because BUILD_THRIFT=OFF and no valid THRIFT_COMPILER is given
+--   Build examples:                             OFF
+--    - Disabled because BUILD_THRIFT=OFF and no valid THRIFT_COMPILER is given
+--   Build Thrift libraries:                     ON
+--  Language libraries:
+--   Build C++ library:                          ON
+--     C++ Language Level:                       C++11 [fallback to earlier if compiler does not support it]
+--   Build C (GLib) library:                     OFF
+--    - Disabled by WITH_C_GLIB=OFF
+--    - GLib missing
+--   Build Java library:                         OFF
+--    - Disabled by WITH_JAVA=OFF
+--   Build Python library:                       OFF
+--    - Disabled by WITH_PYTHON=OFF
+--   Build Haskell library:                      OFF
+--    - Disabled by WITH_HASKELL=OFF
+--    - GHC missing
+--    - Cabal missing
+--  Library features:
+--   Build shared libraries:                     OFF
+--   Build static libraries:                     ON
+--   Build with Boost static link library:       OFF
+--   Build with Boost thread support:            OFF
+--   Build with boost/tr1/functional (forced)    OFF
+--   Build with boost/smart_ptr (forced)         OFF
+--   Build with C++ std::thread support:         OFF
+--   Build with libevent support:                ON
+--   Build with OpenSSL support:                 ON
+--   Build with Qt4 support:                     OFF
+--   Build with Qt5 support:                     OFF
+--   Build with ZLIB support:                    OFF
+-- ----------------------------------------------------------
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build

@@ -1,4 +1,4 @@
-set(command "/opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake;-P;/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/download-libevent_ep.cmake")
+set(command "/usr/bin/cmake;-P;/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/download-libevent_ep.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -8,7 +8,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake;-P;/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/verify-libevent_ep.cmake")
+set(command "/usr/bin/cmake;-P;/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/verify-libevent_ep.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -18,7 +18,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake;-P;/Users/svemula/Desktop/Downloads/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/extract-libevent_ep.cmake")
+set(command "/usr/bin/cmake;-P;/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/extract-libevent_ep.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)

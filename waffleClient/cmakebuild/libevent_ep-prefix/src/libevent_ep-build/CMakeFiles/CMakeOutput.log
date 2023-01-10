@@ -1,0 +1,2167 @@
+The system is: Linux - 5.10.47-linuxkit - aarch64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ca2c8/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ca2c8.dir/build.make CMakeFiles/cmTC_ca2c8.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: aarch64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ca2c8.dir/'
+ /usr/lib/gcc/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ca2c8.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccsCT41A.s
+GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/aarch64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/aarch64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 06562aa9f506efde66562d94abdb9ed5
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ca2c8.dir/'
+ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o /tmp/ccsCT41A.s
+GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_ca2c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca2c8.dir/link.txt --verbose=1
+/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o -o cmTC_ca2c8 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper
+Target: aarch64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ca2c8' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ca2c8.'
+ /usr/lib/gcc/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWn2onx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_ca2c8 /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ca2c8' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ca2c8.'
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/aarch64-linux-gnu/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include/aarch64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/11/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/aarch64-linux-gnu/11/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ca2c8/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ca2c8.dir/build.make CMakeFiles/cmTC_ca2c8.dir/build]
+  ignore line: [gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: aarch64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ca2c8.dir/']
+  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/11/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ca2c8.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccsCT41A.s]
+  ignore line: [GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/aarch64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (aarch64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 06562aa9f506efde66562d94abdb9ed5]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ca2c8.dir/']
+  ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o /tmp/ccsCT41A.s]
+  ignore line: [GNU assembler version 2.38 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_ca2c8]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca2c8.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o -o cmTC_ca2c8 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper]
+  ignore line: [Target: aarch64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/11/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ca2c8' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ca2c8.']
+  link line: [ /usr/lib/gcc/aarch64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWn2onx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_ca2c8 /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/11 -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/11/../../.. CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccWn2onx.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_ca2c8] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib]
+    arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/aarch64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../..]
+    arg [CMakeFiles/cmTC_ca2c8.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o]
+    arg [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11] ==> [/usr/lib/gcc/aarch64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/11/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/11/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/11;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test check_c_compiler_flag__Wall succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4a1ee/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_4a1ee.dir/build.make CMakeFiles/cmTC_4a1ee.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a1ee.dir/src.c.o
+/usr/bin/cc -Dcheck_c_compiler_flag__Wall  -Wall -o CMakeFiles/cmTC_4a1ee.dir/src.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4a1ee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a1ee.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_4a1ee.dir/src.c.o -o cmTC_4a1ee 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_c_compiler_flag__Wswitch succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f6918/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_f6918.dir/build.make CMakeFiles/cmTC_f6918.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f6918.dir/src.c.o
+/usr/bin/cc -Dcheck_c_compiler_flag__Wswitch  -Wall    -Wswitch -o CMakeFiles/cmTC_f6918.dir/src.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f6918
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6918.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_f6918.dir/src.c.o -o cmTC_f6918 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_c_compiler_flag__fno_strict_aliasing succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c1f16/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_c1f16.dir/build.make CMakeFiles/cmTC_c1f16.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1f16.dir/src.c.o
+/usr/bin/cc -Dcheck_c_compiler_flag__fno_strict_aliasing  -Wall -Wswitch    -fno-strict-aliasing -o CMakeFiles/cmTC_c1f16.dir/src.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c1f16
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1f16.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch  -rdynamic CMakeFiles/cmTC_c1f16.dir/src.c.o -o cmTC_c1f16 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the __GNU_LIBRARY__ exist passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_80953/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_80953.dir/build.make CMakeFiles/cmTC_80953.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80953.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_80953.dir/CheckSymbolExists.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_80953
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80953.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_80953.dir/CheckSymbolExists.c.o -o cmTC_80953 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+File /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <features.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GNU_LIBRARY__
+  return ((int*)(&__GNU_LIBRARY__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_56d1f/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_56d1f.dir/build.make CMakeFiles/cmTC_56d1f.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56d1f.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_56d1f.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_56d1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56d1f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_56d1f.dir/CheckIncludeFile.c.o -o cmTC_56d1f 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/socket.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dc259/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_dc259.dir/build.make CMakeFiles/cmTC_dc259.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc259.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_dc259.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_dc259
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc259.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_dc259.dir/CheckIncludeFile.c.o -o cmTC_dc259 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file netinet/in.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_97504/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_97504.dir/build.make CMakeFiles/cmTC_97504.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97504.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_97504.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_97504
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97504.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_97504.dir/CheckIncludeFile.c.o -o cmTC_97504 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed129/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ed129.dir/build.make CMakeFiles/cmTC_ed129.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed129.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_ed129.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ed129
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed129.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_ed129.dir/CheckIncludeFile.c.o -o cmTC_ed129 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file netdb.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7a9de/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_7a9de.dir/build.make CMakeFiles/cmTC_7a9de.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a9de.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_7a9de.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7a9de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a9de.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_7a9de.dir/CheckIncludeFile.c.o -o cmTC_7a9de 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_64012/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_64012.dir/build.make CMakeFiles/cmTC_64012.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_64012.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_64012.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_64012
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64012.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_64012.dir/CheckIncludeFile.c.o -o cmTC_64012 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file arpa/inet.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cef09/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_cef09.dir/build.make CMakeFiles/cmTC_cef09.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cef09.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_cef09.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_cef09
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cef09.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_cef09.dir/CheckIncludeFile.c.o -o cmTC_cef09 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_585f3/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_585f3.dir/build.make CMakeFiles/cmTC_585f3.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_585f3.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_585f3.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_585f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_585f3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_585f3.dir/CheckIncludeFile.c.o -o cmTC_585f3 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_00b6d/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_00b6d.dir/build.make CMakeFiles/cmTC_00b6d.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00b6d.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_00b6d.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_00b6d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00b6d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_00b6d.dir/CheckIncludeFile.c.o -o cmTC_00b6d 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c5a95/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_c5a95.dir/build.make CMakeFiles/cmTC_c5a95.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5a95.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_c5a95.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c5a95
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5a95.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_c5a95.dir/CheckIncludeFile.c.o -o cmTC_c5a95 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file poll.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50eb4/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_50eb4.dir/build.make CMakeFiles/cmTC_50eb4.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50eb4.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_50eb4.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_50eb4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50eb4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_50eb4.dir/CheckIncludeFile.c.o -o cmTC_50eb4 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_53608/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_53608.dir/build.make CMakeFiles/cmTC_53608.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53608.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_53608.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_53608
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53608.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_53608.dir/CheckIncludeFile.c.o -o cmTC_53608 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3904d/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_3904d.dir/build.make CMakeFiles/cmTC_3904d.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3904d.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_3904d.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3904d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3904d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_3904d.dir/CheckIncludeFile.c.o -o cmTC_3904d 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_133bc/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_133bc.dir/build.make CMakeFiles/cmTC_133bc.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_133bc.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_133bc.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_133bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_133bc.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_133bc.dir/CheckIncludeFile.c.o -o cmTC_133bc 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e146b/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e146b.dir/build.make CMakeFiles/cmTC_e146b.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e146b.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_e146b.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e146b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e146b.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_e146b.dir/CheckIncludeFile.c.o -o cmTC_e146b 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_791a1/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_791a1.dir/build.make CMakeFiles/cmTC_791a1.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_791a1.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_791a1.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_791a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_791a1.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_791a1.dir/CheckIncludeFile.c.o -o cmTC_791a1 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0e873/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_0e873.dir/build.make CMakeFiles/cmTC_0e873.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e873.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_0e873.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0e873
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e873.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_0e873.dir/CheckIncludeFile.c.o -o cmTC_0e873 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_526a6/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_526a6.dir/build.make CMakeFiles/cmTC_526a6.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_526a6.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_526a6.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_526a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_526a6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_526a6.dir/CheckIncludeFile.c.o -o cmTC_526a6 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/epoll.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f1ff3/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_f1ff3.dir/build.make CMakeFiles/cmTC_f1ff3.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1ff3.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_f1ff3.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f1ff3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1ff3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_f1ff3.dir/CheckIncludeFile.c.o -o cmTC_f1ff3 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/eventfd.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b32c4/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b32c4.dir/build.make CMakeFiles/cmTC_b32c4.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b32c4.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_b32c4.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b32c4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b32c4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_b32c4.dir/CheckIncludeFile.c.o -o cmTC_b32c4 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/ioctl.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_111c0/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_111c0.dir/build.make CMakeFiles/cmTC_111c0.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_111c0.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_111c0.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_111c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_111c0.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_111c0.dir/CheckIncludeFile.c.o -o cmTC_111c0 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3d9a3/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_3d9a3.dir/build.make CMakeFiles/cmTC_3d9a3.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3d9a3.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_3d9a3.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3d9a3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d9a3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_3d9a3.dir/CheckIncludeFile.c.o -o cmTC_3d9a3 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_56056/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_56056.dir/build.make CMakeFiles/cmTC_56056.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56056.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_56056.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_56056
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56056.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_56056.dir/CheckIncludeFile.c.o -o cmTC_56056 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/queue.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2ec07/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_2ec07.dir/build.make CMakeFiles/cmTC_2ec07.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ec07.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_2ec07.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2ec07
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ec07.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_2ec07.dir/CheckIncludeFile.c.o -o cmTC_2ec07 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/select.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_87ab9/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_87ab9.dir/build.make CMakeFiles/cmTC_87ab9.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87ab9.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_87ab9.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_87ab9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87ab9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_87ab9.dir/CheckIncludeFile.c.o -o cmTC_87ab9 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/sendfile.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_77691/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_77691.dir/build.make CMakeFiles/cmTC_77691.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77691.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_77691.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_77691
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77691.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_77691.dir/CheckIncludeFile.c.o -o cmTC_77691 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3dbf6/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_3dbf6.dir/build.make CMakeFiles/cmTC_3dbf6.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3dbf6.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_3dbf6.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3dbf6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3dbf6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_3dbf6.dir/CheckIncludeFile.c.o -o cmTC_3dbf6 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c2bf6/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_c2bf6.dir/build.make CMakeFiles/cmTC_c2bf6.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2bf6.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_c2bf6.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c2bf6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2bf6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_c2bf6.dir/CheckIncludeFile.c.o -o cmTC_c2bf6 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/uio.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b5d62/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b5d62.dir/build.make CMakeFiles/cmTC_b5d62.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5d62.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_b5d62.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b5d62
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5d62.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_b5d62.dir/CheckIncludeFile.c.o -o cmTC_b5d62 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files sys/types.h;ifaddrs.h exist passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a927/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_6a927.dir/build.make CMakeFiles/cmTC_6a927.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a927.dir/EVENT__HAVE_IFADDRS_H.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_6a927.dir/EVENT__HAVE_IFADDRS_H.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_IFADDRS_H.c
+Linking C executable cmTC_6a927
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a927.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_6a927.dir/EVENT__HAVE_IFADDRS_H.c.o -o cmTC_6a927 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file netinet/tcp.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58685/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_58685.dir/build.make CMakeFiles/cmTC_58685.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58685.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_58685.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_58685
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58685.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_58685.dir/CheckIncludeFile.c.o -o cmTC_58685 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/wait.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9b1a5/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_9b1a5.dir/build.make CMakeFiles/cmTC_9b1a5.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b1a5.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_9b1a5.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9b1a5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b1a5.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_9b1a5.dir/CheckIncludeFile.c.o -o cmTC_9b1a5 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1f766/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_1f766.dir/build.make CMakeFiles/cmTC_1f766.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1f766.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_1f766.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1f766
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f766.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_1f766.dir/CheckIncludeFile.c.o -o cmTC_1f766 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/timerfd.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7c7ad/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_7c7ad.dir/build.make CMakeFiles/cmTC_7c7ad.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7c7ad.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_7c7ad.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7c7ad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c7ad.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_7c7ad.dir/CheckIncludeFile.c.o -o cmTC_7c7ad 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_22f95/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_22f95.dir/build.make CMakeFiles/cmTC_22f95.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22f95.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_22f95.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_22f95
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22f95.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_22f95.dir/CheckIncludeFile.c.o -o cmTC_22f95 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function epoll_create exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_01d7d/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_01d7d.dir/build.make CMakeFiles/cmTC_01d7d.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_01d7d.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=epoll_create -o CMakeFiles/cmTC_01d7d.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_01d7d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01d7d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=epoll_create -rdynamic CMakeFiles/cmTC_01d7d.dir/CheckFunctionExistsEx.c.o -o cmTC_01d7d 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function epoll_ctl exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9a32a/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_9a32a.dir/build.make CMakeFiles/cmTC_9a32a.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a32a.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=epoll_ctl -o CMakeFiles/cmTC_9a32a.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_9a32a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a32a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=epoll_ctl -rdynamic CMakeFiles/cmTC_9a32a.dir/CheckFunctionExistsEx.c.o -o cmTC_9a32a 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function eventfd exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5b8a0/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_5b8a0.dir/build.make CMakeFiles/cmTC_5b8a0.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b8a0.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=eventfd -o CMakeFiles/cmTC_5b8a0.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_5b8a0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b8a0.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=eventfd -rdynamic CMakeFiles/cmTC_5b8a0.dir/CheckFunctionExistsEx.c.o -o cmTC_5b8a0 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function clock_gettime exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3c3b9/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_3c3b9.dir/build.make CMakeFiles/cmTC_3c3b9.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c3b9.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=clock_gettime -o CMakeFiles/cmTC_3c3b9.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_3c3b9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c3b9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=clock_gettime -rdynamic CMakeFiles/cmTC_3c3b9.dir/CheckFunctionExistsEx.c.o -o cmTC_3c3b9 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fcntl exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b1104/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b1104.dir/build.make CMakeFiles/cmTC_b1104.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1104.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=fcntl -o CMakeFiles/cmTC_b1104.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_b1104
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1104.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=fcntl -rdynamic CMakeFiles/cmTC_b1104.dir/CheckFunctionExistsEx.c.o -o cmTC_b1104 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getaddrinfo exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_feb70/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_feb70.dir/build.make CMakeFiles/cmTC_feb70.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_feb70.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getaddrinfo -o CMakeFiles/cmTC_feb70.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_feb70
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_feb70.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getaddrinfo -rdynamic CMakeFiles/cmTC_feb70.dir/CheckFunctionExistsEx.c.o -o cmTC_feb70 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getnameinfo exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_68700/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_68700.dir/build.make CMakeFiles/cmTC_68700.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_68700.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getnameinfo -o CMakeFiles/cmTC_68700.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_68700
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68700.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getnameinfo -rdynamic CMakeFiles/cmTC_68700.dir/CheckFunctionExistsEx.c.o -o cmTC_68700 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_656af/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_656af.dir/build.make CMakeFiles/cmTC_656af.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_656af.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=gettimeofday -o CMakeFiles/cmTC_656af.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_656af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_656af.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=gettimeofday -rdynamic CMakeFiles/cmTC_656af.dir/CheckFunctionExistsEx.c.o -o cmTC_656af 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getprotobynumber exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_709c9/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_709c9.dir/build.make CMakeFiles/cmTC_709c9.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_709c9.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getprotobynumber -o CMakeFiles/cmTC_709c9.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_709c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_709c9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getprotobynumber -rdynamic CMakeFiles/cmTC_709c9.dir/CheckFunctionExistsEx.c.o -o cmTC_709c9 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getservbyname exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d90ec/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_d90ec.dir/build.make CMakeFiles/cmTC_d90ec.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d90ec.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getservbyname -o CMakeFiles/cmTC_d90ec.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_d90ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d90ec.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getservbyname -rdynamic CMakeFiles/cmTC_d90ec.dir/CheckFunctionExistsEx.c.o -o cmTC_d90ec 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function inet_ntop exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_726a7/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_726a7.dir/build.make CMakeFiles/cmTC_726a7.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_726a7.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=inet_ntop -o CMakeFiles/cmTC_726a7.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_726a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_726a7.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=inet_ntop -rdynamic CMakeFiles/cmTC_726a7.dir/CheckFunctionExistsEx.c.o -o cmTC_726a7 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function inet_pton exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ac40a/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_ac40a.dir/build.make CMakeFiles/cmTC_ac40a.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac40a.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=inet_pton -o CMakeFiles/cmTC_ac40a.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_ac40a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac40a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=inet_pton -rdynamic CMakeFiles/cmTC_ac40a.dir/CheckFunctionExistsEx.c.o -o cmTC_ac40a 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f0efd/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_f0efd.dir/build.make CMakeFiles/cmTC_f0efd.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f0efd.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=mmap -o CMakeFiles/cmTC_f0efd.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_f0efd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0efd.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=mmap -rdynamic CMakeFiles/cmTC_f0efd.dir/CheckFunctionExistsEx.c.o -o cmTC_f0efd 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pipe exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a3e39/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_a3e39.dir/build.make CMakeFiles/cmTC_a3e39.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a3e39.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=pipe -o CMakeFiles/cmTC_a3e39.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_a3e39
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3e39.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=pipe -rdynamic CMakeFiles/cmTC_a3e39.dir/CheckFunctionExistsEx.c.o -o cmTC_a3e39 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pipe2 exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_23525/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_23525.dir/build.make CMakeFiles/cmTC_23525.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23525.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=pipe2 -o CMakeFiles/cmTC_23525.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_23525
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23525.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=pipe2 -rdynamic CMakeFiles/cmTC_23525.dir/CheckFunctionExistsEx.c.o -o cmTC_23525 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function poll exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eac97/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_eac97.dir/build.make CMakeFiles/cmTC_eac97.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eac97.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=poll -o CMakeFiles/cmTC_eac97.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_eac97
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eac97.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=poll -rdynamic CMakeFiles/cmTC_eac97.dir/CheckFunctionExistsEx.c.o -o cmTC_eac97 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sendfile exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_20f6f/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_20f6f.dir/build.make CMakeFiles/cmTC_20f6f.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20f6f.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=sendfile -o CMakeFiles/cmTC_20f6f.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_20f6f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20f6f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=sendfile -rdynamic CMakeFiles/cmTC_20f6f.dir/CheckFunctionExistsEx.c.o -o cmTC_20f6f 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sigaction exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1d808/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_1d808.dir/build.make CMakeFiles/cmTC_1d808.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d808.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=sigaction -o CMakeFiles/cmTC_1d808.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_1d808
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d808.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=sigaction -rdynamic CMakeFiles/cmTC_1d808.dir/CheckFunctionExistsEx.c.o -o cmTC_1d808 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function signal exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_11733/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_11733.dir/build.make CMakeFiles/cmTC_11733.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_11733.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=signal -o CMakeFiles/cmTC_11733.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_11733
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11733.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=signal -rdynamic CMakeFiles/cmTC_11733.dir/CheckFunctionExistsEx.c.o -o cmTC_11733 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function splice exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aadb5/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_aadb5.dir/build.make CMakeFiles/cmTC_aadb5.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aadb5.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=splice -o CMakeFiles/cmTC_aadb5.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_aadb5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aadb5.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=splice -rdynamic CMakeFiles/cmTC_aadb5.dir/CheckFunctionExistsEx.c.o -o cmTC_aadb5 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strsep exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9460a/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_9460a.dir/build.make CMakeFiles/cmTC_9460a.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9460a.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strsep -o CMakeFiles/cmTC_9460a.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_9460a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9460a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strsep -rdynamic CMakeFiles/cmTC_9460a.dir/CheckFunctionExistsEx.c.o -o cmTC_9460a 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strtok_r exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bacbd/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_bacbd.dir/build.make CMakeFiles/cmTC_bacbd.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bacbd.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strtok_r -o CMakeFiles/cmTC_bacbd.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_bacbd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bacbd.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strtok_r -rdynamic CMakeFiles/cmTC_bacbd.dir/CheckFunctionExistsEx.c.o -o cmTC_bacbd 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strtoll exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bb562/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_bb562.dir/build.make CMakeFiles/cmTC_bb562.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb562.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strtoll -o CMakeFiles/cmTC_bb562.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_bb562
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb562.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strtoll -rdynamic CMakeFiles/cmTC_bb562.dir/CheckFunctionExistsEx.c.o -o cmTC_bb562 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function vasprintf exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3f5bd/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_3f5bd.dir/build.make CMakeFiles/cmTC_3f5bd.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f5bd.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=vasprintf -o CMakeFiles/cmTC_3f5bd.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_3f5bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f5bd.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=vasprintf -rdynamic CMakeFiles/cmTC_3f5bd.dir/CheckFunctionExistsEx.c.o -o cmTC_3f5bd 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function accept4 exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1bc26/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_1bc26.dir/build.make CMakeFiles/cmTC_1bc26.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1bc26.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=accept4 -o CMakeFiles/cmTC_1bc26.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_1bc26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bc26.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=accept4 -rdynamic CMakeFiles/cmTC_1bc26.dir/CheckFunctionExistsEx.c.o -o cmTC_1bc26 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function epoll_create1 exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dd8cc/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_dd8cc.dir/build.make CMakeFiles/cmTC_dd8cc.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd8cc.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=epoll_create1 -o CMakeFiles/cmTC_dd8cc.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_dd8cc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd8cc.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=epoll_create1 -rdynamic CMakeFiles/cmTC_dd8cc.dir/CheckFunctionExistsEx.c.o -o cmTC_dd8cc 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getegid exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_501db/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_501db.dir/build.make CMakeFiles/cmTC_501db.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_501db.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getegid -o CMakeFiles/cmTC_501db.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_501db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_501db.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getegid -rdynamic CMakeFiles/cmTC_501db.dir/CheckFunctionExistsEx.c.o -o cmTC_501db 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function geteuid exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8aea3/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_8aea3.dir/build.make CMakeFiles/cmTC_8aea3.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8aea3.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=geteuid -o CMakeFiles/cmTC_8aea3.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_8aea3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8aea3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=geteuid -rdynamic CMakeFiles/cmTC_8aea3.dir/CheckFunctionExistsEx.c.o -o cmTC_8aea3 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getifaddrs exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b2d49/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b2d49.dir/build.make CMakeFiles/cmTC_b2d49.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2d49.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getifaddrs -o CMakeFiles/cmTC_b2d49.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_b2d49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2d49.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getifaddrs -rdynamic CMakeFiles/cmTC_b2d49.dir/CheckFunctionExistsEx.c.o -o cmTC_b2d49 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function nanosleep exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1fa46/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_1fa46.dir/build.make CMakeFiles/cmTC_1fa46.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fa46.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=nanosleep -o CMakeFiles/cmTC_1fa46.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_1fa46
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fa46.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=nanosleep -rdynamic CMakeFiles/cmTC_1fa46.dir/CheckFunctionExistsEx.c.o -o cmTC_1fa46 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function usleep exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_813ae/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_813ae.dir/build.make CMakeFiles/cmTC_813ae.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_813ae.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=usleep -o CMakeFiles/cmTC_813ae.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_813ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_813ae.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=usleep -rdynamic CMakeFiles/cmTC_813ae.dir/CheckFunctionExistsEx.c.o -o cmTC_813ae 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function timerfd_create exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b3c88/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b3c88.dir/build.make CMakeFiles/cmTC_b3c88.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b3c88.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerfd_create -o CMakeFiles/cmTC_b3c88.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_b3c88
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3c88.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerfd_create -rdynamic CMakeFiles/cmTC_b3c88.dir/CheckFunctionExistsEx.c.o -o cmTC_b3c88 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function putenv exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4c3ed/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_4c3ed.dir/build.make CMakeFiles/cmTC_4c3ed.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4c3ed.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=putenv -o CMakeFiles/cmTC_4c3ed.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_4c3ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c3ed.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=putenv -rdynamic CMakeFiles/cmTC_4c3ed.dir/CheckFunctionExistsEx.c.o -o cmTC_4c3ed 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function setenv exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_23ef3/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_23ef3.dir/build.make CMakeFiles/cmTC_23ef3.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23ef3.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=setenv -o CMakeFiles/cmTC_23ef3.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_23ef3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23ef3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=setenv -rdynamic CMakeFiles/cmTC_23ef3.dir/CheckFunctionExistsEx.c.o -o cmTC_23ef3 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function setrlimit exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3469d/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_3469d.dir/build.make CMakeFiles/cmTC_3469d.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3469d.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=setrlimit -o CMakeFiles/cmTC_3469d.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_3469d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3469d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=setrlimit -rdynamic CMakeFiles/cmTC_3469d.dir/CheckFunctionExistsEx.c.o -o cmTC_3469d 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function umask exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0e762/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_0e762.dir/build.make CMakeFiles/cmTC_0e762.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e762.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=umask -o CMakeFiles/cmTC_0e762.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_0e762
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e762.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=umask -rdynamic CMakeFiles/cmTC_0e762.dir/CheckFunctionExistsEx.c.o -o cmTC_0e762 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function unsetenv exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_df839/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_df839.dir/build.make CMakeFiles/cmTC_df839.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_df839.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=unsetenv -o CMakeFiles/cmTC_df839.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_df839
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df839.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=unsetenv -rdynamic CMakeFiles/cmTC_df839.dir/CheckFunctionExistsEx.c.o -o cmTC_df839 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname_r exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_af47c/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_af47c.dir/build.make CMakeFiles/cmTC_af47c.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af47c.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=gethostbyname_r -o CMakeFiles/cmTC_af47c.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_af47c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af47c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=gethostbyname_r -rdynamic CMakeFiles/cmTC_af47c.dir/CheckFunctionExistsEx.c.o -o cmTC_af47c 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the prototype gethostbyname_r exists for EVENT__HAVE_GETHOSTBYNAME_R_6_ARG passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_65737/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_65737.dir/build.make CMakeFiles/cmTC_65737.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65737.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_65737.dir/CheckPrototypeDefinition.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+Linking C executable cmTC_65737
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65737.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_65737.dir/CheckPrototypeDefinition.c.o -o cmTC_65737 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function select exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e71c2/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e71c2.dir/build.make CMakeFiles/cmTC_e71c2.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e71c2.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=select -o CMakeFiles/cmTC_e71c2.dir/CheckFunctionExistsEx.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_e71c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e71c2.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=select -rdynamic CMakeFiles/cmTC_e71c2.dir/CheckFunctionExistsEx.c.o -o cmTC_e71c2 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_76cbe/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_76cbe.dir/build.make CMakeFiles/cmTC_76cbe.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76cbe.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_76cbe.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_76cbe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76cbe.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_76cbe.dir/CheckIncludeFile.c.o -o cmTC_76cbe 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_acda9/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_acda9.dir/build.make CMakeFiles/cmTC_acda9.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_acda9.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_acda9.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_acda9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_acda9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_acda9.dir/CheckIncludeFile.c.o -o cmTC_acda9 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0e4a9/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_0e4a9.dir/build.make CMakeFiles/cmTC_0e4a9.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e4a9.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_0e4a9.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0e4a9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e4a9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_0e4a9.dir/CheckIncludeFile.c.o -o cmTC_0e4a9 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint8_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1927a/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_1927a.dir/build.make CMakeFiles/cmTC_1927a.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1927a.dir/EVENT__HAVE_UINT8_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_1927a.dir/EVENT__HAVE_UINT8_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINT8_T.c
+Linking C executable cmTC_1927a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1927a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_1927a.dir/EVENT__HAVE_UINT8_T.c.o -o cmTC_1927a 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint16_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_92187/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_92187.dir/build.make CMakeFiles/cmTC_92187.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92187.dir/EVENT__HAVE_UINT16_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_92187.dir/EVENT__HAVE_UINT16_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINT16_T.c
+Linking C executable cmTC_92187
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92187.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_92187.dir/EVENT__HAVE_UINT16_T.c.o -o cmTC_92187 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint32_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a627/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_6a627.dir/build.make CMakeFiles/cmTC_6a627.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a627.dir/EVENT__HAVE_UINT32_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_6a627.dir/EVENT__HAVE_UINT32_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINT32_T.c
+Linking C executable cmTC_6a627
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a627.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_6a627.dir/EVENT__HAVE_UINT32_T.c.o -o cmTC_6a627 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uint64_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8c065/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_8c065.dir/build.make CMakeFiles/cmTC_8c065.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c065.dir/EVENT__HAVE_UINT64_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_8c065.dir/EVENT__HAVE_UINT64_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINT64_T.c
+Linking C executable cmTC_8c065
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c065.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_8c065.dir/EVENT__HAVE_UINT64_T.c.o -o cmTC_8c065 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of short passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b5ab0/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b5ab0.dir/build.make CMakeFiles/cmTC_b5ab0.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5ab0.dir/EVENT__SIZEOF_SHORT.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_b5ab0.dir/EVENT__SIZEOF_SHORT.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SHORT.c
+Linking C executable cmTC_b5ab0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5ab0.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_b5ab0.dir/EVENT__SIZEOF_SHORT.c.o -o cmTC_b5ab0 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_17c9c/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_17c9c.dir/build.make CMakeFiles/cmTC_17c9c.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17c9c.dir/EVENT__SIZEOF_INT.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_17c9c.dir/EVENT__SIZEOF_INT.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_INT.c
+Linking C executable cmTC_17c9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17c9c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_17c9c.dir/EVENT__SIZEOF_INT.c.o -o cmTC_17c9c 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_79675/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_79675.dir/build.make CMakeFiles/cmTC_79675.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79675.dir/EVENT__SIZEOF_UNSIGNED.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_79675.dir/EVENT__SIZEOF_UNSIGNED.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_UNSIGNED.c
+Linking C executable cmTC_79675
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79675.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_79675.dir/EVENT__SIZEOF_UNSIGNED.c.o -o cmTC_79675 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4461a/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_4461a.dir/build.make CMakeFiles/cmTC_4461a.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4461a.dir/EVENT__SIZEOF_UNSIGNED_INT.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_4461a.dir/EVENT__SIZEOF_UNSIGNED_INT.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_UNSIGNED_INT.c
+Linking C executable cmTC_4461a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4461a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_4461a.dir/EVENT__SIZEOF_UNSIGNED_INT.c.o -o cmTC_4461a 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b2519/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b2519.dir/build.make CMakeFiles/cmTC_b2519.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2519.dir/EVENT__SIZEOF_LONG.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_b2519.dir/EVENT__SIZEOF_LONG.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_LONG.c
+Linking C executable cmTC_b2519
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2519.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_b2519.dir/EVENT__SIZEOF_LONG.c.o -o cmTC_b2519 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e5cde/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e5cde.dir/build.make CMakeFiles/cmTC_e5cde.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e5cde.dir/EVENT__SIZEOF_LONG_LONG.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_e5cde.dir/EVENT__SIZEOF_LONG_LONG.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_LONG_LONG.c
+Linking C executable cmTC_e5cde
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5cde.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_e5cde.dir/EVENT__SIZEOF_LONG_LONG.c.o -o cmTC_e5cde 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test HAVE_INLINE succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2f6d9/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_2f6d9.dir/build.make CMakeFiles/cmTC_2f6d9.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2f6d9.dir/src.c.o
+/usr/bin/cc -DHAVE_INLINE  -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_2f6d9.dir/src.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2f6d9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f6d9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_2f6d9.dir/src.c.o -o cmTC_2f6d9 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+inline void func(); void func() { } int main() { func(); return 0; }
+Determining if the TAILQ_FOREACH exist passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c2f0d/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_c2f0d.dir/build.make CMakeFiles/cmTC_c2f0d.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2f0d.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_c2f0d.dir/CheckSymbolExists.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c2f0d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2f0d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_c2f0d.dir/CheckSymbolExists.c.o -o cmTC_c2f0d 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+File /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/queue.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef TAILQ_FOREACH
+  return ((int*)(&TAILQ_FOREACH))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the F_SETFD exist passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e08e7/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e08e7.dir/build.make CMakeFiles/cmTC_e08e7.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e08e7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_e08e7.dir/CheckSymbolExists.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e08e7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e08e7.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_e08e7.dir/CheckSymbolExists.c.o -o cmTC_e08e7 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+File /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef F_SETFD
+  return ((int*)(&F_SETFD))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining size of fd_mask passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2cba2/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_2cba2.dir/build.make CMakeFiles/cmTC_2cba2.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2cba2.dir/EVENT__HAVE_FD_MASK.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_2cba2.dir/EVENT__HAVE_FD_MASK.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_FD_MASK.c
+Linking C executable cmTC_2cba2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cba2.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_2cba2.dir/EVENT__HAVE_FD_MASK.c.o -o cmTC_2cba2 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_389a9/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_389a9.dir/build.make CMakeFiles/cmTC_389a9.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_389a9.dir/EVENT__SIZEOF_SIZEE_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_389a9.dir/EVENT__SIZEOF_SIZEE_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SIZEE_T.c
+Linking C executable cmTC_389a9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_389a9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_389a9.dir/EVENT__SIZEOF_SIZEE_T.c.o -o cmTC_389a9 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of off_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b8769/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b8769.dir/build.make CMakeFiles/cmTC_b8769.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b8769.dir/EVENT__SIZEOF_OFF_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_b8769.dir/EVENT__SIZEOF_OFF_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_OFF_T.c
+Linking C executable cmTC_b8769
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8769.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_b8769.dir/EVENT__SIZEOF_OFF_T.c.o -o cmTC_b8769 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fdd6b/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_fdd6b.dir/build.make CMakeFiles/cmTC_fdd6b.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fdd6b.dir/EVENT__SIZEOF_SSIZE_T_LOWER.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_fdd6b.dir/EVENT__SIZEOF_SSIZE_T_LOWER.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_LOWER.c
+Linking C executable cmTC_fdd6b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdd6b.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_fdd6b.dir/EVENT__SIZEOF_SSIZE_T_LOWER.c.o -o cmTC_fdd6b 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of socklen_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c9720/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_c9720.dir/build.make CMakeFiles/cmTC_c9720.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c9720.dir/EVENT__SIZEOF_SOCKLEN_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_c9720.dir/EVENT__SIZEOF_SOCKLEN_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SOCKLEN_T.c
+Linking C executable cmTC_c9720
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9720.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_c9720.dir/EVENT__SIZEOF_SOCKLEN_T.c.o -o cmTC_c9720 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of pid_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98d0b/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_98d0b.dir/build.make CMakeFiles/cmTC_98d0b.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98d0b.dir/EVENT__SIZEOF_PID_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_98d0b.dir/EVENT__SIZEOF_PID_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_PID_T.c
+Linking C executable cmTC_98d0b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98d0b.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_98d0b.dir/EVENT__SIZEOF_PID_T.c.o -o cmTC_98d0b 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of pthread_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b410f/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b410f.dir/build.make CMakeFiles/cmTC_b410f.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b410f.dir/EVENT__SIZEOF_PTHREAD_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_b410f.dir/EVENT__SIZEOF_PTHREAD_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_PTHREAD_T.c
+Linking C executable cmTC_b410f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b410f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_b410f.dir/EVENT__SIZEOF_PTHREAD_T.c.o -o cmTC_b410f 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of uintptr_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a0d93/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_a0d93.dir/build.make CMakeFiles/cmTC_a0d93.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0d93.dir/EVENT__HAVE_UINTPTR_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_a0d93.dir/EVENT__HAVE_UINTPTR_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_UINTPTR_T.c
+Linking C executable cmTC_a0d93
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0d93.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_a0d93.dir/EVENT__HAVE_UINTPTR_T.c.o -o cmTC_a0d93 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of void * passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_16096/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_16096.dir/build.make CMakeFiles/cmTC_16096.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16096.dir/EVENT__SIZEOF_VOID_P.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_16096.dir/EVENT__SIZEOF_VOID_P.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_VOID_P.c
+Linking C executable cmTC_16096
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16096.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_16096.dir/EVENT__SIZEOF_VOID_P.c.o -o cmTC_16096 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the _POSIX_SOURCE exist passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b80ab/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b80ab.dir/build.make CMakeFiles/cmTC_b80ab.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b80ab.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_b80ab.dir/CheckSymbolExists.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b80ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b80ab.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_b80ab.dir/CheckSymbolExists.c.o -o cmTC_b80ab 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+File /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _POSIX_SOURCE
+  return ((int*)(&_POSIX_SOURCE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining size of struct addrinfo passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_60c53/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_60c53.dir/build.make CMakeFiles/cmTC_60c53.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60c53.dir/EVENT__HAVE_STRUCT_ADDRINFO.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_60c53.dir/EVENT__HAVE_STRUCT_ADDRINFO.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_ADDRINFO.c
+Linking C executable cmTC_60c53
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60c53.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_60c53.dir/EVENT__HAVE_STRUCT_ADDRINFO.c.o -o cmTC_60c53 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of struct in6_addr passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_42623/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_42623.dir/build.make CMakeFiles/cmTC_42623.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42623.dir/EVENT__HAVE_STRUCT_IN6_ADDR.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_42623.dir/EVENT__HAVE_STRUCT_IN6_ADDR.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_IN6_ADDR.c
+Linking C executable cmTC_42623
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42623.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_42623.dir/EVENT__HAVE_STRUCT_IN6_ADDR.c.o -o cmTC_42623 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR16 succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_03f76/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_03f76.dir/build.make CMakeFiles/cmTC_03f76.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03f76.dir/src.c.o
+/usr/bin/cc -DEVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR16  -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_03f76.dir/src.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_03f76
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03f76.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_03f76.dir/src.c.o -o cmTC_03f76 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <netdb.h>
+
+int main()
+{
+  (void)sizeof(((struct in6_addr *)0)->s6_addr16);
+  return 0;
+}
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR32 succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_86284/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_86284.dir/build.make CMakeFiles/cmTC_86284.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86284.dir/src.c.o
+/usr/bin/cc -DEVENT__HAVE_STRUCT_IN6_ADDR_S6_ADDR32  -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_86284.dir/src.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_86284
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86284.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_86284.dir/src.c.o -o cmTC_86284 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <netdb.h>
+
+int main()
+{
+  (void)sizeof(((struct in6_addr *)0)->s6_addr32);
+  return 0;
+}
+
+Determining size of sa_family_t passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_84821/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_84821.dir/build.make CMakeFiles/cmTC_84821.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84821.dir/EVENT__HAVE_SA_FAMILY_T.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_84821.dir/EVENT__HAVE_SA_FAMILY_T.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_SA_FAMILY_T.c
+Linking C executable cmTC_84821
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84821.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_84821.dir/EVENT__HAVE_SA_FAMILY_T.c.o -o cmTC_84821 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of struct sockaddr_in6 passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_95503/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_95503.dir/build.make CMakeFiles/cmTC_95503.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95503.dir/EVENT__HAVE_STRUCT_SOCKADDR_IN6.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_95503.dir/EVENT__HAVE_STRUCT_SOCKADDR_IN6.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_SOCKADDR_IN6.c
+Linking C executable cmTC_95503
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95503.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_95503.dir/EVENT__HAVE_STRUCT_SOCKADDR_IN6.c.o -o cmTC_95503 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of struct sockaddr_storage passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d5310/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_d5310.dir/build.make CMakeFiles/cmTC_d5310.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5310.dir/EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_d5310.dir/EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c
+Linking C executable cmTC_d5310
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5310.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_d5310.dir/EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c.o -o cmTC_d5310 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fed90/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_fed90.dir/build.make CMakeFiles/cmTC_fed90.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fed90.dir/src.c.o
+/usr/bin/cc -DEVENT__HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY  -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_fed90.dir/src.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fed90
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fed90.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_fed90.dir/src.c.o -o cmTC_fed90 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <netdb.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_storage *)0)->ss_family);
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_460df/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_460df.dir/build.make CMakeFiles/cmTC_460df.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_460df.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_460df.dir/CheckIncludeFile.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_460df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_460df.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_460df.dir/CheckIncludeFile.c.o -o cmTC_460df 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_55501/fast && gmake[3]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_55501.dir/build.make CMakeFiles/cmTC_55501.dir/build
+gmake[4]: Entering directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_55501.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_55501.dir/src.c.o -c /tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_55501
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55501.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing  -rdynamic CMakeFiles/cmTC_55501.dir/src.c.o -o cmTC_55501 
+gmake[4]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+gmake[3]: Leaving directory '/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

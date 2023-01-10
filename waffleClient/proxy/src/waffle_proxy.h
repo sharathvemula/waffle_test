@@ -71,7 +71,7 @@ private:
                                std::vector<std::shared_ptr<std::promise<std::string>>> &promises);
 
     void execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
-                       std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> storage_interface);
+                       std::vector<std::shared_ptr<std::promise<std::string>>> &promises);
     void consumer_thread(int id);
     void responder_thread();
 

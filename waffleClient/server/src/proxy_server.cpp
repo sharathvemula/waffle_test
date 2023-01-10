@@ -16,7 +16,7 @@
 
 typedef std::vector<std::pair<std::vector<std::string>, std::vector<std::string>>> trace_vector;
 
-void load_frequencies_from_trace(const std::string &trace_location, trace_vector &trace_, int client_batch_size_) {
+std::vector<std::string> load_frequencies_from_trace(const std::string &trace_location, trace_vector &trace_, int client_batch_size_) {
     std::vector<std::string> get_keys;
     std::vector<std::string> put_keys;
     std::vector<std::string> put_values;
@@ -85,6 +85,7 @@ void load_frequencies_from_trace(const std::string &trace_location, trace_vector
         frequencies.push_back(pair.second/(double)frequency_sum);
     }
     in_workload_file.close();
+    return keys;
 };
 
 void flush_thread(std::shared_ptr<proxy> proxy){
@@ -173,7 +174,7 @@ int main(int argc, char *argv[]) {
     void *arguments[4];
     std::vector<std::pair<std::vector<std::string>, std::vector<std::string>>> trace_;
     assert(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_ != "");
-    load_frequencies_from_trace(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_, trace_, client_batch_size);
+    auto items = load_frequencies_from_trace(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_, trace_, client_batch_size);
     auto id_to_client = std::make_shared<thrift_response_client_map>();
     arguments[0] = &id_to_client;
     std::string dummy(object_size_, '0');
@@ -188,4 +189,4 @@ int main(int argc, char *argv[]) {
     //flush_thread(proxy_);
     //proxy_->close();
     //proxy_server->stop();
-}1
+}
