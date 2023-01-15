@@ -61,7 +61,7 @@ public:
     int object_size_ = 1024;
     int key_size_ = 16;
     int server_count_ = 1;
-    std::string server_type_ = "redis";
+    std::string server_type_ = "rocksdb";
     int p_threads_ = 1;
     int storage_batch_size_ = 40;
     int core_ = 0;

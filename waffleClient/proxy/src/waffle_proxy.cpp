@@ -261,10 +261,7 @@ std::future<std::string> waffle_proxy::put_future(int queue_id, const std::strin
 
 void waffle_proxy::consumer_thread(int id){
     std::shared_ptr<storage_interface> storage_interface;
-    if (server_type_ == "redis") {
-        storage_interface = std::make_shared<redis>(server_host_name_, server_port_);
-    }
-    else if (server_type_ == "rocksdb") {
+    if (server_type_ == "rocksdb") {
         storage_interface = std::make_shared<rocksdb>(server_host_name_, server_port_);
     }
     //else if (server_type_ == "memcached")
