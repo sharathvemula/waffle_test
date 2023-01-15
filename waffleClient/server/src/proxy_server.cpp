@@ -16,14 +16,7 @@
 
 typedef std::vector<std::pair<std::vector<std::string>, std::vector<std::string>>> trace_vector;
 
-std::vector<std::string> load_frequencies_from_trace(const std::string &trace_location, trace_vector &trace_, int client_batch_size_) {
-    std::vector<std::string> get_keys;
-    std::vector<std::string> put_keys;
-    std::vector<std::string> put_values;
-
-    std::unordered_map<std::string, int> key_to_frequency;
-    int frequency_sum = 0;
-    std::string op, key, val;
+std::vector<int> get_keys(const std::string &trace_location, FrequencySmoother& bst) {
     std::ifstream in_workload_file;
     in_workload_file.open(trace_location, std::ios::in);
     if(!in_workload_file.is_open()){
@@ -33,59 +26,11 @@ std::vector<std::string> load_frequencies_from_trace(const std::string &trace_lo
         std::perror("Opening workload file failed");
     }
     std::string line;
+    vector<int> keys;
     while (std::getline(in_workload_file, line)) {
-        op = line.substr(0, line.find(" "));
-        key = line.substr(line.find(" ")+1);
-        val = "";
-
-        if (key.find(" ") != -1) {
-            val = key.substr(key.find(" ")+1);
-            key = key.substr(0, key.find(" "));
-        }
-        if(val == ""){
-            get_keys.push_back(key);
-            if (get_keys.size() == client_batch_size_){
-                trace_.push_back(std::make_pair(get_keys, std::vector<std::string>()));
-                get_keys.clear();
-            }
-        }
-        else {
-            put_keys.push_back(key);
-            put_values.push_back(val);
-            if (put_keys.size() == client_batch_size_){
-                trace_.push_back(std::make_pair(put_keys, put_values));
-                put_keys.clear();
-                put_values.clear();
-            }
-        }
-        assert (key != "PUT");
-        assert (key != "GET");
-        if (key_to_frequency.count(key) == 0){
-            key_to_frequency[key] = 1;
-            frequency_sum += 1;
-        }
-        else {
-            key_to_frequency[key] += 1;
-            frequency_sum += 1;
-        }
-    }
-    if (get_keys.size() > 0){
-        trace_.push_back(std::make_pair(get_keys, std::vector<std::string>()));
-        get_keys.clear();
-    }
-    if (put_keys.size() > 0){
-        trace_.push_back(std::make_pair(put_keys, put_values));
-        put_keys.clear();
-        put_values.clear();
-    }
-    std::vector<std::string> keys;
-    std::vector<double> frequencies;
-    for (auto pair: key_to_frequency){
-        keys.push_back(pair.first);
-        frequencies.push_back(pair.second/(double)frequency_sum);
+        keys.push_back(key);
     }
     in_workload_file.close();
-    return keys;
 };
 
 void flush_thread(std::shared_ptr<proxy> proxy){
@@ -171,19 +116,17 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    void *arguments[4];
-    std::vector<std::pair<std::vector<std::string>, std::vector<std::string>>> trace_;
+    void *arguments[1];
     assert(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_ != "");
-    auto items = load_frequencies_from_trace(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_, trace_, client_batch_size);
+    auto keys = get_keys(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_, bst);
     auto id_to_client = std::make_shared<thrift_response_client_map>();
     arguments[0] = &id_to_client;
     std::string dummy(object_size_, '0');
     std::cout <<"Initializing pancake" << std::endl;
-    dynamic_cast<waffle_proxy&>(*proxy_).init(items, std::vector<std::string>(items.size(), dummy), arguments);
+    dynamic_cast<waffle_proxy&>(*proxy_).init(keys, arguments);
     std::cout << "Initialized pancake" << std::endl;
     auto proxy_server = thrift_server::create(proxy_, "pancake", id_to_client, PROXY_PORT, 1);
     std::thread proxy_serve_thread([&proxy_server] { proxy_server->serve(); });
-    //wait_for_server_start(HOST, PROXY_PORT);
     std::cout << "Proxy server is reachable" << std::endl;
     sleep(10000);
     //flush_thread(proxy_);

@@ -4,7 +4,7 @@
 
 #include "waffle_proxy.h"
 
-void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<std::string> &values, void ** args){
+void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
     id_to_client_ = *(static_cast<std::shared_ptr<thrift_response_client_map>*>(args[0]));
     //int num_cores = sysconf(_SC_NPROCESSORS_ONLN);
     int num_cores = 1;
@@ -16,82 +16,121 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     for (int i = 0; i < num_cores; i++) {
         threads_.push_back(std::thread(&waffle_proxy::consumer_thread, this, i));
     }
-    //if (!is_static_)
-    //    threads_.push_back(std::thread(&waffle_proxy::distribution_thread, this));
     threads_.push_back(std::thread(&waffle_proxy::responder_thread, this));
+    for(auto& it : keys) {
+        bst.insert(it);
+    }
+
 }
 
 void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
                                           std::vector<operation> &storage_batch, std::vector<bool> &is_trues,
                                           std::vector<std::shared_ptr<std::promise<std::string>>> &promises) {
+// Can optimize this code. TODO(sharathvemula)
     for (int i = 0; i < security_batch_size_; i++) {
-        // if (is_true_distribution()) {
-        //     if (op_queue->size() == 0) {
-        //         struct operation operat;
-        //         operat.key = real_distribution_.sample();
-        //         operat.value = "";
-        //         storage_batch.push_back(operat);
-        //         is_trues.push_back(false);
-        //     } else {
-        //         auto operation_promise_pair = op_queue->pop();
-        //         storage_batch.push_back(operation_promise_pair.first);
-        //         is_trues.push_back(true);
-        //         promises.push_back(operation_promise_pair.second);
-        //     }
-        // } else {
-        //     struct operation operat;
-        //     operat.key = fake_distribution_.sample();
-        //     operat.value = "";
-        //     storage_batch.push_back(operat);
-        //     is_trues.push_back(false);
-        // }
-        if (op_queue->size() == 0) {
-            struct operation operat;
-            operat.key = 1;
-            operat.value = "test";
-            storage_batch.push_back(operat);
-            is_trues.push_back(true);
+        auto coin_toss = rand()%2;
+        // coin_toss = 1 means serving real request
+        if(coin_toss == 1) {
+            if (op_queue->size() == 0) {
+                struct operation operat;
+                operat.key = bst.getKeyWithMinFrequency();
+                bst.incrementFrequency(operat.key);
+                if(bst.getFrequency(operat.key) > freqMax) {
+                    freqMax = bst.getFrequency(operat.key);
+                    cache.evictCache();
+                }
+                operat.value = "";
+                storage_batch.push_back(operat);
+                is_trues.push_back(false);
+            } else {
+                struct operation operat;
+                auto operation_promise_pair = op_queue->pop();
+                auto currentKey = operation_promise_pair.first.key;
+                if(operation_promise_pair.first.value != "") {
+                    if(cache.checkIfKeyExists(currentKey) == true) {
+                        cache.markKeyDirty(currentKey);
+                        operat.key = bst.getKeyWithMinFrequency();
+                        bst.incrementFrequency(operat.key);
+                        if(bst.getFrequency(operat.key) > freqMax) {
+                            freqMax = bst.getFrequency(operat.key);
+                            cache.evictCache();
+                        }
+                        operat.value = "";
+                        storage_batch.push_back(operat);
+                        is_trues.push_back(false);
+                        operation_promise_pair.second->set_value(cache.getValue(currentKey));
+                    } else {
+                        if(bst.getFrequency(currentKey) > freqMax) {
+                            freqMax = bst.getFrequency(currentKey);
+                            cache.evictCache();
+                        }
+                        storage_batch.push_back(operation_promise_pair.first);
+                        is_trues.push_back(true);
+                        promises.push_back(operation_promise_pair.second);
+                    }
+                } else {
+                    if(cache.checkIfKeyExists(currentKey) == true) {
+                        operat.key = bst.getKeyWithMinFrequency();
+                        bst.incrementFrequency(operat.key);
+                        if(bst.getFrequency(operat.key) > freqMax) {
+                            freqMax = bst.getFrequency(operat.key);
+                            cache.evictCache();
+                        }
+                        operat.value = "";
+                        storage_batch.push_back(operat);
+                        is_trues.push_back(false);
+                        operation_promise_pair.second->set_value(cache.getValue(currentKey));
+                    } else {
+                        if(bst.getFrequency(currentKey) > freqMax) {
+                            freqMax = bst.getFrequency(currentKey);
+                            cache.evictCache();
+                        }
+                        storage_batch.push_back(operation_promise_pair.first);
+                        is_trues.push_back(true);
+                        promises.push_back(operation_promise_pair.second);
+                    }
+                }
+            }
         } else {
-            auto operation_promise_pair = op_queue->pop();
-            storage_batch.push_back(operation_promise_pair.first);
-            is_trues.push_back(true);
-            promises.push_back(operation_promise_pair.second);
+            struct operation operat;
+                operat.key = bst.getKeyWithMinFrequency();
+                bst.incrementFrequency(operat.key);
+                if(bst.getFrequency(operat.key) > freqMax) {
+                    freqMax = bst.getFrequency(operat.key);
+                    cache.evictCache();
+                }
+                operat.value = "";
+                storage_batch.push_back(operat);
+                is_trues.push_back(false);
         }
     }
 };
 
 void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
-                                  std::vector<std::shared_ptr<std::promise<std::string>>> &promises) {
-
-    // Store which are real queries so we can return the values
-    // std::vector<std::string> labels;
-
-    // std::vector<std::string> storage_keys;
-    // for(int i = 0; i < operations.size(); i++){
-    //     std::string key = operations[i].key;
-    //     replica_ids.push_back(missing_new_replicas_.sample_a_replica(key, key_to_number_of_replicas_[key], is_trues[i], key_to_frequency_[key], p_max_));
-    //     labels.push_back(std::to_string(replica_to_label_[operations[i].key+std::to_string(replica_ids[i])]));
-    //     storage_keys.push_back(labels[i]);
-    // }
-    // auto responses = storage_interface->get_batch(storage_keys);
-    // std::vector<std::string> storage_values;
-    // for(int i = 0, j = 0; i < operations.size(); i++){
-    //     auto cipher = responses[i];
-    //     auto plaintext = enc_engine->decrypt(cipher);
-    //     if(operations[i].value != ""){
-    //         update_cache_.populate_replica_updates(operations[i].key, operations[i].value, key_to_number_of_replicas_[operations[i].key]);
-    //     }
-    //     auto plaintext_update = update_cache_.check_for_update(operations[i].key, replica_ids[i]);
-    //     plaintext = plaintext_update == "" ? plaintext : plaintext_update;
-    //     missing_new_replicas_.check_if_missing(operations[i].key, plaintext, update_cache_);
-    //     if (is_trues[i]) {
-    //         promises[j]->set_value(plaintext);
-    //         j++;
-    //     }
-    //     storage_values.push_back(enc_engine->encrypt(plaintext));
-    // }
-    // storage_interface->put_batch(storage_keys, storage_values);
+                                  std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> storage_interface) {
     std::cout << "Executing batch " << std::endl;
+    std::vector<std::string> storage_keys;
+    for(int i = 0; i < operations.size(); i++){
+        std::string key = operations[i].key;
+        storage_keys.push_back(key);
+    }
+    auto responses = storage_interface->get_batch(storage_keys);
+    std::vector<std::string> storage_values;
+    for(int i = 0, j = 0; i < operations.size(); i++){
+        if(cache.checkIfKeyExists(operations[i].key)) {
+            cache.unMarkKeyDirty(operations[i].key);
+            storage_values.push_back(cache.getValue(operations[i].key))
+        } else {
+            storage_values.push_back(responses[i]);
+        }
+        if (is_trues[i]) {
+            promises[j]->set_value(storage_values[i]);
+            j++;
+            if(bst.getFrequency(operations[i].key) == freqMax && cache.checkIfKeyExists(operations[i].key)==false) {
+                cache.insertIntoCache(operations[i].key, "", false);
+            }
+        }
+    }
 }
 
 std::string waffle_proxy::get(const std::string &key) {
@@ -221,18 +260,18 @@ std::future<std::string> waffle_proxy::put_future(int queue_id, const std::strin
 };
 
 void waffle_proxy::consumer_thread(int id){
-    // std::shared_ptr<storage_interface> storage_interface;
-    // if (server_type_ == "redis") {
-    //     storage_interface = std::make_shared<redis>(server_host_name_, server_port_);
-    // }
-    // else if (server_type_ == "rocksdb") {
-    //     storage_interface = std::make_shared<rocksdb>(server_host_name_, server_port_);
-    // }
-    // //else if (server_type_ == "memcached")
-    // //    storage_interface_ new memcached(server_host_name_, server_port_+i);
-    // for (int i = 1; i < server_count_; i++) {
-    //     storage_interface->add_server(server_host_name_, server_port_+i);
-    // }
+    std::shared_ptr<storage_interface> storage_interface;
+    if (server_type_ == "redis") {
+        storage_interface = std::make_shared<redis>(server_host_name_, server_port_);
+    }
+    else if (server_type_ == "rocksdb") {
+        storage_interface = std::make_shared<rocksdb>(server_host_name_, server_port_);
+    }
+    //else if (server_type_ == "memcached")
+    //    storage_interface_ new memcached(server_host_name_, server_port_+i);
+    for (int i = 1; i < server_count_; i++) {
+        storage_interface->add_server(server_host_name_, server_port_+i);
+    }
     int operations_serviced = 0;
     int previous_total_operations = 0;
     int total_operations = 0;
@@ -246,12 +285,12 @@ void waffle_proxy::consumer_thread(int id){
             int i = 0;
             for (; i < total_operations - previous_total_operations; i++)
                 create_security_batch(operation_queues_[id], storage_batch, is_trues, promises);
+                execute_batch(storage_batch, is_trues, promises, storage_interface);
             if (i != 0) {
                 operations_serviced += i;
                 previous_total_operations = total_operations;
             }
         }
-        execute_batch(storage_batch, is_trues, promises);
     }
 
 };
@@ -259,7 +298,6 @@ void waffle_proxy::consumer_thread(int id){
 void waffle_proxy::responder_thread(){
     while (true){
         auto tuple = respond_queue_.pop();
-        
         auto op_code = tuple.first;
         auto seq = tuple.second.first;
         seq = sequence_queue_.pop();

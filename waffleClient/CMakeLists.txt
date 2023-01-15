@@ -32,6 +32,9 @@ if (BUILD_STRESS_TESTS)
     add_definitions(-DSTRESS_TEST)
 endif()
 
+# Storage library
+add_subdirectory(libstorage)
+
 # Proxy
 add_subdirectory(proxy)
 

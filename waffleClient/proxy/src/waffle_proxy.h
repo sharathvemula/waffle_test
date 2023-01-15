@@ -18,6 +18,8 @@
 #include "operation.h"
 #include "queue.h"
 #include "thrift_response_client_map.h"
+#include "FrequencySmoother.hpp"
+#include "Cache.hpp"
 //#include "memcached.h"
 
 
@@ -84,7 +86,9 @@ private:
     int PUT = 1;
     int GET_BATCH = 2;
     int PUT_BATCH = 3;
-
+    int freqMax = 0;
+    FrequencySmoother bst;
+    Cache cache;
     queue<std::pair<int, std::pair<const sequence_id&, std::vector<std::future<std::string>>>>> respond_queue_;
     queue<sequence_id> sequence_queue_;
 };
