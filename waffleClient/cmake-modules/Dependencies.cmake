@@ -360,8 +360,3 @@ message(STATUS "Snappy library: ${SNAPPY_LIBRARY}")
 
 message(STATUS "SSDB Client include dir: ${SSDB_CLIENT_INCLUDE_DIR}")
 message(STATUS "SSDB Client library: ${SSDB_CLIENT_LIBRARY}")
-
-find_package(ZLIB REQUIRED)
-include_directories(SYSTEM ${ZLIB_INCLUDE_DIRS})
-find_package(BZip2 REQUIRED)
-include_directories(SYSTEM ${BZIP2_INCLUDE_DIR})
