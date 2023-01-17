@@ -2,8 +2,6 @@
 
 #include <iostream>
 #include <fstream>
-#include <filesystem>
-
 bool freqCmp(std::pair<std::string, int> a, std::pair<std::string, int> b){ return (a.second == b.second ? a.first < b.first : a.second < b.second); }
 
 FrequencySmoother::FrequencySmoother() : accessTree(freqCmp) {}

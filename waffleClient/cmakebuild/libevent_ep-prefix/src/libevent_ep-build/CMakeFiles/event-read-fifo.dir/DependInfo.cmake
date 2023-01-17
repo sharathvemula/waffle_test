@@ -1,19 +1,30 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "HAVE_CONFIG_H"
+  "_GNU_SOURCE"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c" "CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o" "gcc" "CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "include"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/compat"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_extra.dir/DependInfo.cmake"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_extra.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

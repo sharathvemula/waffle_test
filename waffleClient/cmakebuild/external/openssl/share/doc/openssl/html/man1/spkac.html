@@ -122,23 +122,23 @@
 
 <p>Print out the contents of an SPKAC:</p>
 
-<pre><code>openssl spkac -in spkac.cnf</code></pre>
+<pre><code> openssl spkac -in spkac.cnf</code></pre>
 
 <p>Verify the signature of an SPKAC:</p>
 
-<pre><code>openssl spkac -in spkac.cnf -noout -verify</code></pre>
+<pre><code> openssl spkac -in spkac.cnf -noout -verify</code></pre>
 
 <p>Create an SPKAC using the challenge string &quot;hello&quot;:</p>
 
-<pre><code>openssl spkac -key key.pem -challenge hello -out spkac.cnf</code></pre>
+<pre><code> openssl spkac -key key.pem -challenge hello -out spkac.cnf</code></pre>
 
 <p>Example of an SPKAC, (long lines split up for clarity):</p>
 
-<pre><code>SPKAC=MIG5MGUwXDANBgkqhkiG9w0BAQEFAANLADBIAkEA1cCoq2Wa3Ixs47uI7F\
-PVwHVIPDx5yso105Y6zpozam135a8R0CpoRvkkigIyXfcCjiVi5oWk+6FfPaD03u\
-PFoQIDAQABFgVoZWxsbzANBgkqhkiG9w0BAQQFAANBAFpQtY/FojdwkJh1bEIYuc\
-2EeM2KHTWPEepWYeawvHD0gQ3DngSC75YCWnnDdq+NQ3F+X4deMx9AaEglZtULwV\
-4=</code></pre>
+<pre><code> SPKAC=MIG5MGUwXDANBgkqhkiG9w0BAQEFAANLADBIAkEA1cCoq2Wa3Ixs47uI7F\
+ PVwHVIPDx5yso105Y6zpozam135a8R0CpoRvkkigIyXfcCjiVi5oWk+6FfPaD03u\
+ PFoQIDAQABFgVoZWxsbzANBgkqhkiG9w0BAQQFAANBAFpQtY/FojdwkJh1bEIYuc\
+ 2EeM2KHTWPEepWYeawvHD0gQ3DngSC75YCWnnDdq+NQ3F+X4deMx9AaEglZtULwV\
+ 4=</code></pre>
 
 <h1 id="NOTES">NOTES</h1>
 

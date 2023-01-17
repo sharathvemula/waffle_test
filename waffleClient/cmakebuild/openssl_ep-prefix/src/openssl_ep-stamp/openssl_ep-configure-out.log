@@ -1,5 +1,5 @@
-Operating system: aarch64-whatever-linux2
-Configuring OpenSSL version 1.1.1-pre7 (0x10101007L) for linux-aarch64
+Operating system: x86_64-whatever-linux2
+Configuring OpenSSL version 1.1.1-pre7 (0x10101007L) for linux-x86_64
 Using os-specific seed configuration
 Creating configdata.pm
 Creating Makefile

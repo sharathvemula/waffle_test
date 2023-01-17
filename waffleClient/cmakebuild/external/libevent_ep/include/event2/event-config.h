@@ -314,7 +314,7 @@
 /* #undef EVENT__HAVE_STRUCT_SOCKADDR_STORAGE___SS_FAMILY */
 
 /* Define to 1 if you have the `sysctl' function. */
-/* #undef EVENT__HAVE_SYSCTL */
+#define EVENT__HAVE_SYSCTL
 
 /* Define to 1 if you have the <sys/devpoll.h> header file. */
 /* #undef EVENT__HAVE_SYS_DEVPOLL_H */
@@ -356,7 +356,7 @@
 #define EVENT__HAVE_SYS_STAT_H
 
 /* Define to 1 if you have the <sys/sysctl.h> header file. */
-/* #undef EVENT__HAVE_SYS_SYSCTL_H */
+#define EVENT__HAVE_SYS_SYSCTL_H
 
 /* Define to 1 if you have the <sys/timerfd.h> header file. */
 #define EVENT__HAVE_SYS_TIMERFD_H */

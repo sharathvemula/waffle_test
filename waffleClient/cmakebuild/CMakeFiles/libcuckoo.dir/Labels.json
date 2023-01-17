@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo-complete.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo-complete.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-mkdir.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-update.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-mkdir.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-patch.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-patch.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-update.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build.rule"
 		}
 	],
 	"target" : 

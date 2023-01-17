@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o"
-  "CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o.d"
-  "bin/event-read-fifo"
   "bin/event-read-fifo.pdb"
+  "bin/event-read-fifo"
 )
 
 # Per-language clean rules from dependency scanning.

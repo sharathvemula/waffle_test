@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/time-test.dir/sample/time-test.c.o"
-  "CMakeFiles/time-test.dir/sample/time-test.c.o.d"
-  "bin/time-test"
   "bin/time-test.pdb"
+  "bin/time-test"
 )
 
 # Per-language clean rules from dependency scanning.

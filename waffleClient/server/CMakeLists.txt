@@ -1,10 +1,11 @@
+set(STORAGE_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/../libstorage/src)
 set(PROXY_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/../proxy/src)
 set(SERVICE_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/../service/src)
 set(SERVER_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 
-include_directories(${PROXY_INCLUDE} ${SERVICE_INCLUDE} ${SERVER_INCLUDE} )
+include_directories(${STORAGE_INCLUDE} ${PROXY_INCLUDE} ${SERVICE_INCLUDE} ${SERVER_INCLUDE})
 
 
 add_executable(proxy_server
@@ -34,6 +35,14 @@ add_executable(proxy_server
         ../proxy/src/queue.h
         ../proxy/src/util.h
         ../proxy/src/util.cpp
+        ../proxy/src/Cache.cpp
+        ../proxy/src/Cache.hpp
+        ../proxy/src/FrequencySmoother.cpp
+        ../proxy/src/FrequencySmoother.hpp
+
+        ../libstorage/src/storage_interface.h
+        ../libstorage/src/redis.h
+        ../libstorage/src/redis.cpp
 
         ../service/src/thrift_utils.h)
 add_dependencies(proxy_server libcuckoo thrift_ep)

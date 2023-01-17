@@ -1,7 +1,6 @@
 -- Downloading...
-   dst='/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
+   dst='/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
    timeout='none'
-   inactivity timeout='none'
 -- Using src='https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.bz2'
 -- [download 100% complete]
 -- [download 0% complete]
@@ -107,8 +106,8 @@
 -- [download 100% complete]
 -- Downloading... done
 -- extracting...
-     src='/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
-     dst='/tmp/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep'
+     src='/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2'
+     dst='/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]

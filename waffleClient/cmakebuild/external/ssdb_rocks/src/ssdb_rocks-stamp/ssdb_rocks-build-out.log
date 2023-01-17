@@ -1,0 +1,2 @@
+Makefile:517: recipe for target 'port/stack_trace.o' failed
+Makefile:7: recipe for target 'all' failed

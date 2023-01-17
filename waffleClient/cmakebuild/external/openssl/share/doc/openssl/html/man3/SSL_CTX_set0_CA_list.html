@@ -27,16 +27,16 @@
 
 <h1 id="SYNOPSIS">SYNOPSIS</h1>
 
-<pre><code>#include &lt;openssl/ssl.h&gt;
+<pre><code> #include &lt;openssl/ssl.h&gt;
 
-void SSL_CTX_set0_CA_list(SSL_CTX *ctx, STACK_OF(X509_NAME) *name_list);
-void SSL_set0_CA_list(SSL *s, STACK_OF(X509_NAME) *name_list);
-const STACK_OF(X509_NAME) *SSL_CTX_get0_CA_list(const SSL_CTX *ctx);
-const STACK_OF(X509_NAME) *SSL_get0_CA_list(const SSL *s);
-int SSL_CTX_add1_CA_list(SSL_CTX *ctx, const X509 *x);
-int SSL_add1_CA_list(SSL *ssl, const X509 *x);
+ void SSL_CTX_set0_CA_list(SSL_CTX *ctx, STACK_OF(X509_NAME) *name_list);
+ void SSL_set0_CA_list(SSL *s, STACK_OF(X509_NAME) *name_list);
+ const STACK_OF(X509_NAME) *SSL_CTX_get0_CA_list(const SSL_CTX *ctx);
+ const STACK_OF(X509_NAME) *SSL_get0_CA_list(const SSL *s);
+ int SSL_CTX_add1_CA_list(SSL_CTX *ctx, const X509 *x);
+ int SSL_add1_CA_list(SSL *ssl, const X509 *x);
 
-const STACK_OF(X509_NAME) *SSL_get0_peer_CA_list(const SSL *s);</code></pre>
+ const STACK_OF(X509_NAME) *SSL_get0_peer_CA_list(const SSL *s);</code></pre>
 
 <h1 id="DESCRIPTION">DESCRIPTION</h1>
 

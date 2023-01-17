@@ -27,40 +27,40 @@
 
 <h1 id="SYNOPSIS">SYNOPSIS</h1>
 
-<pre><code>#include &lt;openssl/ocsp.h&gt;
+<pre><code> #include &lt;openssl/ocsp.h&gt;
 
-int OCSP_resp_find_status(OCSP_BASICRESP *bs, OCSP_CERTID *id, int *status,
-                          int *reason,
-                          ASN1_GENERALIZEDTIME **revtime,
-                          ASN1_GENERALIZEDTIME **thisupd,
-                          ASN1_GENERALIZEDTIME **nextupd);
+ int OCSP_resp_find_status(OCSP_BASICRESP *bs, OCSP_CERTID *id, int *status,
+                           int *reason,
+                           ASN1_GENERALIZEDTIME **revtime,
+                           ASN1_GENERALIZEDTIME **thisupd,
+                           ASN1_GENERALIZEDTIME **nextupd);
 
-int OCSP_resp_count(OCSP_BASICRESP *bs);
-OCSP_SINGLERESP *OCSP_resp_get0(OCSP_BASICRESP *bs, int idx);
-int OCSP_resp_find(OCSP_BASICRESP *bs, OCSP_CERTID *id, int last);
-int OCSP_single_get0_status(OCSP_SINGLERESP *single, int *reason,
-                            ASN1_GENERALIZEDTIME **revtime,
-                            ASN1_GENERALIZEDTIME **thisupd,
-                            ASN1_GENERALIZEDTIME **nextupd);
+ int OCSP_resp_count(OCSP_BASICRESP *bs);
+ OCSP_SINGLERESP *OCSP_resp_get0(OCSP_BASICRESP *bs, int idx);
+ int OCSP_resp_find(OCSP_BASICRESP *bs, OCSP_CERTID *id, int last);
+ int OCSP_single_get0_status(OCSP_SINGLERESP *single, int *reason,
+                             ASN1_GENERALIZEDTIME **revtime,
+                             ASN1_GENERALIZEDTIME **thisupd,
+                             ASN1_GENERALIZEDTIME **nextupd);
 
-const ASN1_GENERALIZEDTIME *OCSP_resp_get0_produced_at(
-                            const OCSP_BASICRESP* single);
+ const ASN1_GENERALIZEDTIME *OCSP_resp_get0_produced_at(
+                             const OCSP_BASICRESP* single);
 
-const STACK_OF(X509) *OCSP_resp_get0_certs(const OCSP_BASICRESP *bs);
+ const STACK_OF(X509) *OCSP_resp_get0_certs(const OCSP_BASICRESP *bs);
 
-int OCSP_resp_get0_signer(OCSP_BASICRESP *bs, X509 **signer,
-                          STACK_OF(X509) *extra_certs);
+ int OCSP_resp_get0_signer(OCSP_BASICRESP *bs, X509 **signer,
+                           STACK_OF(X509) *extra_certs);
 
-int OCSP_resp_get0_id(const OCSP_BASICRESP *bs,
-                      const ASN1_OCTET_STRING **pid,
-                      const X509_NAME **pname);
-int OCSP_resp_get1_id(const OCSP_BASICRESP *bs,
-                      ASN1_OCTET_STRING **pid,
-                      X509_NAME **pname);
+ int OCSP_resp_get0_id(const OCSP_BASICRESP *bs,
+                       const ASN1_OCTET_STRING **pid,
+                       const X509_NAME **pname);
+ int OCSP_resp_get1_id(const OCSP_BASICRESP *bs,
+                       ASN1_OCTET_STRING **pid,
+                       X509_NAME **pname);
 
-int OCSP_check_validity(ASN1_GENERALIZEDTIME *thisupd,
-                        ASN1_GENERALIZEDTIME *nextupd,
-                        long sec, long maxsec);</code></pre>
+ int OCSP_check_validity(ASN1_GENERALIZEDTIME *thisupd,
+                         ASN1_GENERALIZEDTIME *nextupd,
+                         long sec, long maxsec);</code></pre>
 
 <h1 id="DESCRIPTION">DESCRIPTION</h1>
 

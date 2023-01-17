@@ -20,13 +20,16 @@
 #include "thrift_response_client_map.h"
 #include "FrequencySmoother.hpp"
 #include "Cache.hpp"
+
+#include "redis.h"
+#include "storage_interface.h"
 //#include "memcached.h"
 
 
 class waffle_proxy : public proxy {
 public:
 
-    void init(const std::vector<std::string> &keys, const std::vector<std::string> &values, void ** args) override;
+    void init(const std::vector<std::string> &keys, void ** args) override;
     void close() override;
     std::string get(const std::string &key) override;
     void put(const std::string &key, const std::string &value) override;
@@ -61,7 +64,7 @@ public:
     int object_size_ = 1024;
     int key_size_ = 16;
     int server_count_ = 1;
-    std::string server_type_ = "rocksdb";
+    std::string server_type_ = "redis";
     int p_threads_ = 1;
     int storage_batch_size_ = 40;
     int core_ = 0;
@@ -73,7 +76,7 @@ private:
                                std::vector<std::shared_ptr<std::promise<std::string>>> &promises);
 
     void execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
-                       std::vector<std::shared_ptr<std::promise<std::string>>> &promises);
+                       std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> &storage_interface);
     void consumer_thread(int id);
     void responder_thread();
 
@@ -81,6 +84,7 @@ private:
     std::vector<std::thread> threads_;
     bool finished_ = false;
     std::shared_ptr<thrift_response_client_map> id_to_client_;
+    std::shared_ptr<storage_interface> storage_interface_; 
 
     int GET = 0;
     int PUT = 1;

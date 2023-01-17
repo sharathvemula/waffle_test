@@ -16,7 +16,7 @@
 
 typedef std::vector<std::pair<std::vector<std::string>, std::vector<std::string>>> trace_vector;
 
-std::vector<int> get_keys(const std::string &trace_location, FrequencySmoother& bst) {
+std::vector<std::string> get_keys(const std::string &trace_location) {
     std::ifstream in_workload_file;
     in_workload_file.open(trace_location, std::ios::in);
     if(!in_workload_file.is_open()){
@@ -26,9 +26,9 @@ std::vector<int> get_keys(const std::string &trace_location, FrequencySmoother& 
         std::perror("Opening workload file failed");
     }
     std::string line;
-    vector<int> keys;
+    std::vector<std::string> keys;
     while (std::getline(in_workload_file, line)) {
-        keys.push_back(key);
+        keys.push_back(line);
     }
     in_workload_file.close();
 };
@@ -118,7 +118,7 @@ int main(int argc, char *argv[]) {
 
     void *arguments[1];
     assert(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_ != "");
-    auto keys = get_keys(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_, bst);
+    auto keys = get_keys(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_);
     auto id_to_client = std::make_shared<thrift_response_client_map>();
     arguments[0] = &id_to_client;
     std::string dummy(object_size_, '0');

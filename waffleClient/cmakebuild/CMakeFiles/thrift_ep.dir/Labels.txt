@@ -1,13 +1,13 @@
 # Target labels
  thrift_ep
 # Source files and their labels
-/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep
-/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep.rule
-/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep-complete.rule
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-build.rule
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure.rule
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-download.rule
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-install.rule
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-mkdir.rule
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-patch.rule
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-update.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep-complete.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-install.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-mkdir.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-download.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-update.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-patch.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-build.rule

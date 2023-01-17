@@ -1,11 +1,11 @@
-[36mInstall the project...[0m
+Install the project...
 -- Install configuration: ""
--- Up-to-date: /tmp/waffle_test/waffleClient/cmakebuild/external/libcuckoo/share/cmake/libcuckoo/libcuckoo-targets.cmake
--- Up-to-date: /tmp/waffle_test/waffleClient/cmakebuild/external/libcuckoo/share/cmake/libcuckoo/libcuckoo-config.cmake
--- Up-to-date: /tmp/waffle_test/waffleClient/cmakebuild/external/libcuckoo/share/cmake/libcuckoo/libcuckoo-config-version.cmake
--- Up-to-date: /tmp/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo/cuckoohash_config.hh
--- Up-to-date: /tmp/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo/cuckoohash_map.hh
--- Up-to-date: /tmp/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo/cuckoohash_util.hh
--- Up-to-date: /tmp/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo/bucket_container.hh
--- Up-to-date: /tmp/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c/cuckoo_table_template.h
--- Up-to-date: /tmp/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c/cuckoo_table_template.cc
+-- Up-to-date: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libcuckoo/share/cmake/libcuckoo/libcuckoo-targets.cmake
+-- Up-to-date: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libcuckoo/share/cmake/libcuckoo/libcuckoo-config.cmake
+-- Up-to-date: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libcuckoo/share/cmake/libcuckoo/libcuckoo-config-version.cmake
+-- Up-to-date: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo/cuckoohash_config.hh
+-- Up-to-date: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo/cuckoohash_map.hh
+-- Up-to-date: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo/cuckoohash_util.hh
+-- Up-to-date: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo/bucket_container.hh
+-- Up-to-date: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c/cuckoo_table_template.h
+-- Up-to-date: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c/cuckoo_table_template.cc

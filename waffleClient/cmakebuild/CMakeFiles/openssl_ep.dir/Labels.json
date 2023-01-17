@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep-complete.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep-complete.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure.rule"
 		},
 		{
-			"file" : "/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update.rule"
+			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build.rule"
 		}
 	],
 	"target" : 

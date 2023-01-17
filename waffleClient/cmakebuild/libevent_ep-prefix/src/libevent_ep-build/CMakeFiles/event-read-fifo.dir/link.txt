@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -O3 -DNDEBUG -rdynamic CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o -o bin/event-read-fifo  lib/libevent_extra.a -lm 
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -O3 -DNDEBUG  -rdynamic CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o  -o bin/event-read-fifo lib/libevent_extra.a -lpthread -lm 

@@ -1,13 +1,13 @@
 # Target labels
  openssl_ep
 # Source files and their labels
-/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep
-/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep.rule
-/tmp/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep-complete.rule
-/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build.rule
-/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure.rule
-/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download.rule
-/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install.rule
-/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir.rule
-/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch.rule
-/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep-complete.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure.rule
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build.rule

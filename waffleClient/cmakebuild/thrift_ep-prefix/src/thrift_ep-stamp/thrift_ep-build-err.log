@@ -1,49 +1,58 @@
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp: In function 'void apache::thrift::transport::cleanupOpenSSL()':
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:154:19: warning: 'void ERR_remove_state(long unsigned int)' is deprecated: Since OpenSSL 1.0.0 [-Wdeprecated-declarations]
-  154 |   ERR_remove_state(0);
-      |   ~~~~~~~~~~~~~~~~^~~
-In file included from /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:47:
-/usr/include/openssl/err.h:476:30: note: declared here
-  476 | OSSL_DEPRECATEDIN_1_0_0 void ERR_remove_state(unsigned long pid);
-      |                              ^~~~~~~~~~~~~~~~
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp: In constructor 'apache::thrift::transport::SSLContext::SSLContext(const apache::thrift::transport::SSLProtocol&)':
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:173:36: warning: 'const SSL_METHOD* TLSv1_method()' is deprecated: Since OpenSSL 1.1.0 [-Wdeprecated-declarations]
-  173 |     ctx_ = SSL_CTX_new(TLSv1_method());
-      |                        ~~~~~~~~~~~~^~
-In file included from /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:49:
-/usr/include/openssl/ssl.h:2004:50: note: declared here
- 2004 | OSSL_DEPRECATEDIN_1_1_0 __owur const SSL_METHOD *TLSv1_method(void); /* TLSv1.0 */
-      |                                                  ^~~~~~~~~~~~
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:175:38: warning: 'const SSL_METHOD* TLSv1_1_method()' is deprecated: Since OpenSSL 1.1.0 [-Wdeprecated-declarations]
-  175 |     ctx_ = SSL_CTX_new(TLSv1_1_method());
-      |                        ~~~~~~~~~~~~~~^~
-In file included from /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:49:
-/usr/include/openssl/ssl.h:2012:50: note: declared here
- 2012 | OSSL_DEPRECATEDIN_1_1_0 __owur const SSL_METHOD *TLSv1_1_method(void); /* TLSv1.1 */
-      |                                                  ^~~~~~~~~~~~~~
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:177:38: warning: 'const SSL_METHOD* TLSv1_2_method()' is deprecated: Since OpenSSL 1.1.0 [-Wdeprecated-declarations]
-  177 |     ctx_ = SSL_CTX_new(TLSv1_2_method());
-      |                        ~~~~~~~~~~~~~~^~
-In file included from /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:49:
-/usr/include/openssl/ssl.h:2020:50: note: declared here
- 2020 | OSSL_DEPRECATEDIN_1_1_0 __owur const SSL_METHOD *TLSv1_2_method(void); /* TLSv1.2 */
-      |                                                  ^~~~~~~~~~~~~~
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp: In member function 'virtual void apache::thrift::transport::TSSLSocket::close()':
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:380:21: warning: 'void ERR_remove_state(long unsigned int)' is deprecated: Since OpenSSL 1.0.0 [-Wdeprecated-declarations]
-  380 |     ERR_remove_state(0);
-      |     ~~~~~~~~~~~~~~~~^~~
-In file included from /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:47:
-/usr/include/openssl/err.h:476:30: note: declared here
-  476 | OSSL_DEPRECATEDIN_1_0_0 void ERR_remove_state(unsigned long pid);
-      |                              ^~~~~~~~~~~~~~~~
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp: In member function 'virtual void apache::thrift::transport::TSSLSocket::authorize()':
-/tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:732:43: warning: 'unsigned char* ASN1_STRING_data(ASN1_STRING*)' is deprecated: Since OpenSSL 1.1.0 [-Wdeprecated-declarations]
-  732 |       char* data = (char*)ASN1_STRING_data(name->d.ia5);
-      |                           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
-In file included from /usr/include/openssl/objects.h:21,
-                 from /usr/include/openssl/evp.h:43,
-                 from /usr/include/openssl/rand.h:23,
-                 from /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:48:
-/usr/include/openssl/asn1.h:680:40: note: declared here
-  680 | OSSL_DEPRECATEDIN_1_1_0 unsigned char *ASN1_STRING_data(ASN1_STRING *x);
-      |                                        ^~~~~~~~~~~~~~~~
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp: In function ‘void apache::thrift::transport::cleanupOpenSSL()’:
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:154:21: warning: ‘void ERR_remove_state(long unsigned int)’ is deprecated [-Wdeprecated-declarations]
+   ERR_remove_state(0);
+                     ^
+In file included from /usr/include/openssl/e_os2.h:13:0,
+                 from /usr/include/openssl/err.h:13,
+                 from /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:47:
+/usr/include/openssl/err.h:260:1: note: declared here
+ DEPRECATEDIN_1_0_0(void ERR_remove_state(unsigned long pid))
+ ^
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp: In constructor ‘apache::thrift::transport::SSLContext::SSLContext(const apache::thrift::transport::SSLProtocol&)’:
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:173:37: warning: ‘const SSL_METHOD* TLSv1_method()’ is deprecated [-Wdeprecated-declarations]
+     ctx_ = SSL_CTX_new(TLSv1_method());
+                                     ^
+In file included from /usr/include/openssl/e_os2.h:13:0,
+                 from /usr/include/openssl/err.h:13,
+                 from /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:47:
+/usr/include/openssl/ssl.h:1852:1: note: declared here
+ DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_method(void)) /* TLSv1.0 */
+ ^
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:175:39: warning: ‘const SSL_METHOD* TLSv1_1_method()’ is deprecated [-Wdeprecated-declarations]
+     ctx_ = SSL_CTX_new(TLSv1_1_method());
+                                       ^
+In file included from /usr/include/openssl/e_os2.h:13:0,
+                 from /usr/include/openssl/err.h:13,
+                 from /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:47:
+/usr/include/openssl/ssl.h:1858:1: note: declared here
+ DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_method(void)) /* TLSv1.1 */
+ ^
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:177:39: warning: ‘const SSL_METHOD* TLSv1_2_method()’ is deprecated [-Wdeprecated-declarations]
+     ctx_ = SSL_CTX_new(TLSv1_2_method());
+                                       ^
+In file included from /usr/include/openssl/e_os2.h:13:0,
+                 from /usr/include/openssl/err.h:13,
+                 from /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:47:
+/usr/include/openssl/ssl.h:1864:1: note: declared here
+ DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_method(void)) /* TLSv1.2 */
+ ^
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp: In member function ‘virtual void apache::thrift::transport::TSSLSocket::close()’:
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:380:23: warning: ‘void ERR_remove_state(long unsigned int)’ is deprecated [-Wdeprecated-declarations]
+     ERR_remove_state(0);
+                       ^
+In file included from /usr/include/openssl/e_os2.h:13:0,
+                 from /usr/include/openssl/err.h:13,
+                 from /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:47:
+/usr/include/openssl/err.h:260:1: note: declared here
+ DEPRECATEDIN_1_0_0(void ERR_remove_state(unsigned long pid))
+ ^
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp: In member function ‘virtual void apache::thrift::transport::TSSLSocket::authorize()’:
+/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:732:55: warning: ‘unsigned char* ASN1_STRING_data(ASN1_STRING*)’ is deprecated [-Wdeprecated-declarations]
+       char* data = (char*)ASN1_STRING_data(name->d.ia5);
+                                                       ^
+In file included from /usr/include/openssl/e_os2.h:13:0,
+                 from /usr/include/openssl/err.h:13,
+                 from /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TSSLSocket.cpp:47:
+/usr/include/openssl/asn1.h:554:1: note: declared here
+ DEPRECATEDIN_1_1_0(unsigned char *ASN1_STRING_data(ASN1_STRING *x))
+ ^

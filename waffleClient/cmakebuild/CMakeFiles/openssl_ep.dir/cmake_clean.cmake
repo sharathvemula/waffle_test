@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/openssl_ep"
   "CMakeFiles/openssl_ep-complete"
-  "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build"
-  "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure"
-  "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download"
   "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install"
   "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir"
-  "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch"
+  "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download"
   "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update"
+  "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch"
+  "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure"
+  "openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build"
 )
 
 # Per-language clean rules from dependency scanning.

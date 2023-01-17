@@ -1,98 +1,108 @@
-[  1%] [32mBuilding C object CMakeFiles/event_core.dir/buffer.c.o[0m
-[  2%] [32mBuilding C object CMakeFiles/event_core.dir/bufferevent.c.o[0m
-[  3%] [32mBuilding C object CMakeFiles/event_core.dir/bufferevent_filter.c.o[0m
-[  4%] [32mBuilding C object CMakeFiles/event_core.dir/bufferevent_pair.c.o[0m
-[  5%] [32mBuilding C object CMakeFiles/event_core.dir/bufferevent_ratelim.c.o[0m
-[  6%] [32mBuilding C object CMakeFiles/event_core.dir/bufferevent_sock.c.o[0m
-[  7%] [32mBuilding C object CMakeFiles/event_core.dir/event.c.o[0m
-[  9%] [32mBuilding C object CMakeFiles/event_core.dir/evmap.c.o[0m
-[ 10%] [32mBuilding C object CMakeFiles/event_core.dir/evthread.c.o[0m
-[ 11%] [32mBuilding C object CMakeFiles/event_core.dir/evutil.c.o[0m
-[ 12%] [32mBuilding C object CMakeFiles/event_core.dir/evutil_rand.c.o[0m
-[ 13%] [32mBuilding C object CMakeFiles/event_core.dir/evutil_time.c.o[0m
-[ 14%] [32mBuilding C object CMakeFiles/event_core.dir/listener.c.o[0m
-[ 15%] [32mBuilding C object CMakeFiles/event_core.dir/log.c.o[0m
-[ 17%] [32mBuilding C object CMakeFiles/event_core.dir/signal.c.o[0m
-[ 18%] [32mBuilding C object CMakeFiles/event_core.dir/strlcpy.c.o[0m
-[ 19%] [32mBuilding C object CMakeFiles/event_core.dir/select.c.o[0m
-[ 20%] [32mBuilding C object CMakeFiles/event_core.dir/poll.c.o[0m
-[ 21%] [32mBuilding C object CMakeFiles/event_core.dir/epoll_sub.c.o[0m
-[ 22%] [32mBuilding C object CMakeFiles/event_core.dir/epoll.c.o[0m
-[ 23%] [32mBuilding C object CMakeFiles/event_core.dir/evthread_pthread.c.o[0m
-[ 25%] [32m[1mLinking C static library lib/libevent_core.a[0m
+Scanning dependencies of target event_core
+[  1%] Building C object CMakeFiles/event_core.dir/buffer.c.o
+[  2%] Building C object CMakeFiles/event_core.dir/bufferevent.c.o
+[  3%] Building C object CMakeFiles/event_core.dir/bufferevent_filter.c.o
+[  4%] Building C object CMakeFiles/event_core.dir/bufferevent_pair.c.o
+[  5%] Building C object CMakeFiles/event_core.dir/bufferevent_ratelim.c.o
+[  6%] Building C object CMakeFiles/event_core.dir/bufferevent_sock.c.o
+[  7%] Building C object CMakeFiles/event_core.dir/event.c.o
+[  9%] Building C object CMakeFiles/event_core.dir/evmap.c.o
+[ 10%] Building C object CMakeFiles/event_core.dir/evthread.c.o
+[ 11%] Building C object CMakeFiles/event_core.dir/evutil.c.o
+[ 12%] Building C object CMakeFiles/event_core.dir/evutil_rand.c.o
+[ 13%] Building C object CMakeFiles/event_core.dir/evutil_time.c.o
+[ 14%] Building C object CMakeFiles/event_core.dir/listener.c.o
+[ 15%] Building C object CMakeFiles/event_core.dir/log.c.o
+[ 17%] Building C object CMakeFiles/event_core.dir/signal.c.o
+[ 18%] Building C object CMakeFiles/event_core.dir/strlcpy.c.o
+[ 19%] Building C object CMakeFiles/event_core.dir/select.c.o
+[ 20%] Building C object CMakeFiles/event_core.dir/poll.c.o
+[ 21%] Building C object CMakeFiles/event_core.dir/epoll_sub.c.o
+[ 22%] Building C object CMakeFiles/event_core.dir/epoll.c.o
+[ 23%] Building C object CMakeFiles/event_core.dir/evthread_pthread.c.o
+[ 25%] Linking C static library lib/libevent_core.a
 [ 25%] Built target event_core
-[ 26%] [32mBuilding C object CMakeFiles/event_extra.dir/buffer.c.o[0m
-[ 27%] [32mBuilding C object CMakeFiles/event_extra.dir/bufferevent.c.o[0m
-[ 28%] [32mBuilding C object CMakeFiles/event_extra.dir/bufferevent_filter.c.o[0m
-[ 29%] [32mBuilding C object CMakeFiles/event_extra.dir/bufferevent_pair.c.o[0m
-[ 30%] [32mBuilding C object CMakeFiles/event_extra.dir/bufferevent_ratelim.c.o[0m
-[ 31%] [32mBuilding C object CMakeFiles/event_extra.dir/bufferevent_sock.c.o[0m
-[ 32%] [32mBuilding C object CMakeFiles/event_extra.dir/event.c.o[0m
-[ 34%] [32mBuilding C object CMakeFiles/event_extra.dir/evmap.c.o[0m
-[ 35%] [32mBuilding C object CMakeFiles/event_extra.dir/evthread.c.o[0m
-[ 36%] [32mBuilding C object CMakeFiles/event_extra.dir/evutil.c.o[0m
-[ 37%] [32mBuilding C object CMakeFiles/event_extra.dir/evutil_rand.c.o[0m
-[ 38%] [32mBuilding C object CMakeFiles/event_extra.dir/evutil_time.c.o[0m
-[ 39%] [32mBuilding C object CMakeFiles/event_extra.dir/listener.c.o[0m
-[ 40%] [32mBuilding C object CMakeFiles/event_extra.dir/log.c.o[0m
-[ 42%] [32mBuilding C object CMakeFiles/event_extra.dir/signal.c.o[0m
-[ 43%] [32mBuilding C object CMakeFiles/event_extra.dir/strlcpy.c.o[0m
-[ 44%] [32mBuilding C object CMakeFiles/event_extra.dir/select.c.o[0m
-[ 45%] [32mBuilding C object CMakeFiles/event_extra.dir/poll.c.o[0m
-[ 46%] [32mBuilding C object CMakeFiles/event_extra.dir/epoll_sub.c.o[0m
-[ 47%] [32mBuilding C object CMakeFiles/event_extra.dir/epoll.c.o[0m
-[ 48%] [32mBuilding C object CMakeFiles/event_extra.dir/evthread_pthread.c.o[0m
-[ 50%] [32mBuilding C object CMakeFiles/event_extra.dir/event_tagging.c.o[0m
-[ 51%] [32mBuilding C object CMakeFiles/event_extra.dir/http.c.o[0m
-[ 52%] [32mBuilding C object CMakeFiles/event_extra.dir/evdns.c.o[0m
-[ 53%] [32mBuilding C object CMakeFiles/event_extra.dir/evrpc.c.o[0m
-[ 54%] [32m[1mLinking C static library lib/libevent_extra.a[0m
+Scanning dependencies of target event_extra
+[ 26%] Building C object CMakeFiles/event_extra.dir/buffer.c.o
+[ 27%] Building C object CMakeFiles/event_extra.dir/bufferevent.c.o
+[ 28%] Building C object CMakeFiles/event_extra.dir/bufferevent_filter.c.o
+[ 29%] Building C object CMakeFiles/event_extra.dir/bufferevent_pair.c.o
+[ 30%] Building C object CMakeFiles/event_extra.dir/bufferevent_ratelim.c.o
+[ 31%] Building C object CMakeFiles/event_extra.dir/bufferevent_sock.c.o
+[ 32%] Building C object CMakeFiles/event_extra.dir/event.c.o
+[ 34%] Building C object CMakeFiles/event_extra.dir/evmap.c.o
+[ 35%] Building C object CMakeFiles/event_extra.dir/evthread.c.o
+[ 36%] Building C object CMakeFiles/event_extra.dir/evutil.c.o
+[ 37%] Building C object CMakeFiles/event_extra.dir/evutil_rand.c.o
+[ 38%] Building C object CMakeFiles/event_extra.dir/evutil_time.c.o
+[ 39%] Building C object CMakeFiles/event_extra.dir/listener.c.o
+[ 40%] Building C object CMakeFiles/event_extra.dir/log.c.o
+[ 42%] Building C object CMakeFiles/event_extra.dir/signal.c.o
+[ 43%] Building C object CMakeFiles/event_extra.dir/strlcpy.c.o
+[ 44%] Building C object CMakeFiles/event_extra.dir/select.c.o
+[ 45%] Building C object CMakeFiles/event_extra.dir/poll.c.o
+[ 46%] Building C object CMakeFiles/event_extra.dir/epoll_sub.c.o
+[ 47%] Building C object CMakeFiles/event_extra.dir/epoll.c.o
+[ 48%] Building C object CMakeFiles/event_extra.dir/evthread_pthread.c.o
+[ 50%] Building C object CMakeFiles/event_extra.dir/event_tagging.c.o
+[ 51%] Building C object CMakeFiles/event_extra.dir/http.c.o
+[ 52%] Building C object CMakeFiles/event_extra.dir/evdns.c.o
+[ 53%] Building C object CMakeFiles/event_extra.dir/evrpc.c.o
+[ 54%] Linking C static library lib/libevent_extra.a
 [ 54%] Built target event_extra
-[ 55%] [32mBuilding C object CMakeFiles/event.dir/buffer.c.o[0m
-[ 56%] [32mBuilding C object CMakeFiles/event.dir/bufferevent.c.o[0m
-[ 57%] [32mBuilding C object CMakeFiles/event.dir/bufferevent_filter.c.o[0m
-[ 59%] [32mBuilding C object CMakeFiles/event.dir/bufferevent_pair.c.o[0m
-[ 60%] [32mBuilding C object CMakeFiles/event.dir/bufferevent_ratelim.c.o[0m
-[ 61%] [32mBuilding C object CMakeFiles/event.dir/bufferevent_sock.c.o[0m
-[ 62%] [32mBuilding C object CMakeFiles/event.dir/event.c.o[0m
-[ 63%] [32mBuilding C object CMakeFiles/event.dir/evmap.c.o[0m
-[ 64%] [32mBuilding C object CMakeFiles/event.dir/evthread.c.o[0m
-[ 65%] [32mBuilding C object CMakeFiles/event.dir/evutil.c.o[0m
-[ 67%] [32mBuilding C object CMakeFiles/event.dir/evutil_rand.c.o[0m
-[ 68%] [32mBuilding C object CMakeFiles/event.dir/evutil_time.c.o[0m
-[ 69%] [32mBuilding C object CMakeFiles/event.dir/listener.c.o[0m
-[ 70%] [32mBuilding C object CMakeFiles/event.dir/log.c.o[0m
-[ 71%] [32mBuilding C object CMakeFiles/event.dir/signal.c.o[0m
-[ 72%] [32mBuilding C object CMakeFiles/event.dir/strlcpy.c.o[0m
-[ 73%] [32mBuilding C object CMakeFiles/event.dir/select.c.o[0m
-[ 75%] [32mBuilding C object CMakeFiles/event.dir/poll.c.o[0m
-[ 76%] [32mBuilding C object CMakeFiles/event.dir/epoll_sub.c.o[0m
-[ 77%] [32mBuilding C object CMakeFiles/event.dir/epoll.c.o[0m
-[ 78%] [32mBuilding C object CMakeFiles/event.dir/evthread_pthread.c.o[0m
-[ 79%] [32mBuilding C object CMakeFiles/event.dir/event_tagging.c.o[0m
-[ 80%] [32mBuilding C object CMakeFiles/event.dir/http.c.o[0m
-[ 81%] [32mBuilding C object CMakeFiles/event.dir/evdns.c.o[0m
-[ 82%] [32mBuilding C object CMakeFiles/event.dir/evrpc.c.o[0m
-[ 84%] [32m[1mLinking C static library lib/libevent.a[0m
+Scanning dependencies of target event
+[ 55%] Building C object CMakeFiles/event.dir/buffer.c.o
+[ 56%] Building C object CMakeFiles/event.dir/bufferevent.c.o
+[ 57%] Building C object CMakeFiles/event.dir/bufferevent_filter.c.o
+[ 59%] Building C object CMakeFiles/event.dir/bufferevent_pair.c.o
+[ 60%] Building C object CMakeFiles/event.dir/bufferevent_ratelim.c.o
+[ 61%] Building C object CMakeFiles/event.dir/bufferevent_sock.c.o
+[ 62%] Building C object CMakeFiles/event.dir/event.c.o
+[ 63%] Building C object CMakeFiles/event.dir/evmap.c.o
+[ 64%] Building C object CMakeFiles/event.dir/evthread.c.o
+[ 65%] Building C object CMakeFiles/event.dir/evutil.c.o
+[ 67%] Building C object CMakeFiles/event.dir/evutil_rand.c.o
+[ 68%] Building C object CMakeFiles/event.dir/evutil_time.c.o
+[ 69%] Building C object CMakeFiles/event.dir/listener.c.o
+[ 70%] Building C object CMakeFiles/event.dir/log.c.o
+[ 71%] Building C object CMakeFiles/event.dir/signal.c.o
+[ 72%] Building C object CMakeFiles/event.dir/strlcpy.c.o
+[ 73%] Building C object CMakeFiles/event.dir/select.c.o
+[ 75%] Building C object CMakeFiles/event.dir/poll.c.o
+[ 76%] Building C object CMakeFiles/event.dir/epoll_sub.c.o
+[ 77%] Building C object CMakeFiles/event.dir/epoll.c.o
+[ 78%] Building C object CMakeFiles/event.dir/evthread_pthread.c.o
+[ 79%] Building C object CMakeFiles/event.dir/event_tagging.c.o
+[ 80%] Building C object CMakeFiles/event.dir/http.c.o
+[ 81%] Building C object CMakeFiles/event.dir/evdns.c.o
+[ 82%] Building C object CMakeFiles/event.dir/evrpc.c.o
+[ 84%] Linking C static library lib/libevent.a
 [ 84%] Built target event
-[ 85%] [32mBuilding C object CMakeFiles/dns-example.dir/sample/dns-example.c.o[0m
-[ 86%] [32m[1mLinking C executable bin/dns-example[0m
-[ 86%] Built target dns-example
-[ 87%] [32mBuilding C object CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o[0m
-[ 88%] [32m[1mLinking C executable bin/event-read-fifo[0m
-[ 88%] Built target event-read-fifo
-[ 89%] [32mBuilding C object CMakeFiles/hello-world.dir/sample/hello-world.c.o[0m
-[ 90%] [32m[1mLinking C executable bin/hello-world[0m
-[ 90%] Built target hello-world
-[ 92%] [32mBuilding C object CMakeFiles/signal-test.dir/sample/signal-test.c.o[0m
-[ 93%] [32m[1mLinking C executable bin/signal-test[0m
+Scanning dependencies of target hello-world
+[ 85%] Building C object CMakeFiles/hello-world.dir/sample/hello-world.c.o
+[ 86%] Linking C executable bin/hello-world
+[ 86%] Built target hello-world
+Scanning dependencies of target dns-example
+[ 87%] Building C object CMakeFiles/dns-example.dir/sample/dns-example.c.o
+[ 88%] Linking C executable bin/dns-example
+[ 88%] Built target dns-example
+Scanning dependencies of target event-read-fifo
+[ 89%] Building C object CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o
+[ 90%] Linking C executable bin/event-read-fifo
+[ 90%] Built target event-read-fifo
+Scanning dependencies of target signal-test
+[ 92%] Building C object CMakeFiles/signal-test.dir/sample/signal-test.c.o
+[ 93%] Linking C executable bin/signal-test
 [ 93%] Built target signal-test
-[ 94%] [32mBuilding C object CMakeFiles/http-server.dir/sample/http-server.c.o[0m
-[ 95%] [32m[1mLinking C executable bin/http-server[0m
+Scanning dependencies of target http-server
+[ 94%] Building C object CMakeFiles/http-server.dir/sample/http-server.c.o
+[ 95%] Linking C executable bin/http-server
 [ 95%] Built target http-server
-[ 96%] [32mBuilding C object CMakeFiles/http-connect.dir/sample/http-connect.c.o[0m
-[ 97%] [32m[1mLinking C executable bin/http-connect[0m
+Scanning dependencies of target http-connect
+[ 96%] Building C object CMakeFiles/http-connect.dir/sample/http-connect.c.o
+[ 97%] Linking C executable bin/http-connect
 [ 97%] Built target http-connect
-[ 98%] [32mBuilding C object CMakeFiles/time-test.dir/sample/time-test.c.o[0m
-[100%] [32m[1mLinking C executable bin/time-test[0m
+Scanning dependencies of target time-test
+[ 98%] Building C object CMakeFiles/time-test.dir/sample/time-test.c.o
+[100%] Linking C executable bin/time-test
 [100%] Built target time-test

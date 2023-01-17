@@ -1,7 +1,6 @@
 -- Downloading...
-   dst='/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl-1.1.1-pre7.tar.gz'
+   dst='/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl-1.1.1-pre7.tar.gz'
    timeout='none'
-   inactivity timeout='none'
 -- Using src='https://www.openssl.org/source/openssl-1.1.1-pre7.tar.gz'
 -- [download 0% complete]
 -- [download 1% complete]
@@ -106,8 +105,8 @@
 -- [download 100% complete]
 -- Downloading... done
 -- extracting...
-     src='/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl-1.1.1-pre7.tar.gz'
-     dst='/tmp/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep'
+     src='/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl-1.1.1-pre7.tar.gz'
+     dst='/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]

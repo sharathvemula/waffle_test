@@ -27,37 +27,37 @@
 
 <h1 id="SYNOPSIS">SYNOPSIS</h1>
 
-<pre><code>#include &lt;openssl/evp.h&gt;
+<pre><code> #include &lt;openssl/evp.h&gt;
 
-int EVP_PKEY_CTX_ctrl(EVP_PKEY_CTX *ctx, int keytype, int optype,
-                      int cmd, int p1, void *p2);
-int EVP_PKEY_CTX_ctrl_str(EVP_PKEY_CTX *ctx, const char *type,
-                          const char *value);
+ int EVP_PKEY_CTX_ctrl(EVP_PKEY_CTX *ctx, int keytype, int optype,
+                       int cmd, int p1, void *p2);
+ int EVP_PKEY_CTX_ctrl_str(EVP_PKEY_CTX *ctx, const char *type,
+                           const char *value);
 
-int EVP_PKEY_CTX_set_signature_md(EVP_PKEY_CTX *ctx, const EVP_MD *md);
-int EVP_PKEY_CTX_get_signature_md(EVP_PKEY_CTX *ctx, const EVP_MD **pmd);
+ int EVP_PKEY_CTX_set_signature_md(EVP_PKEY_CTX *ctx, const EVP_MD *md);
+ int EVP_PKEY_CTX_get_signature_md(EVP_PKEY_CTX *ctx, const EVP_MD **pmd);
 
-int EVP_PKEY_CTX_set_mac_key(EVP_PKEY_CTX *ctx, unsigned char *key, int len);
+ int EVP_PKEY_CTX_set_mac_key(EVP_PKEY_CTX *ctx, unsigned char *key, int len);
 
-#include &lt;openssl/rsa.h&gt;
+ #include &lt;openssl/rsa.h&gt;
 
-int EVP_PKEY_CTX_set_rsa_padding(EVP_PKEY_CTX *ctx, int pad);
-int EVP_PKEY_CTX_set_rsa_pss_saltlen(EVP_PKEY_CTX *ctx, int len);
-int EVP_PKEY_CTX_set_rsa_keygen_bits(EVP_PKEY_CTX *ctx, int mbits);
-int EVP_PKEY_CTX_set_rsa_keygen_pubexp(EVP_PKEY_CTX *ctx, BIGNUM *pubexp);
+ int EVP_PKEY_CTX_set_rsa_padding(EVP_PKEY_CTX *ctx, int pad);
+ int EVP_PKEY_CTX_set_rsa_pss_saltlen(EVP_PKEY_CTX *ctx, int len);
+ int EVP_PKEY_CTX_set_rsa_keygen_bits(EVP_PKEY_CTX *ctx, int mbits);
+ int EVP_PKEY_CTX_set_rsa_keygen_pubexp(EVP_PKEY_CTX *ctx, BIGNUM *pubexp);
 
-#include &lt;openssl/dsa.h&gt;
-int EVP_PKEY_CTX_set_dsa_paramgen_bits(EVP_PKEY_CTX *ctx, int nbits);
+ #include &lt;openssl/dsa.h&gt;
+ int EVP_PKEY_CTX_set_dsa_paramgen_bits(EVP_PKEY_CTX *ctx, int nbits);
 
-#include &lt;openssl/dh.h&gt;
-int EVP_PKEY_CTX_set_dh_paramgen_prime_len(EVP_PKEY_CTX *ctx, int len);
-int EVP_PKEY_CTX_set_dh_paramgen_generator(EVP_PKEY_CTX *ctx, int gen);
-int EVP_PKEY_CTX_set_dh_pad(EVP_PKEY_CTX *ctx, int pad);
-int EVP_PKEY_CTX_set_dh_nid(EVP_PKEY_CTX *ctx, int nid);
+ #include &lt;openssl/dh.h&gt;
+ int EVP_PKEY_CTX_set_dh_paramgen_prime_len(EVP_PKEY_CTX *ctx, int len);
+ int EVP_PKEY_CTX_set_dh_paramgen_generator(EVP_PKEY_CTX *ctx, int gen);
+ int EVP_PKEY_CTX_set_dh_pad(EVP_PKEY_CTX *ctx, int pad);
+ int EVP_PKEY_CTX_set_dh_nid(EVP_PKEY_CTX *ctx, int nid);
 
-#include &lt;openssl/ec.h&gt;
-int EVP_PKEY_CTX_set_ec_paramgen_curve_nid(EVP_PKEY_CTX *ctx, int nid);
-int EVP_PKEY_CTX_set_ec_param_enc(EVP_PKEY_CTX *ctx, int param_enc);</code></pre>
+ #include &lt;openssl/ec.h&gt;
+ int EVP_PKEY_CTX_set_ec_paramgen_curve_nid(EVP_PKEY_CTX *ctx, int nid);
+ int EVP_PKEY_CTX_set_ec_param_enc(EVP_PKEY_CTX *ctx, int param_enc);</code></pre>
 
 <h1 id="DESCRIPTION">DESCRIPTION</h1>
 

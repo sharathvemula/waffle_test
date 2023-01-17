@@ -283,46 +283,36 @@ if (GENERATE_THRIFT)
     add_dependencies(thriftcompiler thrift)
 endif ()
 
-
-set(SSDB_ROCKS_PREFIX "${PROJECT_BINARY_DIR}/external/ssdb_rocks")
-set(SSDB_ROCKS_HOME "${SSDB_ROCKS_PREFIX}/src/ssdb_rocks")
-set(LEVELDB_PATH "${SSDB_ROCKS_HOME}/deps/rocksdb-master")
-set(JEMALLOC_PATH "${SSDB_ROCKS_HOME}/deps/jemalloc-3.3.1")
-set(SNAPPY_PATH "${SSDB_ROCKS_HOME}/deps/snappy-1.1.0")
-
-set(LEVELDB_INCLUDE_DIR "${LEVELDB_PATH}/include")
-set(JEMALLOC_INCLUDE_DIR "${JEMALLOC_PATH}/include")
-
-set(LEVELDB_LIBRARY "${LEVELDB_PATH}/librocksdb.a")
-set(SNAPPY_LIBRARY "${SNAPPY_PATH}/.libs/libsnappy.a")
-set(JEMALLOC_LIBRARY "${JEMALLOC_PATH}/lib/libjemalloc.a")
-
-set(SSDB_CLIENT_INCLUDE_DIR "${SSDB_ROCKS_HOME}/api/cpp")
-set(SSDB_CLIENT_LIBRARY "${SSDB_ROCKS_HOME}/api/cpp/libssdb.a")
-
-ExternalProject_Add(ssdb_rocks
-        GIT_REPOSITORY "https://github.com/anuragkh/ssdb-rocks.git"
-        PREFIX ${SSDB_ROCKS_PREFIX}
-        BUILD_IN_SOURCE 1
-        CONFIGURE_COMMAND ./build.sh
-        BUILD_COMMAND "$(MAKE)"
-        INSTALL_COMMAND ""
+set(CPP_REDIS_CXX_FLAGS "${EXTERNAL_CXX_FLAGS}")
+set(CPP_REDIS_C_FLAGS "${EXTERNAL_C_FLAGS}")
+set(CPP_REDIS_PREFIX "${PROJECT_BINARY_DIR}/external/cpp_redis")
+set(CPP_REDIS_HOME "${CPP_REDIS_PREFIX}")
+set(CPP_REDIS_INCLUDE_DIR "${CPP_REDIS_PREFIX}/include")
+set(CPP_REDIS_CMAKE_ARGS "-Wno-dev"
+        "-DCMAKE_CXX_COMPILER=${CMAKE_CXX_COMPILER}"
+        "-DCMAKE_C_COMPILER=${CMAKE_C_COMPILER}"
+        "-DCMAKE_CXX_FLAGS=${CPP_REDIS_CXX_FLAGS}"
+        "-DCMAKE_C_FLAGS=${CPP_REDIS_C_FLAGS}"
+        "-DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}"
+        "-DCMAKE_INSTALL_PREFIX=${CPP_REDIS_PREFIX}"
+        "-DBUILD_EXAMPLES=OFF"
+        "-DBUILD_TESTS=OFF"
+        "-DBUILD_SHARED_LIBS=OFF")
+set(CPP_REDIS_STATIC_LIB_NAME "${CMAKE_STATIC_LIBRARY_PREFIX}cpp_redis")
+set(CPP_REDIS_TACOPIE_STATIC_LIB_NAME "${CMAKE_STATIC_LIBRARY_PREFIX}tacopie")
+set(CPP_REDIS_LIBRARY "${CPP_REDIS_PREFIX}/lib/${CPP_REDIS_STATIC_LIB_NAME}${CMAKE_STATIC_LIBRARY_SUFFIX}")
+set(CPP_REDIS_TACOPIE_LIBRARY "${CPP_REDIS_PREFIX}/lib/${CPP_REDIS_TACOPIE_STATIC_LIB_NAME}${CMAKE_STATIC_LIBRARY_SUFFIX}")
+set(CPP_REDIS_LIBRARIES ${CPP_REDIS_LIBRARY} ${CPP_REDIS_TACOPIE_LIBRARY})
+ExternalProject_Add(cpp_redis
+        GIT_REPOSITORY https://github.com/Cylix/cpp_redis.git
+        GIT_TAG ${CPP_REDIS_VERSION}
+        GIT_SUBMODULES
+        LIST_SEPARATOR |
+        CMAKE_ARGS ${CPP_REDIS_CMAKE_ARGS}
         LOG_DOWNLOAD ON
         LOG_CONFIGURE ON
         LOG_BUILD ON
         LOG_INSTALL ON)
-
-include_directories(SYSTEM ${LEVELDB_INCLUDE_DIR})
-include_directories(SYSTEM ${JEMALLOC_INCLUDE_DIR})
-include_directories(SYSTEM ${SSDB_CLIENT_INCLUDE_DIR})
-
-message(STATUS "LevelDB include dir: ${LEVELDB_INCLUDE_DIR}")
-message(STATUS "LevelDB library: ${LEVELDB_LIBRARY}")
-
-message(STATUS "Jemalloc include dir: ${JEMALLOC_INCLUDE_DIR}")
-message(STATUS "Jemalloc library: ${JEMALLOC_LIBRARY}")
-
-message(STATUS "Snappy library: ${SNAPPY_LIBRARY}")
-
-message(STATUS "SSDB Client include dir: ${SSDB_CLIENT_INCLUDE_DIR}")
-message(STATUS "SSDB Client library: ${SSDB_CLIENT_LIBRARY}")
+include_directories(SYSTEM ${CPP_REDIS_INCLUDE_DIR})
+message(STATUS "cpp_redis include dir: ${CPP_REDIS_INCLUDE_DIR}")
+message(STATUS "cpp_redis static library: ${CPP_REDIS_LIBRARIES}")

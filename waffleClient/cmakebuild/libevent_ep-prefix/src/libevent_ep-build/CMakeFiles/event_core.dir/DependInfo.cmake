@@ -1,34 +1,45 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/buffer.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/buffer.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/bufferevent.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent_filter.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/bufferevent_filter.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent_pair.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/bufferevent_pair.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent_ratelim.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/bufferevent_ratelim.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent_sock.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/bufferevent_sock.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/epoll.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/epoll.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/epoll_sub.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/epoll_sub.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/event.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/event.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evmap.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/evmap.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evthread.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/evthread.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evthread_pthread.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/evthread_pthread.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/evutil.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil_rand.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/evutil_rand.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil_time.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/evutil_time.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/listener.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/listener.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/log.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/log.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/poll.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/poll.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/select.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/select.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/signal.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/signal.c.o"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/strlcpy.c" "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event_core.dir/strlcpy.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "HAVE_CONFIG_H"
+  "_GNU_SOURCE"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/buffer.c" "CMakeFiles/event_core.dir/buffer.c.o" "gcc" "CMakeFiles/event_core.dir/buffer.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent.c" "CMakeFiles/event_core.dir/bufferevent.c.o" "gcc" "CMakeFiles/event_core.dir/bufferevent.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent_filter.c" "CMakeFiles/event_core.dir/bufferevent_filter.c.o" "gcc" "CMakeFiles/event_core.dir/bufferevent_filter.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent_pair.c" "CMakeFiles/event_core.dir/bufferevent_pair.c.o" "gcc" "CMakeFiles/event_core.dir/bufferevent_pair.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent_ratelim.c" "CMakeFiles/event_core.dir/bufferevent_ratelim.c.o" "gcc" "CMakeFiles/event_core.dir/bufferevent_ratelim.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/bufferevent_sock.c" "CMakeFiles/event_core.dir/bufferevent_sock.c.o" "gcc" "CMakeFiles/event_core.dir/bufferevent_sock.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/epoll.c" "CMakeFiles/event_core.dir/epoll.c.o" "gcc" "CMakeFiles/event_core.dir/epoll.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/epoll_sub.c" "CMakeFiles/event_core.dir/epoll_sub.c.o" "gcc" "CMakeFiles/event_core.dir/epoll_sub.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/event.c" "CMakeFiles/event_core.dir/event.c.o" "gcc" "CMakeFiles/event_core.dir/event.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evmap.c" "CMakeFiles/event_core.dir/evmap.c.o" "gcc" "CMakeFiles/event_core.dir/evmap.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evthread.c" "CMakeFiles/event_core.dir/evthread.c.o" "gcc" "CMakeFiles/event_core.dir/evthread.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evthread_pthread.c" "CMakeFiles/event_core.dir/evthread_pthread.c.o" "gcc" "CMakeFiles/event_core.dir/evthread_pthread.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil.c" "CMakeFiles/event_core.dir/evutil.c.o" "gcc" "CMakeFiles/event_core.dir/evutil.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil_rand.c" "CMakeFiles/event_core.dir/evutil_rand.c.o" "gcc" "CMakeFiles/event_core.dir/evutil_rand.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evutil_time.c" "CMakeFiles/event_core.dir/evutil_time.c.o" "gcc" "CMakeFiles/event_core.dir/evutil_time.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/listener.c" "CMakeFiles/event_core.dir/listener.c.o" "gcc" "CMakeFiles/event_core.dir/listener.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/log.c" "CMakeFiles/event_core.dir/log.c.o" "gcc" "CMakeFiles/event_core.dir/log.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/poll.c" "CMakeFiles/event_core.dir/poll.c.o" "gcc" "CMakeFiles/event_core.dir/poll.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/select.c" "CMakeFiles/event_core.dir/select.c.o" "gcc" "CMakeFiles/event_core.dir/select.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/signal.c" "CMakeFiles/event_core.dir/signal.c.o" "gcc" "CMakeFiles/event_core.dir/signal.c.o.d"
-  "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/strlcpy.c" "CMakeFiles/event_core.dir/strlcpy.c.o" "gcc" "CMakeFiles/event_core.dir/strlcpy.c.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "include"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/compat"
+  "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep"
   )
 
 # Targets to which this target links.

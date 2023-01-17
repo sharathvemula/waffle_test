@@ -5,6 +5,8 @@
 #include "waffle_proxy.h"
 
 void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
+    bst = FrequencySmoother();
+    cache = Cache();
     id_to_client_ = *(static_cast<std::shared_ptr<thrift_response_client_map>*>(args[0]));
     //int num_cores = sysconf(_SC_NPROCESSORS_ONLN);
     int num_cores = 1;
@@ -107,7 +109,7 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
 };
 
 void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
-                                  std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> storage_interface) {
+                                  std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface>& storage_interface) {
     std::cout << "Executing batch " << std::endl;
     std::vector<std::string> storage_keys;
     for(int i = 0; i < operations.size(); i++){
@@ -119,7 +121,7 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     for(int i = 0, j = 0; i < operations.size(); i++){
         if(cache.checkIfKeyExists(operations[i].key)) {
             cache.unMarkKeyDirty(operations[i].key);
-            storage_values.push_back(cache.getValue(operations[i].key))
+            storage_values.push_back(cache.getValue(operations[i].key));
         } else {
             storage_values.push_back(responses[i]);
         }
@@ -261,9 +263,14 @@ std::future<std::string> waffle_proxy::put_future(int queue_id, const std::strin
 
 void waffle_proxy::consumer_thread(int id){
     std::shared_ptr<storage_interface> storage_interface;
-    if (server_type_ == "rocksdb") {
-        storage_interface = std::make_shared<rocksdb>(server_host_name_, server_port_);
+    if (server_type_ == "redis") {
+        storage_interface_ = std::make_shared<redis>(server_host_name_, server_port_);
+        cpp_redis::network::set_default_nb_workers(std::min(10, p_threads_));
     }
+
+    // if (server_type_ == "rocksdb") {
+    //     storage_interface = std::make_shared<rocksdb>(server_host_name_, server_port_);
+    // }
     //else if (server_type_ == "memcached")
     //    storage_interface_ new memcached(server_host_name_, server_port_+i);
     for (int i = 1; i < server_count_; i++) {
@@ -280,9 +287,10 @@ void waffle_proxy::consumer_thread(int id){
         while (storage_batch.size() < storage_batch_size_ && !finished_) {
             total_operations = operation_queues_[id]->size() + operations_serviced;
             int i = 0;
-            for (; i < total_operations - previous_total_operations; i++)
+            for (; i < total_operations - previous_total_operations; i++) {
                 create_security_batch(operation_queues_[id], storage_batch, is_trues, promises);
                 execute_batch(storage_batch, is_trues, promises, storage_interface);
+            }
             if (i != 0) {
                 operations_serviced += i;
                 previous_total_operations = total_operations;

@@ -1,4 +1,4 @@
-prefix=/tmp/waffle_test/waffleClient/cmakebuild/external/openssl
+prefix=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/openssl
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

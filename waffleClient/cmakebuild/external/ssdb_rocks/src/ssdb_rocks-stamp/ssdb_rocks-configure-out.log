@@ -1,0 +1,287 @@
+
+##### building snappy... #####
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether byte ordering is bigendian... no
+checking for stdint.h... (cached) yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking sys/byteswap.h usability... no
+checking sys/byteswap.h presence... no
+checking for sys/byteswap.h... no
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for mmap... yes
+checking for 'gtest-config'... checking for gtest-config... no
+no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gflags... no
+checking if the compiler supports __builtin_expect... yes
+checking if the compiler supports __builtin_ctzll... yes
+checking for zlibVersion in -lz... yes
+checking for lzo1x_1_15_compress in -llzo2... no
+checking for lzf_compress in -llzf... no
+checking for fastlz_compress in -lfastlz... no
+checking for qlz_compress in -lquicklz... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating snappy-stubs-public.h
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -g -O2 -MT snappy.lo -MD -MP -MF .deps/snappy.Tpo -c snappy.cc  -fPIC -DPIC -o .libs/snappy.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -g -O2 -MT snappy.lo -MD -MP -MF .deps/snappy.Tpo -c snappy.cc -o snappy.o >/dev/null 2>&1
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -g -O2 -MT snappy-sinksource.lo -MD -MP -MF .deps/snappy-sinksource.Tpo -c snappy-sinksource.cc  -fPIC -DPIC -o .libs/snappy-sinksource.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -g -O2 -MT snappy-sinksource.lo -MD -MP -MF .deps/snappy-sinksource.Tpo -c snappy-sinksource.cc -o snappy-sinksource.o >/dev/null 2>&1
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -g -O2 -MT snappy-stubs-internal.lo -MD -MP -MF .deps/snappy-stubs-internal.Tpo -c snappy-stubs-internal.cc  -fPIC -DPIC -o .libs/snappy-stubs-internal.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -g -O2 -MT snappy-stubs-internal.lo -MD -MP -MF .deps/snappy-stubs-internal.Tpo -c snappy-stubs-internal.cc -o snappy-stubs-internal.o >/dev/null 2>&1
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -g -O2 -MT snappy-c.lo -MD -MP -MF .deps/snappy-c.Tpo -c snappy-c.cc  -fPIC -DPIC -o .libs/snappy-c.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -g -O2 -MT snappy-c.lo -MD -MP -MF .deps/snappy-c.Tpo -c snappy-c.cc -o snappy-c.o >/dev/null 2>&1
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o  .libs/snappy.o .libs/snappy-sinksource.o .libs/snappy-stubs-internal.o .libs/snappy-c.o   -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o  -O2   -Wl,-soname -Wl,libsnappy.so.1 -o .libs/libsnappy.so.1.1.4
+libtool: link: (cd ".libs" && rm -f "libsnappy.so.1" && ln -s "libsnappy.so.1.1.4" "libsnappy.so.1")
+libtool: link: (cd ".libs" && rm -f "libsnappy.so" && ln -s "libsnappy.so.1.1.4" "libsnappy.so")
+libtool: link: ar cru .libs/libsnappy.a  snappy.o snappy-sinksource.o snappy-stubs-internal.o snappy-c.o
+libtool: link: ranlib .libs/libsnappy.a
+libtool: link: ( cd ".libs" && rm -f "libsnappy.la" && ln -s "../libsnappy.la" "libsnappy.la" )
+libtool: link: g++ -g -O2 -o .libs/snappy_unittest snappy_unittest-snappy_unittest.o snappy_unittest-snappy-test.o  ./.libs/libsnappy.so -lz
+##### building snappy finished #####
+
+
+##### building jemalloc... #####
+checking for xsltproc... false
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether compiler supports -std=gnu99... yes
+checking whether compiler supports -Wall... yes
+checking whether compiler supports -pipe... yes
+checking whether compiler supports -g3... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of void *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of intmax_t... 8
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking whether __asm__ syntax is compilable... yes
+checking whether __attribute__ syntax is compilable... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -Werror... yes
+checking whether tls_model attribute is compilable... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ar... /usr/bin/ar
+checking for ld... /usr/bin/ld
+checking for autoconf... /usr/bin/autoconf
+checking for memalign... yes
+checking for valloc... yes
+checking whether compiler supports -O3... yes
+checking whether compiler supports -funroll-loops... yes
+checking configured backtracing method... N/A
+checking for sbrk... yes
+checking whether utrace(2) is compilable... no
+checking whether valgrind is compilable... no
+checking STATIC_PAGE_SHIFT... 12
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for _malloc_thread_cleanup... no
+checking for _pthread_mutex_init_calloc_cb... no
+checking for TLS... yes
+checking whether a program using ffsl is compilable... yes
+checking whether atomic(9) is compilable... no
+checking whether Darwin OSAtomic*() is compilable... no
+checking whether to force 32-bit __sync_{add,sub}_and_fetch()... no
+checking whether to force 64-bit __sync_{add,sub}_and_fetch()... no
+checking whether Darwin OSSpin*() is compilable... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/html.xsl
+config.status: creating doc/manpages.xsl
+config.status: creating doc/jemalloc.xml
+config.status: creating include/jemalloc/jemalloc.h
+config.status: creating include/jemalloc/internal/jemalloc_internal.h
+config.status: creating test/jemalloc_test.h
+config.status: creating config.stamp
+config.status: creating bin/jemalloc.sh
+config.status: creating include/jemalloc/jemalloc_defs.h
+config.status: executing include/jemalloc/internal/size_classes.h commands
+===============================================================================
+jemalloc version   : 3.3.1-0-g9ef9d9e8c271cdf14f664b871a8f98c827714784
+library revision   : 1
+
+CC                 : gcc
+CPPFLAGS           :  -D_GNU_SOURCE -D_REENTRANT
+CFLAGS             : -std=gnu99 -Wall -pipe -g3 -fvisibility=hidden -O3 -funroll-loops
+LDFLAGS            : 
+LIBS               :  -lm -lpthread
+RPATH_EXTRA        : 
+
+XSLTPROC           : false
+XSLROOT            : 
+
+PREFIX             : /usr/local
+BINDIR             : /usr/local/bin
+INCLUDEDIR         : /usr/local/include
+LIBDIR             : /usr/local/lib
+DATADIR            : /usr/local/share
+MANDIR             : /usr/local/share/man
+
+srcroot            : 
+abs_srcroot        : /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/ssdb_rocks/src/ssdb_rocks/deps/jemalloc-3.3.1/
+objroot            : 
+abs_objroot        : /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/ssdb_rocks/src/ssdb_rocks/deps/jemalloc-3.3.1/
+
+JEMALLOC_PREFIX    : 
+JEMALLOC_PRIVATE_NAMESPACE
+                   : 
+install_suffix     : 
+autogen            : 0
+experimental       : 1
+cc-silence         : 0
+debug              : 0
+stats              : 1
+prof               : 0
+prof-libunwind     : 0
+prof-libgcc        : 0
+prof-gcc           : 0
+tcache             : 1
+fill               : 1
+utrace             : 0
+valgrind           : 0
+xmalloc            : 0
+mremap             : 0
+munmap             : 0
+dss                : 0
+lazy_lock          : 0
+tls                : 1
+===============================================================================
+##### building jemalloc finished #####
+

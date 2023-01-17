@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/signal-test.dir/sample/signal-test.c.o"
-  "CMakeFiles/signal-test.dir/sample/signal-test.c.o.d"
-  "bin/signal-test"
   "bin/signal-test.pdb"
+  "bin/signal-test"
 )
 
 # Per-language clean rules from dependency scanning.

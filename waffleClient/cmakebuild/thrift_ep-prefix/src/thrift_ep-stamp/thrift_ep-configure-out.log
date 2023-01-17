@@ -1,13 +1,15 @@
--- The C compiler identification is GNU 11.3.0
--- The CXX compiler identification is GNU 11.3.0
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Parsed Thrift package version: 0.12.0
@@ -76,12 +78,16 @@
 -- Performing Test STRERROR_R_CHAR_P - Success
 -- Looking for pthread.h
 -- Looking for pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
 -- Found Threads: TRUE  
 -- Building without tests
--- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
--- Found libevent: /tmp/waffle_test/waffleClient/cmakebuild/external/libevent_ep/lib/libevent.a
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
+-- Found libevent: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libevent_ep/lib/libevent.a
 -- ----------------------------------------------------------
 -- Thrift version:                               0.12.0 (0.2.0)
 -- Thrift package version:                       0.12.0
@@ -123,4 +129,4 @@
 -- ----------------------------------------------------------
 -- Configuring done
 -- Generating done
--- Build files have been written to: /tmp/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build
+-- Build files have been written to: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build

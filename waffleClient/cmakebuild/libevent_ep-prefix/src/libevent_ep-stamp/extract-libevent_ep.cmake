@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/release-2.1.8-stable.tar.gz" ABSOLUTE)
-get_filename_component(directory "/tmp/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep" ABSOLUTE)
+get_filename_component(filename "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/release-2.1.8-stable.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'
