@@ -12,7 +12,7 @@ void proxy_client::init(const std::string &host_name, int port) {
     auto socket = std::make_shared<TSocket>(host_name, port);;
     auto transport = std::shared_ptr<TTransport>(new TFramedTransport(socket));
     auto protocol = std::shared_ptr<TProtocol>(new TBinaryProtocol(transport));
-    client_ = std::make_shared<pancake_thriftClient>(protocol);
+    client_ = std::make_shared<waffle_thriftClient>(protocol);
     transport->open();
 }
 

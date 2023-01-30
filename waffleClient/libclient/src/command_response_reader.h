@@ -9,8 +9,8 @@
 #include <thread>
 #include <iostream>
 
-#include "thrift.h"
-#include "thrift_response_service.h"
+#include "waffle_thrift.h"
+#include "waffle_thrift_response.h"
 
 class command_response_reader {
 public:

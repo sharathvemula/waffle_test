@@ -18,48 +18,42 @@ add_executable(proxy_benchmark
         ../libclient/src/command_response_reader.cpp
         ../libclient/src/command_response_reader.h
 
-        ../service/src/thrift_response_service.cpp
-        ../service/src/thrift_response_service.cpp
-        ../service/src/thrift_response_client.cpp
-        ../service/src/thrift_response_client.h
-        ../service/src/thrift_response_client_map.cpp
-        ../service/src/thrift_response_client_map.h
         ../service/src/thrift_server.cpp
         ../service/src/thrift_server.h
         ../service/src/thrift_handler_factory.cpp
         ../service/src/thrift_handler_factory.h
         ../service/src/thrift_handler.cpp
         ../service/src/thrift_handler.h
-        ../service/src/thrift.cpp
-        ../service/src/thrift.h
+        ../service/src/thrift_response_client_map.cpp
+        ../service/src/thrift_response_client_map.h
+        ../service/src/thrift_response_client.cpp
+        ../service/src/thrift_response_client.h
+        ../service/src/waffle_thrift_response.cpp
+        ../service/src/waffle_thrift_response.h
+        ../service/src/waffle_thrift.cpp
+        ../service/src/waffle_thrift.h
         ../service/src/proxy_types.cpp
         ../service/src/proxy_types.h
-        ../service/src/proxy_constants.cpp
-        ../service/src/proxy_constants.h
 
-        ../proxy/src/pancake_proxy.cpp
-        ../proxy/src/pancake_proxy.h
+        ../proxy/src/waffle_proxy.cpp
+        ../proxy/src/waffle_proxy.h
         ../proxy/src/proxy.h
         ../proxy/src/operation.h
-        ../proxy/src/distribution.h
-        ../proxy/src/distribution.cpp
         ../proxy/src/queue.h
-        ../proxy/src/update_cache.h
-        ../proxy/src/update_cache.cpp
-        ../proxy/src/encryption_engine.h
-        ../proxy/src/encryption_engine.cpp
         ../proxy/src/util.h
         ../proxy/src/util.cpp
+        ../proxy/src/Cache.cpp
+        ../proxy/src/Cache.hpp
+        ../proxy/src/FrequencySmoother.cpp
+        ../proxy/src/FrequencySmoother.hpp
 
         ../libstorage/src/storage_interface.h
         ../libstorage/src/redis.h
         ../libstorage/src/redis.cpp
-        ../libstorage/src/rocksdb.cpp
-        ../libstorage/src/rocksdb.h
         #../libstorage/src/memcached.cpp
         #../libstorage/src/memcached.h
         ../service/src/thrift_utils.h)
-add_dependencies(proxy_benchmark cpp_redis ssdb_rocks libcuckoo openssl_ep thrift_ep)
+add_dependencies(proxy_benchmark cpp_redis libcuckoo openssl_ep thrift_ep)
 target_link_libraries(proxy_benchmark
         ${THRIFTNB_LIBRARY}
         ${THRIFT_LIBRARY}

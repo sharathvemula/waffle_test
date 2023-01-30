@@ -68,7 +68,7 @@ CMakeFiles/thrift_ep.dir/all: CMakeFiles/boost_ep.dir/all
 CMakeFiles/thrift_ep.dir/all: CMakeFiles/openssl_ep.dir/all
 	$(MAKE) -f CMakeFiles/thrift_ep.dir/build.make CMakeFiles/thrift_ep.dir/depend
 	$(MAKE) -f CMakeFiles/thrift_ep.dir/build.make CMakeFiles/thrift_ep.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=56,57,58,59,60,61,62,63 "Built target thrift_ep"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=74,75,76,77,78,79,80,81 "Built target thrift_ep"
 .PHONY : CMakeFiles/thrift_ep.dir/all
 
 # Include target in all.
@@ -284,6 +284,24 @@ clean: CMakeFiles/openssl_ep.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory libclient
+
+# Convenience name for "all" pass in the directory.
+libclient/all:
+
+.PHONY : libclient/all
+
+# Convenience name for "clean" pass in the directory.
+libclient/clean:
+
+.PHONY : libclient/clean
+
+# Convenience name for "preinstall" pass in the directory.
+libclient/preinstall:
+
+.PHONY : libclient/preinstall
+
+#=============================================================================
 # Directory level rules for directory libstorage
 
 # Convenience name for "all" pass in the directory.
@@ -320,6 +338,64 @@ proxy/preinstall:
 .PHONY : proxy/preinstall
 
 #=============================================================================
+# Directory level rules for directory benchmark
+
+# Convenience name for "all" pass in the directory.
+benchmark/all: benchmark/CMakeFiles/proxy_benchmark.dir/all
+
+.PHONY : benchmark/all
+
+# Convenience name for "clean" pass in the directory.
+benchmark/clean: benchmark/CMakeFiles/proxy_benchmark.dir/clean
+
+.PHONY : benchmark/clean
+
+# Convenience name for "preinstall" pass in the directory.
+benchmark/preinstall:
+
+.PHONY : benchmark/preinstall
+
+#=============================================================================
+# Target rules for target benchmark/CMakeFiles/proxy_benchmark.dir
+
+# All Build rule for target.
+benchmark/CMakeFiles/proxy_benchmark.dir/all: CMakeFiles/thrift_ep.dir/all
+benchmark/CMakeFiles/proxy_benchmark.dir/all: CMakeFiles/cpp_redis.dir/all
+benchmark/CMakeFiles/proxy_benchmark.dir/all: CMakeFiles/libcuckoo.dir/all
+benchmark/CMakeFiles/proxy_benchmark.dir/all: CMakeFiles/openssl_ep.dir/all
+	$(MAKE) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/depend
+	$(MAKE) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58 "Built target proxy_benchmark"
+.PHONY : benchmark/CMakeFiles/proxy_benchmark.dir/all
+
+# Include target in all.
+all: benchmark/CMakeFiles/proxy_benchmark.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+benchmark/CMakeFiles/proxy_benchmark.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles 66
+	$(MAKE) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/proxy_benchmark.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+.PHONY : benchmark/CMakeFiles/proxy_benchmark.dir/rule
+
+# Convenience name for target.
+proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/rule
+
+.PHONY : proxy_benchmark
+
+# clean rule for target.
+benchmark/CMakeFiles/proxy_benchmark.dir/clean:
+	$(MAKE) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/clean
+.PHONY : benchmark/CMakeFiles/proxy_benchmark.dir/clean
+
+# clean rule for target.
+clean: benchmark/CMakeFiles/proxy_benchmark.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory server
 
 # Convenience name for "all" pass in the directory.
@@ -345,7 +421,7 @@ server/CMakeFiles/proxy_server.dir/all: CMakeFiles/thrift_ep.dir/all
 server/CMakeFiles/proxy_server.dir/all: CMakeFiles/libcuckoo.dir/all
 	$(MAKE) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/depend
 	$(MAKE) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54,55 "Built target proxy_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67,68,69,70,71,72,73 "Built target proxy_server"
 .PHONY : server/CMakeFiles/proxy_server.dir/all
 
 # Include target in all.

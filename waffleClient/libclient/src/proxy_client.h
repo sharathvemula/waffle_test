@@ -2,8 +2,8 @@
 // Created by Lloyd Brown on 10/1/19.
 //
 
-#ifndef PANCAKE_PROXY_CLIENT_H
-#define PANCAKE_PROXY_CLIENT_H
+#ifndef WAFFLE_PROXY_CLIENT_H
+#define WAFFLE_PROXY_CLIENT_H
 
 #include <thrift/transport/TSocket.h>
 #include <thrift/protocol/TBinaryProtocol.h>
@@ -13,7 +13,7 @@
 #include <vector>
 
 #include "client.h"
-#include "thrift.h"
+#include "waffle_thrift.h"
 
 using namespace apache::thrift;
 using namespace apache::thrift::protocol;
@@ -30,9 +30,9 @@ public:
 
 
 private:
-    std::shared_ptr<pancake_thriftClient> client_;
+    std::shared_ptr<waffle_thriftClient> client_;
 
 };
 
 
-#endif //PANCAKE_PROXY_CLIENT_H
+#endif //waffle_PROXY_CLIENT_H

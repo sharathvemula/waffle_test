@@ -32,11 +32,17 @@ if (BUILD_STRESS_TESTS)
     add_definitions(-DSTRESS_TEST)
 endif()
 
+# Client library
+add_subdirectory(libclient)
+
 # Storage library
 add_subdirectory(libstorage)
 
 # Proxy
 add_subdirectory(proxy)
+
+# Benchmark
+add_subdirectory(benchmark)
 
 # Proxy Server
 add_subdirectory(server)

@@ -59,14 +59,14 @@ public:
     std::string output_location_ = "log";
     std::string trace_location_ = "";
     std::string server_host_name_ = "127.0.0.1";
-    int server_port_ = 50054;
+    int server_port_ = 6379;
     int security_batch_size_ = 3;
     int object_size_ = 1024;
     int key_size_ = 16;
     int server_count_ = 1;
     std::string server_type_ = "redis";
     int p_threads_ = 1;
-    int storage_batch_size_ = 40;
+    int storage_batch_size_ = 5;
     int core_ = 0;
     bool is_static_ = true;
 
@@ -76,7 +76,7 @@ private:
                                std::vector<std::shared_ptr<std::promise<std::string>>> &promises);
 
     void execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
-                       std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> &storage_interface);
+                       std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> storage_interface);
     void consumer_thread(int id);
     void responder_thread();
 

@@ -235,6 +235,19 @@ openssl_ep/fast:
 .PHONY : openssl_ep/fast
 
 #=============================================================================
+# Target rules for targets named proxy_benchmark
+
+# Build rule for target.
+proxy_benchmark: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 proxy_benchmark
+.PHONY : proxy_benchmark
+
+# fast build rule for target.
+proxy_benchmark/fast:
+	$(MAKE) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/build
+.PHONY : proxy_benchmark/fast
+
+#=============================================================================
 # Target rules for targets named proxy_server
 
 # Build rule for target.
@@ -265,6 +278,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... libcuckoo"
 	@echo "... openssl_ep"
+	@echo "... proxy_benchmark"
 	@echo "... proxy_server"
 .PHONY : help
 

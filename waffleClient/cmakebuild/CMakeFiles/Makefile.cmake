@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../benchmark/CMakeLists.txt"
   "../cmake-modules/Dependencies.cmake"
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
@@ -18,6 +19,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "libevent_ep-prefix/tmp/libevent_ep-cfgcmd.txt.in"
   "openssl_ep-prefix/tmp/openssl_ep-cfgcmd.txt.in"
   "thrift_ep-prefix/tmp/thrift_ep-cfgcmd.txt.in"
+  "../libclient/CMakeLists.txt"
   "../libstorage/CMakeLists.txt"
   "../proxy/CMakeLists.txt"
   "../server/CMakeLists.txt"
@@ -101,8 +103,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-build-.cmake"
   "cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-install-.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libclient/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libstorage/CMakeFiles/CMakeDirectoryInformation.cmake"
   "proxy/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "benchmark/CMakeFiles/CMakeDirectoryInformation.cmake"
   "server/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -114,5 +118,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/boost_ep.dir/DependInfo.cmake"
   "CMakeFiles/libcuckoo.dir/DependInfo.cmake"
   "CMakeFiles/openssl_ep.dir/DependInfo.cmake"
+  "benchmark/CMakeFiles/proxy_benchmark.dir/DependInfo.cmake"
   "server/CMakeFiles/proxy_server.dir/DependInfo.cmake"
   )

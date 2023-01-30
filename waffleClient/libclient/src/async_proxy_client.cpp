@@ -17,7 +17,7 @@ void async_proxy_client::init(const std::string &host_name, int port) {
     socket->setSendTimeout(1200000);
     transport_ = std::shared_ptr<TTransport>(new TFramedTransport(socket));
     protocol_ = std::shared_ptr<TProtocol>(new TBinaryProtocol(transport_));
-    client_ = std::make_shared<pancake_thriftClient>(protocol_);
+    client_ = std::make_shared<waffle_thriftClient>(protocol_);
     transport_->open();
     requests_ = std::make_shared<queue<int>>();
     client_id_ = get_client_id();
@@ -62,10 +62,12 @@ void async_proxy_client::put(const std::string &key, const std::string &value) {
 
 std::vector<std::string> async_proxy_client::get_batch(const std::vector<std::string> &keys) {
     std::unique_lock<std::mutex> mlock(*m_mtx_);
+    std::cout << "Entering async_proxy_client.cpp line " << __LINE__ << "requests size is " << requests_->size() << std::endl;
     while (requests_->size() >= in_flight_limit_){
         m_cond_->wait(mlock);
     }
     seq_id_.__set_client_seq_no(sequence_num++);
+    std::cout << "Entering async_proxy_client.cpp line " << __LINE__ << std::endl;
     client_->async_get_batch(seq_id_, keys);
     requests_->push(GET_BATCH);
     while (requests_->size() > 63){
@@ -86,6 +88,7 @@ void async_proxy_client::put_batch(const std::vector<std::string> &keys, const s
 }
 
 void async_proxy_client::read_responses() { 
+    std::cout << "Client read responses is called " << std::endl;
     std::vector<std::string> _return;
     while (!done_->load()) {
         auto type = requests_->pop();

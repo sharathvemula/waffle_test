@@ -21,7 +21,7 @@ int64_t command_response_reader::recv_response(std::vector<std::string> &out) {
     this->iprot_->getTransport()->readEnd();
     throw x;
   }
-  pancake_thrift_response_async_response_args result;
+  waffle_thrift_response_async_response_args result;
   result.read(this->iprot_);
   this->iprot_->readMessageEnd();
   this->iprot_->getTransport()->readEnd();

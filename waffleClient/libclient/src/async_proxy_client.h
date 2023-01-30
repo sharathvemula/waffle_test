@@ -2,8 +2,8 @@
 // Created by Lloyd Brown on 10/1/19.
 //
 
-#ifndef PANCAKE_ASYNC_PROXY_CLIENT_H
-#define PANCAKE_ASYNC_PROXY_CLIENT_H
+#ifndef WAFFLE_ASYNC_PROXY_CLIENT_H
+#define WAFFLE_ASYNC_PROXY_CLIENT_H
 
 #include <thrift/transport/TSocket.h>
 #include <thrift/protocol/TBinaryProtocol.h>
@@ -16,8 +16,8 @@
 #include <iostream>
 
 #include "client.h"
-#include "thrift.h"
-#include "thrift_response_service.h"
+#include "waffle_thrift.h"
+#include "waffle_thrift_response.h"
 #include "queue.h"
 #include "command_response_reader.h"
 
@@ -73,4 +73,4 @@ private:
 };
 
 
-#endif //PANCAKE_PROXY_CLIENT_H
+#endif //WAFFLE_PROXY_CLIENT_H
