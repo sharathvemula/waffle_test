@@ -46,11 +46,11 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
                                           std::vector<std::shared_ptr<std::promise<std::string>>> &promises) {
 // Can optimize this code. TODO(sharathvemula)
     for (int i = 0; i < security_batch_size_; i++) {
-        std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+        // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
         auto coin_toss = rand()%2;
         // coin_toss = 1 means serving real request
         if(coin_toss == 1) {
-            std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+            // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
             if (op_queue->size() == 0) {
                 struct operation operat;
                 operat.key = bst.getKeyWithMinFrequency();
@@ -63,12 +63,12 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
                 storage_batch.push_back(operat);
                 is_trues.push_back(false);
             } else {
-                std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+                // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
                 struct operation operat;
                 auto operation_promise_pair = op_queue->pop();
                 auto currentKey = operation_promise_pair.first.key;
                 if(operation_promise_pair.first.value != "") {
-                    std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+                    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
                     if(cache.checkIfKeyExists(currentKey) == true) {
                         cache.markKeyDirty(currentKey);
                         operat.key = bst.getKeyWithMinFrequency();
@@ -82,7 +82,7 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
                         is_trues.push_back(false);
                         operation_promise_pair.second->set_value(cache.getValue(currentKey));
                     } else {
-                        std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+                        // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
                         if(bst.getFrequency(currentKey) > freqMax) {
                             freqMax = bst.getFrequency(currentKey);
                             cache.evictCache();
@@ -92,7 +92,7 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
                         promises.push_back(operation_promise_pair.second);
                     }
                 } else {
-                    std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+                    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
                     if(cache.checkIfKeyExists(currentKey) == true) {
                         operat.key = bst.getKeyWithMinFrequency();
                         bst.incrementFrequency(operat.key);
@@ -132,15 +132,15 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
 
 void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
                                   std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> storage_interface) {
-    std::cout << "Executing batch " << std::endl;
+    //std::cout << "Executing batch " << std::endl;
     std::vector<std::string> storage_keys;
     for(int i = 0; i < operations.size(); i++){
         std::string key = operations[i].key;
         storage_keys.push_back(key);
     }
-    std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
     auto responses = storage_interface->get_batch(storage_keys);
-    std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
     std::vector<std::string> storage_values;
     for(int i = 0, j = 0; i < operations.size(); i++){
         if(cache.checkIfKeyExists(operations[i].key)) {
@@ -157,7 +157,7 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
             }
         }
     }
-    std::cout << "Executed batch " << std::endl;
+    //std::cout << "Executed batch " << std::endl;
 }
 
 std::string waffle_proxy::get(const std::string &key) {
@@ -200,6 +200,7 @@ void waffle_proxy::async_get(const sequence_id &seq_id, int queue_id, const std:
     // Send to responder thread
     std::vector<std::future<std::string>> waiters;
     waiters.push_back(get_future(queue_id, key));
+    std::cout << "Pushing client ID async_get is " << seq_id.client_id << std::endl;
     respond_queue_.push(std::make_pair(GET, std::make_pair(seq_id, std::move(waiters))));
 };
 
@@ -211,6 +212,7 @@ void waffle_proxy::async_put(const sequence_id &seq_id, int queue_id, const std:
     // Send to responder thread
     std::vector<std::future<std::string>> waiters;
     waiters.push_back(put_future(queue_id, key, value));
+    std::cout << "Pushing client ID async_put is " << seq_id.client_id << std::endl;
     respond_queue_.push(std::make_pair(GET, std::make_pair(seq_id, std::move(waiters))));
 };
 
@@ -229,14 +231,15 @@ std::vector<std::string> waffle_proxy::get_batch(int queue_id, const std::vector
 void waffle_proxy::async_get_batch(const sequence_id &seq_id, int queue_id, const std::vector<std::string> &keys) {
     std::vector<std::string> _return;
     std::vector<std::future<std::string>> waiters;
-    std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
     for (const auto &key: keys) {
         waiters.push_back((get_future(queue_id, key)));
     }
-    std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+    std::cout << "Pushing client ID async_get_batch is " << seq_id.client_id << std::endl;
     respond_queue_.push(std::make_pair(GET_BATCH, std::make_pair(seq_id, std::move(waiters))));
     sequence_queue_.push(seq_id);
-    std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
 };
 
 void waffle_proxy::put_batch(int queue_id, const std::vector<std::string> &keys, const std::vector<std::string> &values) {
@@ -255,7 +258,7 @@ void waffle_proxy::put_batch(int queue_id, const std::vector<std::string> &keys,
 void waffle_proxy::async_put_batch(const sequence_id &seq_id, int queue_id, const std::vector<std::string> &keys, const std::vector<std::string> &values) {
     // Send waiters to responder thread
     std::vector<std::future<std::string>> waiters;
-    std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
     int i = 0;
     for (const auto &key: keys) {
         waiters.push_back((put_future(queue_id, key, values[i])));
@@ -264,7 +267,9 @@ void waffle_proxy::async_put_batch(const sequence_id &seq_id, int queue_id, cons
     // for (int i = 0; i < waiters.size(); i++){
     //     waiters[i].get();
     // }
+    std::cout << "Pushing client ID async_put_batch is " << seq_id.client_id << std::endl;
     respond_queue_.push(std::make_pair(PUT_BATCH, std::make_pair(seq_id, std::move(waiters))));
+    sequence_queue_.push(seq_id);
 };
 
 std::future<std::string> waffle_proxy::get_future(int queue_id, const std::string &key) {
@@ -277,7 +282,7 @@ std::future<std::string> waffle_proxy::get_future(int queue_id, const std::strin
     operat.key = key;
     operat.value = "";
     operation_queues_[queue_id % operation_queues_.size()]->push(std::make_pair(operat, prom));
-    std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
     return waiter;
 };
 
@@ -313,19 +318,19 @@ void waffle_proxy::consumer_thread(int id){
     int total_operations = 0;
     std::cout << "Entering here to consumer thread" << std::endl;
     while (!finished_) {
-        std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+        // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
         while (1 && !finished_) {
             total_operations = operation_queues_[id]->size(); // + operations_serviced;
             int i = 0;
-            // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << "Total operations are " << total_operations  << std::endl;
-            // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << "Prev Total operations are " << previous_total_operations  << std::endl;
+            // // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << "Total operations are " << total_operations  << std::endl;
+            // // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << "Prev Total operations are " << previous_total_operations  << std::endl;
             for (; i < total_operations; i++) {
-                std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << "Total operations are " << total_operations  << std::endl;
-                std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << "Prev Total operations are " << previous_total_operations  << std::endl;
+                // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << "Total operations are " << total_operations  << std::endl;
+                // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << "Prev Total operations are " << previous_total_operations  << std::endl;
                 std::vector <operation> storage_batch;
                 std::vector<std::shared_ptr<std::promise<std::string>>> promises;
                 std::vector<bool> is_trues;
-                std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+                // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
                 create_security_batch(operation_queues_[id], storage_batch, is_trues, promises);
                 execute_batch(storage_batch, is_trues, promises, storage_interface);
             }
@@ -346,10 +351,9 @@ void waffle_proxy::responder_thread(){
         seq = sequence_queue_.pop();
         std::vector<std::string>results;
         for (int i = 0; i < tuple.second.second.size(); i++) {
-            std::cout << "Results size is " << tuple.second.second.size() << std::endl;
             results.push_back(tuple.second.second[i].get());
         }
-
+        std::cout << "Responder thread client ID is " << seq.client_id << std::endl;
         id_to_client_->async_respond_client(seq, op_code, results);
     }
     std::cout << "Quitting response thread" << std::endl;

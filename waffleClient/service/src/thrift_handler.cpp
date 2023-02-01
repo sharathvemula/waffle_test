@@ -34,10 +34,13 @@ thrift_handler::thrift_handler(std::shared_ptr<proxy> proxy, const std::string &
 }
 
 int64_t thrift_handler::thrift_handler::get_client_id() {
-    return client_id_gen_.fetch_add(1L);    
+    auto value = client_id_gen_.fetch_add(1L);
+    std::cout << "In thrift_handler, client ID is " << value << std::endl;
+    return value;    
 }
 
 void thrift_handler::register_client_id(const int32_t block_id, const int64_t client_id) {
+    std::cout << "Register client ID called by client: ID is " << client_id << std::endl;
     registered_client_id_ = client_id;
     id_to_client_->add_client(client_id, client_);
 }

@@ -49,7 +49,7 @@
     }
 
     std::vector<std::string> redis::get_batch(const std::vector<std::string> &keys){
-        std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
+        // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
         std::queue<std::future<cpp_redis::reply>> futures;
         std::unordered_map<int, std::vector<std::string>> key_vectors;
 
@@ -59,19 +59,19 @@
             key_vectors[id].emplace_back(key);
         }
 
-         std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
+        // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
 
         for (auto it = key_vectors.begin(); it != key_vectors.end(); it++) {
-             std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
+             // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
             auto future = clients[it->first]->mget(it->second);
             futures.push(std::move(future));
 
         }
-        std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
+        // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
         // Issue requests to each storage server
         for (auto it = key_vectors.begin(); it != key_vectors.end(); it++)
             clients[it->first]->commit();
-        std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
+        // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
         std::vector< std::string> return_vector;
 
         for (int i = 0; i < futures.size(); i++) {

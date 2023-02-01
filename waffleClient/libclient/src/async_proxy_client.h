@@ -57,8 +57,8 @@ private:
     std::mutex *m_mtx_;
 
 
-    int sequence_num = 0;
-    int client_id_;
+    int64_t sequence_num = 0;
+    int64_t client_id_;
     sequence_id seq_id_;
     std::thread *response_thread_;
 

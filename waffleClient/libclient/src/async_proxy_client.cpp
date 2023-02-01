@@ -22,6 +22,7 @@ void async_proxy_client::init(const std::string &host_name, int port) {
     requests_ = std::make_shared<queue<int>>();
     client_id_ = get_client_id();
     seq_id_ = sequence_id();
+    std::cout << "IN client::init, client_id_ is " << client_id_ << std::endl;
     seq_id_.__set_client_id(client_id_);
     
     m_mtx_ = new std::mutex();
@@ -34,6 +35,7 @@ void async_proxy_client::init(const std::string &host_name, int port) {
 int64_t async_proxy_client::get_client_id() {
   auto id = client_->get_client_id();
   auto block_id_ = 1;
+  std::cout << "Client ID is " << id << std::endl;
   client_->register_client_id(block_id_, id);
   return id;
 }
@@ -62,12 +64,13 @@ void async_proxy_client::put(const std::string &key, const std::string &value) {
 
 std::vector<std::string> async_proxy_client::get_batch(const std::vector<std::string> &keys) {
     std::unique_lock<std::mutex> mlock(*m_mtx_);
-    std::cout << "Entering async_proxy_client.cpp line " << __LINE__ << "requests size is " << requests_->size() << std::endl;
+    //std::cout << "Entering async_proxy_client.cpp line " << __LINE__ << "requests size is " << requests_->size() << std::endl;
     while (requests_->size() >= in_flight_limit_){
         m_cond_->wait(mlock);
     }
     seq_id_.__set_client_seq_no(sequence_num++);
-    std::cout << "Entering async_proxy_client.cpp line " << __LINE__ << std::endl;
+    //std::cout << "Entering async_proxy_client.cpp line " << __LINE__ << std::endl;
+    std::cout << "client get_batch client ID is " << seq_id_.client_id << std::endl;
     client_->async_get_batch(seq_id_, keys);
     requests_->push(GET_BATCH);
     while (requests_->size() > 63){
@@ -83,6 +86,7 @@ void async_proxy_client::put_batch(const std::vector<std::string> &keys, const s
         m_cond_->wait(mlock);
     }
     seq_id_.__set_client_seq_no(sequence_num++);
+    std::cout << "client put_batch client ID is " << seq_id_.client_id << std::endl;
     client_->async_put_batch(seq_id_, keys, values);
     requests_->push(PUT_BATCH);
 }
@@ -95,7 +99,9 @@ void async_proxy_client::read_responses() {
         m_cond_->notify_one();
         try {
             reader_.recv_response(_return);
+            std::cout << "Client read responses is success " << std::endl;
         } catch(apache::thrift::transport::TTransportException e){
+            std::cout << "Client read responses is FAILURE " << std::endl;
             (void)0;
         }
         *total_ += _return.size();

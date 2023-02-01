@@ -91,7 +91,7 @@ void run_benchmark(int run_time, bool stats, std::vector<int> &latencies, int cl
         ops = client.num_requests_satisfied();
     }
     uint64_t start, end;
-    std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << std::endl;
+    //std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << std::endl;
     auto ticks_per_ns = static_cast<double>(rdtscuhz()) / 1000;
     auto s = std::chrono::high_resolution_clock::now();
     auto e = std::chrono::high_resolution_clock::now();
@@ -99,17 +99,17 @@ void run_benchmark(int run_time, bool stats, std::vector<int> &latencies, int cl
     std::vector<std::string> results;
     int i = 0;
     while (elapsed < run_time*1000000) {
-        std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << "i =  " << i << std::endl;
+        //std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << "i =  " << i << std::endl;
         if (stats) {
             rdtscll(start);
         }
         auto keys_values_pair = trace[i];
         if (keys_values_pair.second.empty()){
-            std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << std::endl;
+            //std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << std::endl;
             client.get_batch(keys_values_pair.first);
         }
         else {
-            std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << std::endl;
+            //std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << std::endl;
             client.put_batch(keys_values_pair.first, keys_values_pair.second);
         }
         if (stats) {
@@ -165,6 +165,8 @@ void client(int idx, int client_batch_size, int object_size, trace_vector &trace
     line.append("Xput: " + std::to_string(indiv_xput) + "\n");
     out << line;
     xput += indiv_xput;
+    std::cout << "indiv_xput is: " << indiv_xput << std::endl;
+    std::cout << "xput is: " << xput << std::endl;
     std::cout << "Beginning cooldown" << std::endl;
     cooldown(latencies, client_batch_size, object_size, trace, indiv_xput, client);
 
