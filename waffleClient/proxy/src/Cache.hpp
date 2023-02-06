@@ -4,40 +4,25 @@
 #include <string>
 #include <vector>
 #include <unordered_map>
+#include <list>
+#include <utility>
 
-struct cacheStruct {
-	bool isDirty;
-	std::string value;
-	cacheStruct(): isDirty(false), value("") {}
-	cacheStruct(std::string value, bool isDirty): isDirty(isDirty), value(value) {}
-};
 
 class Cache {
 
 private:
-	std::unordered_map<std::string, struct cacheStruct> cacheWaffle;
-	int readHits;
-	int reads;
-	int writeHits;
-	int writes;
+	std::unordered_map<std::string, std::list<std::pair<std::string,std::string>>::iterator> cacheMap;
+    std::list<std::pair<std::string,std::string>> accessList;
+    int m_capacity;
+
 
 public:
-	Cache();
+	Cache(std::vector<std::string> keys, std::vector<std::vector> values, int cacheCapacity);
 	int size();
 	bool checkIfKeyExists(std::string key);
-	bool checkIfKeyExistsInEvicted(std::string key);
 	std::string getValue(std::string key);
-	void markKeyDirty(std::string key);
-	void unMarkKeyDirty(std::string key);
-	bool checkIfKeyDirty(std::string key);
-	void insertIntoCache(std::string key, std::string value, bool dirty);
-	void insertIntoEvicted(std::string key, std::string value);
-	void removeFromEvicted(std::string key);
-	void evictCache();
-	void removeFromCache(std::string key);
-	void printStatistics();
-	void printAll();
-	std::unordered_map<std::string, std::string> evictedItems;
+	void insertIntoCache(std::string key, std::string value);
+	std::vector<std::string> evictLRElementFromCache();
 };
 
 #endif

@@ -19,12 +19,13 @@ private:
 public:
 	FrequencySmoother();
 	void insert(std::string key);
-	int getFrequency(std::string key);
 	int getMinFrequency();
 	void incrementFrequency(std::string key);
 	std::string getKeyWithMinFrequency();
-	void printFreqs();
 	int size();
+	int getFrequency(std::string key);
+	std::set<std::pair<std::string, int>, decltype(&freqCmp)>::iterator getIterator();
+
 };
 
 #endif

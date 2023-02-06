@@ -12,6 +12,7 @@
 #include <algorithm>
 #include <thread>
 #include <future>
+#include <random>
 
 #include "proxy.h"
 #include "util.h"
@@ -76,7 +77,7 @@ private:
                                std::vector<std::shared_ptr<std::promise<std::string>>> &promises);
 
     void execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
-                       std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> storage_interface);
+                       std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine);
     void consumer_thread(int id);
     void responder_thread();
 
@@ -91,10 +92,16 @@ private:
     int GET_BATCH = 2;
     int PUT_BATCH = 3;
     int freqMax = 0;
-    FrequencySmoother bst;
+    FrequencySmoother realBst;
+    FrequencySmoother fakeBst;
     Cache cache;
     queue<std::pair<int, std::pair<const sequence_id&, std::vector<std::future<std::string>>>>> respond_queue_;
     queue<sequence_id> sequence_queue_;
+    // System parameters
+    int R;
+    int D;
+    int s;
+    int m;
 };
 
 #endif //WAFFLE_PROXY_H
