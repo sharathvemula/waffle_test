@@ -101,7 +101,6 @@ void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
 void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
                                           std::vector<operation> &storage_batch, std::vector<bool> &is_trues,
                                           std::vector<std::shared_ptr<std::promise<std::string>>> &promises) {
-// Can optimize this code. TODO(sharathvemula)
     if (op_queue->size() == 0) {
         std::cout << "WARNING: You should never see this line on console! Queue size is 0" << std::endl;
     } else {

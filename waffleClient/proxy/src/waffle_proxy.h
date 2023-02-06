@@ -98,10 +98,10 @@ private:
     queue<std::pair<int, std::pair<const sequence_id&, std::vector<std::future<std::string>>>>> respond_queue_;
     queue<sequence_id> sequence_queue_;
     // System parameters
-    int R;
-    int D;
-    int s;
-    int m;
+    int R = 10;
+    int D = 11;
+    int s = 20;
+    int m = 1000;
 };
 
 #endif //WAFFLE_PROXY_H
