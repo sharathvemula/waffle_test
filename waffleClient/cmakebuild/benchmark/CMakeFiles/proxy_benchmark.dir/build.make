@@ -441,9 +441,33 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/FrequencySmoother.cpp.o.pr
 benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/FrequencySmoother.cpp.o.provides.build: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/FrequencySmoother.cpp.o
 
 
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o: benchmark/CMakeFiles/proxy_benchmark.dir/flags.make
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o: ../proxy/src/encryption_engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o"
+	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/benchmark && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/encryption_engine.cpp
+
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.i"
+	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/benchmark && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/encryption_engine.cpp > CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.i
+
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.s"
+	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/benchmark && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/encryption_engine.cpp -o CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.s
+
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o.requires:
+
+.PHONY : benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o.requires
+
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o.provides: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o.requires
+	$(MAKE) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o.provides.build
+.PHONY : benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o.provides
+
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o.provides.build: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o
+
+
 benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o: benchmark/CMakeFiles/proxy_benchmark.dir/flags.make
 benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o: ../libstorage/src/redis.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o"
 	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/benchmark && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/libstorage/src/redis.cpp
 
 benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.i: cmake_force
@@ -483,6 +507,7 @@ proxy_benchmark_OBJECTS = \
 "CMakeFiles/proxy_benchmark.dir/__/proxy/src/util.cpp.o" \
 "CMakeFiles/proxy_benchmark.dir/__/proxy/src/Cache.cpp.o" \
 "CMakeFiles/proxy_benchmark.dir/__/proxy/src/FrequencySmoother.cpp.o" \
+"CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o" \
 "CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o"
 
 # External object files for target proxy_benchmark
@@ -504,6 +529,7 @@ proxy_benchmark_EXTERNAL_OBJECTS =
 ../bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/util.cpp.o
 ../bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/Cache.cpp.o
 ../bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/FrequencySmoother.cpp.o
+../bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o
 ../bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o
 ../bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/build.make
 ../bin/proxy_benchmark: external/thrift_ep/lib/libthriftnb.a
@@ -514,7 +540,7 @@ proxy_benchmark_EXTERNAL_OBJECTS =
 ../bin/proxy_benchmark: external/openssl/lib/libssl.a
 ../bin/proxy_benchmark: external/openssl/lib/libcrypto.a
 ../bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable ../../bin/proxy_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable ../../bin/proxy_benchmark"
 	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/benchmark && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proxy_benchmark.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -538,6 +564,7 @@ benchmark/CMakeFiles/proxy_benchmark.dir/requires: benchmark/CMakeFiles/proxy_be
 benchmark/CMakeFiles/proxy_benchmark.dir/requires: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/util.cpp.o.requires
 benchmark/CMakeFiles/proxy_benchmark.dir/requires: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/Cache.cpp.o.requires
 benchmark/CMakeFiles/proxy_benchmark.dir/requires: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/FrequencySmoother.cpp.o.requires
+benchmark/CMakeFiles/proxy_benchmark.dir/requires: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o.requires
 benchmark/CMakeFiles/proxy_benchmark.dir/requires: benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o.requires
 
 .PHONY : benchmark/CMakeFiles/proxy_benchmark.dir/requires

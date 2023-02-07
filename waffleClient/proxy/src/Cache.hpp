@@ -17,7 +17,8 @@ private:
 
 
 public:
-	Cache(std::vector<std::string> keys, std::vector<std::vector> values, int cacheCapacity);
+	Cache();
+	Cache(std::vector<std::string> keys, std::vector<std::string> values, int cacheCapacity);
 	int size();
 	bool checkIfKeyExists(std::string key);
 	std::string getValue(std::string key);

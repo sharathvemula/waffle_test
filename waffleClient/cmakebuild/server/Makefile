@@ -252,6 +252,33 @@ __/proxy/src/FrequencySmoother.cpp.s:
 	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild && $(MAKE) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.s
 .PHONY : __/proxy/src/FrequencySmoother.cpp.s
 
+__/proxy/src/encryption_engine.o: __/proxy/src/encryption_engine.cpp.o
+
+.PHONY : __/proxy/src/encryption_engine.o
+
+# target to build an object file
+__/proxy/src/encryption_engine.cpp.o:
+	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild && $(MAKE) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o
+.PHONY : __/proxy/src/encryption_engine.cpp.o
+
+__/proxy/src/encryption_engine.i: __/proxy/src/encryption_engine.cpp.i
+
+.PHONY : __/proxy/src/encryption_engine.i
+
+# target to preprocess a source file
+__/proxy/src/encryption_engine.cpp.i:
+	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild && $(MAKE) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.i
+.PHONY : __/proxy/src/encryption_engine.cpp.i
+
+__/proxy/src/encryption_engine.s: __/proxy/src/encryption_engine.cpp.s
+
+.PHONY : __/proxy/src/encryption_engine.s
+
+# target to generate assembly for a file
+__/proxy/src/encryption_engine.cpp.s:
+	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild && $(MAKE) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.s
+.PHONY : __/proxy/src/encryption_engine.cpp.s
+
 __/proxy/src/util.o: __/proxy/src/util.cpp.o
 
 .PHONY : __/proxy/src/util.o
@@ -571,6 +598,9 @@ help:
 	@echo "... __/proxy/src/FrequencySmoother.o"
 	@echo "... __/proxy/src/FrequencySmoother.i"
 	@echo "... __/proxy/src/FrequencySmoother.s"
+	@echo "... __/proxy/src/encryption_engine.o"
+	@echo "... __/proxy/src/encryption_engine.i"
+	@echo "... __/proxy/src/encryption_engine.s"
 	@echo "... __/proxy/src/util.o"
 	@echo "... __/proxy/src/util.i"
 	@echo "... __/proxy/src/util.s"

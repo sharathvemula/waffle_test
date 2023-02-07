@@ -92,14 +92,13 @@ void async_proxy_client::put_batch(const std::vector<std::string> &keys, const s
 }
 
 void async_proxy_client::read_responses() { 
-    std::cout << "Client read responses is called " << std::endl;
+    // std::cout << "Client read responses is called " << std::endl;
     std::vector<std::string> _return;
     while (!done_->load()) {
         auto type = requests_->pop();
         m_cond_->notify_one();
         try {
             reader_.recv_response(_return);
-            std::cout << "Client read responses is success " << std::endl;
         } catch(apache::thrift::transport::TTransportException e){
             std::cout << "Client read responses is FAILURE " << std::endl;
             (void)0;

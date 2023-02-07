@@ -3584,6 +3584,37 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/Cache.cpp.o
 benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/FrequencySmoother.cpp.o
  /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/FrequencySmoother.cpp
  /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/FrequencySmoother.hpp
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o
+ /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/encryption_engine.cpp
+ /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/encryption_engine.h
+ /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/util.h
+ external/openssl/include/openssl/asn1.h
+ external/openssl/include/openssl/asn1err.h
+ external/openssl/include/openssl/bio.h
+ external/openssl/include/openssl/bioerr.h
+ external/openssl/include/openssl/bn.h
+ external/openssl/include/openssl/bnerr.h
+ external/openssl/include/openssl/crypto.h
+ external/openssl/include/openssl/cryptoerr.h
+ external/openssl/include/openssl/e_os2.h
+ external/openssl/include/openssl/ebcdic.h
+ external/openssl/include/openssl/err.h
+ external/openssl/include/openssl/evp.h
+ external/openssl/include/openssl/evperr.h
+ external/openssl/include/openssl/hmac.h
+ external/openssl/include/openssl/lhash.h
+ external/openssl/include/openssl/obj_mac.h
+ external/openssl/include/openssl/objects.h
+ external/openssl/include/openssl/objectserr.h
+ external/openssl/include/openssl/opensslconf.h
+ external/openssl/include/openssl/opensslv.h
+ external/openssl/include/openssl/ossl_typ.h
+ external/openssl/include/openssl/rand.h
+ external/openssl/include/openssl/randerr.h
+ external/openssl/include/openssl/safestack.h
+ external/openssl/include/openssl/sha.h
+ external/openssl/include/openssl/stack.h
+ external/openssl/include/openssl/symhacks.h
 benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/util.cpp.o
  /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/util.cpp
  /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/util.h
@@ -3596,6 +3627,7 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/waffle_proxy.cpp.o
  ../benchmark/../service/src/waffle_thrift_response.h
  /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/Cache.hpp
  /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/FrequencySmoother.hpp
+ /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/encryption_engine.h
  /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/operation.h
  /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/proxy.h
  /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/queue.h
@@ -4309,6 +4341,33 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/waffle_proxy.cpp.o
  external/libcuckoo/include/libcuckoo/cuckoohash_config.hh
  external/libcuckoo/include/libcuckoo/cuckoohash_map.hh
  external/libcuckoo/include/libcuckoo/cuckoohash_util.hh
+ external/openssl/include/openssl/asn1.h
+ external/openssl/include/openssl/asn1err.h
+ external/openssl/include/openssl/bio.h
+ external/openssl/include/openssl/bioerr.h
+ external/openssl/include/openssl/bn.h
+ external/openssl/include/openssl/bnerr.h
+ external/openssl/include/openssl/crypto.h
+ external/openssl/include/openssl/cryptoerr.h
+ external/openssl/include/openssl/e_os2.h
+ external/openssl/include/openssl/ebcdic.h
+ external/openssl/include/openssl/err.h
+ external/openssl/include/openssl/evp.h
+ external/openssl/include/openssl/evperr.h
+ external/openssl/include/openssl/hmac.h
+ external/openssl/include/openssl/lhash.h
+ external/openssl/include/openssl/obj_mac.h
+ external/openssl/include/openssl/objects.h
+ external/openssl/include/openssl/objectserr.h
+ external/openssl/include/openssl/opensslconf.h
+ external/openssl/include/openssl/opensslv.h
+ external/openssl/include/openssl/ossl_typ.h
+ external/openssl/include/openssl/rand.h
+ external/openssl/include/openssl/randerr.h
+ external/openssl/include/openssl/safestack.h
+ external/openssl/include/openssl/sha.h
+ external/openssl/include/openssl/stack.h
+ external/openssl/include/openssl/symhacks.h
  external/thrift_ep/include/thrift/TApplicationException.h
  external/thrift_ep/include/thrift/TBase.h
  external/thrift_ep/include/thrift/TDispatchProcessor.h
@@ -5029,6 +5088,7 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/service/src/thrift_handler.cpp.o
  ../benchmark/../libstorage/src/storage_interface.h
  ../benchmark/../proxy/src/Cache.hpp
  ../benchmark/../proxy/src/FrequencySmoother.hpp
+ ../benchmark/../proxy/src/encryption_engine.h
  ../benchmark/../proxy/src/operation.h
  ../benchmark/../proxy/src/proxy.h
  ../benchmark/../proxy/src/queue.h
@@ -6221,6 +6281,33 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/service/src/thrift_handler.cpp.o
  external/libevent_ep/include/event2/util.h
  external/libevent_ep/include/event2/visibility.h
  external/libevent_ep/include/evutil.h
+ external/openssl/include/openssl/asn1.h
+ external/openssl/include/openssl/asn1err.h
+ external/openssl/include/openssl/bio.h
+ external/openssl/include/openssl/bioerr.h
+ external/openssl/include/openssl/bn.h
+ external/openssl/include/openssl/bnerr.h
+ external/openssl/include/openssl/crypto.h
+ external/openssl/include/openssl/cryptoerr.h
+ external/openssl/include/openssl/e_os2.h
+ external/openssl/include/openssl/ebcdic.h
+ external/openssl/include/openssl/err.h
+ external/openssl/include/openssl/evp.h
+ external/openssl/include/openssl/evperr.h
+ external/openssl/include/openssl/hmac.h
+ external/openssl/include/openssl/lhash.h
+ external/openssl/include/openssl/obj_mac.h
+ external/openssl/include/openssl/objects.h
+ external/openssl/include/openssl/objectserr.h
+ external/openssl/include/openssl/opensslconf.h
+ external/openssl/include/openssl/opensslv.h
+ external/openssl/include/openssl/ossl_typ.h
+ external/openssl/include/openssl/rand.h
+ external/openssl/include/openssl/randerr.h
+ external/openssl/include/openssl/safestack.h
+ external/openssl/include/openssl/sha.h
+ external/openssl/include/openssl/stack.h
+ external/openssl/include/openssl/symhacks.h
  external/thrift_ep/include/thrift/TApplicationException.h
  external/thrift_ep/include/thrift/TBase.h
  external/thrift_ep/include/thrift/TDispatchProcessor.h
@@ -6272,6 +6359,7 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/service/src/thrift_handler_factory.c
  ../benchmark/../libstorage/src/storage_interface.h
  ../benchmark/../proxy/src/Cache.hpp
  ../benchmark/../proxy/src/FrequencySmoother.hpp
+ ../benchmark/../proxy/src/encryption_engine.h
  ../benchmark/../proxy/src/operation.h
  ../benchmark/../proxy/src/proxy.h
  ../benchmark/../proxy/src/queue.h
@@ -7465,6 +7553,33 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/service/src/thrift_handler_factory.c
  external/libevent_ep/include/event2/util.h
  external/libevent_ep/include/event2/visibility.h
  external/libevent_ep/include/evutil.h
+ external/openssl/include/openssl/asn1.h
+ external/openssl/include/openssl/asn1err.h
+ external/openssl/include/openssl/bio.h
+ external/openssl/include/openssl/bioerr.h
+ external/openssl/include/openssl/bn.h
+ external/openssl/include/openssl/bnerr.h
+ external/openssl/include/openssl/crypto.h
+ external/openssl/include/openssl/cryptoerr.h
+ external/openssl/include/openssl/e_os2.h
+ external/openssl/include/openssl/ebcdic.h
+ external/openssl/include/openssl/err.h
+ external/openssl/include/openssl/evp.h
+ external/openssl/include/openssl/evperr.h
+ external/openssl/include/openssl/hmac.h
+ external/openssl/include/openssl/lhash.h
+ external/openssl/include/openssl/obj_mac.h
+ external/openssl/include/openssl/objects.h
+ external/openssl/include/openssl/objectserr.h
+ external/openssl/include/openssl/opensslconf.h
+ external/openssl/include/openssl/opensslv.h
+ external/openssl/include/openssl/ossl_typ.h
+ external/openssl/include/openssl/rand.h
+ external/openssl/include/openssl/randerr.h
+ external/openssl/include/openssl/safestack.h
+ external/openssl/include/openssl/sha.h
+ external/openssl/include/openssl/stack.h
+ external/openssl/include/openssl/symhacks.h
  external/thrift_ep/include/thrift/TApplicationException.h
  external/thrift_ep/include/thrift/TBase.h
  external/thrift_ep/include/thrift/TDispatchProcessor.h
@@ -8950,6 +9065,7 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/service/src/thrift_server.cpp.o
  ../benchmark/../libstorage/src/storage_interface.h
  ../benchmark/../proxy/src/Cache.hpp
  ../benchmark/../proxy/src/FrequencySmoother.hpp
+ ../benchmark/../proxy/src/encryption_engine.h
  ../benchmark/../proxy/src/operation.h
  ../benchmark/../proxy/src/proxy.h
  ../benchmark/../proxy/src/queue.h
@@ -10144,6 +10260,33 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/service/src/thrift_server.cpp.o
  external/libevent_ep/include/event2/util.h
  external/libevent_ep/include/event2/visibility.h
  external/libevent_ep/include/evutil.h
+ external/openssl/include/openssl/asn1.h
+ external/openssl/include/openssl/asn1err.h
+ external/openssl/include/openssl/bio.h
+ external/openssl/include/openssl/bioerr.h
+ external/openssl/include/openssl/bn.h
+ external/openssl/include/openssl/bnerr.h
+ external/openssl/include/openssl/crypto.h
+ external/openssl/include/openssl/cryptoerr.h
+ external/openssl/include/openssl/e_os2.h
+ external/openssl/include/openssl/ebcdic.h
+ external/openssl/include/openssl/err.h
+ external/openssl/include/openssl/evp.h
+ external/openssl/include/openssl/evperr.h
+ external/openssl/include/openssl/hmac.h
+ external/openssl/include/openssl/lhash.h
+ external/openssl/include/openssl/obj_mac.h
+ external/openssl/include/openssl/objects.h
+ external/openssl/include/openssl/objectserr.h
+ external/openssl/include/openssl/opensslconf.h
+ external/openssl/include/openssl/opensslv.h
+ external/openssl/include/openssl/ossl_typ.h
+ external/openssl/include/openssl/rand.h
+ external/openssl/include/openssl/randerr.h
+ external/openssl/include/openssl/safestack.h
+ external/openssl/include/openssl/sha.h
+ external/openssl/include/openssl/stack.h
+ external/openssl/include/openssl/symhacks.h
  external/thrift_ep/include/thrift/TApplicationException.h
  external/thrift_ep/include/thrift/TBase.h
  external/thrift_ep/include/thrift/TDispatchProcessor.h
@@ -11616,6 +11759,7 @@ benchmark/CMakeFiles/proxy_benchmark.dir/src/proxy_benchmark.cpp.o
  ../benchmark/../libstorage/src/storage_interface.h
  ../benchmark/../proxy/src/Cache.hpp
  ../benchmark/../proxy/src/FrequencySmoother.hpp
+ ../benchmark/../proxy/src/encryption_engine.h
  ../benchmark/../proxy/src/operation.h
  ../benchmark/../proxy/src/proxy.h
  ../benchmark/../proxy/src/queue.h
@@ -12812,6 +12956,33 @@ benchmark/CMakeFiles/proxy_benchmark.dir/src/proxy_benchmark.cpp.o
  external/libevent_ep/include/event2/util.h
  external/libevent_ep/include/event2/visibility.h
  external/libevent_ep/include/evutil.h
+ external/openssl/include/openssl/asn1.h
+ external/openssl/include/openssl/asn1err.h
+ external/openssl/include/openssl/bio.h
+ external/openssl/include/openssl/bioerr.h
+ external/openssl/include/openssl/bn.h
+ external/openssl/include/openssl/bnerr.h
+ external/openssl/include/openssl/crypto.h
+ external/openssl/include/openssl/cryptoerr.h
+ external/openssl/include/openssl/e_os2.h
+ external/openssl/include/openssl/ebcdic.h
+ external/openssl/include/openssl/err.h
+ external/openssl/include/openssl/evp.h
+ external/openssl/include/openssl/evperr.h
+ external/openssl/include/openssl/hmac.h
+ external/openssl/include/openssl/lhash.h
+ external/openssl/include/openssl/obj_mac.h
+ external/openssl/include/openssl/objects.h
+ external/openssl/include/openssl/objectserr.h
+ external/openssl/include/openssl/opensslconf.h
+ external/openssl/include/openssl/opensslv.h
+ external/openssl/include/openssl/ossl_typ.h
+ external/openssl/include/openssl/rand.h
+ external/openssl/include/openssl/randerr.h
+ external/openssl/include/openssl/safestack.h
+ external/openssl/include/openssl/sha.h
+ external/openssl/include/openssl/stack.h
+ external/openssl/include/openssl/symhacks.h
  external/thrift_ep/include/thrift/TApplicationException.h
  external/thrift_ep/include/thrift/TBase.h
  external/thrift_ep/include/thrift/TDispatchProcessor.h

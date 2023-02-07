@@ -369,9 +369,33 @@ server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o.provides
 server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o.provides.build: server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o
 
 
+server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o: server/CMakeFiles/proxy_server.dir/flags.make
+server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o: ../proxy/src/encryption_engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o"
+	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/encryption_engine.cpp
+
+server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.i"
+	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/encryption_engine.cpp > CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.i
+
+server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.s"
+	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/proxy/src/encryption_engine.cpp -o CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.s
+
+server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o.requires:
+
+.PHONY : server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o.requires
+
+server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o.provides: server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o.requires
+	$(MAKE) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o.provides.build
+.PHONY : server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o.provides
+
+server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o.provides.build: server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o
+
+
 server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o: server/CMakeFiles/proxy_server.dir/flags.make
 server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o: ../libstorage/src/redis.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o"
 	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/libstorage/src/redis.cpp
 
 server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.i: cmake_force
@@ -408,6 +432,7 @@ proxy_server_OBJECTS = \
 "CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.o" \
 "CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o" \
 "CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o" \
+"CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o" \
 "CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o"
 
 # External object files for target proxy_server
@@ -426,6 +451,7 @@ proxy_server_EXTERNAL_OBJECTS =
 ../bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.o
 ../bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o
 ../bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o
+../bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o
 ../bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o
 ../bin/proxy_server: server/CMakeFiles/proxy_server.dir/build.make
 ../bin/proxy_server: external/thrift_ep/lib/libthriftnb.a
@@ -436,7 +462,7 @@ proxy_server_EXTERNAL_OBJECTS =
 ../bin/proxy_server: external/openssl/lib/libssl.a
 ../bin/proxy_server: external/openssl/lib/libcrypto.a
 ../bin/proxy_server: server/CMakeFiles/proxy_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable ../../bin/proxy_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable ../../bin/proxy_server"
 	cd /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proxy_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -457,6 +483,7 @@ server/CMakeFiles/proxy_server.dir/requires: server/CMakeFiles/proxy_server.dir/
 server/CMakeFiles/proxy_server.dir/requires: server/CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.o.requires
 server/CMakeFiles/proxy_server.dir/requires: server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o.requires
 server/CMakeFiles/proxy_server.dir/requires: server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o.requires
+server/CMakeFiles/proxy_server.dir/requires: server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o.requires
 server/CMakeFiles/proxy_server.dir/requires: server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o.requires
 
 .PHONY : server/CMakeFiles/proxy_server.dir/requires
