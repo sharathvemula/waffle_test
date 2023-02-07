@@ -198,7 +198,8 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
             cache.insertIntoCache(keyAboutToGoToCache, valueAboutToGoToCache);
         } else {
             // Writing fake key values to DB
-            writeBatchKeys.push_back(storage_keys[i]);
+            auto fakeWriteKey = extractKey(enc_engine->decrypt(storage_keys[i]));
+            writeBatchKeys.push_back(enc_engine->encrypt(fakeWriteKey + "#" + to_string(realBst.getFrequency(fakeWriteKey))));
             writeBatchValues.push_back(enc_engine->encrypt("fakeValue"));
 
         }
