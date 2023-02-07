@@ -67,13 +67,23 @@ void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
     for(auto& it : keys) {
         allKeys.insert(it);
         realBst.insert(it);
-        storage_interface_->put(encryption_engine_.encrypt(it + "#" + to_string(realBst.getFrequency(it))), encryption_engine_.encrypt("valueAtDatabase"));
+        storage_interface_->put(encryption_engine_.encrypt(it + "#" + std::to_string(realBst.getFrequency(it))), encryption_engine_.encrypt("valueAtDatabase"));
     }
 
 
     // Initialising Cache
     size_t cacheCapacity = R+s;
-    std::sample(keys.begin(), keys.end(), std::back_inserter(keysCache), cacheCapacity, std::mt19937{std::random_device{}()});
+    // std::sample(keys.begin(), keys.end(), std::back_inserter(keysCache), cacheCapacity, std::mt19937{std::random_device{}()});
+    //std::mt19937_64 random_engine{std::random_device{}()};
+    //std::ranges::sample(keys, std::back_inserter(keysCache), cacheCapacity, random_engine);
+    std::unordered_set<std::string> temp;
+    while(keysCache.size() < cacheCapacity) {
+        auto index = rand()%keys.size();
+        if(temp.find(keys[index]) == temp.end()) {
+            temp.insert(keys[index]);
+            keysCache.push_back(encryption_engine_.encrypt(keys[index] + "#" + std::to_string(realBst.getFrequency(keys[index]))));
+        }
+    }
     auto valuesCache = storage_interface_->get_batch(keysCache);
     for(int i=0;i<valuesCache.size(); ++i) {
         valuesCache[i] = encryption_engine_.decrypt(valuesCache[i]);
@@ -89,7 +99,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
         if(allKeys.find(fakeKey) == allKeys.end()) {
             ++i;
             fakeBst.insert(fakeKey);
-            fakeKeys.push_back(encryption_engine_.encrypt(fakeKey));
+            fakeKeys.push_back(encryption_engine_.encrypt(fakeKey + '#' + std::to_string(fakeBst.getFrequency(fakeKey))));
             fakeValues.push_back(encryption_engine_.encrypt(gen_random(rand()%15)));
         }
     }
@@ -99,8 +109,9 @@ void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
 }
 
 void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
-                                          std::vector<operation> &storage_batch, std::vector<bool> &is_trues,
-                                          std::vector<std::shared_ptr<std::promise<std::string>>> &promises) {
+                                          std::vector<operation> &storage_batch,
+                                          std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap) {
+
     if (op_queue->size() == 0) {
         std::cout << "WARNING: You should never see this line on console! Queue size is 0" << std::endl;
     } else {
@@ -112,29 +123,34 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
             if(cache.checkIfKeyExists(currentKey) == true) {
                 operation_promise_pair.second->set_value(cache.getValue(currentKey));
             } else {
-                storage_batch.push_back(operation_promise_pair.first);
-                is_trues.push_back(true);
-                promises.push_back(operation_promise_pair.second);
+                if(keyToPromiseMap.find(currentKey) == keyToPromiseMap.end()) {
+                    storage_batch.push_back(operation_promise_pair.first);
+                }
+                keyToPromiseMap[currentKey].push_back(operation_promise_pair.second);
             }
         } else {
             // It's a PUT request
             if(cache.checkIfKeyExists(currentKey) == false) {
-                storage_batch.push_back(operation_promise_pair.first);
+                if(keyToPromiseMap.find(currentKey) == keyToPromiseMap.end()) {
+                    storage_batch.push_back(operation_promise_pair.first);
+                }
             }
             cache.insertIntoCache(currentKey, operation_promise_pair.first.value);
-            is_trues.push_back(false);
             operation_promise_pair.second->set_value(cache.getValue(currentKey));
         }
+    }
 };
 
-void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
-                                  std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine) {
+void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine) {
     std::cout << "Storage batch size is " << operations.size() << " and R is " << R << std::endl; // Both need not be the same
     // Storage_keys is same as readBatch
     std::vector<std::string> storage_keys;
+    std::vector<std::string> writeBatchKeys;
+    std::vector<std::string> writeBatchValues;
+
     for(int i = 0; i < operations.size(); i++){
         std::string key = operations[i].key;
-        storage_keys.push_back(enc_engine->encrypt(key + "#" + to_string(realBst.getFrequency(key))));
+        storage_keys.push_back(enc_engine->encrypt(key + "#" + std::to_string(realBst.getFrequency(key))));
         realBst.incrementFrequency(key);
     }
 
@@ -149,35 +165,33 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     }
 
     for(auto& iter: realKeysNotInCache) {
-        storage_keys.push_back(enc_engine->encrypt(iter + "#" + to_string(realBst.getFrequency(iter))));
+        storage_keys.push_back(enc_engine->encrypt(iter + "#" + std::to_string(realBst.getFrequency(iter))));
         realBst.incrementFrequency(iter);
     }
 
     for(int i=0;i<(D-operations.size());++i) {
         auto fakeMinKey = fakeBst.getKeyWithMinFrequency();
-        storage_keys.push_back(enc_engine->encrypt(fakeMinKey + "#" + to_string(realBst.getFrequency(fakeMinKey))));
+        storage_keys.push_back(enc_engine->encrypt(fakeMinKey + "#" + std::to_string(fakeBst.getFrequency(fakeMinKey))));
         fakeBst.incrementFrequency(fakeMinKey);
     }
 
-
     auto responses = storage_interface->get_batch(storage_keys);
-    vector<std::string> writeBatchKeys;
-    std::vector<std::string> storage_values;
+    std::cout << "Got key value pairs" << std::endl;
     for(int i = 0, j = 0; i < storage_keys.size(); i++){
-        if (i < operations.size()) {
-            if(is_trues[i] == true) {
-                promises[j]->set_value(enc_engine->decrypt(storage_values[i]));
-                j++;
-            }
-        }
 
         if(i < (operations.size() + realKeysNotInCache.size())) {
             auto kv_pair = cache.evictLRElementFromCache();
-            writeBatchKeys.push_back(enc_engine->encrypt(kv_pair[0] + "#" + to_string(realBst.getFrequency(kv_pair[0]))));
+            writeBatchKeys.push_back(enc_engine->encrypt(kv_pair[0] + "#" + std::to_string(realBst.getFrequency(kv_pair[0]))));
             writeBatchValues.push_back(enc_engine->encrypt(kv_pair[1]));
 
             auto keyAboutToGoToCache = extractKey(enc_engine->decrypt(storage_keys[i]));
+            std::cout << "Extracted key which is about to go to Cache is " << keyAboutToGoToCache << std::endl;
             std::string valueAboutToGoToCache = enc_engine->decrypt(responses[i]);
+            if(keyToPromiseMap.find(keyAboutToGoToCache) != keyToPromiseMap.end()) {
+                for(auto it: keyToPromiseMap[keyAboutToGoToCache]) {
+                    it->set_value(valueAboutToGoToCache);
+                }
+            }
             if(cache.checkIfKeyExists(keyAboutToGoToCache)) {
                 valueAboutToGoToCache = cache.getValue(keyAboutToGoToCache);
             }
@@ -190,7 +204,7 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         }
     }
     storage_interface_->put_batch(writeBatchKeys, writeBatchValues);
-}
+};
 
 std::string waffle_proxy::get(const std::string &key) {
     return get(rand_uint32(0, RAND_MAX), key);
@@ -232,6 +246,7 @@ void waffle_proxy::async_get(const sequence_id &seq_id, int queue_id, const std:
     // Send to responder thread
     std::vector<std::future<std::string>> waiters;
     waiters.push_back(get_future(queue_id, key));
+
     respond_queue_.push(std::make_pair(GET, std::make_pair(seq_id, std::move(waiters))));
 };
 
@@ -243,6 +258,7 @@ void waffle_proxy::async_put(const sequence_id &seq_id, int queue_id, const std:
     // Send to responder thread
     std::vector<std::future<std::string>> waiters;
     waiters.push_back(put_future(queue_id, key, value));
+
     respond_queue_.push(std::make_pair(GET, std::make_pair(seq_id, std::move(waiters))));
 };
 
@@ -264,6 +280,7 @@ void waffle_proxy::async_get_batch(const sequence_id &seq_id, int queue_id, cons
     for (const auto &key: keys) {
         waiters.push_back((get_future(queue_id, key)));
     }
+    std::cout << "async_get_batch client ID is " << seq_id.client_id << std::endl;
     respond_queue_.push(std::make_pair(GET_BATCH, std::make_pair(seq_id, std::move(waiters))));
     sequence_queue_.push(seq_id);
 };
@@ -284,7 +301,7 @@ void waffle_proxy::put_batch(int queue_id, const std::vector<std::string> &keys,
 void waffle_proxy::async_put_batch(const sequence_id &seq_id, int queue_id, const std::vector<std::string> &keys, const std::vector<std::string> &values) {
     // Send waiters to responder thread
     std::vector<std::future<std::string>> waiters;
-    // std::cout << "Entering waffle_proxy.cpp line " << __LINE__ << std::endl;
+    std::cout << "async_put_batch client ID is " << seq_id.client_id << std::endl;
     int i = 0;
     for (const auto &key: keys) {
         waiters.push_back((put_future(queue_id, key, values[i])));
@@ -322,14 +339,16 @@ void waffle_proxy::consumer_thread(int id, encryption_engine *enc_engine){
     std::cout << "Entering here to consumer thread" << std::endl;
     while (!finished_) {
         std::vector <operation> storage_batch;
-        std::vector<std::shared_ptr<std::promise<std::string>>> promises;
-        std::vector<bool> is_trues;
+        std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> keyToPromiseMap;
+        //std::unordered_set<std::string> tempSet;
         int i=0;
-        while (i < R &&  operation_queues_[id]->size() > 0 && !finished_) {
-            create_security_batch(operation_queues_[id], storage_batch, is_trues, promises);
-            ++i;
+        while (i < R && !finished_) {
+            if(operation_queues_[id]->size() > 0) {
+                create_security_batch(operation_queues_[id], storage_batch, keyToPromiseMap);
+                ++i;
+            }
         }
-        execute_batch(storage_batch, is_trues, promises, storage_interface_, enc_engine);
+        execute_batch(storage_batch, keyToPromiseMap, storage_interface_, enc_engine);
     }
 
 };
@@ -347,15 +366,15 @@ void waffle_proxy::responder_thread(){
         id_to_client_->async_respond_client(seq, op_code, results);
     }
     std::cout << "Quitting response thread" << std::endl;
-}
+};
 
 void waffle_proxy::flush() {
     std::cout << "Flushing proxy " << std::endl;
-}
+};
 
 void waffle_proxy::close() {
     finished_ = true;
     for (int i = 0; i < threads_.size(); i++)
         threads_[i].join();
-}
+};
 

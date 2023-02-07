@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.o"
   "CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o"
   "CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o"
+  "CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o"
   "CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o"
   "../../bin/proxy_server.pdb"
   "../../bin/proxy_server"

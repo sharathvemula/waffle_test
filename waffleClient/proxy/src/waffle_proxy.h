@@ -13,6 +13,11 @@
 #include <thread>
 #include <future>
 #include <random>
+#include <unordered_set>
+#include <string>
+#include <iterator>
+#include <algorithm>
+#include <iostream>
 
 #include "proxy.h"
 #include "util.h"
@@ -21,6 +26,7 @@
 #include "thrift_response_client_map.h"
 #include "FrequencySmoother.hpp"
 #include "Cache.hpp"
+#include "encryption_engine.h"
 
 #include "redis.h"
 #include "storage_interface.h"
@@ -73,12 +79,11 @@ public:
 
 private:
     void create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
-                               std::vector<operation> &storage_batch, std::vector<bool> &is_trues,
-                               std::vector<std::shared_ptr<std::promise<std::string>>> &promises);
+                                          std::vector<operation> &storage_batch,
+                                          std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap);
 
-    void execute_batch(const std::vector<operation> &operations, std::vector<bool> &is_trues,
-                       std::vector<std::shared_ptr<std::promise<std::string>>> &promises, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine);
-    void consumer_thread(int id);
+    void execute_batch(const std::vector<operation> &operations, std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine);
+    void consumer_thread(int id, encryption_engine *enc_engine);
     void responder_thread();
 
     std::vector<std::shared_ptr<queue<std::pair<operation, std::shared_ptr<std::promise<std::string>>>>>> operation_queues_;
@@ -94,6 +99,7 @@ private:
     int freqMax = 0;
     FrequencySmoother realBst;
     FrequencySmoother fakeBst;
+    encryption_engine encryption_engine_;
     Cache cache;
     queue<std::pair<int, std::pair<const sequence_id&, std::vector<std::future<std::string>>>>> respond_queue_;
     queue<sequence_id> sequence_queue_;
