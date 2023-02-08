@@ -31,6 +31,11 @@ std::string Cache::getValue(std::string key){
     return val;
 }
 
+std::string Cache::getValueWithoutPositionChange(std::string key){
+    if (checkIfKeyExists(key) == false) return "";
+    return cacheMap[key]->second;
+}
+
 void Cache::insertIntoCache(std::string key, std::string value) {
 	if (cacheMap.count(key) == 0)
     {

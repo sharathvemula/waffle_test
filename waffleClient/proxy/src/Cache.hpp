@@ -22,6 +22,7 @@ public:
 	int size();
 	bool checkIfKeyExists(std::string key);
 	std::string getValue(std::string key);
+	std::string getValueWithoutPositionChange(std::string key);
 	void insertIntoCache(std::string key, std::string value);
 	std::vector<std::string> evictLRElementFromCache();
 };

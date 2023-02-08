@@ -70,7 +70,7 @@ std::vector<std::string> async_proxy_client::get_batch(const std::vector<std::st
     }
     seq_id_.__set_client_seq_no(sequence_num++);
     //std::cout << "Entering async_proxy_client.cpp line " << __LINE__ << std::endl;
-    std::cout << "client get_batch client ID is " << seq_id_.client_id << std::endl;
+    // std::cout << "client get_batch client ID is " << seq_id_.client_id << std::endl;
     client_->async_get_batch(seq_id_, keys);
     requests_->push(GET_BATCH);
     while (requests_->size() > 63){
@@ -86,7 +86,7 @@ void async_proxy_client::put_batch(const std::vector<std::string> &keys, const s
         m_cond_->wait(mlock);
     }
     seq_id_.__set_client_seq_no(sequence_num++);
-    std::cout << "client put_batch client ID is " << seq_id_.client_id << std::endl;
+    // std::cout << "client put_batch client ID is " << seq_id_.client_id << std::endl;
     client_->async_put_batch(seq_id_, keys, values);
     requests_->push(PUT_BATCH);
 }
