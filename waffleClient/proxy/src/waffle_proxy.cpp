@@ -108,6 +108,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
         }
     }
     storage_interface_->put_batch(fakeKeys, fakeValues);
+    threads_.push_back(std::thread(&waffle_proxy::clearThread, this));
     std::cout << "Successfully initialized waffle with keys size " << keys.size() << " and cache with " << cache.size() << " Fake keys size is " << m << " D is " << D << " R is" << R << " s is "  << s << " FakeBST size is " << fakeBst.size() << std::endl;
 }
 
@@ -183,8 +184,8 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     auto responses = storage_interface->get_batch(storage_keys);
     // std::cout << "Got key value pairs" << std::endl;
     for(int i = 0 ; i < storage_keys.size(); i++){
-        // if(i < (operations.size() + realKeysNotInCache.size())) {
-        if(i < operations.size()) {
+        if(i < (operations.size() + realKeysNotInCache.size())) {
+        // if(i < operations.size()) {
             // This means ith request is for real key
             auto kv_pair = cache.evictLRElementFromCache();
             writeBatchKeys.push_back(enc_engine->encrypt(kv_pair[0] + "#" + std::to_string(realBst.getFrequency(kv_pair[0]))));
@@ -211,6 +212,7 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         }
     }
     storage_interface_->put_batch(writeBatchKeys, writeBatchValues);
+    keysNotUsed.push(storage_keys);
 
     if(cache.size() != (R+s)) {
         std::cout << "WARNING: This should never happen: Cache size is less than R+s" << std::endl;
@@ -378,6 +380,14 @@ void waffle_proxy::responder_thread(){
     }
     std::cout << "Quitting response thread" << std::endl;
 };
+
+void waffle_proxy::clearThread(){
+    while(true) {
+        auto keyVectorNotUsed = keysNotUsed.pop();
+        if(keyVectorNotUsed.size() > 0)
+            storage_interface_->delete_batch(keyVectorNotUsed);
+    }
+}
 
 void waffle_proxy::flush() {
     std::cout << "Flushing proxy " << std::endl;

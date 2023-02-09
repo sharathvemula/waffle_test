@@ -85,6 +85,7 @@ private:
     void execute_batch(const std::vector<operation> &operations, std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine);
     void consumer_thread(int id, encryption_engine *enc_engine);
     void responder_thread();
+    void clearThread();
 
     std::vector<std::shared_ptr<queue<std::pair<operation, std::shared_ptr<std::promise<std::string>>>>>> operation_queues_;
     std::vector<std::thread> threads_;
@@ -103,6 +104,7 @@ private:
     Cache cache;
     queue<std::pair<int, std::pair<const sequence_id&, std::vector<std::future<std::string>>>>> respond_queue_;
     queue<sequence_id> sequence_queue_;
+    queue<std::vector<std::string>> keysNotUsed;
     // System parameters
     int R = 100;
     int D = 110;
