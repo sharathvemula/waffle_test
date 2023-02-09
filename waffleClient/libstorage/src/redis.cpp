@@ -49,7 +49,6 @@
     }
 
     std::vector<std::string> redis::get_batch(const std::vector<std::string> &keys){
-        // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
         std::queue<std::future<cpp_redis::reply>> futures;
         std::unordered_map<int, std::vector<std::string>> key_vectors;
 
@@ -59,19 +58,15 @@
             key_vectors[id].emplace_back(key);
         }
 
-        // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
-
         for (auto it = key_vectors.begin(); it != key_vectors.end(); it++) {
              // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
             auto future = clients[it->first]->mget(it->second);
             futures.push(std::move(future));
 
         }
-        // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
         // Issue requests to each storage server
         for (auto it = key_vectors.begin(); it != key_vectors.end(); it++)
             clients[it->first]->commit();
-        // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
         std::vector< std::string> return_vector;
 
         for (int i = 0; i < futures.size(); i++) {
@@ -121,4 +116,21 @@
                 throw std::runtime_error(reply.error());
             }
         }
+    }
+
+    void redis::delete_batch(const std::vector<std::string> &keys) {
+        std::unordered_map<int, std::vector<std::string>> key_vectors;
+         // Gather all relevant storage interface's by id and create vector for key batch
+        for (const auto &key: keys) {
+            auto id = (std::hash<std::string>{}(std::string(key)) % clients.size());
+            key_vectors[id].emplace_back(key);
+        }
+
+        for (auto it = key_vectors.begin(); it != key_vectors.end(); it++) {
+             // std::cout << "Entering redis.cpp line " << __LINE__ << std::endl;
+            clients[it->first]->del(it->second);
+        }
+
+        for (auto it = key_vectors.begin(); it != key_vectors.end(); it++)
+            clients[it->first]->commit();
     }

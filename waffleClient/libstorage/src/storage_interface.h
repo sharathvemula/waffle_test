@@ -14,5 +14,6 @@ public:
     virtual std::vector<std::string> get_batch(const std::vector<std::string> &keys) = 0;
     virtual void put_batch(const std::vector<std::string> &keys, const std::vector<std::string> &values) = 0;
     virtual void add_server(const std::string &host_name, int port) = 0;
+    virtual void delete_batch(const std::vector<std::string> &keys) = 0;
 };
 #endif //STORAGE_INTERFACE_H

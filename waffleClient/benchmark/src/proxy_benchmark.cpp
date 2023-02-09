@@ -165,7 +165,7 @@ void client(int idx, int client_batch_size, int object_size, trace_vector &trace
     line.append("Xput: " + std::to_string(indiv_xput) + "\n");
     out << line;
     xput += indiv_xput;
-    // std::cout << "indiv_xput is: " << indiv_xput << std::endl;
+
     std::cout << "xput is: " << xput << std::endl;
     std::cout << "Beginning cooldown" << std::endl;
     cooldown(latencies, client_batch_size, object_size, trace, indiv_xput, client);
