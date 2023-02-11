@@ -28,7 +28,7 @@ std::string gen_random(const int len) {
     return tmp_s;
 }
 
-void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
+void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<std::string> &values, void ** args){
     std::unordered_set<std::string> allKeys;
     std::unordered_set<std::string> tempFakeKeys;
     realBst = FrequencySmoother();
@@ -67,29 +67,35 @@ void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
     
     //Adding the data to Database
     std::cout << "Keys size in init() is " << keys.size() << std::endl;
-    for(auto& it : keys) {
-        allKeys.insert(it);
-        realBst.insert(it);
-        storage_interface_->put(encryption_engine_.encrypt(it + "#" + std::to_string(realBst.getFrequency(it))), encryption_engine_.encrypt("valueAtDatabase"));
+    std::unordered_map<std::string, std::string> keyValueMap;
+    for(int i=0;i<keys.size();++i) {
+        keyValueMap[keys[i]] = values[i];
+        // allKeys.insert(keys[i]);
+        realBst.insert(keys[i]);
+        // storage_interface_->put(encryption_engine_.encrypt(keys[i] + "#" + std::to_string(realBst.getFrequency(keys[i]))), encryption_engine_.encrypt(values[i]));
     }
 
 
     // Initialising Cache
     size_t cacheCapacity = R+s;
     std::unordered_set<std::string> temp;
+    std::vector<std::string> valuesCache;
     while(keysCacheUnencrypted.size() < cacheCapacity) {
-        auto index = rand()%keys.size();
+        auto index = rand()%(keys.size());
         if(temp.find(keys[index]) == temp.end()) {
             temp.insert(keys[index]);
             keysCacheUnencrypted.push_back(keys[index]);
-            keysCache.push_back(encryption_engine_.encrypt(keys[index] + "#" + std::to_string(realBst.getFrequency(keys[index]))));
+            //keysCache.push_back(encryption_engine_.encrypt(keys[index] + "#" + std::to_string(realBst.getFrequency(keys[index]))));
+            // keysCache.push_back(keys[index]);
+            valuesCache.push_back(values[index]);
+            keyValueMap.erase(keys[index]);
         }
     }
-    auto valuesCache = storage_interface_->get_batch(keysCache);
-    for(int i=0;i<valuesCache.size(); ++i) {
-        valuesCache[i] = encryption_engine_.decrypt(valuesCache[i]);
-    }
-    cache = Cache(keysCache, valuesCache, cacheCapacity+R);
+    //auto valuesCache = storage_interface_->get_batch(keysCache);
+    // for(int i=0;i<valuesCache.size(); ++i) {
+    //     valuesCache[i] = encryption_engine_.decrypt(valuesCache[i]);
+    // }
+    cache = Cache(keysCacheUnencrypted, valuesCache, cacheCapacity+R);
     
 
 
@@ -106,6 +112,10 @@ void waffle_proxy::init(const std::vector<std::string> &keys, void ** args){
             fakeKeys.push_back(tempFakeKey);
             fakeValues.push_back(fakeKeyValue);
         }
+    }
+
+    for(auto& it: keyValueMap) {
+        storage_interface_->put(encryption_engine_.encrypt(it.first + "#" + std::to_string(realBst.getFrequency(it.first))), encryption_engine_.encrypt(it.second));
     }
     storage_interface_->put_batch(fakeKeys, fakeValues);
     threads_.push_back(std::thread(&waffle_proxy::clearThread, this));
@@ -185,7 +195,6 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     // std::cout << "Got key value pairs" << std::endl;
     for(int i = 0 ; i < storage_keys.size(); i++){
         if(i < (operations.size() + realKeysNotInCache.size())) {
-        // if(i < operations.size()) {
             // This means ith request is for real key
             auto kv_pair = cache.evictLRElementFromCache();
             writeBatchKeys.push_back(enc_engine->encrypt(kv_pair[0] + "#" + std::to_string(realBst.getFrequency(kv_pair[0]))));

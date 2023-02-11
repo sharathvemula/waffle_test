@@ -125,7 +125,7 @@ void run_benchmark(int run_time, bool stats, std::vector<int> &latencies, int cl
     }
     if (stats) 
         ops = client.num_requests_satisfied() - ops;
-    std::cout << "Ops is " << ops << " client num_requests_satisfied is " << client.num_requests_satisfied() << std::endl;
+    // std::cout << "Ops is " << ops << " client num_requests_satisfied is " << client.num_requests_satisfied() << std::endl;
     e = std::chrono::high_resolution_clock::now(); 
     elapsed = static_cast<int>(std::chrono::duration_cast<std::chrono::microseconds>(e - s).count());
     if (stats)
@@ -199,7 +199,7 @@ int main(int argc, char *argv[]) {
     std::string proxy_host = "127.0.0.1";
     int proxy_port = 9090;
     std::string trace_location = "";
-    int client_batch_size = 5;
+    int client_batch_size = 50;
     int object_size = 1000;
     int num_clients = 1;
 

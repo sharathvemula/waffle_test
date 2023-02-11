@@ -36,7 +36,7 @@
 class waffle_proxy : public proxy {
 public:
 
-    void init(const std::vector<std::string> &keys, void ** args) override;
+    void init(const std::vector<std::string> &keys, const std::vector<std::string> &values, void ** args) override;
     void close() override;
     std::string get(const std::string &key) override;
     void put(const std::string &key, const std::string &value) override;
@@ -107,9 +107,9 @@ private:
     queue<std::vector<std::string>> keysNotUsed;
     // System parameters
     int R = 100;
-    int D = 110;
-    int s = 10;
-    int m = 5000;
+    int D = 100;
+    int s = 50;
+    int m = 100;
 };
 
 #endif //WAFFLE_PROXY_H
