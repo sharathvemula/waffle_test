@@ -16,7 +16,7 @@
 
 typedef std::vector<std::pair<std::vector<std::string>, std::vector<std::string>>> trace_vector;
 
-std::vector<std::string> get_keys(const std::string &trace_location) {
+void getKeysValues(const std::string &trace_location, std::vector<std::string>& keys, std::vector<std::string>& values) {
     std::ifstream in_workload_file;
     in_workload_file.open(trace_location, std::ios::in);
     if(!in_workload_file.is_open()){
@@ -26,12 +26,22 @@ std::vector<std::string> get_keys(const std::string &trace_location) {
         std::perror("Opening workload file failed");
     }
     std::string line;
-    std::vector<std::string> keys;
+    std::string op, key, val;
     while (std::getline(in_workload_file, line)) {
-        keys.push_back(line);
+        op = line.substr(0, line.find(" "));
+        key = line.substr(line.find(" ")+1);
+        val = "";
+
+        if (key.find(" ") != -1) {
+            val = key.substr(key.find(" ")+1);
+            key = key.substr(0, key.find(" "));
+        }
+
+        keys.push_back(key);
+        values.push_back(val);
+        assert (key != "SET");
     }
     in_workload_file.close();
-    return keys;
 };
 
 void flush_thread(std::shared_ptr<proxy> proxy){
@@ -119,13 +129,15 @@ int main(int argc, char *argv[]) {
 
     void *arguments[1];
     assert(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_ != "");
-    auto keys = get_keys(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_);
+    std::vector<std::string> keys;
+    std::vector<std::string> values;
+    getKeysValues(dynamic_cast<waffle_proxy&>(*proxy_).trace_location_, keys, values);
     std::cout << "Keys size before init is " << keys.size() << std::endl;
     auto id_to_client = std::make_shared<thrift_response_client_map>();
     arguments[0] = &id_to_client;
     std::string dummy(object_size_, '0');
     std::cout <<"Initializing pancake" << std::endl;
-    dynamic_cast<waffle_proxy&>(*proxy_).init(keys, arguments);
+    dynamic_cast<waffle_proxy&>(*proxy_).init(keys, values, arguments);
     std::cout << "Initialized pancake" << std::endl;
     auto proxy_server = thrift_server::create(proxy_, "waffle", id_to_client, PROXY_PORT, 1);
     std::thread proxy_serve_thread([&proxy_server] { proxy_server->serve(); });
