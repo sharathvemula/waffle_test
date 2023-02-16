@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
     std::shared_ptr<proxy> proxy_ = std::make_shared<waffle_proxy>();
     int o;
     std::string proxy_type_ = "waffle";
-    while ((o = getopt(argc, argv, "h:p:s:n:v:b:c:t:o:d:z:q:l:")) != -1) {
+    while ((o = getopt(argc, argv, "h:p:s:n:v:b:c:t:o:d:z:q:l:m:r:y")) != -1) {
         switch (o) {
             case 'h':
                 dynamic_cast<waffle_proxy&>(*proxy_).server_host_name_ = std::string(optarg);
@@ -89,7 +89,10 @@ int main(int argc, char *argv[]) {
                 dynamic_cast<waffle_proxy&>(*proxy_).server_port_ = std::atoi(optarg);
                 break;
             case 's':
-                dynamic_cast<waffle_proxy&>(*proxy_).server_type_ = std::string(optarg);
+                dynamic_cast<waffle_proxy&>(*proxy_).s = std::atoi(optarg);
+                break;
+            case 'm':
+                dynamic_cast<waffle_proxy&>(*proxy_).m = std::atoi(optarg);
                 break;
             case 'n':
                 dynamic_cast<waffle_proxy&>(*proxy_).server_count_ = std::atoi(optarg);
@@ -110,7 +113,7 @@ int main(int argc, char *argv[]) {
                 dynamic_cast<waffle_proxy&>(*proxy_).output_location_ = std::string(optarg);
                 break;
             case 'd':
-                dynamic_cast<waffle_proxy&>(*proxy_).core_ = std::atoi(optarg) - 1;
+                dynamic_cast<waffle_proxy&>(*proxy_).D = std::atoi(optarg);
                 break;
             case 'z':
                 proxy_type_ = std::string(optarg);
@@ -120,6 +123,12 @@ int main(int argc, char *argv[]) {
                 break;
             case 'l':
                 dynamic_cast<waffle_proxy&>(*proxy_).trace_location_ = std::string(optarg);
+                break;
+            case 'y':
+                dynamic_cast<waffle_proxy&>(*proxy_).latency = true;
+                break;
+            case 'r':
+                dynamic_cast<waffle_proxy&>(*proxy_).R = std::atoi(optarg);
                 break;
             default:
                 usage();

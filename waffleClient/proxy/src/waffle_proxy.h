@@ -17,7 +17,11 @@
 #include <string>
 #include <iterator>
 #include <algorithm>
+#include <sys/stat.h>
 #include <iostream>
+#include <chrono>
+#include <math.h>
+#include "unistd.h"
 
 #include "proxy.h"
 #include "util.h"
@@ -76,6 +80,18 @@ public:
     int storage_batch_size_ = 5;
     int core_ = 0;
     bool is_static_ = true;
+    std::string date_string;
+    bool latency = false;
+    std::string output_directory_bst_latency;
+    std::string output_directory_redis_latency;
+    std::ofstream out_bst_latency;
+    std::ofstream out_redis_latency;
+    double ticks_per_ns;
+    // System parameters
+    int R = 50;
+    int D = 50;
+    int s = 25;
+    int m = 50;
 
 private:
     void create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
@@ -105,11 +121,6 @@ private:
     queue<std::pair<int, std::pair<const sequence_id&, std::vector<std::future<std::string>>>>> respond_queue_;
     queue<sequence_id> sequence_queue_;
     queue<std::vector<std::string>> keysNotUsed;
-    // System parameters
-    int R = 100;
-    int D = 100;
-    int s = 50;
-    int m = 100;
 };
 
 #endif //WAFFLE_PROXY_H
