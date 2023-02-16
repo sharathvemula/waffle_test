@@ -42,6 +42,7 @@ add_executable(proxy_server
         ../proxy/src/encryption_engine.cpp
         ../proxy/src/encryption_engine.h
 
+
         ../libstorage/src/storage_interface.h
         ../libstorage/src/redis.h
         ../libstorage/src/redis.cpp

@@ -2,8 +2,8 @@
 // Created by Lloyd Brown on 8/30/19.
 //
 
-#ifndef PANCAKE_TIMER_H
-#define PANCAKE_TIMER_H
+#ifndef WAFFLE_TIMER_H
+#define WAFFLE_TIMER_H
 
 #include <chrono>
 #include <math.h>
@@ -39,4 +39,4 @@ unsigned long long rdtscuhz(void) {
     return (unsigned long long) freq;
 }
 
-#endif //PANCAKE_TIMER_H
+#endif //WAFFLE_TIMER_H

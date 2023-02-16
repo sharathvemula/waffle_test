@@ -66,11 +66,10 @@ std::vector<std::string> async_proxy_client::get_batch(const std::vector<std::st
     std::unique_lock<std::mutex> mlock(*m_mtx_);
     //std::cout << "Entering async_proxy_client.cpp line " << __LINE__ << "requests size is " << requests_->size() << std::endl;
     while (requests_->size() >= in_flight_limit_){
+        // std::cout << "Waiting for lock " <<std::endl;
         m_cond_->wait(mlock);
     }
     seq_id_.__set_client_seq_no(sequence_num++);
-    //std::cout << "Entering async_proxy_client.cpp line " << __LINE__ << std::endl;
-    // std::cout << "client get_batch client ID is " << seq_id_.client_id << std::endl;
     client_->async_get_batch(seq_id_, keys);
     requests_->push(GET_BATCH);
     while (requests_->size() > 63){
@@ -83,6 +82,7 @@ std::vector<std::string> async_proxy_client::get_batch(const std::vector<std::st
 void async_proxy_client::put_batch(const std::vector<std::string> &keys, const std::vector<std::string> &values) {
     std::unique_lock<std::mutex> mlock(*m_mtx_);
     while (requests_->size() >= in_flight_limit_){
+        // std::cout << "Waiting for lock " <<std::endl;
         m_cond_->wait(mlock);
     }
     seq_id_.__set_client_seq_no(sequence_num++);
