@@ -92,6 +92,7 @@ public:
     int D = 50;
     int s = 25;
     int m = 50;
+    int redisBulkLength = 524287;
 
 private:
     void create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,

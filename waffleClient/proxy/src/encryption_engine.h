@@ -31,6 +31,10 @@ public:
     std::string encrypt(const std::string &plain_text);
     std::string decrypt(const std::string &cipher_text);
     std::string hmac(const std::string &key);
+    std::string encryptNonDeterministic(const std::string &plain_text);
+    std::string decryptNonDeterministic(const std::string &cipher_text);
+    std::string getencryption_string_();
+
 
 private:
     void handle_errors();
@@ -43,6 +47,8 @@ private:
     void print_it(const char* label, const byte* buff, size_t len);
     int make_keys(EVP_PKEY** skey, EVP_PKEY** vkey);
     int hmac_it(const byte* msg, size_t mlen, byte** val, size_t* vlen, EVP_PKEY* pkey);
+    std::string encryptNonDeterministicHelper(const std::string& plaintext, const std::string& key);
+    std::string decryptNonDeterministicHelper(const std::string& ciphertext, const std::string& key);
 
     std::string encryption_string_;
     std::string iv_string_;
