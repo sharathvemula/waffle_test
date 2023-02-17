@@ -4,6 +4,17 @@
 
 #include "waffle_proxy.h"
 
+void randomize_map(const std::unordered_map<std::string, std::string>& input_map, std::vector<std::string>& keys, std::vector<std::string>& values) {
+    for (const auto& it : input_map) {
+        keys.push_back(it.first);
+        values.push_back(it.second);
+    }
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(keys.begin(), keys.end(), g);
+    std::shuffle(values.begin(), values.end(), g);
+}
+
 #define rdtscllProxy(val) do { \
     unsigned int __a,__d; \
     __asm__ __volatile__("rdtsc" : "=a" (__a), "=d" (__d)); \
@@ -80,12 +91,10 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     std::vector<std::string> keysCacheUnencrypted;
 
     if (server_type_ == "redis") {
-        std::cout << "Storage interface is starting with Redis DB " << std::endl;
         storage_interface_ = std::make_shared<redis>(server_host_name_, server_port_);
         cpp_redis::network::set_default_nb_workers(std::min(10, p_threads_));
         std::cout << "Storage interface is initialized with Redis DB " << std::endl;
     }
-
 
     for (int i = 1; i < server_count_; i++) {
         storage_interface_->add_server(server_host_name_, server_port_+i);
@@ -108,7 +117,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     std::cout << "Keys size in init() is " << keys.size() << std::endl;
     std::unordered_map<std::string, std::string> keyValueMap;
     for(int i=0;i<keys.size();++i) {
-        keyValueMap[keys[i]] = values[i];
+        keyValueMap[encryption_engine_.hmac(keys[i])] = encryption_engine_.encryptNonDeterministic(values[i]);
         realBst.insert(keys[i]);
     }
 
@@ -123,41 +132,83 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
             temp.insert(keys[index]);
             keysCacheUnencrypted.push_back(keys[index]);
             valuesCache.push_back(values[index]);
-            keyValueMap.erase(keys[index]);
+            keyValueMap.erase(encryption_engine_.hmac(keys[index]));
         }
     }
 
     cache = Cache(keysCacheUnencrypted, valuesCache, cacheCapacity+R);
 
-    std::vector<std::string> fakeValues;
-    std::vector<std::string> fakeKeys;
     for(int i=0; i < m; ) {
-        auto fakeKey = gen_random(rand()%15);
+        auto fakeKey = gen_random(rand()%10);
         if(allKeys.find(fakeKey) == allKeys.end() && tempFakeKeys.find(fakeKey)==tempFakeKeys.end()) {
             ++i;
             fakeBst.insert(fakeKey);
             tempFakeKeys.insert(fakeKey);
-            auto tempFakeKey = fakeKey + '#' + std::to_string(fakeBst.getFrequency(fakeKey));
-            auto fakeKeyValue = encryption_engine_.encrypt(gen_random(rand()%15));
-            fakeKeys.push_back(tempFakeKey);
-            fakeValues.push_back(fakeKeyValue);
+            auto tempFakeKey = encryption_engine_.hmac(fakeKey + "#" + std::to_string(fakeBst.getFrequency(fakeKey)));
+            auto fakeKeyValue = encryption_engine_.encryptNonDeterministic(gen_random(rand()%10));
+            keyValueMap[tempFakeKey] = fakeKeyValue;
         }
     }
 
-    for(auto& it: keyValueMap) {
-        storage_interface_->put(it.first + "#" + std::to_string(realBst.getFrequency(it.first)), encryption_engine_.encrypt(it.second));
+    std::vector<std::string> redisKeys;
+    std::vector<std::string> redisValues;
+    randomize_map(keyValueMap, redisKeys, redisValues);
+
+    // for(auto& it: keyValueMap) {
+    //     storage_interface_->put(it.first + "#" + std::to_string(realBst.getFrequency(it.first)), encryption_engine_.encryptNonDeterministic(it.second));
+    // }
+    std::vector<std::string> finalKeysRedis;
+    std::vector<std::string> finalValuesRedis;
+    for(int i=0;i<redisKeys.size();++i) {
+        finalKeysRedis.push_back(redisKeys[i]);
+        finalValuesRedis.push_back(redisValues[i]);
+        if(finalValuesRedis.size() == redisBulkLength) {
+            storage_interface_->put_batch(finalKeysRedis, finalValuesRedis);
+            finalValuesRedis.clear();
+            finalKeysRedis.clear();
+        }
     }
-    storage_interface_->put_batch(fakeKeys, fakeValues);
+    if(finalValuesRedis.size() > 0) { 
+        storage_interface_->put_batch(finalKeysRedis, finalValuesRedis);
+    }
     threads_.push_back(std::thread(&waffle_proxy::clearThread, this));
 
-    auto test1 = encryption_engine_.encrypt("mynameissharath");
-    auto test2 = encryption_engine_.encrypt("mynameissharath");
+    //Tests for the encryption
+    auto test1 = encryption_engine_.hmac("mynameissharath");
+    auto test2 = encryption_engine_.hmac("mynameissharath");
 
     if(test1 == test2) {
         std::cout << "Encryption is same" << std::endl;
     } else {
         std::cout << "Encryption is not same" << std::endl;
     }
+
+
+    auto test3 = encryption_engine_.encryptNonDeterministic("mynameissharath");
+    auto test4 = encryption_engine_.encryptNonDeterministic("mynameissharath");
+    if(test3 == test4) {
+        std::cout << "Non Deterministic Encryption is same" << std::endl;
+    } else {
+        std::cout << "Non Deterministic Encryption is not same and test3 is " << test3 << std::endl;
+        std::cout << "Non Deterministic Encryption is not same and test4 is " << test4 << std::endl;
+    }
+
+    std::cout << "Encryption string is " << encryption_engine_.getencryption_string_() << std::endl;
+
+    auto test5 = encryption_engine_.decryptNonDeterministic(test3);
+    auto test6 = encryption_engine_.decryptNonDeterministic(test4);
+    if(test5 == test6) {
+        std::cout << "Decryption is same and the value is " << std::endl;
+        for (char c : test5) {
+             std::cout << std::hex << (int)c;
+        }
+        std::cout << std::endl;
+    } else {
+        std::cout << "Decryption is not same and the value is " << test5 << std::endl;
+        std::cout << "Decryption is not same and the value is " << test6 << std::endl;
+    }
+    //Tests for the encryption ended
+
     std::time_t end_time = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
     date_string = std::string(std::ctime(&end_time));
     date_string = date_string.substr(0, date_string.rfind(":"));
@@ -213,6 +264,7 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     std::vector<std::string> storage_keys;
     std::vector<std::string> writeBatchKeys;
     std::vector<std::string> writeBatchValues;
+    std::unordered_map<std::string, std::string> readBatchMap;
     uint64_t start, end;
 
     if(latency) {
@@ -220,7 +272,9 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     }
     for(int i = 0; i < operations.size(); i++){
         std::string key = operations[i].key;
-        storage_keys.push_back(key + "#" + std::to_string(realBst.getFrequency(key)));
+        auto stKey = enc_engine->hmac(key + "#" + std::to_string(realBst.getFrequency(key)));
+        readBatchMap[stKey] = key;
+        storage_keys.push_back(stKey);
         realBst.incrementFrequency(key);
     }
 
@@ -237,13 +291,17 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     // std::cout << "realKeysNotInCache size is " << realKeysNotInCache.size() << std::endl;
 
     for(auto& iter: realKeysNotInCache) {
-        storage_keys.push_back(iter + "#" + std::to_string(realBst.getFrequency(iter)));
+        auto stKey = enc_engine->hmac(iter + "#" + std::to_string(realBst.getFrequency(iter)));
+        readBatchMap[stKey] = iter;
+        storage_keys.push_back(stKey);
         realBst.incrementFrequency(iter);
     }
 
     for(int i=0;i<(D-operations.size());++i) {
         auto fakeMinKey = fakeBst.getKeyWithMinFrequency();
-        storage_keys.push_back(fakeMinKey + "#" + std::to_string(fakeBst.getFrequency(fakeMinKey)));
+        auto stKey = enc_engine->hmac(fakeMinKey + "#" + std::to_string(fakeBst.getFrequency(fakeMinKey)));
+        readBatchMap[stKey] = fakeMinKey;
+        storage_keys.push_back(stKey);
         fakeBst.incrementFrequency(fakeMinKey);
     }
 
@@ -265,12 +323,12 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         if(i < (operations.size() + realKeysNotInCache.size())) {
             // This means ith request is for real key
             auto kv_pair = cache.evictLRElementFromCache();
-            writeBatchKeys.push_back(kv_pair[0] + "#" + std::to_string(realBst.getFrequency(kv_pair[0])));
-            writeBatchValues.push_back(enc_engine->encrypt(kv_pair[1]));
+            writeBatchKeys.push_back(enc_engine->hmac(kv_pair[0] + "#" + std::to_string(realBst.getFrequency(kv_pair[0]))));
+            writeBatchValues.push_back(enc_engine->encryptNonDeterministic(kv_pair[1]));
 
-            auto keyAboutToGoToCache = extractKey(storage_keys[i]);
+            auto keyAboutToGoToCache = readBatchMap[storage_keys[i]];
             // std::cout << "Extracted key which is about to go to Cache is " << keyAboutToGoToCache << std::endl;
-            std::string valueAboutToGoToCache = enc_engine->decrypt(responses[i]);
+            std::string valueAboutToGoToCache = enc_engine->decryptNonDeterministic(responses[i]);
             if(keyToPromiseMap.find(keyAboutToGoToCache) != keyToPromiseMap.end()) {
                 for(auto& it: keyToPromiseMap[keyAboutToGoToCache]) {
                     it->set_value(valueAboutToGoToCache);
@@ -282,9 +340,9 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
             cache.insertIntoCache(keyAboutToGoToCache, valueAboutToGoToCache);
         } else {
             // Writing fake key values to DB
-            auto fakeWriteKey = extractKey(storage_keys[i]);
-            writeBatchKeys.push_back(fakeWriteKey + "#" + std::to_string(fakeBst.getFrequency(fakeWriteKey)));
-            writeBatchValues.push_back(enc_engine->encrypt("fakeValue"));
+            auto fakeWriteKey = readBatchMap[storage_keys[i]];
+            writeBatchKeys.push_back(enc_engine->hmac(fakeWriteKey + "#" + std::to_string(fakeBst.getFrequency(fakeWriteKey))));
+            writeBatchValues.push_back(enc_engine->encryptNonDeterministic(gen_random(rand()%10)));
 
         }
     }
