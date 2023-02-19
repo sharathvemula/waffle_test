@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -O3 -DNDEBUG  -rdynamic CMakeFiles/hello-world.dir/sample/hello-world.c.o  -o bin/hello-world lib/libevent_extra.a -lpthread -lm 
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -O3 -DNDEBUG -rdynamic "CMakeFiles/hello-world.dir/sample/hello-world.c.o" -o bin/hello-world  lib/libevent_extra.a -lpthread -lm 

@@ -1,386 +1,257 @@
-Determining if the include file netinet/in6.h exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_74257/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_74257.dir/build.make CMakeFiles/cmTC_74257.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_74257.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_74257.dir/CheckIncludeFile.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: netinet/in6.h: No such file or directory
- #include <netinet/in6.h>
-          ^~~~~~~~~~~~~~~
-compilation terminated.
-CMakeFiles/cmTC_74257.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_74257.dir/CheckIncludeFile.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_74257.dir/CheckIncludeFile.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_74257/fast' failed
-make[3]: *** [cmTC_74257/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-
-Determining if the include file port.h exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_4dcfa/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_4dcfa.dir/build.make CMakeFiles/cmTC_4dcfa.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4dcfa.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_4dcfa.dir/CheckIncludeFile.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: port.h: No such file or directory
- #include <port.h>
-          ^~~~~~~~
-compilation terminated.
-CMakeFiles/cmTC_4dcfa.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4dcfa.dir/CheckIncludeFile.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_4dcfa.dir/CheckIncludeFile.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_4dcfa/fast' failed
-make[3]: *** [cmTC_4dcfa/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-
-Determining if the include file sys/devpoll.h exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_04fa5/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_04fa5.dir/build.make CMakeFiles/cmTC_04fa5.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_04fa5.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_04fa5.dir/CheckIncludeFile.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/devpoll.h: No such file or directory
- #include <sys/devpoll.h>
-          ^~~~~~~~~~~~~~~
-compilation terminated.
-CMakeFiles/cmTC_04fa5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_04fa5.dir/CheckIncludeFile.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_04fa5.dir/CheckIncludeFile.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_04fa5/fast' failed
-make[3]: *** [cmTC_04fa5/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-
-Determining if the include file sys/event.h exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_c4560/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_c4560.dir/build.make CMakeFiles/cmTC_c4560.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c4560.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_c4560.dir/CheckIncludeFile.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/event.h: No such file or directory
- #include <sys/event.h>
-          ^~~~~~~~~~~~~
-compilation terminated.
-CMakeFiles/cmTC_c4560.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c4560.dir/CheckIncludeFile.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_c4560.dir/CheckIncludeFile.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c4560/fast' failed
-make[3]: *** [cmTC_c4560/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-
-Determining if the include file mach/mach_time.h exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_89d61/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_89d61.dir/build.make CMakeFiles/cmTC_89d61.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_89d61.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_89d61.dir/CheckIncludeFile.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: mach/mach_time.h: No such file or directory
- #include <mach/mach_time.h>
-          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
-CMakeFiles/cmTC_89d61.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_89d61.dir/CheckIncludeFile.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_89d61.dir/CheckIncludeFile.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_89d61/fast' failed
-make[3]: *** [cmTC_89d61/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-
 Determining if the function kqueue exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c96d9/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_c96d9.dir/build.make CMakeFiles/cmTC_c96d9.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c96d9.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=kqueue   -o CMakeFiles/cmTC_c96d9.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_c96d9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c96d9.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=kqueue    -rdynamic CMakeFiles/cmTC_c96d9.dir/CheckFunctionExistsEx.c.o  -o cmTC_c96d9 
-CMakeFiles/cmTC_c96d9.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `kqueue'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5ccb6/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_5ccb6.dir/build.make CMakeFiles/cmTC_5ccb6.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ccb6.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=kqueue -o CMakeFiles/cmTC_5ccb6.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_5ccb6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ccb6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=kqueue -rdynamic CMakeFiles/cmTC_5ccb6.dir/CheckFunctionExistsEx.c.o -o cmTC_5ccb6 
+/usr/bin/ld: CMakeFiles/cmTC_5ccb6.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `kqueue'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c96d9.dir/build.make:97: recipe for target 'cmTC_c96d9' failed
-make[4]: *** [cmTC_c96d9] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c96d9/fast' failed
-make[3]: *** [cmTC_c96d9/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_5ccb6.dir/build.make:99: cmTC_5ccb6] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_5ccb6/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function port_create exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_edbf6/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_edbf6.dir/build.make CMakeFiles/cmTC_edbf6.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_edbf6.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=port_create   -o CMakeFiles/cmTC_edbf6.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_edbf6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_edbf6.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=port_create    -rdynamic CMakeFiles/cmTC_edbf6.dir/CheckFunctionExistsEx.c.o  -o cmTC_edbf6 
-CMakeFiles/cmTC_edbf6.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `port_create'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4008d/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_4008d.dir/build.make CMakeFiles/cmTC_4008d.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4008d.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=port_create -o CMakeFiles/cmTC_4008d.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_4008d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4008d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=port_create -rdynamic CMakeFiles/cmTC_4008d.dir/CheckFunctionExistsEx.c.o -o cmTC_4008d 
+/usr/bin/ld: CMakeFiles/cmTC_4008d.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `port_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_edbf6.dir/build.make:97: recipe for target 'cmTC_edbf6' failed
-make[4]: *** [cmTC_edbf6] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_edbf6/fast' failed
-make[3]: *** [cmTC_edbf6/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_4008d.dir/build.make:99: cmTC_4008d] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_4008d/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function strlcpy exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0606e/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_0606e.dir/build.make CMakeFiles/cmTC_0606e.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0606e.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_0606e.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_0606e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0606e.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_0606e.dir/CheckFunctionExistsEx.c.o  -o cmTC_0606e 
-CMakeFiles/cmTC_0606e.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `strlcpy'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_94824/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_94824.dir/build.make CMakeFiles/cmTC_94824.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94824.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strlcpy -o CMakeFiles/cmTC_94824.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_94824
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94824.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=strlcpy -rdynamic CMakeFiles/cmTC_94824.dir/CheckFunctionExistsEx.c.o -o cmTC_94824 
+/usr/bin/ld: CMakeFiles/cmTC_94824.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `strlcpy'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_0606e.dir/build.make:97: recipe for target 'cmTC_0606e' failed
-make[4]: *** [cmTC_0606e] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_0606e/fast' failed
-make[3]: *** [cmTC_0606e/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_94824.dir/build.make:99: cmTC_94824] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_94824/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function arc4random exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_44b76/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_44b76.dir/build.make CMakeFiles/cmTC_44b76.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_44b76.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random   -o CMakeFiles/cmTC_44b76.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_44b76
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44b76.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random    -rdynamic CMakeFiles/cmTC_44b76.dir/CheckFunctionExistsEx.c.o  -o cmTC_44b76 
-CMakeFiles/cmTC_44b76.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `arc4random'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_91b9f/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_91b9f.dir/build.make CMakeFiles/cmTC_91b9f.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91b9f.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random -o CMakeFiles/cmTC_91b9f.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_91b9f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91b9f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random -rdynamic CMakeFiles/cmTC_91b9f.dir/CheckFunctionExistsEx.c.o -o cmTC_91b9f 
+/usr/bin/ld: CMakeFiles/cmTC_91b9f.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `arc4random'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_44b76.dir/build.make:97: recipe for target 'cmTC_44b76' failed
-make[4]: *** [cmTC_44b76] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_44b76/fast' failed
-make[3]: *** [cmTC_44b76/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_91b9f.dir/build.make:99: cmTC_91b9f] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_91b9f/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function arc4random_buf exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a6d76/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_a6d76.dir/build.make CMakeFiles/cmTC_a6d76.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a6d76.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random_buf   -o CMakeFiles/cmTC_a6d76.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_a6d76
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6d76.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random_buf    -rdynamic CMakeFiles/cmTC_a6d76.dir/CheckFunctionExistsEx.c.o  -o cmTC_a6d76 
-CMakeFiles/cmTC_a6d76.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `arc4random_buf'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_718ea/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_718ea.dir/build.make CMakeFiles/cmTC_718ea.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_718ea.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random_buf -o CMakeFiles/cmTC_718ea.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_718ea
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_718ea.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=arc4random_buf -rdynamic CMakeFiles/cmTC_718ea.dir/CheckFunctionExistsEx.c.o -o cmTC_718ea 
+/usr/bin/ld: CMakeFiles/cmTC_718ea.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `arc4random_buf'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_a6d76.dir/build.make:97: recipe for target 'cmTC_a6d76' failed
-make[4]: *** [cmTC_a6d76] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_a6d76/fast' failed
-make[3]: *** [cmTC_a6d76/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_718ea.dir/build.make:99: cmTC_718ea] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_718ea/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function issetugid exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b6a5c/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_b6a5c.dir/build.make CMakeFiles/cmTC_b6a5c.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b6a5c.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=issetugid   -o CMakeFiles/cmTC_b6a5c.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_b6a5c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6a5c.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=issetugid    -rdynamic CMakeFiles/cmTC_b6a5c.dir/CheckFunctionExistsEx.c.o  -o cmTC_b6a5c 
-CMakeFiles/cmTC_b6a5c.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `issetugid'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0963c/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_0963c.dir/build.make CMakeFiles/cmTC_0963c.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0963c.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=issetugid -o CMakeFiles/cmTC_0963c.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_0963c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0963c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=issetugid -rdynamic CMakeFiles/cmTC_0963c.dir/CheckFunctionExistsEx.c.o -o cmTC_0963c 
+/usr/bin/ld: CMakeFiles/cmTC_0963c.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `issetugid'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_b6a5c.dir/build.make:97: recipe for target 'cmTC_b6a5c' failed
-make[4]: *** [cmTC_b6a5c] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_b6a5c/fast' failed
-make[3]: *** [cmTC_b6a5c/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_0963c.dir/build.make:99: cmTC_0963c] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_0963c/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function mach_absolute_time exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_32aa6/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_32aa6.dir/build.make CMakeFiles/cmTC_32aa6.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_32aa6.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=mach_absolute_time   -o CMakeFiles/cmTC_32aa6.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_32aa6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32aa6.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=mach_absolute_time    -rdynamic CMakeFiles/cmTC_32aa6.dir/CheckFunctionExistsEx.c.o  -o cmTC_32aa6 
-CMakeFiles/cmTC_32aa6.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `mach_absolute_time'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5257e/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_5257e.dir/build.make CMakeFiles/cmTC_5257e.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5257e.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=mach_absolute_time -o CMakeFiles/cmTC_5257e.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_5257e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5257e.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=mach_absolute_time -rdynamic CMakeFiles/cmTC_5257e.dir/CheckFunctionExistsEx.c.o -o cmTC_5257e 
+/usr/bin/ld: CMakeFiles/cmTC_5257e.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `mach_absolute_time'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_32aa6.dir/build.make:97: recipe for target 'cmTC_32aa6' failed
-make[4]: *** [cmTC_32aa6] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_32aa6/fast' failed
-make[3]: *** [cmTC_32aa6/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_5257e.dir/build.make:99: cmTC_5257e] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_5257e/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function timeradd exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_528eb/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_528eb.dir/build.make CMakeFiles/cmTC_528eb.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_528eb.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timeradd   -o CMakeFiles/cmTC_528eb.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_528eb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_528eb.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timeradd    -rdynamic CMakeFiles/cmTC_528eb.dir/CheckFunctionExistsEx.c.o  -o cmTC_528eb 
-CMakeFiles/cmTC_528eb.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `timeradd'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c9f8a/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_c9f8a.dir/build.make CMakeFiles/cmTC_c9f8a.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c9f8a.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timeradd -o CMakeFiles/cmTC_c9f8a.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_c9f8a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9f8a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timeradd -rdynamic CMakeFiles/cmTC_c9f8a.dir/CheckFunctionExistsEx.c.o -o cmTC_c9f8a 
+/usr/bin/ld: CMakeFiles/cmTC_c9f8a.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `timeradd'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_528eb.dir/build.make:97: recipe for target 'cmTC_528eb' failed
-make[4]: *** [cmTC_528eb] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_528eb/fast' failed
-make[3]: *** [cmTC_528eb/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_c9f8a.dir/build.make:99: cmTC_c9f8a] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_c9f8a/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function timerclear exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8c471/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_8c471.dir/build.make CMakeFiles/cmTC_8c471.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8c471.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerclear   -o CMakeFiles/cmTC_8c471.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_8c471
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c471.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerclear    -rdynamic CMakeFiles/cmTC_8c471.dir/CheckFunctionExistsEx.c.o  -o cmTC_8c471 
-CMakeFiles/cmTC_8c471.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `timerclear'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1f970/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_1f970.dir/build.make CMakeFiles/cmTC_1f970.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1f970.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerclear -o CMakeFiles/cmTC_1f970.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_1f970
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f970.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerclear -rdynamic CMakeFiles/cmTC_1f970.dir/CheckFunctionExistsEx.c.o -o cmTC_1f970 
+/usr/bin/ld: CMakeFiles/cmTC_1f970.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `timerclear'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_8c471.dir/build.make:97: recipe for target 'cmTC_8c471' failed
-make[4]: *** [cmTC_8c471] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_8c471/fast' failed
-make[3]: *** [cmTC_8c471/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_1f970.dir/build.make:99: cmTC_1f970] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_1f970/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function timercmp exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_df537/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_df537.dir/build.make CMakeFiles/cmTC_df537.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_df537.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timercmp   -o CMakeFiles/cmTC_df537.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_df537
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df537.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timercmp    -rdynamic CMakeFiles/cmTC_df537.dir/CheckFunctionExistsEx.c.o  -o cmTC_df537 
-CMakeFiles/cmTC_df537.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `timercmp'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_83bc7/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_83bc7.dir/build.make CMakeFiles/cmTC_83bc7.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83bc7.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timercmp -o CMakeFiles/cmTC_83bc7.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_83bc7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83bc7.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timercmp -rdynamic CMakeFiles/cmTC_83bc7.dir/CheckFunctionExistsEx.c.o -o cmTC_83bc7 
+/usr/bin/ld: CMakeFiles/cmTC_83bc7.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `timercmp'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_df537.dir/build.make:97: recipe for target 'cmTC_df537' failed
-make[4]: *** [cmTC_df537] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_df537/fast' failed
-make[3]: *** [cmTC_df537/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_83bc7.dir/build.make:99: cmTC_83bc7] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_83bc7/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the function timerisset exists failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6abde/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_6abde.dir/build.make CMakeFiles/cmTC_6abde.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6abde.dir/CheckFunctionExistsEx.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerisset   -o CMakeFiles/cmTC_6abde.dir/CheckFunctionExistsEx.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
-Linking C executable cmTC_6abde
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6abde.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerisset    -rdynamic CMakeFiles/cmTC_6abde.dir/CheckFunctionExistsEx.c.o  -o cmTC_6abde 
-CMakeFiles/cmTC_6abde.dir/CheckFunctionExistsEx.c.o: In function `main':
-CheckFunctionExistsEx.c:(.text+0x15): undefined reference to `timerisset'
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_813a4/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_813a4.dir/build.make CMakeFiles/cmTC_813a4.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_813a4.dir/CheckFunctionExistsEx.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerisset -o CMakeFiles/cmTC_813a4.dir/CheckFunctionExistsEx.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/cmake/CheckFunctionExistsEx.c
+Linking C executable cmTC_813a4
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_813a4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=timerisset -rdynamic CMakeFiles/cmTC_813a4.dir/CheckFunctionExistsEx.c.o -o cmTC_813a4 
+/usr/bin/ld: CMakeFiles/cmTC_813a4.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x19): undefined reference to `timerisset'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_6abde.dir/build.make:97: recipe for target 'cmTC_6abde' failed
-make[4]: *** [cmTC_6abde] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_6abde/fast' failed
-make[3]: *** [cmTC_6abde/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTC_813a4.dir/build.make:99: cmTC_813a4] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_813a4/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 Determining if the prototype gethostbyname_r exists for EVENT__HAVE_GETHOSTBYNAME_R_3_ARG failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_249a2/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_249a2.dir/build.make CMakeFiles/cmTC_249a2.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_249a2.dir/CheckPrototypeDefinition.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_249a2.dir/CheckPrototypeDefinition.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:66: warning: ‘struct hostent_data’ declared inside parameter list will not be visible outside of this definition or declaration
- int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
-                                                                  ^~~~~~~~~~~~
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:5: error: conflicting types for ‘gethostbyname_r’
- int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
-     ^~~~~~~~~~~~~~~
-In file included from /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:0:
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ec40f/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_ec40f.dir/build.make CMakeFiles/cmTC_ec40f.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ec40f.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_ec40f.dir/CheckPrototypeDefinition.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:66: warning: ‘struct hostent_data’ declared inside parameter list will not be visible outside of this definition or declaration
+   14 | int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
+      |                                                                  ^~~~~~~~~~~~
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:5: error: conflicting types for ‘gethostbyname_r’
+   14 | int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
+      |     ^~~~~~~~~~~~~~~
+In file included from /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:
 /usr/include/netdb.h:177:12: note: previous declaration of ‘gethostbyname_r’ was here
- extern int gethostbyname_r (const char *__restrict __name,
-            ^~~~~~~~~~~~~~~
-CMakeFiles/cmTC_249a2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_249a2.dir/CheckPrototypeDefinition.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_249a2.dir/CheckPrototypeDefinition.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_249a2/fast' failed
-make[3]: *** [cmTC_249a2/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+make[4]: *** [CMakeFiles/cmTC_ec40f.dir/build.make:78: CMakeFiles/cmTC_ec40f.dir/CheckPrototypeDefinition.c.o] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_ec40f/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 #include <netdb.h>
@@ -416,35 +287,39 @@ int main(int ac, char *av[]) {
 
 
 Determining if the prototype gethostbyname_r exists for EVENT__HAVE_GETHOSTBYNAME_R_5_ARG failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
+Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4f653/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_4f653.dir/build.make CMakeFiles/cmTC_4f653.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4f653.dir/CheckPrototypeDefinition.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_4f653.dir/CheckPrototypeDefinition.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:17: error: conflicting types for ‘gethostbyname_r’
- struct hostent *gethostbyname_r(const char *name, struct hostent *hp, char *buf, size_t buflen, int *herr) {
-                 ^~~~~~~~~~~~~~~
-In file included from /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:0:
+Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a55d4/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_a55d4.dir/build.make CMakeFiles/cmTC_a55d4.dir/build
+make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a55d4.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing  -o CMakeFiles/cmTC_a55d4.dir/CheckPrototypeDefinition.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:17: error: conflicting types for ‘gethostbyname_r’
+   14 | struct hostent *gethostbyname_r(const char *name, struct hostent *hp, char *buf, size_t buflen, int *herr) {
+      |                 ^~~~~~~~~~~~~~~
+In file included from /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:
 /usr/include/netdb.h:177:12: note: previous declaration of ‘gethostbyname_r’ was here
- extern int gethostbyname_r (const char *__restrict __name,
-            ^~~~~~~~~~~~~~~
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: In function ‘gethostbyname_r’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:15:10: error: ‘NULL’ undeclared (first use in this function)
-   return NULL;
-          ^~~~
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:15:10: note: each undeclared identifier is reported only once for each function it appears in
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:16:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-CMakeFiles/cmTC_4f653.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4f653.dir/CheckPrototypeDefinition.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_4f653.dir/CheckPrototypeDefinition.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_4f653/fast' failed
-make[3]: *** [cmTC_4f653/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: In function ‘gethostbyname_r’:
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:15:10: error: ‘NULL’ undeclared (first use in this function)
+   15 |   return NULL;
+      |          ^~~~
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:2:1: note: ‘NULL’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+    1 | #include <netdb.h>
+  +++ |+#include <stddef.h>
+    2 | 
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:15:10: note: each undeclared identifier is reported only once for each function it appears in
+   15 |   return NULL;
+      |          ^~~~
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:16:1: warning: control reaches end of non-void function [-Wreturn-type]
+   16 | }
+      | ^
+make[4]: *** [CMakeFiles/cmTC_a55d4.dir/build.make:78: CMakeFiles/cmTC_a55d4.dir/CheckPrototypeDefinition.c.o] Error 1
+make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:127: cmTC_a55d4/fast] Error 2
+make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
+
 
 
 #include <netdb.h>
@@ -477,484 +352,5 @@ int main(int ac, char *av[]) {
   }
   return 0;
 }
-
-
-Determining if the CTL_KERN exist failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_a980a/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_a980a.dir/build.make CMakeFiles/cmTC_a980a.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a980a.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_a980a.dir/CheckSymbolExists.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:18: error: lvalue required as unary ‘&’ operand
-   return ((int*)(&CTL_KERN))[argc];
-                  ^
-CMakeFiles/cmTC_a980a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a980a.dir/CheckSymbolExists.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_a980a.dir/CheckSymbolExists.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_a980a/fast' failed
-make[3]: *** [cmTC_a980a/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-File /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <sys/sysctl.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef CTL_KERN
-  return ((int*)(&CTL_KERN))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the KERN_ARND exist failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_23f0a/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_23f0a.dir/build.make CMakeFiles/cmTC_23f0a.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_23f0a.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_23f0a.dir/CheckSymbolExists.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘KERN_ARND’ undeclared (first use in this function); did you mean ‘KERN_ACCT’?
-   return ((int*)(&KERN_ARND))[argc];
-                   ^~~~~~~~~
-                   KERN_ACCT
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-CMakeFiles/cmTC_23f0a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_23f0a.dir/CheckSymbolExists.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_23f0a.dir/CheckSymbolExists.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_23f0a/fast' failed
-make[3]: *** [cmTC_23f0a/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-File /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <sys/sysctl.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef KERN_ARND
-  return ((int*)(&KERN_ARND))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the KERN_RANDOM exist failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_18226/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_18226.dir/build.make CMakeFiles/cmTC_18226.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_18226.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_18226.dir/CheckSymbolExists.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:18: error: lvalue required as unary ‘&’ operand
-   return ((int*)(&KERN_RANDOM))[argc];
-                  ^
-CMakeFiles/cmTC_18226.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_18226.dir/CheckSymbolExists.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_18226.dir/CheckSymbolExists.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_18226/fast' failed
-make[3]: *** [cmTC_18226/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-File /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <sys/sysctl.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef KERN_RANDOM
-  return ((int*)(&KERN_RANDOM))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the RANDOM_UUID exist failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_29771/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_29771.dir/build.make CMakeFiles/cmTC_29771.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_29771.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_29771.dir/CheckSymbolExists.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:18: error: lvalue required as unary ‘&’ operand
-   return ((int*)(&RANDOM_UUID))[argc];
-                  ^
-CMakeFiles/cmTC_29771.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_29771.dir/CheckSymbolExists.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_29771.dir/CheckSymbolExists.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_29771/fast' failed
-make[3]: *** [cmTC_29771/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-File /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <sys/sysctl.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef RANDOM_UUID
-  return ((int*)(&RANDOM_UUID))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining size of SSIZE_T failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_184b8/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_184b8.dir/build.make CMakeFiles/cmTC_184b8.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_184b8.dir/EVENT__SIZEOF_SSIZE_T_UPPER.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_184b8.dir/EVENT__SIZEOF_SSIZE_T_UPPER.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_UPPER.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_UPPER.c:28:22: error: ‘SSIZE_T’ undeclared here (not in a function); did you mean ‘_SIZE_T’?
- #define SIZE (sizeof(SSIZE_T))
-                      ^
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_UPPER.c:30:12: note: in expansion of macro ‘SIZE’
-   ('0' + ((SIZE / 10000)%10)),
-            ^~~~
-CMakeFiles/cmTC_184b8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_184b8.dir/EVENT__SIZEOF_SSIZE_T_UPPER.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_184b8.dir/EVENT__SIZEOF_SSIZE_T_UPPER.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_184b8/fast' failed
-make[3]: *** [cmTC_184b8/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_UPPER.c:
-#include <sys/types.h>
-#include <stdint.h>
-#include <stddef.h>
-#include "sys/types.h"
-#include "sys/socket.h"
-#include "netinet/in.h"
-#include "fcntl.h"
-#include "sys/time.h"
-
-
-#undef KEY
-#if defined(__i386)
-# define KEY '_','_','i','3','8','6'
-#elif defined(__x86_64)
-# define KEY '_','_','x','8','6','_','6','4'
-#elif defined(__ppc__)
-# define KEY '_','_','p','p','c','_','_'
-#elif defined(__ppc64__)
-# define KEY '_','_','p','p','c','6','4','_','_'
-#elif defined(__aarch64__)
-# define KEY '_','_','a','a','r','c','h','6','4','_','_'
-#elif defined(__ARM_ARCH_7A__)
-# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
-#elif defined(__ARM_ARCH_7S__)
-# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
-#endif
-
-#define SIZE (sizeof(SSIZE_T))
-char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
-  ('0' + ((SIZE / 10000)%10)),
-  ('0' + ((SIZE / 1000)%10)),
-  ('0' + ((SIZE / 100)%10)),
-  ('0' + ((SIZE / 10)%10)),
-  ('0' +  (SIZE    % 10)),
-  ']',
-#ifdef KEY
-  ' ','k','e','y','[', KEY, ']',
-#endif
-  '\0'};
-
-#ifdef __CLASSIC_C__
-int main(argc, argv) int argc; char *argv[];
-#else
-int main(int argc, char *argv[])
-#endif
-{
-  int require = 0;
-  require += info_size[argc];
-  (void)argv;
-  return require;
-}
-
-
-Performing C SOURCE FILE Test EVENT__HAVE_WAITPID_WITH_WNOWAIT failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_567a6/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_567a6.dir/build.make CMakeFiles/cmTC_567a6.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_567a6.dir/src.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_WAITPID_WITH_WNOWAIT   -o CMakeFiles/cmTC_567a6.dir/src.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_567a6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_567a6.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_WAITPID_WITH_WNOWAIT    -rdynamic CMakeFiles/cmTC_567a6.dir/src.c.o  -o cmTC_567a6 
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-Return value: 1
-Source file was:
-
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <stdlib.h>
-
-int
-main(int argc, char** argv)
-{
-    pid_t pid;
-    int status;
-    if ((pid = fork()) == 0) _exit(0);
-    _exit(waitpid(pid, &status, WNOWAIT) == -1);
-}
-Determining if the _MINIX exist failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_70a31/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_70a31.dir/build.make CMakeFiles/cmTC_70a31.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_70a31.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_70a31.dir/CheckSymbolExists.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_MINIX’ undeclared (first use in this function)
-   return ((int*)(&_MINIX))[argc];
-                   ^~~~~~
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-CMakeFiles/cmTC_70a31.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_70a31.dir/CheckSymbolExists.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_70a31.dir/CheckSymbolExists.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_70a31/fast' failed
-make[3]: *** [cmTC_70a31/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-File /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdio.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef _MINIX
-  return ((int*)(&_MINIX))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the _POSIX_1_SOURCE exist failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_84e1a/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_84e1a.dir/build.make CMakeFiles/cmTC_84e1a.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_84e1a.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_84e1a.dir/CheckSymbolExists.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_POSIX_1_SOURCE’ undeclared (first use in this function); did you mean ‘_POSIX_C_SOURCE’?
-   return ((int*)(&_POSIX_1_SOURCE))[argc];
-                   ^~~~~~~~~~~~~~~
-                   _POSIX_C_SOURCE
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-CMakeFiles/cmTC_84e1a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_84e1a.dir/CheckSymbolExists.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_84e1a.dir/CheckSymbolExists.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_84e1a/fast' failed
-make[3]: *** [cmTC_84e1a/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-File /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <stdio.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef _POSIX_1_SOURCE
-  return ((int*)(&_POSIX_1_SOURCE))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_7ced1/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_7ced1.dir/build.make CMakeFiles/cmTC_7ced1.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7ced1.dir/src.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN   -o CMakeFiles/cmTC_7ced1.dir/src.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c:8:45: error: ‘struct sockaddr_in6’ has no member named ‘sin6_len’; did you mean ‘sin6_port’?
-    (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
-                                             ^~~~~~~~
-                                             sin6_port
-CMakeFiles/cmTC_7ced1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7ced1.dir/src.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_7ced1.dir/src.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_7ced1/fast' failed
-make[3]: *** [cmTC_7ced1/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-Source file was:
-
-#include <netinet/in.h>
-#include <sys/socket.h>
-#include <netdb.h>
-
-int main()
-{
-   (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
-   return 0;
-}
-
-Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_IN_SIN_LEN failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_56ec7/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_56ec7.dir/build.make CMakeFiles/cmTC_56ec7.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_56ec7.dir/src.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_SOCKADDR_IN_SIN_LEN   -o CMakeFiles/cmTC_56ec7.dir/src.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c:8:43: error: ‘struct sockaddr_in6’ has no member named ‘sin_len’
-    (void)sizeof(((struct sockaddr_in6 *)0)->sin_len);
-                                           ^~
-CMakeFiles/cmTC_56ec7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_56ec7.dir/src.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_56ec7.dir/src.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_56ec7/fast' failed
-make[3]: *** [cmTC_56ec7/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-Source file was:
-
-#include <netinet/in.h>
-#include <sys/socket.h>
-#include <netdb.h>
-
-int main()
-{
-   (void)sizeof(((struct sockaddr_in6 *)0)->sin_len);
-   return 0;
-}
-
-Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_STORAGE___SS_FAMILY failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_8bf18/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_8bf18.dir/build.make CMakeFiles/cmTC_8bf18.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8bf18.dir/src.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DEVENT__HAVE_STRUCT_SOCKADDR_STORAGE___SS_FAMILY   -o CMakeFiles/cmTC_8bf18.dir/src.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
-/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/src.c:8:49: error: ‘struct sockaddr_storage’ has no member named ‘__ss_family’; did you mean ‘ss_family’?
-    (void)sizeof(((struct sockaddr_storage *)0)->__ss_family);
-                                                 ^~~~~~~~~~~
-                                                 ss_family
-CMakeFiles/cmTC_8bf18.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8bf18.dir/src.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_8bf18.dir/src.c.o] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_8bf18/fast' failed
-make[3]: *** [cmTC_8bf18/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-Source file was:
-
-#include <netinet/in.h>
-#include <sys/socket.h>
-#include <netdb.h>
-
-int main()
-{
-   (void)sizeof(((struct sockaddr_storage *)0)->__ss_family);
-   return 0;
-}
-
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_0512f/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_0512f.dir/build.make CMakeFiles/cmTC_0512f.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0512f.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing    -o CMakeFiles/cmTC_0512f.dir/CheckSymbolExists.c.o   -c /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_0512f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0512f.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing     -rdynamic CMakeFiles/cmTC_0512f.dir/CheckSymbolExists.c.o  -o cmTC_0512f 
-CMakeFiles/cmTC_0512f.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
-collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_0512f.dir/build.make:97: recipe for target 'cmTC_0512f' failed
-make[4]: *** [cmTC_0512f] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_0512f/fast' failed
-make[3]: *** [cmTC_0512f/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-
-File /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <pthread.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_91404/fast"
-make[3]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_91404.dir/build.make CMakeFiles/cmTC_91404.dir/build
-make[4]: Entering directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_91404.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_91404.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_91404
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91404.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_91404.dir/CheckFunctionExists.c.o  -o cmTC_91404 -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
-collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_91404.dir/build.make:97: recipe for target 'cmTC_91404' failed
-make[4]: *** [cmTC_91404] Error 1
-make[4]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_91404/fast' failed
-make[3]: *** [cmTC_91404/fast] Error 2
-make[3]: Leaving directory '/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/CMakeTmp'
 
 

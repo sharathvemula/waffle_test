@@ -1,11 +1,12 @@
 -- Downloading...
-   dst='/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/release-2.1.8-stable.tar.gz'
+   dst='/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/release-2.1.8-stable.tar.gz'
    timeout='none'
+   inactivity timeout='none'
 -- Using src='https://github.com/nmathewson/Libevent/archive/release-2.1.8-stable.tar.gz'
 -- Downloading... done
 -- extracting...
-     src='/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/release-2.1.8-stable.tar.gz'
-     dst='/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep'
+     src='/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/release-2.1.8-stable.tar.gz'
+     dst='/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]

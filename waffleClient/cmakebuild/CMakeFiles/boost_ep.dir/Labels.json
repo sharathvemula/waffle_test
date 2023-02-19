@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep"
 		},
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep.rule"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep.rule"
 		},
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep-complete.rule"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep-complete.rule"
 		},
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-install.rule"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build.rule"
 		},
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-mkdir.rule"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure.rule"
 		},
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download.rule"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download.rule"
 		},
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-update.rule"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-install.rule"
 		},
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch.rule"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-mkdir.rule"
 		},
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure.rule"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch.rule"
 		},
 		{
-			"file" : "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build.rule"
+			"file" : "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-update.rule"
 		}
 	],
 	"target" : 

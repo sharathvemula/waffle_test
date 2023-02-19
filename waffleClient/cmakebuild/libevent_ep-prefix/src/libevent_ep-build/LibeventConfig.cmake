@@ -7,7 +7,7 @@
 get_filename_component(LIBEVENT_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 
 # Set the include directories.
-set(LIBEVENT_INCLUDE_DIRS "/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include;/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include")
+set(LIBEVENT_INCLUDE_DIRS "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include")
 
 # Include the project Targets file, this contains definitions for IMPORTED targets.
 include(${LIBEVENT_CMAKE_DIR}/LibeventTargets.cmake)

@@ -1,0 +1,8 @@
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/network/unix/unix_self_pipe.cpp: In member function ‘void tacopie::self_pipe::notify()’:
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/network/unix/unix_self_pipe.cpp:70:15: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+   70 |   (void) write(m_fds[1], "a", 1);
+      |          ~~~~~^~~~~~~~~~~~~~~~~~
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/network/unix/unix_self_pipe.cpp: In member function ‘void tacopie::self_pipe::clr_buffer()’:
+/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/network/unix/unix_self_pipe.cpp:79:14: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+   79 |   (void) read(m_fds[0], buf, 1024);
+      |          ~~~~^~~~~~~~~~~~~~~~~~~~~

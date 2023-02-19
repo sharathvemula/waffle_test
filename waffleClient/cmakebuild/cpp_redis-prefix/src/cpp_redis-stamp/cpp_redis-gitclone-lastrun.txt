@@ -1,3 +1,15 @@
-repository='https://github.com/Cylix/cpp_redis.git'
-module=''
-tag=''
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/tmp/cpp_redis-gitclone.cmake
+source_dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis
+work_dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src
+repository=https://github.com/Cylix/cpp_redis.git
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=
+CMP0097=
+

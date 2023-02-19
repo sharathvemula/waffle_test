@@ -1,6 +1,4 @@
 Building Boost.Build engine with toolset gcc... tools/build/src/engine/bin.linuxx86_64/b2
-Detecting Python version... 2.7
-Detecting Python root... /usr
 Unicode/ICU support for Boost.Regex?... /usr
 Generating Boost.Build configuration in project-config.jam...
 

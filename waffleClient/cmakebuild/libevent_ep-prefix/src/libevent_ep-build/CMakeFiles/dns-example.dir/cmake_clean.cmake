@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dns-example.dir/sample/dns-example.c.o"
-  "bin/dns-example.pdb"
+  "CMakeFiles/dns-example.dir/sample/dns-example.c.o.d"
   "bin/dns-example"
+  "bin/dns-example.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

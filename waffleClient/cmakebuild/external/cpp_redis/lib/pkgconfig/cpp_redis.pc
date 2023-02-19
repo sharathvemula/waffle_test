@@ -1,4 +1,4 @@
-prefix=/home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/cpp_redis
+prefix=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis
 libdir=${prefix}/lib
 includedir=${prefix}/include
 

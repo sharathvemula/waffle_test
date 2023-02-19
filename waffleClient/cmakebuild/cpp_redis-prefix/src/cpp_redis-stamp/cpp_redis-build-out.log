@@ -1,1 +1,27 @@
+[  4%] [32mBuilding CXX object tacopie/CMakeFiles/tacopie.dir/sources/network/io_service.cpp.o[0m
+[  8%] [32mBuilding CXX object tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_client.cpp.o[0m
+[ 12%] [32mBuilding CXX object tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_server.cpp.o[0m
+[ 16%] [32mBuilding CXX object tacopie/CMakeFiles/tacopie.dir/sources/network/common/tcp_socket.cpp.o[0m
+[ 20%] [32mBuilding CXX object tacopie/CMakeFiles/tacopie.dir/sources/utils/error.cpp.o[0m
+[ 24%] [32mBuilding CXX object tacopie/CMakeFiles/tacopie.dir/sources/utils/logger.cpp.o[0m
+[ 28%] [32mBuilding CXX object tacopie/CMakeFiles/tacopie.dir/sources/utils/thread_pool.cpp.o[0m
+[ 32%] [32mBuilding CXX object tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_self_pipe.cpp.o[0m
+[ 36%] [32mBuilding CXX object tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_tcp_socket.cpp.o[0m
+[ 40%] [32m[1mLinking CXX static library ../lib/libtacopie.a[0m
+[ 40%] Built target tacopie
+[ 44%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o[0m
+[100%] [32m[1mLinking CXX static library lib/libcpp_redis.a[0m
 [100%] Built target cpp_redis

@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -O3 -DNDEBUG  -rdynamic CMakeFiles/http-connect.dir/sample/http-connect.c.o  -o bin/http-connect lib/libevent_extra.a -lpthread -lm 
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -O3 -DNDEBUG -rdynamic "CMakeFiles/http-connect.dir/sample/http-connect.c.o" -o bin/http-connect  lib/libevent_extra.a -lpthread -lm 

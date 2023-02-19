@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -O3 -DNDEBUG  -rdynamic CMakeFiles/dns-example.dir/sample/dns-example.c.o  -o bin/dns-example lib/libevent_extra.a -lpthread -lm 
+/usr/bin/cc  -Wall -Wswitch -fno-strict-aliasing -O3 -DNDEBUG -rdynamic "CMakeFiles/dns-example.dir/sample/dns-example.c.o" -o bin/dns-example  lib/libevent_extra.a -lpthread -lm 

@@ -14,13 +14,6 @@ if ! gcc in [ feature.values <toolset> ]
 
 project : default-build <toolset>gcc ;
 
-# Python configuration
-import python ;
-if ! [ python.configured ]
-{
-    using python : 2.7 : /usr ;
-}
-
 path-constant ICU_PATH : /usr ;
 
 
@@ -32,10 +25,10 @@ libraries =  ;
 
 # These settings are equivivalent to corresponding command-line
 # options.
-option.set prefix : /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/boost_ep ;
-option.set exec-prefix : /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/boost_ep ;
-option.set libdir : /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/boost_ep/lib ;
-option.set includedir : /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/boost_ep/include ;
+option.set prefix : /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/boost_ep ;
+option.set exec-prefix : /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/boost_ep ;
+option.set libdir : /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/boost_ep/lib ;
+option.set includedir : /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/boost_ep/include ;
 
 # Stop on first error
 option.set keep-going : false ;

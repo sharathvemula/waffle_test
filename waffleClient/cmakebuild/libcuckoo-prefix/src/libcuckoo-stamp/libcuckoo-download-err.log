@@ -1,19 +1,2 @@
 Cloning into 'libcuckoo'...
-Note: switching to '8785773896d74f72b6224e59d37f5f8c3c1e022a'.
-
-You are in 'detached HEAD' state. You can look around, make experimental
-changes and commit them, and you can discard any commits you make in this
-state without impacting any branches by switching back to a branch.
-
-If you want to create a new branch to retain commits you create, you may
-do so (now or later) by using -c with the switch command. Example:
-
-  git switch -c <new-branch-name>
-
-Or undo this operation with:
-
-  git switch -
-
-Turn off this advice by setting config variable advice.detachedHead to false
-
 HEAD is now at 8785773 Update minor version.

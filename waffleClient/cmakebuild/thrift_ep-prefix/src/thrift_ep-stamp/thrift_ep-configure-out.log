@@ -1,22 +1,20 @@
--- The C compiler identification is GNU 7.5.0
--- The CXX compiler identification is GNU 7.5.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Parsed Thrift package version: 0.12.0
 -- Parsed Thrift version: 0.12.0 (0.2.0)
 -- Setting C++11 as the default language level.
 -- To specify a different C++ language level, set CMAKE_CXX_STANDARD
--- Could NOT find RUN_HASKELL (missing: RUN_HASKELL) 
+-- Found RUN_HASKELL: /usr/bin/runhaskell  
 -- Could NOT find CABAL (missing: CABAL) 
 -- Looking for arpa/inet.h
 -- Looking for arpa/inet.h - found
@@ -76,18 +74,16 @@
 -- Looking for sched_get_priority_min - found
 -- Performing Test STRERROR_R_CHAR_P
 -- Performing Test STRERROR_R_CHAR_P - Success
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Looking for pthread_create
--- Looking for pthread_create - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
 -- Looking for pthread_create in pthreads
 -- Looking for pthread_create in pthreads - not found
 -- Looking for pthread_create in pthread
 -- Looking for pthread_create in pthread - found
 -- Found Threads: TRUE  
 -- Building without tests
--- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
--- Found libevent: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/external/libevent_ep/lib/libevent.a
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found libevent: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/libevent_ep/lib/libevent.a
 -- ----------------------------------------------------------
 -- Thrift version:                               0.12.0 (0.2.0)
 -- Thrift package version:                       0.12.0
@@ -111,7 +107,6 @@
 --    - Disabled by WITH_PYTHON=OFF
 --   Build Haskell library:                      OFF
 --    - Disabled by WITH_HASKELL=OFF
---    - GHC missing
 --    - Cabal missing
 --  Library features:
 --   Build shared libraries:                     OFF
@@ -127,6 +122,6 @@
 --   Build with Qt5 support:                     OFF
 --   Build with ZLIB support:                    OFF
 -- ----------------------------------------------------------
--- Configuring done
--- Generating done
--- Build files have been written to: /home/avishekde/Desktop/Sharath_Waffle/waffle_final/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build
+-- Configuring done (6.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build
