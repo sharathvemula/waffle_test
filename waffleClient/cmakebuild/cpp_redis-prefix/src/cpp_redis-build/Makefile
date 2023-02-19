@@ -174,19 +174,6 @@ cpp_redis/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_redis.dir/build.make CMakeFiles/cpp_redis.dir/build
 .PHONY : cpp_redis/fast
 
-#=============================================================================
-# Target rules for targets named tacopie
-
-# Build rule for target.
-tacopie: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie
-.PHONY : tacopie
-
-# fast build rule for target.
-tacopie/fast:
-	$(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/build
-.PHONY : tacopie/fast
-
 sources/builders/array_builder.o: sources/builders/array_builder.cpp.o
 .PHONY : sources/builders/array_builder.o
 
@@ -536,7 +523,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... cpp_redis"
-	@echo "... tacopie"
 	@echo "... sources/builders/array_builder.o"
 	@echo "... sources/builders/array_builder.i"
 	@echo "... sources/builders/array_builder.s"

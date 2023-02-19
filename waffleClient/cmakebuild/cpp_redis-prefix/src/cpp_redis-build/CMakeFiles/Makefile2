@@ -64,38 +64,21 @@ CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_
 
 # The main recursive "all" target.
 all: CMakeFiles/cpp_redis.dir/all
-all: tacopie/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: tacopie/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/cpp_redis.dir/clean
-clean: tacopie/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory tacopie
-
-# Recursive "all" directory target.
-tacopie/all: tacopie/CMakeFiles/tacopie.dir/all
-.PHONY : tacopie/all
-
-# Recursive "preinstall" directory target.
-tacopie/preinstall:
-.PHONY : tacopie/preinstall
-
-# Recursive "clean" directory target.
-tacopie/clean: tacopie/CMakeFiles/tacopie.dir/clean
-.PHONY : tacopie/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/cpp_redis.dir
 
 # All Build rule for target.
-CMakeFiles/cpp_redis.dir/all: tacopie/CMakeFiles/tacopie.dir/all
+CMakeFiles/cpp_redis.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_redis.dir/build.make CMakeFiles/cpp_redis.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_redis.dir/build.make CMakeFiles/cpp_redis.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target cpp_redis"
@@ -103,7 +86,7 @@ CMakeFiles/cpp_redis.dir/all: tacopie/CMakeFiles/tacopie.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cpp_redis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpp_redis.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles 0
 .PHONY : CMakeFiles/cpp_redis.dir/rule
@@ -116,32 +99,6 @@ cpp_redis: CMakeFiles/cpp_redis.dir/rule
 CMakeFiles/cpp_redis.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_redis.dir/build.make CMakeFiles/cpp_redis.dir/clean
 .PHONY : CMakeFiles/cpp_redis.dir/clean
-
-#=============================================================================
-# Target rules for target tacopie/CMakeFiles/tacopie.dir
-
-# All Build rule for target.
-tacopie/CMakeFiles/tacopie.dir/all:
-	$(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/depend
-	$(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23,24,25 "Built target tacopie"
-.PHONY : tacopie/CMakeFiles/tacopie.dir/all
-
-# Build rule for subdir invocation for target.
-tacopie/CMakeFiles/tacopie.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/CMakeFiles/tacopie.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles 0
-.PHONY : tacopie/CMakeFiles/tacopie.dir/rule
-
-# Convenience name for target.
-tacopie: tacopie/CMakeFiles/tacopie.dir/rule
-.PHONY : tacopie
-
-# clean rule for target.
-tacopie/CMakeFiles/tacopie.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/clean
-.PHONY : tacopie/CMakeFiles/tacopie.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

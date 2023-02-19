@@ -36,8 +36,8 @@ CMAKE_BUILD_TYPE:STRING=
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:UNINITIALIZED=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -205,7 +205,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 TACOPIE_INCLUDE_DIR:PATH=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes
 
 //Path to a library.
-TACOPIE_LIBRARY:FILEPATH=TACOPIE_LIBRARY-NOTFOUND
+TACOPIE_LIBRARY:FILEPATH=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/lib/libtacopie.a
 
 //Value Computed by CMake
 cpp_redis_BINARY_DIR:STATIC=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build
@@ -214,7 +214,7 @@ cpp_redis_BINARY_DIR:STATIC=/home/svemula/Waffle/waffle_test/waffleClient/cmakeb
 cpp_redis_IS_TOP_LEVEL:STATIC=ON
 
 //Dependencies for the target
-cpp_redis_LIB_DEPENDS:STATIC=general;pthread;general;tacopie;
+cpp_redis_LIB_DEPENDS:STATIC=general;pthread;general;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/lib/libtacopie.a;
 
 //Value Computed by CMake
 cpp_redis_SOURCE_DIR:STATIC=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis
@@ -324,7 +324,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

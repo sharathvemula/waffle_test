@@ -22,16 +22,3 @@
 /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/network/tcp_client_iface.hpp
 /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/network/tcp_client.hpp
 /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/network/redis_connection.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/lib/libtacopie.a
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/lib/pkgconfig/cpp_redis.pc
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/lib/libcpp_redis.a
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/thread_pool.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/logger.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/typedefs.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/error.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/tcp_client.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/self_pipe.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/tcp_socket.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/tcp_server.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/io_service.hpp
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/tacopie

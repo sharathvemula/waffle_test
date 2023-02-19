@@ -5,6 +5,30 @@
 #include "encryption_engine.h"
 #include <iostream>
 
+std::string encryption_engine::extractKey(std::string encryptedKey) {
+    for(int i=encryptedKey.size()-1; i>=0; --i) {
+        if(encryptedKey[i] == '#') {
+            return encryptedKey.substr(0, i);
+        }
+    }
+    return "";
+}
+
+std::string encryption_engine::gen_random(const int len) {
+    static const char alphanum[] =
+        "0123456789"
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        "abcdefghijklmnopqrstuvwxyz";
+    std::string tmp_s;
+    tmp_s.reserve(len);
+
+    for (int i = 0; i < len; ++i) {
+        tmp_s += alphanum[rand() % (sizeof(alphanum) - 1)];
+    }
+    
+    return tmp_s;
+}
+
 encryption_engine::encryption_engine() {
     OpenSSL_add_all_algorithms();
     encryption_string_ = rand_str(32);
@@ -521,74 +545,12 @@ std::string encryption_engine::hmac(const std::string &key) {
     return str;
 };
 
-std::string encryption_engine::encryptNonDeterministicHelper(const std::string& plaintext, const std::string& key) {
-    EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
-
-    // Initialize the encryption context
-    EVP_EncryptInit_ex(ctx, EVP_aes_256_cbc(), nullptr, (const unsigned char*)key.c_str(), nullptr);
-
-    // Generate a random IV
-    unsigned char iv[EVP_MAX_IV_LENGTH];
-    RAND_bytes(iv, EVP_MAX_IV_LENGTH);
-
-    // Set the IV in the encryption context
-    EVP_EncryptInit_ex(ctx, nullptr, nullptr, nullptr, iv);
-
-    // Allocate memory for the ciphertext
-    std::string ciphertext(EVP_MAX_BLOCK_LENGTH + plaintext.length(), '\0');
-
-    // Perform the encryption
-    int len;
-    EVP_EncryptUpdate(ctx, (unsigned char*)ciphertext.data(), &len, (const unsigned char*)plaintext.c_str(), plaintext.length());
-    ciphertext.resize(len);
-
-    // Finalize the encryption and append the padding
-    EVP_EncryptFinal_ex(ctx, (unsigned char*)ciphertext.data() + len, &len);
-    ciphertext.resize(len + ciphertext.length());
-
-    // Concatenate the IV to the ciphertext
-    ciphertext.insert(0, (char*)iv, EVP_MAX_IV_LENGTH);
-
-    EVP_CIPHER_CTX_free(ctx);
-
-    return ciphertext;
-};
-
-std::string encryption_engine::decryptNonDeterministicHelper(const std::string& ciphertext, const std::string& key) {
-    EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
-
-    // Extract the IV from the ciphertext
-    unsigned char iv[EVP_MAX_IV_LENGTH];
-    std::string ciphertextWithoutIV = ciphertext.substr(EVP_MAX_IV_LENGTH, std::string::npos);
-    ciphertextWithoutIV.substr(0, EVP_MAX_IV_LENGTH).copy((char*)iv, EVP_MAX_IV_LENGTH, 0);
-
-    // Initialize the decryption context
-    EVP_DecryptInit_ex(ctx, EVP_aes_256_cbc(), nullptr, (const unsigned char*)key.c_str(), nullptr);
-
-    // Set the IV in the decryption context
-    EVP_DecryptInit_ex(ctx, nullptr, nullptr, nullptr, iv);
-
-    // Allocate memory for the plaintext
-    std::string plaintext(ciphertextWithoutIV.length(), '\0');
-
-    // Perform the decryption
-    int len1 = 0, len2 = 0;
-    EVP_DecryptUpdate(ctx, (unsigned char*)plaintext.data(), &len1, (const unsigned char*)ciphertextWithoutIV.c_str(), ciphertextWithoutIV.length());
-    EVP_DecryptFinal_ex(ctx, (unsigned char*)plaintext.data() + len1, &len2);
-    plaintext.resize(len1 + len2);
-
-    EVP_CIPHER_CTX_free(ctx);
-
-    return plaintext;
-}
-
-
 std::string encryption_engine::encryptNonDeterministic(const std::string &plain_text) {
-    return encryptNonDeterministicHelper(plain_text, encryption_string_);
+    return encrypt(plain_text + '#' + gen_random(rand()%10));
 };
 
 std::string encryption_engine::decryptNonDeterministic(const std::string &cipher_text){
-    return decryptNonDeterministicHelper(cipher_text, encryption_string_);
+    return extractKey(decrypt(cipher_text));
 };
 
 std::string encryption_engine::getencryption_string_(){

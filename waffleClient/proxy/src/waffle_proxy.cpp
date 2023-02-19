@@ -116,9 +116,9 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     //Adding the data to Database
     std::cout << "Keys size in init() is " << keys.size() << std::endl;
     std::unordered_map<std::string, std::string> keyValueMap;
-    for(int i=0;i<keys.size();++i) {
-        keyValueMap[encryption_engine_.hmac(keys[i])] = encryption_engine_.encryptNonDeterministic(values[i]);
+    for(int i = 0; i<keys.size(); ++i) {
         realBst.insert(keys[i]);
+        keyValueMap[encryption_engine_.hmac(keys[i] + "#" + std::to_string(realBst.getFrequency(keys[i])))] = encryption_engine_.encryptNonDeterministic(values[i]);
     }
 
 
@@ -132,7 +132,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
             temp.insert(keys[index]);
             keysCacheUnencrypted.push_back(keys[index]);
             valuesCache.push_back(values[index]);
-            keyValueMap.erase(encryption_engine_.hmac(keys[index]));
+            keyValueMap.erase(encryption_engine_.hmac(keys[index] + "#" + std::to_string(realBst.getFrequency(keys[index]))));
         }
     }
 
@@ -154,9 +154,6 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     std::vector<std::string> redisValues;
     randomize_map(keyValueMap, redisKeys, redisValues);
 
-    // for(auto& it: keyValueMap) {
-    //     storage_interface_->put(it.first + "#" + std::to_string(realBst.getFrequency(it.first)), encryption_engine_.encryptNonDeterministic(it.second));
-    // }
     std::vector<std::string> finalKeysRedis;
     std::vector<std::string> finalValuesRedis;
     for(int i=0;i<redisKeys.size();++i) {
@@ -195,14 +192,10 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
 
     std::cout << "Encryption string is " << encryption_engine_.getencryption_string_() << std::endl;
 
-    auto test5 = encryption_engine_.decryptNonDeterministic(test3);
-    auto test6 = encryption_engine_.decryptNonDeterministic(test4);
+    std::string test5 = encryption_engine_.decryptNonDeterministic(test3);
+    std::string test6 = encryption_engine_.decryptNonDeterministic(test4);
     if(test5 == test6) {
-        std::cout << "Decryption is same and the value is " << std::endl;
-        for (char c : test5) {
-             std::cout << std::hex << (int)c;
-        }
-        std::cout << std::endl;
+        std::cout << "Decryption is same and the value is " << test5 << std::endl;
     } else {
         std::cout << "Decryption is not same and the value is " << test5 << std::endl;
         std::cout << "Decryption is not same and the value is " << test6 << std::endl;

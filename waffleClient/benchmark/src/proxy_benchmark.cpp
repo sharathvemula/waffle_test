@@ -62,14 +62,6 @@ void load_trace(const std::string &trace_location, trace_vector &trace, int clie
         }
         assert (key != "PUT");
         assert (key != "GET");
-        if (key_to_frequency.count(key) == 0){
-            key_to_frequency[key] = 1;
-            frequency_sum += 1;
-        }
-        else {
-            key_to_frequency[key] += 1;
-            frequency_sum += 1;
-        }
     }
     if (get_keys.size() > 0){
         trace.push_back(std::make_pair(get_keys, std::vector<std::string>()));
