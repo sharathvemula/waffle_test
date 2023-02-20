@@ -34,10 +34,9 @@ public:
     std::string encryptNonDeterministic(const std::string &plain_text);
     std::string decryptNonDeterministic(const std::string &cipher_text);
     std::string getencryption_string_();
-    std::string extractKey(std::string encryptedKey);
+    std::string extractKey(const std::string &encryptedKey);
     std::string gen_random(const int len);
-
-
+    std::string prf(const std::string &plain_text);
 
 private:
     void handle_errors();
@@ -56,5 +55,6 @@ private:
     unsigned char * encryption_key_;
     unsigned char * iv_;
     EVP_PKEY * skey_, * vkey_;
+    std::string prf_encrypt(const std::string& key, const std::string& plaintext);
 };
 #endif //WAFFLE_BASIC_CRYPTO_H

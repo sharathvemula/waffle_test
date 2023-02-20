@@ -116,12 +116,17 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     //Adding the data to Database
     std::cout << "Keys size in init() is " << keys.size() << std::endl;
     std::unordered_map<std::string, std::string> keyValueMap;
+    // std::cout << "0th key is " << keys[0] << std::endl;
     for(int i = 0; i<keys.size(); ++i) {
         realBst.insert(keys[i]);
-        keyValueMap[encryption_engine_.hmac(keys[i] + "#" + std::to_string(realBst.getFrequency(keys[i])))] = encryption_engine_.encryptNonDeterministic(values[i]);
+        keyValueMap[encryption_engine_.prf(keys[i] + "#" + std::to_string(realBst.getFrequency(keys[i])))] = encryption_engine_.encryptNonDeterministic(values[i]);
     }
 
+    // if(keyValueMap.find(encryption_engine_.encrypt("user5159055689701779241#0")) == keyValueMap.end()) {
+    //     std::cout << "First querying key is not available " << std::endl;
+    // }
 
+    std::cout << "Init encryption string is " << encryption_engine_.getencryption_string_() << std::endl;
     // Initialising Cache
     size_t cacheCapacity = R+s;
     std::unordered_set<std::string> temp;
@@ -132,7 +137,10 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
             temp.insert(keys[index]);
             keysCacheUnencrypted.push_back(keys[index]);
             valuesCache.push_back(values[index]);
-            keyValueMap.erase(encryption_engine_.hmac(keys[index] + "#" + std::to_string(realBst.getFrequency(keys[index]))));
+            if(keyValueMap.find(encryption_engine_.prf(keys[index] + "#" + std::to_string(realBst.getFrequency(keys[index])))) == keyValueMap.end()) {
+                std::cout << "WARNING: Key is Missing & this should not happen" << std::endl;
+            }
+            keyValueMap.erase(encryption_engine_.prf(keys[index] + "#" + std::to_string(realBst.getFrequency(keys[index]))));
         }
     }
 
@@ -144,8 +152,8 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
             ++i;
             fakeBst.insert(fakeKey);
             tempFakeKeys.insert(fakeKey);
-            auto tempFakeKey = encryption_engine_.hmac(fakeKey + "#" + std::to_string(fakeBst.getFrequency(fakeKey)));
-            auto fakeKeyValue = encryption_engine_.encryptNonDeterministic(gen_random(rand()%10));
+            auto tempFakeKey = encryption_engine_.prf(fakeKey + "#" + std::to_string(fakeBst.getFrequency(fakeKey)));
+            auto fakeKeyValue = encryption_engine_.encryptNonDeterministic(gen_random(1 + rand()%10));
             keyValueMap[tempFakeKey] = fakeKeyValue;
         }
     }
@@ -171,34 +179,27 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     threads_.push_back(std::thread(&waffle_proxy::clearThread, this));
 
     //Tests for the encryption
-    auto test1 = encryption_engine_.hmac("mynameissharath");
-    auto test2 = encryption_engine_.hmac("mynameissharath");
-
-    if(test1 == test2) {
-        std::cout << "Encryption is same" << std::endl;
-    } else {
-        std::cout << "Encryption is not same" << std::endl;
-    }
-
-
     auto test3 = encryption_engine_.encryptNonDeterministic("mynameissharath");
     auto test4 = encryption_engine_.encryptNonDeterministic("mynameissharath");
     if(test3 == test4) {
         std::cout << "Non Deterministic Encryption is same" << std::endl;
     } else {
-        std::cout << "Non Deterministic Encryption is not same and test3 is " << test3 << std::endl;
-        std::cout << "Non Deterministic Encryption is not same and test4 is " << test4 << std::endl;
+        std::cout << "Non Deterministic Encryption is not same" << std::endl;
     }
-
-    std::cout << "Encryption string is " << encryption_engine_.getencryption_string_() << std::endl;
 
     std::string test5 = encryption_engine_.decryptNonDeterministic(test3);
     std::string test6 = encryption_engine_.decryptNonDeterministic(test4);
     if(test5 == test6) {
-        std::cout << "Decryption is same and the value is " << test5 << std::endl;
+        std::cout << "non deterministic Decryption is same and the value is " << test5 << std::endl;
     } else {
-        std::cout << "Decryption is not same and the value is " << test5 << std::endl;
-        std::cout << "Decryption is not same and the value is " << test6 << std::endl;
+        std::cout << "non deterministic Decryption is not same and the value is " << test5 << std::endl;
+        std::cout << "non deterministic Decryption is not same and the value is " << test6 << std::endl;
+    }
+
+    auto test7 = encryption_engine_.prf("mynameissharath1");
+    auto test8 = encryption_engine_.prf("mynameissharath1");
+    if(test7 == test8) {
+        std::cout << "PRF encryption is same" << std::endl;
     }
     //Tests for the encryption ended
 
@@ -263,9 +264,12 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     if(latency) {
         rdtscllProxy(start);
     }
+
+    std::cout << "execute_batch encryption string is " << enc_engine->getencryption_string_() << std::endl;
+
     for(int i = 0; i < operations.size(); i++){
         std::string key = operations[i].key;
-        auto stKey = enc_engine->hmac(key + "#" + std::to_string(realBst.getFrequency(key)));
+        auto stKey = enc_engine->prf(key + "#" + std::to_string(realBst.getFrequency(key)));
         readBatchMap[stKey] = key;
         storage_keys.push_back(stKey);
         realBst.incrementFrequency(key);
@@ -284,7 +288,7 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     // std::cout << "realKeysNotInCache size is " << realKeysNotInCache.size() << std::endl;
 
     for(auto& iter: realKeysNotInCache) {
-        auto stKey = enc_engine->hmac(iter + "#" + std::to_string(realBst.getFrequency(iter)));
+        auto stKey = enc_engine->encrypt(iter + "#" + std::to_string(realBst.getFrequency(iter)));
         readBatchMap[stKey] = iter;
         storage_keys.push_back(stKey);
         realBst.incrementFrequency(iter);
@@ -292,7 +296,7 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
 
     for(int i=0;i<(D-operations.size());++i) {
         auto fakeMinKey = fakeBst.getKeyWithMinFrequency();
-        auto stKey = enc_engine->hmac(fakeMinKey + "#" + std::to_string(fakeBst.getFrequency(fakeMinKey)));
+        auto stKey = enc_engine->prf(fakeMinKey + "#" + std::to_string(fakeBst.getFrequency(fakeMinKey)));
         readBatchMap[stKey] = fakeMinKey;
         storage_keys.push_back(stKey);
         fakeBst.incrementFrequency(fakeMinKey);
@@ -310,13 +314,19 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     if(latency) {
         rdtscllProxy(start);
     }
+
+    // std::cout << "Querying key value pairs in execute_batch() new" << std::endl;
+    // for(int i=0;i<storage_keys.size();++i) {
+    //     std::cout << "Getting response for " << i << "th key" << std::endl;
+    //     std::cout << storage_interface->get(storage_keys[i]) << std::endl;
+    // }
     auto responses = storage_interface->get_batch(storage_keys);
     // std::cout << "Got key value pairs" << std::endl;
     for(int i = 0 ; i < storage_keys.size(); i++){
         if(i < (operations.size() + realKeysNotInCache.size())) {
             // This means ith request is for real key
             auto kv_pair = cache.evictLRElementFromCache();
-            writeBatchKeys.push_back(enc_engine->hmac(kv_pair[0] + "#" + std::to_string(realBst.getFrequency(kv_pair[0]))));
+            writeBatchKeys.push_back(enc_engine->prf(kv_pair[0] + "#" + std::to_string(realBst.getFrequency(kv_pair[0]))));
             writeBatchValues.push_back(enc_engine->encryptNonDeterministic(kv_pair[1]));
 
             auto keyAboutToGoToCache = readBatchMap[storage_keys[i]];
@@ -334,9 +344,8 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         } else {
             // Writing fake key values to DB
             auto fakeWriteKey = readBatchMap[storage_keys[i]];
-            writeBatchKeys.push_back(enc_engine->hmac(fakeWriteKey + "#" + std::to_string(fakeBst.getFrequency(fakeWriteKey))));
-            writeBatchValues.push_back(enc_engine->encryptNonDeterministic(gen_random(rand()%10)));
-
+            writeBatchKeys.push_back(enc_engine->prf(fakeWriteKey + "#" + std::to_string(fakeBst.getFrequency(fakeWriteKey))));
+            writeBatchValues.push_back(enc_engine->encryptNonDeterministic(gen_random(1 + rand()%10)));
         }
     }
     storage_interface_->put_batch(writeBatchKeys, writeBatchValues);

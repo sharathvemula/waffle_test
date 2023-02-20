@@ -5,7 +5,7 @@
 #include "encryption_engine.h"
 #include <iostream>
 
-std::string encryption_engine::extractKey(std::string encryptedKey) {
+std::string encryption_engine::extractKey(const std::string& encryptedKey) {
     for(int i=encryptedKey.size()-1; i>=0; --i) {
         if(encryptedKey[i] == '#') {
             return encryptedKey.substr(0, i);
@@ -546,7 +546,7 @@ std::string encryption_engine::hmac(const std::string &key) {
 };
 
 std::string encryption_engine::encryptNonDeterministic(const std::string &plain_text) {
-    return encrypt(plain_text + '#' + gen_random(rand()%10));
+    return encrypt(plain_text + "#" + gen_random(rand()%10));
 };
 
 std::string encryption_engine::decryptNonDeterministic(const std::string &cipher_text){
@@ -555,4 +555,19 @@ std::string encryption_engine::decryptNonDeterministic(const std::string &cipher
 
 std::string encryption_engine::getencryption_string_(){
     return encryption_string_;
-}
+};
+
+std::string encryption_engine::prf_encrypt(const std::string& key, const std::string& plaintext) {
+    unsigned char* result = new unsigned char[32];
+    unsigned int resultlen;
+
+    HMAC(EVP_sha256(), key.c_str(), key.length(), reinterpret_cast<const unsigned char*>(plaintext.c_str()), plaintext.length(), result, &resultlen);
+
+    std::string ciphertext(reinterpret_cast<char*>(result), resultlen);
+    delete[] result;
+    return ciphertext;
+};
+
+std::string encryption_engine::prf(const std::string& plain_text) {
+    return prf_encrypt(encryption_string_, plain_text);
+};
