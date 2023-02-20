@@ -115,7 +115,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     
     //Adding the data to Database
     std::cout << "Keys size in init() is " << keys.size() << std::endl;
-    std::unordered_map<std::string, std::string> keyValueMap;
+    // std::unordered_map<std::string, std::string> keyValueMap;
     // std::cout << "0th key is " << keys[0] << std::endl;
     for(int i = 0; i<keys.size(); ++i) {
         realBst.insert(keys[i]);
@@ -126,7 +126,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     //     std::cout << "First querying key is not available " << std::endl;
     // }
 
-    std::cout << "Init encryption string is " << encryption_engine_.getencryption_string_() << std::endl;
+    // std::cout << "Init encryption string is " << encryption_engine_.getencryption_string_() << std::endl;
     // Initialising Cache
     size_t cacheCapacity = R+s;
     std::unordered_set<std::string> temp;
@@ -265,8 +265,9 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         rdtscllProxy(start);
     }
 
-    std::cout << "execute_batch encryption string is " << enc_engine->getencryption_string_() << std::endl;
+    // std::cout << "execute_batch encryption string is " << enc_engine->getencryption_string_() << std::endl;
 
+    // std::cout << "r is " << operations.size() << std::endl;
     for(int i = 0; i < operations.size(); i++){
         std::string key = operations[i].key;
         auto stKey = enc_engine->prf(key + "#" + std::to_string(realBst.getFrequency(key)));
@@ -288,11 +289,13 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     // std::cout << "realKeysNotInCache size is " << realKeysNotInCache.size() << std::endl;
 
     for(auto& iter: realKeysNotInCache) {
-        auto stKey = enc_engine->encrypt(iter + "#" + std::to_string(realBst.getFrequency(iter)));
+        auto stKey = enc_engine->prf(iter + "#" + std::to_string(realBst.getFrequency(iter)));
         readBatchMap[stKey] = iter;
         storage_keys.push_back(stKey);
         realBst.incrementFrequency(iter);
     }
+
+    // std::cout << "D-r is " << D-operations.size() << std::endl;
 
     for(int i=0;i<(D-operations.size());++i) {
         auto fakeMinKey = fakeBst.getKeyWithMinFrequency();
@@ -318,7 +321,12 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     // std::cout << "Querying key value pairs in execute_batch() new" << std::endl;
     // for(int i=0;i<storage_keys.size();++i) {
     //     std::cout << "Getting response for " << i << "th key" << std::endl;
-    //     std::cout << storage_interface->get(storage_keys[i]) << std::endl;
+    //     if(keyValueMap.find(storage_keys[i]) != keyValueMap.end()) {
+    //         std::cout << i << "th key is present " << std::endl;
+    //         storage_interface->get(storage_keys[i]);
+    //     } else {
+    //         std::cout << "WARNING: " << i << "th key is not present " << std::endl;
+    //     }
     // }
     auto responses = storage_interface->get_batch(storage_keys);
     // std::cout << "Got key value pairs" << std::endl;
