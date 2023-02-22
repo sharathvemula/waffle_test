@@ -188,7 +188,7 @@ int _mkdir(const char *path) {
 }
 
 int main(int argc, char *argv[]) {
-    std::string proxy_host = "127.0.0.1";
+    std::string proxy_host = "192.168.152.109";
     int proxy_port = 9090;
     std::string trace_location = "";
     int client_batch_size = 50;

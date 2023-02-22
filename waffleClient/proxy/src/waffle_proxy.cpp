@@ -115,18 +115,11 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     
     //Adding the data to Database
     std::cout << "Keys size in init() is " << keys.size() << std::endl;
-    // std::unordered_map<std::string, std::string> keyValueMap;
-    // std::cout << "0th key is " << keys[0] << std::endl;
     for(int i = 0; i<keys.size(); ++i) {
         realBst.insert(keys[i]);
         keyValueMap[encryption_engine_.prf(keys[i] + "#" + std::to_string(realBst.getFrequency(keys[i])))] = encryption_engine_.encryptNonDeterministic(values[i]);
     }
 
-    // if(keyValueMap.find(encryption_engine_.encrypt("user5159055689701779241#0")) == keyValueMap.end()) {
-    //     std::cout << "First querying key is not available " << std::endl;
-    // }
-
-    // std::cout << "Init encryption string is " << encryption_engine_.getencryption_string_() << std::endl;
     // Initialising Cache
     size_t cacheCapacity = R+s;
     std::unordered_set<std::string> temp;
@@ -317,17 +310,6 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
     if(latency) {
         rdtscllProxy(start);
     }
-
-    // std::cout << "Querying key value pairs in execute_batch() new" << std::endl;
-    // for(int i=0;i<storage_keys.size();++i) {
-    //     std::cout << "Getting response for " << i << "th key" << std::endl;
-    //     if(keyValueMap.find(storage_keys[i]) != keyValueMap.end()) {
-    //         std::cout << i << "th key is present " << std::endl;
-    //         storage_interface->get(storage_keys[i]);
-    //     } else {
-    //         std::cout << "WARNING: " << i << "th key is not present " << std::endl;
-    //     }
-    // }
     auto responses = storage_interface->get_batch(storage_keys);
     // std::cout << "Got key value pairs" << std::endl;
     for(int i = 0 ; i < storage_keys.size(); i++){

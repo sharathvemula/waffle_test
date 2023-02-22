@@ -69,7 +69,7 @@ public:
 
     std::string output_location_ = "log";
     std::string trace_location_ = "";
-    std::string server_host_name_ = "127.0.0.1";
+    std::string server_host_name_ = "192.168.152.110";
     int server_port_ = 6379;
     int security_batch_size_ = 3;
     int object_size_ = 1024;
