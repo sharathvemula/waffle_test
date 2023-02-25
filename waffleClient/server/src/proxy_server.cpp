@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
     std::shared_ptr<proxy> proxy_ = std::make_shared<waffle_proxy>();
     int o;
     std::string proxy_type_ = "waffle";
-    while ((o = getopt(argc, argv, "h:p:s:n:v:b:c:t:o:d:z:q:l:m:r:y")) != -1) {
+    while ((o = getopt(argc, argv, "h:p:s:n:v:b:c:t:o:d:z:q:l:m:r:y:f:a")) != -1) {
         switch (o) {
             case 'h':
                 dynamic_cast<waffle_proxy&>(*proxy_).server_host_name_ = std::string(optarg);
@@ -88,11 +88,11 @@ int main(int argc, char *argv[]) {
             case 'p':
                 dynamic_cast<waffle_proxy&>(*proxy_).server_port_ = std::atoi(optarg);
                 break;
-            case 's':
-                dynamic_cast<waffle_proxy&>(*proxy_).s = std::atoi(optarg);
+            case 'f':
+                dynamic_cast<waffle_proxy&>(*proxy_).F = std::atoi(optarg);
                 break;
-            case 'm':
-                dynamic_cast<waffle_proxy&>(*proxy_).m = std::atoi(optarg);
+            case 'd':
+                dynamic_cast<waffle_proxy&>(*proxy_).D = std::atoi(optarg);
                 break;
             case 'n':
                 dynamic_cast<waffle_proxy&>(*proxy_).server_count_ = std::atoi(optarg);
@@ -100,7 +100,7 @@ int main(int argc, char *argv[]) {
             case 'v':
                 dynamic_cast<waffle_proxy&>(*proxy_).object_size_ = std::atoi(optarg);
                 break;
-            case 'b':
+            case 'z':
                 dynamic_cast<waffle_proxy&>(*proxy_).security_batch_size_ = std::atoi(optarg);
                 break;
             case 'c':
@@ -112,10 +112,10 @@ int main(int argc, char *argv[]) {
             case 'o':
                 dynamic_cast<waffle_proxy&>(*proxy_).output_location_ = std::string(optarg);
                 break;
-            case 'd':
-                dynamic_cast<waffle_proxy&>(*proxy_).D = std::atoi(optarg);
+            case 'b':
+                dynamic_cast<waffle_proxy&>(*proxy_).B = std::atoi(optarg);
                 break;
-            case 'z':
+            case 'a':
                 proxy_type_ = std::string(optarg);
                 break;
             case 'q':

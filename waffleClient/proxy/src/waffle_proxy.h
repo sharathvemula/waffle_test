@@ -89,9 +89,9 @@ public:
     double ticks_per_ns;
     // System parameters
     int R = 50;
+    int B = 50;
+    int F = 25;
     int D = 50;
-    int s = 25;
-    int m = 50;
     int redisBulkLength = 524287;
     std::unordered_map<std::string, std::string> keyValueMap;
 

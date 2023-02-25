@@ -121,7 +121,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     }
 
     // Initialising Cache
-    size_t cacheCapacity = R+s;
+    size_t cacheCapacity = 2*B;
     std::unordered_set<std::string> temp;
     std::vector<std::string> valuesCache;
     while(keysCacheUnencrypted.size() < cacheCapacity) {
@@ -137,9 +137,9 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
         }
     }
 
-    cache = Cache(keysCacheUnencrypted, valuesCache, cacheCapacity+R);
+    cache = Cache(keysCacheUnencrypted, valuesCache, cacheCapacity+B);
 
-    for(int i=0; i < m; ) {
+    for(int i=0; i < D; ) {
         auto fakeKey = gen_random(rand()%10);
         if(allKeys.find(fakeKey) == allKeys.end() && tempFakeKeys.find(fakeKey)==tempFakeKeys.end()) {
             ++i;
@@ -210,7 +210,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     out_redis_latency = std::ofstream(output_directory_redis_latency+"/1");
     ticks_per_ns = static_cast<double>(rdtscuhzProxy()) / 1000;
 
-    std::cout << "Successfully initialized waffle with keys size " << keys.size() << " and cache with " << cache.size() << " Fake keys size is " << m << " D is " << D << " R is" << R << " s is "  << s << " FakeBST size is " << fakeBst.size() << std::endl;
+    std::cout << "Successfully initialized waffle with keys size " << keys.size() << " and cache with " << cache.size() << " Fake keys size is " << D << " batch size is " << B << " F is" << F << " FakeBST size is " << fakeBst.size() << std::endl;
 }
 
 void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
@@ -271,14 +271,13 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
 
     std::vector<std::string> realKeysNotInCache;
     auto it = realBst.getIterator();
-    for(int i=0;i<s;) {
+    for(int i=0;i<B-(operations.size()+F);) {
         if(cache.checkIfKeyExists(it->first) == false) {
             realKeysNotInCache.push_back(it->first);
             ++i;
         }
         ++it;
     }
-
     // std::cout << "realKeysNotInCache size is " << realKeysNotInCache.size() << std::endl;
 
     for(auto& iter: realKeysNotInCache) {
@@ -290,7 +289,7 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
 
     // std::cout << "D-r is " << D-operations.size() << std::endl;
 
-    for(int i=0;i<(D-operations.size());++i) {
+    for(int i=0;i<F;++i) {
         auto fakeMinKey = fakeBst.getKeyWithMinFrequency();
         auto stKey = enc_engine->prf(fakeMinKey + "#" + std::to_string(fakeBst.getFrequency(fakeMinKey)));
         readBatchMap[stKey] = fakeMinKey;
@@ -350,8 +349,8 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         out_redis_latency << line;
     }
 
-    if(cache.size() != (R+s)) {
-        std::cout << "WARNING: This should never happen: Cache size is less than R+s" << std::endl;
+    if(cache.size() != (2*B)) {
+        std::cout << "WARNING: This should never happen: Cache size is less than 2*B" << std::endl;
     }
 };
 
