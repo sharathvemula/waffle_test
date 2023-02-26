@@ -5,6 +5,8 @@
 #include <unordered_map>
 #include <utility>
 #include <set>
+#include <mutex>
+#include <memory>
 
 //#include "CloudDB.hpp"
 
@@ -17,6 +19,8 @@ private:
 	std::unordered_map<std::string, int> accessFreqs;
 
 public:
+	FrequencySmoother(FrequencySmoother&& other) noexcept;
+	FrequencySmoother& operator=(FrequencySmoother&& other) noexcept;
 	FrequencySmoother();
 	void insert(std::string key);
 	int getMinFrequency();
@@ -25,6 +29,11 @@ public:
 	int size();
 	int getFrequency(std::string key);
 	std::set<std::pair<std::string, int>, decltype(&freqCmp)>::iterator getIterator();
+	std::mutex& getMutex();
+	mutable std::mutex m_mutex_;
+
+	// template<typename Func>
+    // void iterateAccessTree(Func func);
 
 };
 

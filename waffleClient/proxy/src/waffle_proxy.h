@@ -31,6 +31,7 @@
 #include "FrequencySmoother.hpp"
 #include "Cache.hpp"
 #include "encryption_engine.h"
+#include "ThreadSafeUnorderedMap.h"
 
 #include "redis.h"
 #include "storage_interface.h"
@@ -94,6 +95,8 @@ public:
     int D = 50;
     int redisBulkLength = 524287;
     std::unordered_map<std::string, std::string> keyValueMap;
+    ThreadSafeUnorderedMap<std::promise<std::string>> runningKeys;
+    
 
 private:
     void create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,

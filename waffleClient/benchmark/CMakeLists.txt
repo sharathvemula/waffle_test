@@ -48,6 +48,7 @@ add_executable(proxy_benchmark
         ../proxy/src/FrequencySmoother.hpp
         ../proxy/src/encryption_engine.cpp
         ../proxy/src/encryption_engine.h
+        ../proxy/src/ThreadSafeUnorderedMap.h
 
         ../libstorage/src/storage_interface.h
         ../libstorage/src/redis.h
