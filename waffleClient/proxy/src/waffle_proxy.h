@@ -77,7 +77,7 @@ public:
     int key_size_ = 16;
     int server_count_ = 1;
     std::string server_type_ = "redis";
-    int p_threads_ = 1;
+    int p_threads_ = 20;
     int storage_batch_size_ = 5;
     int core_ = 0;
     bool is_static_ = true;
@@ -96,14 +96,13 @@ public:
     int redisBulkLength = 524287;
     std::unordered_map<std::string, std::string> keyValueMap;
     ThreadSafeUnorderedMap<std::promise<std::string>> runningKeys;
-    
 
 private:
     void create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
                                           std::vector<operation> &storage_batch,
                                           std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap);
 
-    void execute_batch(const std::vector<operation> &operations, std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine);
+    void execute_batch(const std::vector<operation> &operations, std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine, int id);
     void consumer_thread(int id, encryption_engine *enc_engine);
     void responder_thread();
     void clearThread();

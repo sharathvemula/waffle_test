@@ -66,17 +66,3 @@ std::set<std::pair<std::string, int>, decltype(&freqCmp)>::iterator FrequencySmo
 std::mutex& FrequencySmoother::getMutex() {
 	return m_mutex_;
 }
-
-// template<typename Func>
-//     void iterateAccessTree(Func func) {
-//         std::lock_guard<std::mutex> lock(m_mutex_);
-//         func(it);
-//     }
-
-// void FrequencySmoother::printFreqs() {
-// 	std::cout << "Printing frequencies ";
-// 	for(auto& it: accessFreqs) {
-// 		std::cout << "Key: " << it.first << " Value: " << it.second << " ";
-// 	}
-// 	std::cout << std::endl;
-// }

@@ -8,7 +8,6 @@
 #include <mutex>
 #include <memory>
 
-//#include "CloudDB.hpp"
 
 bool freqCmp(std::pair<std::string, int> a, std::pair<std::string, int> b);
 
@@ -31,9 +30,6 @@ public:
 	std::set<std::pair<std::string, int>, decltype(&freqCmp)>::iterator getIterator();
 	std::mutex& getMutex();
 	mutable std::mutex m_mutex_;
-
-	// template<typename Func>
-    // void iterateAccessTree(Func func);
 
 };
 
