@@ -343,6 +343,30 @@ __/proxy/src/encryption_engine.cpp.s:
 	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.s
 .PHONY : __/proxy/src/encryption_engine.cpp.s
 
+__/proxy/src/evictedItems.o: __/proxy/src/evictedItems.cpp.o
+.PHONY : __/proxy/src/evictedItems.o
+
+# target to build an object file
+__/proxy/src/evictedItems.cpp.o:
+	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o
+.PHONY : __/proxy/src/evictedItems.cpp.o
+
+__/proxy/src/evictedItems.i: __/proxy/src/evictedItems.cpp.i
+.PHONY : __/proxy/src/evictedItems.i
+
+# target to preprocess a source file
+__/proxy/src/evictedItems.cpp.i:
+	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.i
+.PHONY : __/proxy/src/evictedItems.cpp.i
+
+__/proxy/src/evictedItems.s: __/proxy/src/evictedItems.cpp.s
+.PHONY : __/proxy/src/evictedItems.s
+
+# target to generate assembly for a file
+__/proxy/src/evictedItems.cpp.s:
+	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.s
+.PHONY : __/proxy/src/evictedItems.cpp.s
+
 __/proxy/src/util.o: __/proxy/src/util.cpp.o
 .PHONY : __/proxy/src/util.o
 
@@ -641,6 +665,9 @@ help:
 	@echo "... __/proxy/src/encryption_engine.o"
 	@echo "... __/proxy/src/encryption_engine.i"
 	@echo "... __/proxy/src/encryption_engine.s"
+	@echo "... __/proxy/src/evictedItems.o"
+	@echo "... __/proxy/src/evictedItems.i"
+	@echo "... __/proxy/src/evictedItems.s"
 	@echo "... __/proxy/src/util.o"
 	@echo "... __/proxy/src/util.i"
 	@echo "... __/proxy/src/util.s"

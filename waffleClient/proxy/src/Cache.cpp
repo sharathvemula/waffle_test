@@ -52,7 +52,7 @@ std::string Cache::getValue(std::string key){
 
 std::string Cache::getValueWithoutPositionChange(std::string key){
     std::lock_guard<std::mutex> lock(m_mutex_);
-    if (cacheMap.find(key)!=cacheMap.end()) return "";
+    if (cacheMap.find(key) == cacheMap.end()) return "";
     return cacheMap[key]->second;
 }
 
@@ -71,14 +71,13 @@ void Cache::insertIntoCache(std::string key, std::string value) {
     {
         accessList.erase(cacheMap[key]);
     }
-        
     accessList.push_front(make_pair(key,value));
     cacheMap[key] = accessList.begin();
 }
 
 
 std::vector<std::string> Cache::evictLRElementFromCache() {
-    std::lock_guard<std::mutex> lock(m_mutex_);
+    // std::lock_guard<std::mutex> lock(m_mutex_);
     if(accessList.empty()) return {"", ""};
 	std::string keyToBeRemoved = accessList.back().first;
 	std::string ValueToBeRemoved = accessList.back().second;
@@ -104,4 +103,7 @@ std::string Cache::getValueWithoutPositionChangeNew(std::string key, bool& isPre
     return cacheMap[key]->second;
 }
 
+std::mutex& Cache::getMutex() {
+	return m_mutex_;
+}
 

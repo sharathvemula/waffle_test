@@ -38,6 +38,10 @@ public:
         m_map_.erase(key);
     }
 
+    std::mutex& getMutex() {
+	    return m_mutex_;
+    }
+
 private:
     mutable std::mutex m_mutex_;
     std::unordered_map<std::string, std::vector<std::shared_ptr<T>>> m_map_;

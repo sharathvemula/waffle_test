@@ -72,9 +72,9 @@ std::vector<std::string> async_proxy_client::get_batch(const std::vector<std::st
     seq_id_.__set_client_seq_no(sequence_num++);
     client_->async_get_batch(seq_id_, keys);
     requests_->push(GET_BATCH);
-    while (requests_->size() > 63){
-        sleep(1);
-    }
+    // while (requests_->size() > 63){
+    //     sleep(1);
+    // }
     std::vector<std::string> fake_vec;
     return fake_vec;
 }

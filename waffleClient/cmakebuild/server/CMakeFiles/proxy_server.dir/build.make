@@ -265,10 +265,24 @@ server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.s"
 	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/encryption_engine.cpp -o CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.s
 
+server/CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o: server/CMakeFiles/proxy_server.dir/flags.make
+server/CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/evictedItems.cpp
+server/CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o: server/CMakeFiles/proxy_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object server/CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o"
+	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o -MF CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o.d -o CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/evictedItems.cpp
+
+server/CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.i"
+	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/evictedItems.cpp > CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.i
+
+server/CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.s"
+	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/evictedItems.cpp -o CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.s
+
 server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o: server/CMakeFiles/proxy_server.dir/flags.make
 server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/libstorage/src/redis.cpp
 server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o: server/CMakeFiles/proxy_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o"
 	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o -MF CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o.d -o CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/libstorage/src/redis.cpp
 
 server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.i: cmake_force
@@ -295,6 +309,7 @@ proxy_server_OBJECTS = \
 "CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o" \
 "CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o" \
 "CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o" \
+"CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o" \
 "CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o"
 
 # External object files for target proxy_server
@@ -314,6 +329,7 @@ proxy_server_EXTERNAL_OBJECTS =
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o
+/home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: server/CMakeFiles/proxy_server.dir/build.make
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: external/thrift_ep/lib/libthriftnb.a
@@ -324,7 +340,7 @@ proxy_server_EXTERNAL_OBJECTS =
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: external/openssl/lib/libssl.a
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: external/openssl/lib/libcrypto.a
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server: server/CMakeFiles/proxy_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server"
 	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proxy_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

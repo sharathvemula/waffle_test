@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o.d"
   "CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o"
   "CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o.d"
+  "CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o"
+  "CMakeFiles/proxy_server.dir/__/proxy/src/evictedItems.cpp.o.d"
   "CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.o"
   "CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.o.d"
   "CMakeFiles/proxy_server.dir/__/proxy/src/waffle_proxy.cpp.o"

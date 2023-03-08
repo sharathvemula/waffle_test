@@ -307,10 +307,24 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.s"
 	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/benchmark && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/encryption_engine.cpp -o CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.s
 
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o: benchmark/CMakeFiles/proxy_benchmark.dir/flags.make
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/evictedItems.cpp
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o: benchmark/CMakeFiles/proxy_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o"
+	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/benchmark && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o -MF CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o.d -o CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/evictedItems.cpp
+
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.i"
+	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/benchmark && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/evictedItems.cpp > CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.i
+
+benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.s"
+	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/benchmark && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/evictedItems.cpp -o CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.s
+
 benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o: benchmark/CMakeFiles/proxy_benchmark.dir/flags.make
 benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/libstorage/src/redis.cpp
 benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o: benchmark/CMakeFiles/proxy_benchmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o"
 	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/benchmark && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o -MF CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o.d -o CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/libstorage/src/redis.cpp
 
 benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.i: cmake_force
@@ -340,6 +354,7 @@ proxy_benchmark_OBJECTS = \
 "CMakeFiles/proxy_benchmark.dir/__/proxy/src/Cache.cpp.o" \
 "CMakeFiles/proxy_benchmark.dir/__/proxy/src/FrequencySmoother.cpp.o" \
 "CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o" \
+"CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o" \
 "CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o"
 
 # External object files for target proxy_benchmark
@@ -362,6 +377,7 @@ proxy_benchmark_EXTERNAL_OBJECTS =
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/Cache.cpp.o
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/FrequencySmoother.cpp.o
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/encryption_engine.cpp.o
+/home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/proxy/src/evictedItems.cpp.o
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/__/libstorage/src/redis.cpp.o
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/build.make
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: external/thrift_ep/lib/libthriftnb.a
@@ -372,7 +388,7 @@ proxy_benchmark_EXTERNAL_OBJECTS =
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: external/openssl/lib/libssl.a
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: external/openssl/lib/libcrypto.a
 /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark: benchmark/CMakeFiles/proxy_benchmark.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable /home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark"
 	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/benchmark && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proxy_benchmark.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

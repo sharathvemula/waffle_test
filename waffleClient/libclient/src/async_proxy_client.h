@@ -62,7 +62,7 @@ private:
     sequence_id seq_id_;
     std::thread *response_thread_;
 
-    int in_flight_limit_ = 16;
+    int in_flight_limit_ = 2000;
 
     command_response_reader reader_;
 

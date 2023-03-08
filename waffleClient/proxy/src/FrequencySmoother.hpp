@@ -24,6 +24,7 @@ public:
 	void insert(std::string key);
 	int getMinFrequency();
 	void incrementFrequency(std::string key);
+	void setFrequency(std::string key, int value);
 	std::string getKeyWithMinFrequency();
 	int size();
 	int getFrequency(std::string key);

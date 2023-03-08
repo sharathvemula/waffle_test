@@ -42,6 +42,8 @@ add_executable(proxy_server
         ../proxy/src/encryption_engine.cpp
         ../proxy/src/encryption_engine.h
         ../proxy/src/ThreadSafeUnorderedMap.h
+        ../proxy/src/evictedItems.cpp
+        ../proxy/src/evictedItems.h
         
 
 

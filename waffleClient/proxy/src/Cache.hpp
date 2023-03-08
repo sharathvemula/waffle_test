@@ -31,6 +31,7 @@ public:
 	void insertIntoCache(std::string key, std::string value);
 	std::vector<std::string> evictLRElementFromCache();
 	std::string getValueWithoutPositionChangeNew(std::string key, bool& isPresent);
+	std::mutex& getMutex();
 };
 
 #endif

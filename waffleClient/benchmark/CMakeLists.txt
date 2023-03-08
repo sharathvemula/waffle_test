@@ -49,6 +49,8 @@ add_executable(proxy_benchmark
         ../proxy/src/encryption_engine.cpp
         ../proxy/src/encryption_engine.h
         ../proxy/src/ThreadSafeUnorderedMap.h
+        ../proxy/src/evictedItems.cpp
+        ../proxy/src/evictedItems.h
 
         ../libstorage/src/storage_interface.h
         ../libstorage/src/redis.h

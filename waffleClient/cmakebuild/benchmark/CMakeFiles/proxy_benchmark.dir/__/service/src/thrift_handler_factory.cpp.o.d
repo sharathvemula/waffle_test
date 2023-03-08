@@ -467,7 +467,8 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/service/src/thrift_handler_factory.c
  /home/svemula/Waffle/waffle_test/waffleClient/benchmark/../proxy/src/proxy.h \
  /home/svemula/Waffle/waffle_test/waffleClient/benchmark/../service/src/proxy_types.h \
  /home/svemula/Waffle/waffle_test/waffleClient/benchmark/../proxy/src/waffle_proxy.h \
- /usr/include/c++/9/unordered_map /usr/include/c++/9/bits/hashtable.h \
+ /usr/include/c++/9/atomic /usr/include/c++/9/unordered_map \
+ /usr/include/c++/9/bits/hashtable.h \
  /usr/include/c++/9/bits/hashtable_policy.h \
  /usr/include/c++/9/bits/unordered_map.h /usr/include/c++/9/fstream \
  /usr/include/c++/9/istream /usr/include/c++/9/ios \
@@ -499,7 +500,7 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/service/src/thrift_handler_factory.c
  /usr/include/c++/9/future /usr/include/c++/9/mutex \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /usr/include/c++/9/condition_variable /usr/include/c++/9/atomic \
+ /usr/include/c++/9/condition_variable \
  /usr/include/c++/9/bits/atomic_futex.h /usr/include/c++/9/random \
  /usr/include/c++/9/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/opt_random.h \
@@ -569,6 +570,7 @@ benchmark/CMakeFiles/proxy_benchmark.dir/__/service/src/thrift_handler_factory.c
  /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl/randerr.h \
  /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl/hmac.h \
  /home/svemula/Waffle/waffle_test/waffleClient/benchmark/../proxy/src/ThreadSafeUnorderedMap.h \
+ /home/svemula/Waffle/waffle_test/waffleClient/benchmark/../proxy/src/evictedItems.h \
  /home/svemula/Waffle/waffle_test/waffleClient/benchmark/../libstorage/src/redis.h \
  /home/svemula/Waffle/waffle_test/waffleClient/benchmark/../libstorage/src/storage_interface.h \
  /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/cpp_redis \
