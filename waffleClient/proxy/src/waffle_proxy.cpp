@@ -208,6 +208,8 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
 
     out_bst_latency = std::ofstream(output_directory_bst_latency+"/1");
     out_redis_latency = std::ofstream(output_directory_redis_latency+"/1");
+    out_cache_miss = std::ofstream(output_directory_cache_miss+"/1");
+
     ticks_per_ns = static_cast<double>(rdtscuhzProxy()) / 1000;
 
     std::cout << "Successfully initialized waffle with keys size " << keys.size() << " and cache with " << cache.size() << " Fake keys size is " << D << " batch size is " << B << " F is" << F << " FakeBST size is " << fakeBst.size() << std::endl;
@@ -215,7 +217,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
 
 void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
                                           std::vector<operation> &storage_batch,
-                                          std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap) {
+                                          std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, int& cacheMisses) {
 
     if (op_queue->size() == 0) {
         std::cout << "WARNING: You should never see this line on console! Queue size is 0" << std::endl;
@@ -232,6 +234,7 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
                     storage_batch.push_back(operation_promise_pair.first);
                 }
                 keyToPromiseMap[currentKey].push_back(operation_promise_pair.second);
+                ++cacheMisses;
             }
         } else {
             // It's a PUT request
@@ -239,6 +242,7 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
                 if(keyToPromiseMap.find(currentKey) == keyToPromiseMap.end()) {
                     storage_batch.push_back(operation_promise_pair.first);
                 }
+                ++cacheMisses;
             }
             cache.insertIntoCache(currentKey, operation_promise_pair.first.value);
             operation_promise_pair.second->set_value(cache.getValueWithoutPositionChange(currentKey));
@@ -246,27 +250,31 @@ void waffle_proxy::create_security_batch(std::shared_ptr<queue <std::pair<operat
     }
 };
 
-void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine) {
+void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine,int& cacheMisses) {
     // Storage_keys is same as readBatch
     std::vector<std::string> storage_keys;
     std::vector<std::string> writeBatchKeys;
     std::vector<std::string> writeBatchValues;
     std::unordered_map<std::string, std::string> readBatchMap;
     uint64_t start, end;
+    timeStamp.fetch_add(1);
 
     if(latency) {
+        std::string line("");
+        auto cacheMissPercentage = static_cast<double>(cacheMisses)/R;
+        line.append(std::to_string(cacheMissPercentage) + "\n");
+        cacheMisses = 0;
+        out_cache_miss << line;
+        out_cache_miss.flush();
         rdtscllProxy(start);
     }
 
-    // std::cout << "execute_batch encryption string is " << enc_engine->getencryption_string_() << std::endl;
-
-    // std::cout << "r is " << operations.size() << std::endl;
     for(int i = 0; i < operations.size(); i++){
         std::string key = operations[i].key;
         auto stKey = enc_engine->prf(key + "#" + std::to_string(realBst.getFrequency(key)));
         readBatchMap[stKey] = key;
         storage_keys.push_back(stKey);
-        realBst.incrementFrequency(key);
+        realBst.setFrequency(key, timeStamp.load());
     }
 
     std::vector<std::string> realKeysNotInCache;
@@ -278,23 +286,20 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         }
         ++it;
     }
-    // std::cout << "realKeysNotInCache size is " << realKeysNotInCache.size() << std::endl;
 
     for(auto& iter: realKeysNotInCache) {
         auto stKey = enc_engine->prf(iter + "#" + std::to_string(realBst.getFrequency(iter)));
         readBatchMap[stKey] = iter;
         storage_keys.push_back(stKey);
-        realBst.incrementFrequency(iter);
+        realBst.setFrequency(iter, timeStamp.load());
     }
-
-    // std::cout << "D-r is " << D-operations.size() << std::endl;
 
     for(int i=0;i<F;++i) {
         auto fakeMinKey = fakeBst.getKeyWithMinFrequency();
         auto stKey = enc_engine->prf(fakeMinKey + "#" + std::to_string(fakeBst.getFrequency(fakeMinKey)));
         readBatchMap[stKey] = fakeMinKey;
         storage_keys.push_back(stKey);
-        fakeBst.incrementFrequency(fakeMinKey);
+        fakeBst.setFrequency(fakeMinKey, timeStamp.load());
     }
 
     if (latency) {
@@ -349,9 +354,9 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         out_redis_latency << line;
     }
 
-    if(cache.size() != (2*B)) {
-        std::cout << "WARNING: This should never happen: Cache size is less than 2*B" << std::endl;
-    }
+    // if(cache.size() != (2*B)) {
+    //     std::cout << "WARNING: This should never happen: Cache size is less than 2*B" << std::endl;
+    // }
 };
 
 std::string waffle_proxy::get(const std::string &key) {
@@ -490,13 +495,14 @@ void waffle_proxy::consumer_thread(int id, encryption_engine *enc_engine){
         std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> keyToPromiseMap;
         //std::unordered_set<std::string> tempSet;
         int i=0;
+        int cacheMisses = 0;
         while (i < R && !finished_) {
             if(operation_queues_[id]->size() > 0) {
-                create_security_batch(operation_queues_[id], storage_batch, keyToPromiseMap);
+                create_security_batch(operation_queues_[id], storage_batch, keyToPromiseMap, cacheMisses);
                 ++i;
             }
         }
-        execute_batch(storage_batch, keyToPromiseMap, storage_interface_, enc_engine);
+        execute_batch(storage_batch, keyToPromiseMap, storage_interface_, enc_engine, cacheMisses);
     }
 
 };

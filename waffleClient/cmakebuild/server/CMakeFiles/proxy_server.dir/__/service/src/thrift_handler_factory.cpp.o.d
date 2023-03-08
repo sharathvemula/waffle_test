@@ -467,7 +467,8 @@ server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler_factory.cpp.o: 
  /home/svemula/Waffle/waffle_test/waffleClient/server/../proxy/src/proxy.h \
  /home/svemula/Waffle/waffle_test/waffleClient/server/../service/src/proxy_types.h \
  /home/svemula/Waffle/waffle_test/waffleClient/server/../proxy/src/waffle_proxy.h \
- /usr/include/c++/9/unordered_map /usr/include/c++/9/bits/hashtable.h \
+ /usr/include/c++/9/atomic /usr/include/c++/9/unordered_map \
+ /usr/include/c++/9/bits/hashtable.h \
  /usr/include/c++/9/bits/hashtable_policy.h \
  /usr/include/c++/9/bits/unordered_map.h /usr/include/c++/9/fstream \
  /usr/include/c++/9/istream /usr/include/c++/9/ios \
@@ -499,7 +500,7 @@ server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler_factory.cpp.o: 
  /usr/include/c++/9/future /usr/include/c++/9/mutex \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /usr/include/c++/9/condition_variable /usr/include/c++/9/atomic \
+ /usr/include/c++/9/condition_variable \
  /usr/include/c++/9/bits/atomic_futex.h /usr/include/c++/9/random \
  /usr/include/c++/9/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/opt_random.h \

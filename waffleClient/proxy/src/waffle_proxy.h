@@ -5,6 +5,7 @@
 #ifndef WAFFLE_PROXY_H
 #define WAFFLE_PROXY_H
 
+#include <atomic>
 #include <unordered_map>
 #include <vector>
 #include <unistd.h>
@@ -84,8 +85,10 @@ public:
     bool latency = false;
     std::string output_directory_bst_latency;
     std::string output_directory_redis_latency;
+    std::string output_directory_cache_miss;
     std::ofstream out_bst_latency;
     std::ofstream out_redis_latency;
+    std::ofstream out_cache_miss;
     double ticks_per_ns;
     // System parameters
     int R = 50;
@@ -94,13 +97,15 @@ public:
     int D = 50;
     int redisBulkLength = 524287;
     std::unordered_map<std::string, std::string> keyValueMap;
+    int num_cores = 1;
+    std::atomic<int> timeStamp{0};
 
 private:
     void create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,
                                           std::vector<operation> &storage_batch,
-                                          std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap);
+                                          std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, int& cacheMisses);
 
-    void execute_batch(const std::vector<operation> &operations, std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine);
+    void execute_batch(const std::vector<operation> &operations, std::unordered_map<std::string, std::vector<std::shared_ptr<std::promise<std::string>>>> &keyToPromiseMap, std::shared_ptr<storage_interface> storage_interface, encryption_engine *enc_engine,int& cacheMisses);
     void consumer_thread(int id, encryption_engine *enc_engine);
     void responder_thread();
     void clearThread();

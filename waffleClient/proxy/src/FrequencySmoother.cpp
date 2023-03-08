@@ -30,6 +30,12 @@ void FrequencySmoother::incrementFrequency(std::string key) {
 	accessTree.insert({key, accessFreqs[key]});
 }
 
+void FrequencySmoother::setFrequency(std::string key, int value) {
+	accessTree.erase({key, accessFreqs[key]});
+	accessFreqs[key] = value;
+	accessTree.insert({key, accessFreqs[key]});
+}
+
 int FrequencySmoother::getFrequency(std::string key) {
 	return accessFreqs[key];
 }

@@ -24,6 +24,7 @@ public:
 	std::string getKeyWithMinFrequency();
 	int size();
 	int getFrequency(std::string key);
+	void setFrequency(std::string key, int value);
 	std::set<std::pair<std::string, int>, decltype(&freqCmp)>::iterator getIterator();
 
 };

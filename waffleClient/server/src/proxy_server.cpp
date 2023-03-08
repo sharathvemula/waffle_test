@@ -95,7 +95,7 @@ int main(int argc, char *argv[]) {
                 dynamic_cast<waffle_proxy&>(*proxy_).D = std::atoi(optarg);
                 break;
             case 'n':
-                dynamic_cast<waffle_proxy&>(*proxy_).server_count_ = std::atoi(optarg);
+                dynamic_cast<waffle_proxy&>(*proxy_).num_cores = std::atoi(optarg);
                 break;
             case 'v':
                 dynamic_cast<waffle_proxy&>(*proxy_).object_size_ = std::atoi(optarg);
