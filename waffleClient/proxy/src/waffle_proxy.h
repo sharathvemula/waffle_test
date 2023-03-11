@@ -86,9 +86,13 @@ public:
     std::string output_directory_bst_latency;
     std::string output_directory_redis_latency;
     std::string output_directory_cache_miss;
+    std::string output_directory_monitoring_alpha_beta;
+
     std::ofstream out_bst_latency;
     std::ofstream out_redis_latency;
     std::ofstream out_cache_miss;
+    std::ofstream out_alpha_beta;
+
     double ticks_per_ns;
     // System parameters
     int R = 50;
@@ -99,6 +103,8 @@ public:
     std::unordered_map<std::string, std::string> keyValueMap;
     int num_cores = 1;
     std::atomic<int> timeStamp{0};
+    int monitoringKeysSize = 10;
+    std::unordered_set<std::string> monitoringKeys;
 
 private:
     void create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,

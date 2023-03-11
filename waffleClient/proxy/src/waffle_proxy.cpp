@@ -4,6 +4,23 @@
 
 #include "waffle_proxy.h"
 
+void select_random_keys(const std::vector<std::string>& keys, size_t m, std::unordered_set<std::string>& monitoringKeys) {
+    if (keys.size() <= m) {
+        return;
+    }
+    // create a copy of the input vector
+    std::vector<std::string> copy_keys(keys);
+    // shuffle the copy of the vector
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(copy_keys.begin(), copy_keys.end(), g);
+    // select the first m keys
+    std::vector<std::string> selected_keys;
+    for (size_t i = 0; i < m; i++) {
+        monitoringKeys.insert(copy_keys[i]);
+    }
+}
+
 void randomize_map(const std::unordered_map<std::string, std::string>& input_map, std::vector<std::string>& keys, std::vector<std::string>& values) {
     for (const auto& it : input_map) {
         keys.push_back(it.first);
@@ -90,6 +107,8 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     std::vector<std::string> keysCache;
     std::vector<std::string> keysCacheUnencrypted;
 
+    select_random_keys(keys, monitoringKeysSize, monitoringKeys);
+
     if (server_type_ == "redis") {
         storage_interface_ = std::make_shared<redis>(server_host_name_, server_port_);
         cpp_redis::network::set_default_nb_workers(std::min(10, p_threads_));
@@ -121,7 +140,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     }
 
     // Initialising Cache
-    size_t cacheCapacity = 2*B;
+    size_t cacheCapacity = 20*B;
     std::unordered_set<std::string> temp;
     std::vector<std::string> valuesCache;
     while(keysCacheUnencrypted.size() < cacheCapacity) {
@@ -137,7 +156,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
         }
     }
 
-    cache = Cache(keysCacheUnencrypted, valuesCache, cacheCapacity+B);
+    cache = Cache(keysCacheUnencrypted, valuesCache, cacheCapacity*2);
 
     for(int i=0; i < D; ) {
         auto fakeKey = gen_random(rand()%10);
@@ -206,9 +225,20 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     std::string output_directory_redis_latency = "data/"+std::string("Redis_Latency_")+date_string;
     _mkdirProxy((output_directory_redis_latency).c_str());
 
+    std::string output_directory_monitoring_alpha_beta = "data/"+std::string("alpha_beta_")+date_string;
+    _mkdirProxy((output_directory_monitoring_alpha_beta).c_str());
+
     out_bst_latency = std::ofstream(output_directory_bst_latency+"/1");
     out_redis_latency = std::ofstream(output_directory_redis_latency+"/1");
     out_cache_miss = std::ofstream(output_directory_cache_miss+"/1");
+    out_alpha_beta = std::ofstream(output_directory_monitoring_alpha_beta+"/1");
+
+    for(auto& iter: monitoringKeys) {
+        std::string line("");
+        line.append(iter + " writing " + std::to_string(timeStamp.load()) + "\n");
+        out_alpha_beta << line;
+        out_alpha_beta.flush();
+    }
 
     ticks_per_ns = static_cast<double>(rdtscuhzProxy()) / 1000;
 
@@ -274,6 +304,12 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         auto stKey = enc_engine->prf(key + "#" + std::to_string(realBst.getFrequency(key)));
         readBatchMap[stKey] = key;
         storage_keys.push_back(stKey);
+        if(monitoringKeys.find(key) != monitoringKeys.end()) {
+            std::string line("");
+            line.append(key + " reading " + std::to_string(timeStamp.load()) + "\n");
+            out_alpha_beta << line;
+            out_alpha_beta.flush();
+        }
         realBst.setFrequency(key, timeStamp.load());
     }
 
@@ -291,6 +327,12 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         auto stKey = enc_engine->prf(iter + "#" + std::to_string(realBst.getFrequency(iter)));
         readBatchMap[stKey] = iter;
         storage_keys.push_back(stKey);
+        if(monitoringKeys.find(iter) != monitoringKeys.end()) {
+            std::string line("");
+            line.append(iter + " reading " + std::to_string(timeStamp.load()) + "\n");
+            out_alpha_beta << line;
+            out_alpha_beta.flush();
+        }
         realBst.setFrequency(iter, timeStamp.load());
     }
 
@@ -320,6 +362,12 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         if(i < (operations.size() + realKeysNotInCache.size())) {
             // This means ith request is for real key
             auto kv_pair = cache.evictLRElementFromCache();
+            if(monitoringKeys.find(kv_pair[0]) != monitoringKeys.end()) {
+                std::string line("");
+                line.append(kv_pair[0] + " writing " + std::to_string(timeStamp.load()) + "\n");
+                out_alpha_beta << line;
+                out_alpha_beta.flush();
+            }
             writeBatchKeys.push_back(enc_engine->prf(kv_pair[0] + "#" + std::to_string(realBst.getFrequency(kv_pair[0]))));
             writeBatchValues.push_back(enc_engine->encryptNonDeterministic(kv_pair[1]));
 

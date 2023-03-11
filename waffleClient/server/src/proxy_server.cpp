@@ -151,7 +151,7 @@ int main(int argc, char *argv[]) {
     auto proxy_server = thrift_server::create(proxy_, "waffle", id_to_client, PROXY_PORT, 1);
     std::thread proxy_serve_thread([&proxy_server] { proxy_server->serve(); });
     std::cout << "Proxy server is reachable" << std::endl;
-    sleep(10000);
+    sleep(300);
     //flush_thread(proxy_);
     //proxy_->close();
     //proxy_server->stop();
