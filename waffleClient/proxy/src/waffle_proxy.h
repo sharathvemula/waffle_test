@@ -97,6 +97,7 @@ public:
     int B = 50;
     int F = 25;
     int D = 50;
+    int cacheBatches = 50;
     int redisBulkLength = 524287;
     std::unordered_map<std::string, std::string> keyValueMap;
     ThreadSafeUnorderedMap<std::promise<std::string>> runningKeys;

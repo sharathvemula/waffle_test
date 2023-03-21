@@ -1,7 +1,4 @@
 *** Installing development files
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl'
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include'
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl'
 install ./include/openssl/aes.h -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl/aes.h
 install ./include/openssl/asn1.h -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl/asn1.h
 install ./include/openssl/asn1_mac.h -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl/asn1_mac.h
@@ -214,29 +211,19 @@ install ./include/openssl/x509_vfy.h -> /home/svemula/Waffle/waffle_test/waffleC
 install ./include/openssl/x509err.h -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl/x509err.h
 install ./include/openssl/x509v3.h -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl/x509v3.h
 install ./include/openssl/x509v3err.h -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl/x509v3err.h
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib'
 install libcrypto.a -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib/libcrypto.a
 install libssl.a -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib/libssl.a
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib/pkgconfig'
 install libcrypto.pc -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib/pkgconfig/libcrypto.pc
 install libssl.pc -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib/pkgconfig/libssl.pc
 install openssl.pc -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib/pkgconfig/openssl.pc
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib/engines-1.1'
 *** Installing engines
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/bin'
 *** Installing runtime files
 install apps/openssl -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/bin/openssl
 install ./tools/c_rehash -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/bin/c_rehash
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl'
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl/certs'
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl/private'
-created directory `/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl/misc'
 install ./apps/CA.pl -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl/misc/CA.pl
 install ./apps/tsget -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl/misc/tsget
 install ./apps/openssl.cnf -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl/openssl.cnf.dist
-install ./apps/openssl.cnf -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl/openssl.cnf
 install ./apps/ct_log_list.cnf -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl/ct_log_list.cnf.dist
-install ./apps/ct_log_list.cnf -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/ssl/ct_log_list.cnf
 *** Installing manpages
 /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/share/man/man1/asn1parse.1
 /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/share/man/man1/openssl-asn1parse.1 -> /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/share/man/man1/asn1parse.1

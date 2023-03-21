@@ -138,13 +138,13 @@ void client(int idx, int client_batch_size, int object_size, trace_vector &trace
     async_proxy_client client;
     client.init(host, proxy_port);
 
-    std::cout << "Client initialized" << std::endl;
+    // std::cout << "Client initialized" << std::endl;
     std::atomic<int> indiv_xput;
     std::atomic_init(&indiv_xput, 0);
     std::vector<int> latencies;
-    std::cout << "Beginning warmup" << std::endl;
+    // std::cout << "Beginning warmup" << std::endl;
     warmup(latencies, client_batch_size, object_size, trace, indiv_xput, client);
-    std::cout << "Beginning benchmark" << std::endl;
+    // std::cout << "Beginning benchmark" << std::endl;
     run_benchmark(20, true, latencies, client_batch_size, object_size, trace, indiv_xput, client);
     std::string location = output_directory + "/" + std::to_string(idx);
     std::ofstream out(location);
@@ -158,8 +158,8 @@ void client(int idx, int client_batch_size, int object_size, trace_vector &trace
     out << line;
     xput += indiv_xput;
 
-    std::cout << "xput is: " << xput << std::endl;
-    std::cout << "Beginning cooldown" << std::endl;
+    // std::cout << "xput is: " << xput << std::endl;
+    // std::cout << "Beginning cooldown" << std::endl;
     cooldown(latencies, client_batch_size, object_size, trace, indiv_xput, client);
 
     client.finish();
@@ -199,7 +199,7 @@ int main(int argc, char *argv[]) {
     auto date_string = std::string(std::ctime(&end_time));
     date_string = date_string.substr(0, date_string.rfind(":"));
     date_string.erase(remove(date_string.begin(), date_string.end(), ' '), date_string.end());
-    std::string output_directory = "data/"+date_string;
+    std::string output_directory = "/home/svemula/Waffle/waffle_test/waffleClient/data/"+date_string;
 
     int o;
     std::string proxy_type_ = "pancake";
@@ -235,7 +235,7 @@ int main(int argc, char *argv[]) {
 
     trace_vector trace;
     load_trace(trace_location, trace, client_batch_size);
-    std::cout << "trace loaded" << std::endl;
+    // std::cout << "trace loaded" << std::endl;
 
     std::vector<std::thread> threads;
     for (int i = 0; i < num_clients; i++) {
@@ -244,5 +244,6 @@ int main(int argc, char *argv[]) {
     }
     for (int i = 0; i < num_clients; i++)
         threads[i].join();
-    std::cout << "Xput was: " << xput << std::endl;
+    // std::cout << "Xput was: " << xput << std::endl;
+    std::cout << xput << std::endl;
 }

@@ -1,3 +1,6 @@
+-- File already exists but no hash specified (use URL_HASH):
+  file='/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift-0.12.0.tar.gz'
+Old file will be removed and new file downloaded from URL.
 -- Downloading...
    dst='/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift-0.12.0.tar.gz'
    timeout='none'
@@ -7,7 +10,6 @@
 -- [download 1% complete]
 -- [download 2% complete]
 -- [download 3% complete]
--- [download 4% complete]
 -- [download 5% complete]
 -- [download 6% complete]
 -- [download 7% complete]

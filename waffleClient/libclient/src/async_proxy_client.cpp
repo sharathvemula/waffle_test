@@ -22,7 +22,7 @@ void async_proxy_client::init(const std::string &host_name, int port) {
     requests_ = std::make_shared<queue<int>>();
     client_id_ = get_client_id();
     seq_id_ = sequence_id();
-    std::cout << "IN client::init, client_id_ is " << client_id_ << std::endl;
+    // std::cout << "IN client::init, client_id_ is " << client_id_ << std::endl;
     seq_id_.__set_client_id(client_id_);
     
     m_mtx_ = new std::mutex();
@@ -35,7 +35,7 @@ void async_proxy_client::init(const std::string &host_name, int port) {
 int64_t async_proxy_client::get_client_id() {
   auto id = client_->get_client_id();
   auto block_id_ = 1;
-  std::cout << "Client ID is " << id << std::endl;
+  // std::cout << "Client ID is " << id << std::endl;
   client_->register_client_id(block_id_, id);
   return id;
 }
@@ -100,7 +100,7 @@ void async_proxy_client::read_responses() {
         try {
             reader_.recv_response(_return);
         } catch(apache::thrift::transport::TTransportException e){
-            std::cout << "Client read responses is FAILURE " << std::endl;
+            // std::cout << "Client read responses is FAILURE " << std::endl;
             (void)0;
         }
         *total_ += _return.size();

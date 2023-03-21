@@ -117,7 +117,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     }
 
     // Initialising Cache
-    size_t cacheCapacity = 4*B;
+    size_t cacheCapacity = cacheBatches*B;
     std::unordered_set<std::string> temp;
     std::vector<std::string> valuesCache;
     while(keysCacheUnencrypted.size() < cacheCapacity) {
@@ -199,19 +199,21 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     date_string = std::string(std::ctime(&end_time));
     date_string = date_string.substr(0, date_string.rfind(":"));
     date_string.erase(remove(date_string.begin(), date_string.end(), ' '), date_string.end());
-    std::string output_directory_bst_latency = "data/"+std::string("BST_Latency_")+date_string;
-    _mkdirProxy((output_directory_bst_latency).c_str());
+    if(latency) {
+        std::string output_directory_bst_latency = "data/"+std::string("BST_Latency_")+date_string;
+        _mkdirProxy((output_directory_bst_latency).c_str());
 
-    std::string output_directory_redis_latency = "data/"+std::string("Redis_Latency_")+date_string;
-    _mkdirProxy((output_directory_redis_latency).c_str());
+        std::string output_directory_redis_latency = "data/"+std::string("Redis_Latency_")+date_string;
+        _mkdirProxy((output_directory_redis_latency).c_str());
 
-    std::string output_directory_cache_miss = "data/"+std::string("Cache_miss_")+date_string;
-    _mkdirProxy((output_directory_cache_miss).c_str());
+        std::string output_directory_cache_miss = "data/"+std::string("Cache_miss_")+date_string;
+        _mkdirProxy((output_directory_cache_miss).c_str());
 
-    out_bst_latency = std::ofstream(output_directory_bst_latency+"/1");
-    out_redis_latency = std::ofstream(output_directory_redis_latency+"/1");
-    out_cache_miss = std::ofstream(output_directory_cache_miss+"/1");
-
+        out_bst_latency = std::ofstream(output_directory_bst_latency+"/1");
+        out_redis_latency = std::ofstream(output_directory_redis_latency+"/1");
+        out_cache_miss = std::ofstream(output_directory_cache_miss+"/1");
+    }
+    
     ticks_per_ns = static_cast<double>(rdtscuhzProxy()) / 1000;
 
     std::cout << "Successfully initialized waffle with keys size " << keys.size() << " and cache with " << cache.size() << " Fake keys size is " << D << " batch size is " << B << " F is" << F << " FakeBST size is " << fakeBst.size() << std::endl;
@@ -342,12 +344,12 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
             std::vector<std::string> kv_pair;
             auto& cacheMutex = cache.getMutex();
             auto& evictedItemsMutex = EvictedItems.getMutex();
-            auto& runningKeysMutex = runningKeys.getMutex();
+            // auto& runningKeysMutex = runningKeys.getMutex();
             // This means ith request is for real key
             {
                 std::lock_guard<std::mutex> lockCache(cacheMutex);
                 std::lock_guard<std::mutex> lockEvicted(evictedItemsMutex);
-                std::lock_guard<std::mutex> lockRunningKeys(runningKeysMutex);
+                // std::lock_guard<std::mutex> lockRunningKeys(runningKeysMutex);
                 kv_pair = cache.evictLRElementFromCache();
                 EvictedItems.insert(kv_pair[0], kv_pair[1]);
             }
@@ -580,4 +582,3 @@ void waffle_proxy::close() {
     for (int i = 0; i < threads_.size(); i++)
         threads_[i].join();
 };
-

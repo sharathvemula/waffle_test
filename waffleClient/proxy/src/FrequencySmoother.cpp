@@ -55,6 +55,16 @@ void FrequencySmoother::setFrequency(std::string key, int value) {
 	accessTree.insert({key, accessFreqs[key]});
 }
 
+void FrequencySmoother::removeKey(std::string key) {
+	std::lock_guard<std::mutex> lock(m_mutex_);
+	accessTree.erase({key, accessFreqs[key]});
+}
+
+void FrequencySmoother::addKey(std::string key) {
+	std::lock_guard<std::mutex> lock(m_mutex_);
+	accessTree.insert({key, accessFreqs[key]});
+}
+
 int FrequencySmoother::getFrequency(std::string key) {
 	std::lock_guard<std::mutex> lock(m_mutex_);
 	return accessFreqs[key];
@@ -73,3 +83,20 @@ std::set<std::pair<std::string, int>, decltype(&freqCmp)>::iterator FrequencySmo
 std::mutex& FrequencySmoother::getMutex() {
 	return m_mutex_;
 }
+
+// void FrequencySmoother::storeFreq(std::string key, int freq) {
+// 	std::lock_guard<std::mutex> lock(m_mutex_freq);
+// 	freqStore[key] = freq;
+// }
+
+// int FrequencySmoother::getstoredFreq(std::string key) {
+// 	std::lock_guard<std::mutex> lock(m_mutex_freq);
+// 	return freqStore[key];
+// }
+
+// int FrequencySmoother::removestoredFreq(std::string key) {
+// 	std::lock_guard<std::mutex> lock(m_mutex_freq);
+// 	auto val  = freqStore[key];
+// 	freqStore.erase(key);
+// 	return val;
+// }

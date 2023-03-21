@@ -1,8 +1,1 @@
 fatal: No names found, cannot describe anything.
-[33mCMake Warning:
-  Manually-specified variables were not used by the project:
-
-    CMAKE_CXX_COMPILER
-    ENABLE_TESTING
-
-[0m

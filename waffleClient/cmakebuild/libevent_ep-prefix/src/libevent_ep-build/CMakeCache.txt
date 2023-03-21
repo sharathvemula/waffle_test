@@ -35,8 +35,8 @@ CMAKE_CONFIGURATION_TYPES:STRING=Debug;Release
 //No help, variable specified on the command line.
 CMAKE_CXX_COMPILER:UNINITIALIZED=/usr/bin/c++
 
-//C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/cc
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:UNINITIALIZED=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -365,6 +365,8 @@ CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
 CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
 //Have library pthread
 CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep
