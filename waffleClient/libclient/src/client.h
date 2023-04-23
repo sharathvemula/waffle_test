@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 8/29/19.
-//
-
 #ifndef CLIENT_H
 #define CLIENT_H
 #include <string>

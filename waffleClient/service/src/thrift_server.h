@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 10/5/19.
-//
-
 #ifndef WAFFLE_THRIFT_SERVER_H
 #define WAFFLE_THRIFT_SERVER_H
 

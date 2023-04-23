@@ -1,8 +1,3 @@
-//
-// Created by Lloyd Brown on 10/24/19.
-//
-
-// for windows mkdir
 #ifdef _WIN32
 #include <direct.h>
 #endif
@@ -91,6 +86,7 @@ void run_benchmark(int run_time, bool stats, std::vector<int> &latencies, int cl
     std::vector<std::string> results;
     int i = 0;
     while (elapsed < run_time*1000000) {
+        if(i == trace.size()) break;
         //std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << "i =  " << i << std::endl;
         if (stats) {
             rdtscll(start);
@@ -113,7 +109,7 @@ void run_benchmark(int run_time, bool stats, std::vector<int> &latencies, int cl
         }
         e = std::chrono::high_resolution_clock::now();
         elapsed = static_cast<int>(std::chrono::duration_cast<std::chrono::microseconds>(e - s).count());
-        i = (i+1)%keys_values_pair.first.size();
+        ++i;
     }
     if (stats) 
         ops = client.num_requests_satisfied() - ops;
@@ -138,14 +134,14 @@ void client(int idx, int client_batch_size, int object_size, trace_vector &trace
     async_proxy_client client;
     client.init(host, proxy_port);
 
-    // std::cout << "Client initialized" << std::endl;
+    // std::cout << "Client initialized with batch size " << client_batch_size << std::endl;
     std::atomic<int> indiv_xput;
     std::atomic_init(&indiv_xput, 0);
     std::vector<int> latencies;
     // std::cout << "Beginning warmup" << std::endl;
     warmup(latencies, client_batch_size, object_size, trace, indiv_xput, client);
     // std::cout << "Beginning benchmark" << std::endl;
-    run_benchmark(20, true, latencies, client_batch_size, object_size, trace, indiv_xput, client);
+    run_benchmark(30, true, latencies, client_batch_size, object_size, trace, indiv_xput, client);
     std::string location = output_directory + "/" + std::to_string(idx);
     std::ofstream out(location);
     std::string line("");
@@ -188,7 +184,7 @@ int _mkdir(const char *path) {
 }
 
 int main(int argc, char *argv[]) {
-    std::string proxy_host = "192.168.152.109";
+    std::string proxy_host = "192.168.252.109";
     int proxy_port = 9090;
     std::string trace_location = "";
     int client_batch_size = 50;

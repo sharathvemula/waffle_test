@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 8/29/19.
-//
-
 #ifndef PROXY_H
 #define PROXY_H
 

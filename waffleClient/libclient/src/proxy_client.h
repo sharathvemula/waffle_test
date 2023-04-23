@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 10/1/19.
-//
-
 #ifndef WAFFLE_PROXY_CLIENT_H
 #define WAFFLE_PROXY_CLIENT_H
 

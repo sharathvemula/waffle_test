@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 8/30/19.
-//
-
 #include "encryption_engine.h"
 #include <iostream>
 

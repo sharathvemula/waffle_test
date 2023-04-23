@@ -1,8 +1,3 @@
-//
-// Created by Lloyd Brown on 10/5/19.
-//
-
-
 #include <unordered_map>
 #include <iostream>
 

@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 10/1/19.
-//
-
 #include "async_proxy_client.h"
 
 using namespace ::apache::thrift;

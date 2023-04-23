@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 9/2/19.
-//
-
 #include "redis.h"
 
     redis::redis(const std::string &host_name, int port){

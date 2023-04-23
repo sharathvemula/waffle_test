@@ -117,7 +117,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     }
 
     // Initialising Cache
-    size_t cacheCapacity = cacheBatches*B;
+    size_t cacheCapacity = cacheBatches*1000000/100;
     std::unordered_set<std::string> temp;
     std::vector<std::string> valuesCache;
     while(keysCacheUnencrypted.size() < cacheCapacity) {
@@ -200,13 +200,13 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     date_string = date_string.substr(0, date_string.rfind(":"));
     date_string.erase(remove(date_string.begin(), date_string.end(), ' '), date_string.end());
     if(latency) {
-        std::string output_directory_bst_latency = "data/"+std::string("BST_Latency_")+date_string;
+        std::string output_directory_bst_latency = "/home/svemula/tmp/BST_Latency";
         _mkdirProxy((output_directory_bst_latency).c_str());
 
-        std::string output_directory_redis_latency = "data/"+std::string("Redis_Latency_")+date_string;
+        std::string output_directory_redis_latency = "/home/svemula/tmp/Redis_Latency";
         _mkdirProxy((output_directory_redis_latency).c_str());
 
-        std::string output_directory_cache_miss = "data/"+std::string("Cache_miss_")+date_string;
+        std::string output_directory_cache_miss = "/home/svemula/tmp/Cache_miss";
         _mkdirProxy((output_directory_cache_miss).c_str());
 
         out_bst_latency = std::ofstream(output_directory_bst_latency+"/1");
@@ -281,7 +281,7 @@ void waffle_proxy::execute_batch(const std::vector<operation> &operations, std::
         rdtscllProxy(start);
     }
 
-    // std::cout << "r is " << operations.size() << std::endl;
+    // std::cout << "r is " << operations.size() << " f_r is " <<  B-(operations.size()+F) << std::endl;
     for(int i = 0; i < operations.size(); i++){
         std::string key = operations[i].key;
         auto stKey = enc_engine->prf(key + "#" + std::to_string(realBst.getFrequency(key)));

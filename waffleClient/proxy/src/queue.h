@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 9/28/19.
-//
-
 #ifndef WAFFLE_QUEUE_H
 #define WAFFLE_QUEUE_H
 

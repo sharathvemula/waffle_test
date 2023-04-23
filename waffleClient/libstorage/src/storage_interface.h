@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 8/29/19.
-//
-
 #ifndef STORAGE_INTERFACE_H
 #define STORAGE_INTERFACE_H
 #include <string>

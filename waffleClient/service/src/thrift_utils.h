@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 10/6/19.
-//
-
 #ifndef PANCAKE_THRIFT_UTILS_H
 #define PANCAKE_THRIFT_UTILS_H
 

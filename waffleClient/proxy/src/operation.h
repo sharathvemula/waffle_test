@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 8/29/19.
-//
-
 #ifndef WAFFLE_OPERATION_H
 #define WAFFLE_OPERATION_H
 

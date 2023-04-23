@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 8/29/19.
-//
-
 #ifndef REDIS_H
 #define REDIS_H
 

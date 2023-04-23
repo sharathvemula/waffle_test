@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 9/19/19.
-//
-
 #ifndef WAFFLE_UTIL_H
 #define WAFFLE_UTIL_H
 

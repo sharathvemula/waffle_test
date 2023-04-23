@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 9/20/19.
-//
-
 #include "util.h"
 
 uint32_t rand_uint32(const uint32_t &min, const uint32_t &max) {

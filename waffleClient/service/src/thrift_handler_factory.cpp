@@ -1,6 +1,3 @@
-//
-// Created by Lloyd Brown on 10/5/19.
-//
 #include "thrift_handler_factory.h"
 
 using namespace ::apache::thrift;

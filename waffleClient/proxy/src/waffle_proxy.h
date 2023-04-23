@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 8/29/19.
-//
-
 #ifndef WAFFLE_PROXY_H
 #define WAFFLE_PROXY_H
 
@@ -72,7 +68,7 @@ public:
 
     std::string output_location_ = "log";
     std::string trace_location_ = "";
-    std::string server_host_name_ = "192.168.152.110";
+    std::string server_host_name_ = "192.168.252.110";
     int server_port_ = 6379;
     int security_batch_size_ = 3;
     int object_size_ = 1024;

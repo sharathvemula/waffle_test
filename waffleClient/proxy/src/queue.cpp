@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 9/28/19.
-//
-
 #include "queue.h"
 template<typename T>
 T queue<T>::pop() {

@@ -1,7 +1,3 @@
-//
-// Created by Lloyd Brown on 8/30/19.
-//
-
 #ifndef WAFFLE_ENCRYPTION_ENGINE_H
 #define WAFFLE_ENCRYPTION_ENGINE_H
 
