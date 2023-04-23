@@ -117,7 +117,7 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     }
 
     // Initialising Cache
-    size_t cacheCapacity = cacheBatches*1000000/100;
+    size_t cacheCapacity = cacheBatches*keys.size()/100;
     std::unordered_set<std::string> temp;
     std::vector<std::string> valuesCache;
     while(keysCacheUnencrypted.size() < cacheCapacity) {
