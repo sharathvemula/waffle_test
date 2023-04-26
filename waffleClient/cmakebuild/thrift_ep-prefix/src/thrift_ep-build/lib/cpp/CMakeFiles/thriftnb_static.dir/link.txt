@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../libthriftnb.a CMakeFiles/thriftnb_static.dir/src/thrift/server/TNonblockingServer.cpp.o CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingServerSocket.cpp.o CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingSSLServerSocket.cpp.o CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpServer.cpp.o CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpClientChannel.cpp.o
-/usr/bin/ranlib ../libthriftnb.a

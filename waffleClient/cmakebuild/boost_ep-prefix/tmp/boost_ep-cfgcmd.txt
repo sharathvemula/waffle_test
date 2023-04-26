@@ -1,1 +1,0 @@
-cmd='./bootstrap.sh;--prefix=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/boost_ep'
