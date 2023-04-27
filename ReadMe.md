@@ -34,12 +34,16 @@ Then start the proxy:
 
 ```
 ./bin/proxy_server  -l <WORKLOAD_FILE> -b <BATCH_SIZE> -r <SYSTEM_PARAMETER> -f <FAKE_QUERIES_FOR_DUMMY_OBJECTS> -d <NUMBER_OF_DUMMY_OBJECTS> -c <CACHE_SIZE> -n <NUM_CORES> -h <STORAGE_SERVER_IP> -p <STORAGE_PORT>
+
+(Example: ./bin/proxy_server  -l tracefiles/proxy_server_command_line_input.txt -b 1200 -r 800 -f 100 -d 100000 -c 2 -n 1 -h 192.168.252.110 -p 6379 )
 ```
 
 Waffle will now initialize. After the proxy says it's reachable launch the benchmark code:
 
 ```
 ./bin/proxy_benchmark -t <TRACE_FILE> -h <PROXY_IP> -p <PROXY_PORT> -n <NUM_CLIENTS>
+
+(Example: ./bin/proxy_benchmark -t tracefiles/proxy_benchmark_command_line_input.txt -h 192.168.252.109 -p 9090 )
 ```
 
 After completion the benchmark will display the throughput during the run. There will be a new folder in the data folder that contains one file for each client displaying the latency of each operation in nanoseconds.
