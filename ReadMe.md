@@ -9,6 +9,7 @@ owner.
 ## Requirements
 
 * cmake-3.5+
+* redis-server
 
 ## Building
 
