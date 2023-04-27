@@ -195,7 +195,7 @@ int main(int argc, char *argv[]) {
     auto date_string = std::string(std::ctime(&end_time));
     date_string = date_string.substr(0, date_string.rfind(":"));
     date_string.erase(remove(date_string.begin(), date_string.end(), ' '), date_string.end());
-    std::string output_directory = "/home/svemula/Waffle/waffle_test/waffleClient/data/"+date_string;
+    std::string output_directory = "data/"+date_string;
 
     int o;
     std::string proxy_type_ = "pancake";

@@ -200,13 +200,13 @@ void waffle_proxy::init(const std::vector<std::string> &keys, const std::vector<
     date_string = date_string.substr(0, date_string.rfind(":"));
     date_string.erase(remove(date_string.begin(), date_string.end(), ' '), date_string.end());
     if(latency) {
-        std::string output_directory_bst_latency = "/home/svemula/tmp/BST_Latency";
+        std::string output_directory_bst_latency = "data/BST_Latency";
         _mkdirProxy((output_directory_bst_latency).c_str());
 
-        std::string output_directory_redis_latency = "/home/svemula/tmp/Redis_Latency";
+        std::string output_directory_redis_latency = "data/Redis_Latency";
         _mkdirProxy((output_directory_redis_latency).c_str());
 
-        std::string output_directory_cache_miss = "/home/svemula/tmp/Cache_miss";
+        std::string output_directory_cache_miss = "data/Cache_miss";
         _mkdirProxy((output_directory_cache_miss).c_str());
 
         out_bst_latency = std::ofstream(output_directory_bst_latency+"/1");
