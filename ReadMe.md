@@ -9,7 +9,7 @@ owner.
 ## Requirements
 
 * cmake-3.5+
-* redis-server
+* redis-server (https://redis.io/docs/getting-started/installation/install-redis-on-linux/ )
 
 ## Building
 
