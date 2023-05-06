@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild
 
 # Utility rule file for cpp_redis.
 
@@ -76,46 +76,46 @@ CMakeFiles/cpp_redis-complete: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-pa
 CMakeFiles/cpp_redis-complete: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure
 CMakeFiles/cpp_redis-complete: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-build
 CMakeFiles/cpp_redis-complete: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'cpp_redis'"
-	/usr/local/bin/cmake -E make_directory /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/cpp_redis-complete
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'cpp_redis'"
+	/usr/local/bin/cmake -E make_directory /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/cpp_redis-complete
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-done
 
 cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-build: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'cpp_redis'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-build-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'cpp_redis'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-build-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-build
 
 cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure: cpp_redis-prefix/tmp/cpp_redis-cfgcmd.txt
 cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'cpp_redis'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'cpp_redis'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure
 
 cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-download: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-gitinfo.txt
 cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-download: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'cpp_redis'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-download-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'cpp_redis'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-download-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-download
 
 cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-install: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'cpp_redis'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-install-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'cpp_redis'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-install-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-install
 
 cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'cpp_redis'"
-	/usr/local/bin/cmake -Dcfgdir= -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/tmp/cpp_redis-mkdirs.cmake
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'cpp_redis'"
+	/usr/local/bin/cmake -Dcfgdir= -P /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/tmp/cpp_redis-mkdirs.cmake
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-mkdir
 
 cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-patch: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'cpp_redis'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'cpp_redis'"
 	/usr/local/bin/cmake -E echo_append
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-patch
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-patch
 
 cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-update: cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'cpp_redis'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/tmp/cpp_redis-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'cpp_redis'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/tmp/cpp_redis-gitupdate.cmake
 
 cpp_redis: CMakeFiles/cpp_redis
 cpp_redis: CMakeFiles/cpp_redis-complete
@@ -138,6 +138,6 @@ CMakeFiles/cpp_redis.dir/clean:
 .PHONY : CMakeFiles/cpp_redis.dir/clean
 
 CMakeFiles/cpp_redis.dir/depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/Waffle/waffle_test/waffleClient /home/svemula/Waffle/waffle_test/waffleClient /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/cpp_redis.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/waffle_test/waffleClient /home/svemula/waffle_test/waffleClient /home/svemula/waffle_test/waffleClient/cmakebuild /home/svemula/waffle_test/waffleClient/cmakebuild /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/cpp_redis.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cpp_redis.dir/depend
 

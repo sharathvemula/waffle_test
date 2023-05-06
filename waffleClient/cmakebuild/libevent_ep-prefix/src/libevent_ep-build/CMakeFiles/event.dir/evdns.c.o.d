@@ -1,8 +1,8 @@
 CMakeFiles/event.dir/evdns.c.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evdns.c \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evdns.c \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/event2/event-config.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/evconfig-private.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/event2/event-config.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/evconfig-private.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -101,9 +101,9 @@ CMakeFiles/event.dir/evdns.c.o: \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/dns.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/visibility.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/util.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/dns.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/visibility.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/util.h \
  /usr/include/netdb.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -123,21 +123,21 @@ CMakeFiles/event.dir/evdns.c.o: \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/dns_struct.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/dns_compat.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/event.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/event_struct.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/keyvalq_struct.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/thread.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/defer-internal.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/compat/sys/queue.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/log-internal.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/mm-internal.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/strlcpy-internal.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/ipv6-internal.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/util-internal.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/dns_struct.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/dns_compat.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/event.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/event_struct.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/keyvalq_struct.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/thread.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/defer-internal.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/compat/sys/queue.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/log-internal.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/mm-internal.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/strlcpy-internal.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/ipv6-internal.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/util-internal.h \
  /usr/include/x86_64-linux-gnu/sys/eventfd.h \
  /usr/include/x86_64-linux-gnu/bits/eventfd.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/time-internal.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evthread-internal.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/time-internal.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/evthread-internal.h \
  /usr/include/arpa/inet.h

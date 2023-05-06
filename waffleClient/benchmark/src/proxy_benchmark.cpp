@@ -22,6 +22,18 @@
 
 typedef std::vector<std::pair<std::vector<std::string>, std::vector<std::string>>> trace_vector;
 
+int _mkdirBenchmark(const char *path) {
+    #ifdef _WIN32
+        return ::_mkdirBenchmark(path);
+    #else
+        #if _POSIX_C_SOURCE
+            return ::mkdir(path, 0755);
+        #else
+            return ::mkdir(path, 0755); // not sure if this works on mac
+        #endif
+    #endif
+}
+
 void load_trace(const std::string &trace_location, trace_vector &trace, int client_batch_size) {
     std::vector<std::string> get_keys;
     std::vector<std::string> put_keys;
@@ -35,6 +47,13 @@ void load_trace(const std::string &trace_location, trace_vector &trace, int clie
     if(!in_workload_file){
         std::perror("Unable to find workload file");
     }
+    std::time_t end_time = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+    std::string date_string = std::string(std::ctime(&end_time));
+    date_string = date_string.substr(0, date_string.rfind(":"));
+    date_string.erase(remove(date_string.begin(), date_string.end(), ' '), date_string.end());
+    // std::string output_bench = "data/"+std::string("benchmark_")+date_string;
+    // _mkdirBenchmark((output_bench).c_str());
+    // std::ofstream out_bench = std::ofstream(output_bench+"/1");
     std::string line;
     while (std::getline(in_workload_file, line)) {
         op = line.substr(0, line.find(" "));
@@ -44,6 +63,7 @@ void load_trace(const std::string &trace_location, trace_vector &trace, int clie
             val = key.substr(key.find(" ")+1);
             key = key.substr(0, key.find(" "));
         }
+        
         if(val == ""){
             get_keys.push_back(key);
             if (get_keys.size() == client_batch_size){
@@ -62,6 +82,7 @@ void load_trace(const std::string &trace_location, trace_vector &trace, int clie
         }
         assert (key != "PUT");
         assert (key != "GET");
+        
     }
     if (get_keys.size() > 0){
         trace.push_back(std::make_pair(get_keys, std::vector<std::string>()));
@@ -83,7 +104,6 @@ void run_benchmark(int run_time, bool stats, std::vector<int> &latencies, int cl
         ops = client.num_requests_satisfied();
     }
     uint64_t start, end;
-    //std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << std::endl;
     auto ticks_per_ns = static_cast<double>(rdtscuhz()) / 1000;
     auto s = std::chrono::high_resolution_clock::now();
     auto e = std::chrono::high_resolution_clock::now();
@@ -91,17 +111,15 @@ void run_benchmark(int run_time, bool stats, std::vector<int> &latencies, int cl
     std::vector<std::string> results;
     int i = 0;
     while (elapsed < run_time*1000000) {
-        //std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << "i =  " << i << std::endl;
+        if(i == trace.size()) break;
         if (stats) {
             rdtscll(start);
         }
         auto keys_values_pair = trace[i];
         if (keys_values_pair.second.empty()){
-            //std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << std::endl;
             client.get_batch(keys_values_pair.first);
         }
         else {
-            //std::cout << "Entering proxy_benchmark.cpp line " << __LINE__ << std::endl;
             client.put_batch(keys_values_pair.first, keys_values_pair.second);
         }
         if (stats) {
@@ -109,15 +127,13 @@ void run_benchmark(int run_time, bool stats, std::vector<int> &latencies, int cl
             double cycles = static_cast<double>(end - start);
             latencies.push_back((cycles / ticks_per_ns) / client_batch_size);
             rdtscll(start);
-            //ops += keys_values_pair.first.size();
         }
         e = std::chrono::high_resolution_clock::now();
         elapsed = static_cast<int>(std::chrono::duration_cast<std::chrono::microseconds>(e - s).count());
-        i = (i+1)%keys_values_pair.first.size();
+        ++i;
     }
     if (stats) 
         ops = client.num_requests_satisfied() - ops;
-    // std::cout << "Ops is " << ops << " client num_requests_satisfied is " << client.num_requests_satisfied() << std::endl;
     e = std::chrono::high_resolution_clock::now(); 
     elapsed = static_cast<int>(std::chrono::duration_cast<std::chrono::microseconds>(e - s).count());
     if (stats)
@@ -145,7 +161,7 @@ void client(int idx, int client_batch_size, int object_size, trace_vector &trace
     // std::cout << "Beginning warmup" << std::endl;
     warmup(latencies, client_batch_size, object_size, trace, indiv_xput, client);
     // std::cout << "Beginning benchmark" << std::endl;
-    run_benchmark(20, true, latencies, client_batch_size, object_size, trace, indiv_xput, client);
+    run_benchmark(240, true, latencies, client_batch_size, object_size, trace, indiv_xput, client);
     std::string location = output_directory + "/" + std::to_string(idx);
     std::ofstream out(location);
     std::string line("");
@@ -158,9 +174,6 @@ void client(int idx, int client_batch_size, int object_size, trace_vector &trace
     out << line;
     xput += indiv_xput;
 
-    // std::cout << "xput is: " << xput << std::endl;
-    // std::cout << xput << std::endl;
-    // std::cout << "Beginning cooldown" << std::endl;
     cooldown(latencies, client_batch_size, object_size, trace, indiv_xput, client);
 
     client.finish();
@@ -189,7 +202,7 @@ int _mkdir(const char *path) {
 }
 
 int main(int argc, char *argv[]) {
-    std::string proxy_host = "192.168.152.109";
+    std::string proxy_host = "192.168.152.107";
     int proxy_port = 9090;
     std::string trace_location = "";
     int client_batch_size = 50;

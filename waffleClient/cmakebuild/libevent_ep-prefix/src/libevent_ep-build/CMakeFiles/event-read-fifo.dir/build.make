@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/event-read-fifo.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/event-read-fifo.dir/progress.make
 include CMakeFiles/event-read-fifo.dir/flags.make
 
 CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o: CMakeFiles/event-read-fifo.dir/flags.make
-CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c
+CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o: /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c
 CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o: CMakeFiles/event-read-fifo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o -MF CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o.d -o CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o -MF CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o.d -o CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c
 
 CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c > CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c > CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.i
 
 CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c -o CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c -o CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.s
 
 # Object files for target event-read-fifo
 event__read__fifo_OBJECTS = \
@@ -94,7 +94,7 @@ bin/event-read-fifo: CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o
 bin/event-read-fifo: CMakeFiles/event-read-fifo.dir/build.make
 bin/event-read-fifo: lib/libevent_extra.a
 bin/event-read-fifo: CMakeFiles/event-read-fifo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable bin/event-read-fifo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable bin/event-read-fifo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/event-read-fifo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -106,6 +106,6 @@ CMakeFiles/event-read-fifo.dir/clean:
 .PHONY : CMakeFiles/event-read-fifo.dir/clean
 
 CMakeFiles/event-read-fifo.dir/depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event-read-fifo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/CMakeFiles/event-read-fifo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/event-read-fifo.dir/depend
 

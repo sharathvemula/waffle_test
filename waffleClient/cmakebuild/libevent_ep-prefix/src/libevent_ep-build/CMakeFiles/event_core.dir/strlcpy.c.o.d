@@ -1,8 +1,8 @@
 CMakeFiles/event_core.dir/strlcpy.c.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/strlcpy.c \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/strlcpy.c \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/event2/event-config.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/evconfig-private.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/event2/event-config.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/evconfig-private.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -35,7 +35,7 @@ CMakeFiles/event_core.dir/strlcpy.c.o: \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/strlcpy-internal.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/strlcpy-internal.h \
  /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \

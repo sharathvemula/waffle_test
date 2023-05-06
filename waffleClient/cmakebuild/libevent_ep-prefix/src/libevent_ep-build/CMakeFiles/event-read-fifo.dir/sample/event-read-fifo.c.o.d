@@ -1,7 +1,7 @@
 CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/sample/event-read-fifo.c \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/event2/event-config.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/include/event2/event-config.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -48,7 +48,7 @@ CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o: \
  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/compat/sys/queue.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/compat/sys/queue.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -112,9 +112,9 @@ CMakeFiles/event-read-fifo.dir/sample/event-read-fifo.c.o: \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/event.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/visibility.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/util.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/event.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/visibility.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep/include/event2/util.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/netdb.h \

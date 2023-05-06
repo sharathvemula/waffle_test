@@ -1,9 +1,9 @@
 lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/ThreadManager.cpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/ThreadManager.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/thrift-config.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/thrift/config.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/ThreadManager.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/thrift-config.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/thrift/config.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/ThreadManager.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -35,12 +35,12 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.o:
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Thread.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Thread.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/stdcxx.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/stdcxx.h \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp /usr/include/c++/9/cstddef \
@@ -161,9 +161,9 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.o:
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Exception.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/Thrift.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/PlatformSocket.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Exception.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/Thrift.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/PlatformSocket.h \
  /usr/include/assert.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -217,11 +217,11 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.o:
  /usr/include/boost/type_traits/is_abstract.hpp \
  /usr/include/boost/type_traits/add_lvalue_reference.hpp \
  /usr/include/boost/type_traits/add_reference.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TLogging.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TOutput.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Monitor.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TLogging.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TOutput.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Monitor.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Mutex.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Mutex.h \
  /usr/include/boost/noncopyable.hpp \
  /usr/include/boost/core/noncopyable.hpp /usr/include/boost/utility.hpp \
  /usr/include/boost/utility/base_from_member.hpp \
@@ -284,6 +284,6 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.o:
  /usr/include/boost/type_traits/add_pointer.hpp \
  /usr/include/boost/core/addressof.hpp \
  /usr/include/boost/core/checked_delete.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Util.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/concurrency/Util.h \
  /usr/include/c++/9/deque /usr/include/c++/9/bits/stl_deque.h \
  /usr/include/c++/9/bits/deque.tcc

@@ -1,5 +1,5 @@
 lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TBufferTransports.cpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TBufferTransports.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/cassert \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -74,7 +74,7 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.
  /usr/include/c++/9/bits/alloc_traits.h \
  /usr/include/c++/9/bits/memoryfwd.h \
  /usr/include/c++/9/bits/uniform_int_dist.h /usr/include/c++/9/limits \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TBufferTransports.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TBufferTransports.h \
  /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/boost/scoped_array.hpp \
  /usr/include/boost/smart_ptr/scoped_array.hpp \
@@ -101,15 +101,15 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.
  /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp \
  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TTransport.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/Thrift.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/PlatformSocket.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TTransport.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/Thrift.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/PlatformSocket.h \
  /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/thrift-config.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/thrift/config.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/thrift-config.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/thrift/config.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -216,9 +216,9 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.
  /usr/include/boost/type_traits/is_abstract.hpp \
  /usr/include/boost/type_traits/add_lvalue_reference.hpp \
  /usr/include/boost/type_traits/add_reference.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TLogging.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TOutput.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/stdcxx.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TLogging.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TOutput.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/stdcxx.h \
  /usr/include/c++/9/functional /usr/include/c++/9/bits/refwrap.h \
  /usr/include/c++/9/bits/std_function.h /usr/include/c++/9/memory \
  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
@@ -230,7 +230,7 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TTransportException.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TTransportException.h \
  /usr/include/boost/numeric/conversion/cast.hpp \
  /usr/include/boost/type.hpp \
  /usr/include/boost/numeric/conversion/converter.hpp \
@@ -393,4 +393,4 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.
  /usr/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp \
  /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp \
  /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TVirtualTransport.h
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/TVirtualTransport.h

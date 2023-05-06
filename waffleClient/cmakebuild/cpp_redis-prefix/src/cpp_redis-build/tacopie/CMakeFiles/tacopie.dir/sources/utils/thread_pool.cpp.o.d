@@ -1,7 +1,7 @@
 tacopie/CMakeFiles/tacopie.dir/sources/utils/thread_pool.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/utils/thread_pool.cpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/utils/thread_pool.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/logger.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/logger.hpp \
  /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -149,7 +149,7 @@ tacopie/CMakeFiles/tacopie.dir/sources/utils/thread_pool.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/thread_pool.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/thread_pool.hpp \
  /usr/include/c++/9/atomic /usr/include/c++/9/condition_variable \
  /usr/include/c++/9/functional /usr/include/c++/9/bits/std_function.h \
  /usr/include/c++/9/list /usr/include/c++/9/bits/stl_list.h \

@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thri
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && /usr/local/bin/cpack --config ./CPackConfig.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && /usr/local/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && /usr/local/bin/cpack --config ./CPackSourceConfig.cmake /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CPackSourceConfig.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && /usr/local/bin/cpack --config ./CPackSourceConfig.cmake /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/lib/cpp//CMakeFiles/progress.marks
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 0
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/lib/cpp//CMakeFiles/progress.marks
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/clean
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/preinstall
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/preinstall
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/cpp/CMakeFiles/thrift_static.dir/rule:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/CMakeFiles/thrift_static.dir/rule
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/CMakeFiles/thrift_static.dir/rule
 .PHONY : lib/cpp/CMakeFiles/thrift_static.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ thrift_static: lib/cpp/CMakeFiles/thrift_static.dir/rule
 
 # fast build rule for target.
 thrift_static/fast:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/build
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/build
 .PHONY : thrift_static/fast
 
 # Convenience name for target.
 lib/cpp/CMakeFiles/thriftnb_static.dir/rule:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/CMakeFiles/thriftnb_static.dir/rule
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/CMakeFiles/thriftnb_static.dir/rule
 .PHONY : lib/cpp/CMakeFiles/thriftnb_static.dir/rule
 
 # Convenience name for target.
@@ -206,7 +206,7 @@ thriftnb_static: lib/cpp/CMakeFiles/thriftnb_static.dir/rule
 
 # fast build rule for target.
 thriftnb_static/fast:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/build
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/build
 .PHONY : thriftnb_static/fast
 
 src/thrift/TApplicationException.o: src/thrift/TApplicationException.cpp.o
@@ -214,7 +214,7 @@ src/thrift/TApplicationException.o: src/thrift/TApplicationException.cpp.o
 
 # target to build an object file
 src/thrift/TApplicationException.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TApplicationException.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TApplicationException.cpp.o
 .PHONY : src/thrift/TApplicationException.cpp.o
 
 src/thrift/TApplicationException.i: src/thrift/TApplicationException.cpp.i
@@ -222,7 +222,7 @@ src/thrift/TApplicationException.i: src/thrift/TApplicationException.cpp.i
 
 # target to preprocess a source file
 src/thrift/TApplicationException.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TApplicationException.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TApplicationException.cpp.i
 .PHONY : src/thrift/TApplicationException.cpp.i
 
 src/thrift/TApplicationException.s: src/thrift/TApplicationException.cpp.s
@@ -230,7 +230,7 @@ src/thrift/TApplicationException.s: src/thrift/TApplicationException.cpp.s
 
 # target to generate assembly for a file
 src/thrift/TApplicationException.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TApplicationException.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TApplicationException.cpp.s
 .PHONY : src/thrift/TApplicationException.cpp.s
 
 src/thrift/TOutput.o: src/thrift/TOutput.cpp.o
@@ -238,7 +238,7 @@ src/thrift/TOutput.o: src/thrift/TOutput.cpp.o
 
 # target to build an object file
 src/thrift/TOutput.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TOutput.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TOutput.cpp.o
 .PHONY : src/thrift/TOutput.cpp.o
 
 src/thrift/TOutput.i: src/thrift/TOutput.cpp.i
@@ -246,7 +246,7 @@ src/thrift/TOutput.i: src/thrift/TOutput.cpp.i
 
 # target to preprocess a source file
 src/thrift/TOutput.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TOutput.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TOutput.cpp.i
 .PHONY : src/thrift/TOutput.cpp.i
 
 src/thrift/TOutput.s: src/thrift/TOutput.cpp.s
@@ -254,7 +254,7 @@ src/thrift/TOutput.s: src/thrift/TOutput.cpp.s
 
 # target to generate assembly for a file
 src/thrift/TOutput.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TOutput.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/TOutput.cpp.s
 .PHONY : src/thrift/TOutput.cpp.s
 
 src/thrift/VirtualProfiling.o: src/thrift/VirtualProfiling.cpp.o
@@ -262,7 +262,7 @@ src/thrift/VirtualProfiling.o: src/thrift/VirtualProfiling.cpp.o
 
 # target to build an object file
 src/thrift/VirtualProfiling.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/VirtualProfiling.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/VirtualProfiling.cpp.o
 .PHONY : src/thrift/VirtualProfiling.cpp.o
 
 src/thrift/VirtualProfiling.i: src/thrift/VirtualProfiling.cpp.i
@@ -270,7 +270,7 @@ src/thrift/VirtualProfiling.i: src/thrift/VirtualProfiling.cpp.i
 
 # target to preprocess a source file
 src/thrift/VirtualProfiling.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/VirtualProfiling.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/VirtualProfiling.cpp.i
 .PHONY : src/thrift/VirtualProfiling.cpp.i
 
 src/thrift/VirtualProfiling.s: src/thrift/VirtualProfiling.cpp.s
@@ -278,7 +278,7 @@ src/thrift/VirtualProfiling.s: src/thrift/VirtualProfiling.cpp.s
 
 # target to generate assembly for a file
 src/thrift/VirtualProfiling.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/VirtualProfiling.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/VirtualProfiling.cpp.s
 .PHONY : src/thrift/VirtualProfiling.cpp.s
 
 src/thrift/async/TAsyncChannel.o: src/thrift/async/TAsyncChannel.cpp.o
@@ -286,7 +286,7 @@ src/thrift/async/TAsyncChannel.o: src/thrift/async/TAsyncChannel.cpp.o
 
 # target to build an object file
 src/thrift/async/TAsyncChannel.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncChannel.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncChannel.cpp.o
 .PHONY : src/thrift/async/TAsyncChannel.cpp.o
 
 src/thrift/async/TAsyncChannel.i: src/thrift/async/TAsyncChannel.cpp.i
@@ -294,7 +294,7 @@ src/thrift/async/TAsyncChannel.i: src/thrift/async/TAsyncChannel.cpp.i
 
 # target to preprocess a source file
 src/thrift/async/TAsyncChannel.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncChannel.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncChannel.cpp.i
 .PHONY : src/thrift/async/TAsyncChannel.cpp.i
 
 src/thrift/async/TAsyncChannel.s: src/thrift/async/TAsyncChannel.cpp.s
@@ -302,7 +302,7 @@ src/thrift/async/TAsyncChannel.s: src/thrift/async/TAsyncChannel.cpp.s
 
 # target to generate assembly for a file
 src/thrift/async/TAsyncChannel.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncChannel.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncChannel.cpp.s
 .PHONY : src/thrift/async/TAsyncChannel.cpp.s
 
 src/thrift/async/TAsyncProtocolProcessor.o: src/thrift/async/TAsyncProtocolProcessor.cpp.o
@@ -310,7 +310,7 @@ src/thrift/async/TAsyncProtocolProcessor.o: src/thrift/async/TAsyncProtocolProce
 
 # target to build an object file
 src/thrift/async/TAsyncProtocolProcessor.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncProtocolProcessor.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncProtocolProcessor.cpp.o
 .PHONY : src/thrift/async/TAsyncProtocolProcessor.cpp.o
 
 src/thrift/async/TAsyncProtocolProcessor.i: src/thrift/async/TAsyncProtocolProcessor.cpp.i
@@ -318,7 +318,7 @@ src/thrift/async/TAsyncProtocolProcessor.i: src/thrift/async/TAsyncProtocolProce
 
 # target to preprocess a source file
 src/thrift/async/TAsyncProtocolProcessor.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncProtocolProcessor.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncProtocolProcessor.cpp.i
 .PHONY : src/thrift/async/TAsyncProtocolProcessor.cpp.i
 
 src/thrift/async/TAsyncProtocolProcessor.s: src/thrift/async/TAsyncProtocolProcessor.cpp.s
@@ -326,7 +326,7 @@ src/thrift/async/TAsyncProtocolProcessor.s: src/thrift/async/TAsyncProtocolProce
 
 # target to generate assembly for a file
 src/thrift/async/TAsyncProtocolProcessor.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncProtocolProcessor.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TAsyncProtocolProcessor.cpp.s
 .PHONY : src/thrift/async/TAsyncProtocolProcessor.cpp.s
 
 src/thrift/async/TConcurrentClientSyncInfo.o: src/thrift/async/TConcurrentClientSyncInfo.cpp.o
@@ -334,7 +334,7 @@ src/thrift/async/TConcurrentClientSyncInfo.o: src/thrift/async/TConcurrentClient
 
 # target to build an object file
 src/thrift/async/TConcurrentClientSyncInfo.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TConcurrentClientSyncInfo.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TConcurrentClientSyncInfo.cpp.o
 .PHONY : src/thrift/async/TConcurrentClientSyncInfo.cpp.o
 
 src/thrift/async/TConcurrentClientSyncInfo.i: src/thrift/async/TConcurrentClientSyncInfo.cpp.i
@@ -342,7 +342,7 @@ src/thrift/async/TConcurrentClientSyncInfo.i: src/thrift/async/TConcurrentClient
 
 # target to preprocess a source file
 src/thrift/async/TConcurrentClientSyncInfo.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TConcurrentClientSyncInfo.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TConcurrentClientSyncInfo.cpp.i
 .PHONY : src/thrift/async/TConcurrentClientSyncInfo.cpp.i
 
 src/thrift/async/TConcurrentClientSyncInfo.s: src/thrift/async/TConcurrentClientSyncInfo.cpp.s
@@ -350,7 +350,7 @@ src/thrift/async/TConcurrentClientSyncInfo.s: src/thrift/async/TConcurrentClient
 
 # target to generate assembly for a file
 src/thrift/async/TConcurrentClientSyncInfo.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TConcurrentClientSyncInfo.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/async/TConcurrentClientSyncInfo.cpp.s
 .PHONY : src/thrift/async/TConcurrentClientSyncInfo.cpp.s
 
 src/thrift/async/TEvhttpClientChannel.o: src/thrift/async/TEvhttpClientChannel.cpp.o
@@ -358,7 +358,7 @@ src/thrift/async/TEvhttpClientChannel.o: src/thrift/async/TEvhttpClientChannel.c
 
 # target to build an object file
 src/thrift/async/TEvhttpClientChannel.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpClientChannel.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpClientChannel.cpp.o
 .PHONY : src/thrift/async/TEvhttpClientChannel.cpp.o
 
 src/thrift/async/TEvhttpClientChannel.i: src/thrift/async/TEvhttpClientChannel.cpp.i
@@ -366,7 +366,7 @@ src/thrift/async/TEvhttpClientChannel.i: src/thrift/async/TEvhttpClientChannel.c
 
 # target to preprocess a source file
 src/thrift/async/TEvhttpClientChannel.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpClientChannel.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpClientChannel.cpp.i
 .PHONY : src/thrift/async/TEvhttpClientChannel.cpp.i
 
 src/thrift/async/TEvhttpClientChannel.s: src/thrift/async/TEvhttpClientChannel.cpp.s
@@ -374,7 +374,7 @@ src/thrift/async/TEvhttpClientChannel.s: src/thrift/async/TEvhttpClientChannel.c
 
 # target to generate assembly for a file
 src/thrift/async/TEvhttpClientChannel.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpClientChannel.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpClientChannel.cpp.s
 .PHONY : src/thrift/async/TEvhttpClientChannel.cpp.s
 
 src/thrift/async/TEvhttpServer.o: src/thrift/async/TEvhttpServer.cpp.o
@@ -382,7 +382,7 @@ src/thrift/async/TEvhttpServer.o: src/thrift/async/TEvhttpServer.cpp.o
 
 # target to build an object file
 src/thrift/async/TEvhttpServer.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpServer.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpServer.cpp.o
 .PHONY : src/thrift/async/TEvhttpServer.cpp.o
 
 src/thrift/async/TEvhttpServer.i: src/thrift/async/TEvhttpServer.cpp.i
@@ -390,7 +390,7 @@ src/thrift/async/TEvhttpServer.i: src/thrift/async/TEvhttpServer.cpp.i
 
 # target to preprocess a source file
 src/thrift/async/TEvhttpServer.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpServer.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpServer.cpp.i
 .PHONY : src/thrift/async/TEvhttpServer.cpp.i
 
 src/thrift/async/TEvhttpServer.s: src/thrift/async/TEvhttpServer.cpp.s
@@ -398,7 +398,7 @@ src/thrift/async/TEvhttpServer.s: src/thrift/async/TEvhttpServer.cpp.s
 
 # target to generate assembly for a file
 src/thrift/async/TEvhttpServer.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpServer.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/async/TEvhttpServer.cpp.s
 .PHONY : src/thrift/async/TEvhttpServer.cpp.s
 
 src/thrift/concurrency/Monitor.o: src/thrift/concurrency/Monitor.cpp.o
@@ -406,7 +406,7 @@ src/thrift/concurrency/Monitor.o: src/thrift/concurrency/Monitor.cpp.o
 
 # target to build an object file
 src/thrift/concurrency/Monitor.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Monitor.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Monitor.cpp.o
 .PHONY : src/thrift/concurrency/Monitor.cpp.o
 
 src/thrift/concurrency/Monitor.i: src/thrift/concurrency/Monitor.cpp.i
@@ -414,7 +414,7 @@ src/thrift/concurrency/Monitor.i: src/thrift/concurrency/Monitor.cpp.i
 
 # target to preprocess a source file
 src/thrift/concurrency/Monitor.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Monitor.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Monitor.cpp.i
 .PHONY : src/thrift/concurrency/Monitor.cpp.i
 
 src/thrift/concurrency/Monitor.s: src/thrift/concurrency/Monitor.cpp.s
@@ -422,7 +422,7 @@ src/thrift/concurrency/Monitor.s: src/thrift/concurrency/Monitor.cpp.s
 
 # target to generate assembly for a file
 src/thrift/concurrency/Monitor.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Monitor.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Monitor.cpp.s
 .PHONY : src/thrift/concurrency/Monitor.cpp.s
 
 src/thrift/concurrency/Mutex.o: src/thrift/concurrency/Mutex.cpp.o
@@ -430,7 +430,7 @@ src/thrift/concurrency/Mutex.o: src/thrift/concurrency/Mutex.cpp.o
 
 # target to build an object file
 src/thrift/concurrency/Mutex.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Mutex.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Mutex.cpp.o
 .PHONY : src/thrift/concurrency/Mutex.cpp.o
 
 src/thrift/concurrency/Mutex.i: src/thrift/concurrency/Mutex.cpp.i
@@ -438,7 +438,7 @@ src/thrift/concurrency/Mutex.i: src/thrift/concurrency/Mutex.cpp.i
 
 # target to preprocess a source file
 src/thrift/concurrency/Mutex.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Mutex.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Mutex.cpp.i
 .PHONY : src/thrift/concurrency/Mutex.cpp.i
 
 src/thrift/concurrency/Mutex.s: src/thrift/concurrency/Mutex.cpp.s
@@ -446,7 +446,7 @@ src/thrift/concurrency/Mutex.s: src/thrift/concurrency/Mutex.cpp.s
 
 # target to generate assembly for a file
 src/thrift/concurrency/Mutex.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Mutex.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Mutex.cpp.s
 .PHONY : src/thrift/concurrency/Mutex.cpp.s
 
 src/thrift/concurrency/PosixThreadFactory.o: src/thrift/concurrency/PosixThreadFactory.cpp.o
@@ -454,7 +454,7 @@ src/thrift/concurrency/PosixThreadFactory.o: src/thrift/concurrency/PosixThreadF
 
 # target to build an object file
 src/thrift/concurrency/PosixThreadFactory.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/PosixThreadFactory.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/PosixThreadFactory.cpp.o
 .PHONY : src/thrift/concurrency/PosixThreadFactory.cpp.o
 
 src/thrift/concurrency/PosixThreadFactory.i: src/thrift/concurrency/PosixThreadFactory.cpp.i
@@ -462,7 +462,7 @@ src/thrift/concurrency/PosixThreadFactory.i: src/thrift/concurrency/PosixThreadF
 
 # target to preprocess a source file
 src/thrift/concurrency/PosixThreadFactory.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/PosixThreadFactory.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/PosixThreadFactory.cpp.i
 .PHONY : src/thrift/concurrency/PosixThreadFactory.cpp.i
 
 src/thrift/concurrency/PosixThreadFactory.s: src/thrift/concurrency/PosixThreadFactory.cpp.s
@@ -470,7 +470,7 @@ src/thrift/concurrency/PosixThreadFactory.s: src/thrift/concurrency/PosixThreadF
 
 # target to generate assembly for a file
 src/thrift/concurrency/PosixThreadFactory.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/PosixThreadFactory.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/PosixThreadFactory.cpp.s
 .PHONY : src/thrift/concurrency/PosixThreadFactory.cpp.s
 
 src/thrift/concurrency/ThreadManager.o: src/thrift/concurrency/ThreadManager.cpp.o
@@ -478,7 +478,7 @@ src/thrift/concurrency/ThreadManager.o: src/thrift/concurrency/ThreadManager.cpp
 
 # target to build an object file
 src/thrift/concurrency/ThreadManager.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.o
 .PHONY : src/thrift/concurrency/ThreadManager.cpp.o
 
 src/thrift/concurrency/ThreadManager.i: src/thrift/concurrency/ThreadManager.cpp.i
@@ -486,7 +486,7 @@ src/thrift/concurrency/ThreadManager.i: src/thrift/concurrency/ThreadManager.cpp
 
 # target to preprocess a source file
 src/thrift/concurrency/ThreadManager.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.i
 .PHONY : src/thrift/concurrency/ThreadManager.cpp.i
 
 src/thrift/concurrency/ThreadManager.s: src/thrift/concurrency/ThreadManager.cpp.s
@@ -494,7 +494,7 @@ src/thrift/concurrency/ThreadManager.s: src/thrift/concurrency/ThreadManager.cpp
 
 # target to generate assembly for a file
 src/thrift/concurrency/ThreadManager.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/ThreadManager.cpp.s
 .PHONY : src/thrift/concurrency/ThreadManager.cpp.s
 
 src/thrift/concurrency/TimerManager.o: src/thrift/concurrency/TimerManager.cpp.o
@@ -502,7 +502,7 @@ src/thrift/concurrency/TimerManager.o: src/thrift/concurrency/TimerManager.cpp.o
 
 # target to build an object file
 src/thrift/concurrency/TimerManager.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/TimerManager.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/TimerManager.cpp.o
 .PHONY : src/thrift/concurrency/TimerManager.cpp.o
 
 src/thrift/concurrency/TimerManager.i: src/thrift/concurrency/TimerManager.cpp.i
@@ -510,7 +510,7 @@ src/thrift/concurrency/TimerManager.i: src/thrift/concurrency/TimerManager.cpp.i
 
 # target to preprocess a source file
 src/thrift/concurrency/TimerManager.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/TimerManager.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/TimerManager.cpp.i
 .PHONY : src/thrift/concurrency/TimerManager.cpp.i
 
 src/thrift/concurrency/TimerManager.s: src/thrift/concurrency/TimerManager.cpp.s
@@ -518,7 +518,7 @@ src/thrift/concurrency/TimerManager.s: src/thrift/concurrency/TimerManager.cpp.s
 
 # target to generate assembly for a file
 src/thrift/concurrency/TimerManager.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/TimerManager.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/TimerManager.cpp.s
 .PHONY : src/thrift/concurrency/TimerManager.cpp.s
 
 src/thrift/concurrency/Util.o: src/thrift/concurrency/Util.cpp.o
@@ -526,7 +526,7 @@ src/thrift/concurrency/Util.o: src/thrift/concurrency/Util.cpp.o
 
 # target to build an object file
 src/thrift/concurrency/Util.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Util.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Util.cpp.o
 .PHONY : src/thrift/concurrency/Util.cpp.o
 
 src/thrift/concurrency/Util.i: src/thrift/concurrency/Util.cpp.i
@@ -534,7 +534,7 @@ src/thrift/concurrency/Util.i: src/thrift/concurrency/Util.cpp.i
 
 # target to preprocess a source file
 src/thrift/concurrency/Util.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Util.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Util.cpp.i
 .PHONY : src/thrift/concurrency/Util.cpp.i
 
 src/thrift/concurrency/Util.s: src/thrift/concurrency/Util.cpp.s
@@ -542,7 +542,7 @@ src/thrift/concurrency/Util.s: src/thrift/concurrency/Util.cpp.s
 
 # target to generate assembly for a file
 src/thrift/concurrency/Util.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Util.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/concurrency/Util.cpp.s
 .PHONY : src/thrift/concurrency/Util.cpp.s
 
 src/thrift/processor/PeekProcessor.o: src/thrift/processor/PeekProcessor.cpp.o
@@ -550,7 +550,7 @@ src/thrift/processor/PeekProcessor.o: src/thrift/processor/PeekProcessor.cpp.o
 
 # target to build an object file
 src/thrift/processor/PeekProcessor.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/processor/PeekProcessor.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/processor/PeekProcessor.cpp.o
 .PHONY : src/thrift/processor/PeekProcessor.cpp.o
 
 src/thrift/processor/PeekProcessor.i: src/thrift/processor/PeekProcessor.cpp.i
@@ -558,7 +558,7 @@ src/thrift/processor/PeekProcessor.i: src/thrift/processor/PeekProcessor.cpp.i
 
 # target to preprocess a source file
 src/thrift/processor/PeekProcessor.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/processor/PeekProcessor.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/processor/PeekProcessor.cpp.i
 .PHONY : src/thrift/processor/PeekProcessor.cpp.i
 
 src/thrift/processor/PeekProcessor.s: src/thrift/processor/PeekProcessor.cpp.s
@@ -566,7 +566,7 @@ src/thrift/processor/PeekProcessor.s: src/thrift/processor/PeekProcessor.cpp.s
 
 # target to generate assembly for a file
 src/thrift/processor/PeekProcessor.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/processor/PeekProcessor.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/processor/PeekProcessor.cpp.s
 .PHONY : src/thrift/processor/PeekProcessor.cpp.s
 
 src/thrift/protocol/TBase64Utils.o: src/thrift/protocol/TBase64Utils.cpp.o
@@ -574,7 +574,7 @@ src/thrift/protocol/TBase64Utils.o: src/thrift/protocol/TBase64Utils.cpp.o
 
 # target to build an object file
 src/thrift/protocol/TBase64Utils.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TBase64Utils.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TBase64Utils.cpp.o
 .PHONY : src/thrift/protocol/TBase64Utils.cpp.o
 
 src/thrift/protocol/TBase64Utils.i: src/thrift/protocol/TBase64Utils.cpp.i
@@ -582,7 +582,7 @@ src/thrift/protocol/TBase64Utils.i: src/thrift/protocol/TBase64Utils.cpp.i
 
 # target to preprocess a source file
 src/thrift/protocol/TBase64Utils.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TBase64Utils.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TBase64Utils.cpp.i
 .PHONY : src/thrift/protocol/TBase64Utils.cpp.i
 
 src/thrift/protocol/TBase64Utils.s: src/thrift/protocol/TBase64Utils.cpp.s
@@ -590,7 +590,7 @@ src/thrift/protocol/TBase64Utils.s: src/thrift/protocol/TBase64Utils.cpp.s
 
 # target to generate assembly for a file
 src/thrift/protocol/TBase64Utils.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TBase64Utils.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TBase64Utils.cpp.s
 .PHONY : src/thrift/protocol/TBase64Utils.cpp.s
 
 src/thrift/protocol/TDebugProtocol.o: src/thrift/protocol/TDebugProtocol.cpp.o
@@ -598,7 +598,7 @@ src/thrift/protocol/TDebugProtocol.o: src/thrift/protocol/TDebugProtocol.cpp.o
 
 # target to build an object file
 src/thrift/protocol/TDebugProtocol.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TDebugProtocol.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TDebugProtocol.cpp.o
 .PHONY : src/thrift/protocol/TDebugProtocol.cpp.o
 
 src/thrift/protocol/TDebugProtocol.i: src/thrift/protocol/TDebugProtocol.cpp.i
@@ -606,7 +606,7 @@ src/thrift/protocol/TDebugProtocol.i: src/thrift/protocol/TDebugProtocol.cpp.i
 
 # target to preprocess a source file
 src/thrift/protocol/TDebugProtocol.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TDebugProtocol.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TDebugProtocol.cpp.i
 .PHONY : src/thrift/protocol/TDebugProtocol.cpp.i
 
 src/thrift/protocol/TDebugProtocol.s: src/thrift/protocol/TDebugProtocol.cpp.s
@@ -614,7 +614,7 @@ src/thrift/protocol/TDebugProtocol.s: src/thrift/protocol/TDebugProtocol.cpp.s
 
 # target to generate assembly for a file
 src/thrift/protocol/TDebugProtocol.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TDebugProtocol.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TDebugProtocol.cpp.s
 .PHONY : src/thrift/protocol/TDebugProtocol.cpp.s
 
 src/thrift/protocol/TJSONProtocol.o: src/thrift/protocol/TJSONProtocol.cpp.o
@@ -622,7 +622,7 @@ src/thrift/protocol/TJSONProtocol.o: src/thrift/protocol/TJSONProtocol.cpp.o
 
 # target to build an object file
 src/thrift/protocol/TJSONProtocol.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TJSONProtocol.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TJSONProtocol.cpp.o
 .PHONY : src/thrift/protocol/TJSONProtocol.cpp.o
 
 src/thrift/protocol/TJSONProtocol.i: src/thrift/protocol/TJSONProtocol.cpp.i
@@ -630,7 +630,7 @@ src/thrift/protocol/TJSONProtocol.i: src/thrift/protocol/TJSONProtocol.cpp.i
 
 # target to preprocess a source file
 src/thrift/protocol/TJSONProtocol.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TJSONProtocol.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TJSONProtocol.cpp.i
 .PHONY : src/thrift/protocol/TJSONProtocol.cpp.i
 
 src/thrift/protocol/TJSONProtocol.s: src/thrift/protocol/TJSONProtocol.cpp.s
@@ -638,7 +638,7 @@ src/thrift/protocol/TJSONProtocol.s: src/thrift/protocol/TJSONProtocol.cpp.s
 
 # target to generate assembly for a file
 src/thrift/protocol/TJSONProtocol.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TJSONProtocol.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TJSONProtocol.cpp.s
 .PHONY : src/thrift/protocol/TJSONProtocol.cpp.s
 
 src/thrift/protocol/TMultiplexedProtocol.o: src/thrift/protocol/TMultiplexedProtocol.cpp.o
@@ -646,7 +646,7 @@ src/thrift/protocol/TMultiplexedProtocol.o: src/thrift/protocol/TMultiplexedProt
 
 # target to build an object file
 src/thrift/protocol/TMultiplexedProtocol.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TMultiplexedProtocol.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TMultiplexedProtocol.cpp.o
 .PHONY : src/thrift/protocol/TMultiplexedProtocol.cpp.o
 
 src/thrift/protocol/TMultiplexedProtocol.i: src/thrift/protocol/TMultiplexedProtocol.cpp.i
@@ -654,7 +654,7 @@ src/thrift/protocol/TMultiplexedProtocol.i: src/thrift/protocol/TMultiplexedProt
 
 # target to preprocess a source file
 src/thrift/protocol/TMultiplexedProtocol.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TMultiplexedProtocol.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TMultiplexedProtocol.cpp.i
 .PHONY : src/thrift/protocol/TMultiplexedProtocol.cpp.i
 
 src/thrift/protocol/TMultiplexedProtocol.s: src/thrift/protocol/TMultiplexedProtocol.cpp.s
@@ -662,7 +662,7 @@ src/thrift/protocol/TMultiplexedProtocol.s: src/thrift/protocol/TMultiplexedProt
 
 # target to generate assembly for a file
 src/thrift/protocol/TMultiplexedProtocol.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TMultiplexedProtocol.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TMultiplexedProtocol.cpp.s
 .PHONY : src/thrift/protocol/TMultiplexedProtocol.cpp.s
 
 src/thrift/protocol/TProtocol.o: src/thrift/protocol/TProtocol.cpp.o
@@ -670,7 +670,7 @@ src/thrift/protocol/TProtocol.o: src/thrift/protocol/TProtocol.cpp.o
 
 # target to build an object file
 src/thrift/protocol/TProtocol.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TProtocol.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TProtocol.cpp.o
 .PHONY : src/thrift/protocol/TProtocol.cpp.o
 
 src/thrift/protocol/TProtocol.i: src/thrift/protocol/TProtocol.cpp.i
@@ -678,7 +678,7 @@ src/thrift/protocol/TProtocol.i: src/thrift/protocol/TProtocol.cpp.i
 
 # target to preprocess a source file
 src/thrift/protocol/TProtocol.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TProtocol.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TProtocol.cpp.i
 .PHONY : src/thrift/protocol/TProtocol.cpp.i
 
 src/thrift/protocol/TProtocol.s: src/thrift/protocol/TProtocol.cpp.s
@@ -686,7 +686,7 @@ src/thrift/protocol/TProtocol.s: src/thrift/protocol/TProtocol.cpp.s
 
 # target to generate assembly for a file
 src/thrift/protocol/TProtocol.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TProtocol.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/protocol/TProtocol.cpp.s
 .PHONY : src/thrift/protocol/TProtocol.cpp.s
 
 src/thrift/server/TConnectedClient.o: src/thrift/server/TConnectedClient.cpp.o
@@ -694,7 +694,7 @@ src/thrift/server/TConnectedClient.o: src/thrift/server/TConnectedClient.cpp.o
 
 # target to build an object file
 src/thrift/server/TConnectedClient.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TConnectedClient.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TConnectedClient.cpp.o
 .PHONY : src/thrift/server/TConnectedClient.cpp.o
 
 src/thrift/server/TConnectedClient.i: src/thrift/server/TConnectedClient.cpp.i
@@ -702,7 +702,7 @@ src/thrift/server/TConnectedClient.i: src/thrift/server/TConnectedClient.cpp.i
 
 # target to preprocess a source file
 src/thrift/server/TConnectedClient.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TConnectedClient.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TConnectedClient.cpp.i
 .PHONY : src/thrift/server/TConnectedClient.cpp.i
 
 src/thrift/server/TConnectedClient.s: src/thrift/server/TConnectedClient.cpp.s
@@ -710,7 +710,7 @@ src/thrift/server/TConnectedClient.s: src/thrift/server/TConnectedClient.cpp.s
 
 # target to generate assembly for a file
 src/thrift/server/TConnectedClient.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TConnectedClient.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TConnectedClient.cpp.s
 .PHONY : src/thrift/server/TConnectedClient.cpp.s
 
 src/thrift/server/TNonblockingServer.o: src/thrift/server/TNonblockingServer.cpp.o
@@ -718,7 +718,7 @@ src/thrift/server/TNonblockingServer.o: src/thrift/server/TNonblockingServer.cpp
 
 # target to build an object file
 src/thrift/server/TNonblockingServer.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/server/TNonblockingServer.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/server/TNonblockingServer.cpp.o
 .PHONY : src/thrift/server/TNonblockingServer.cpp.o
 
 src/thrift/server/TNonblockingServer.i: src/thrift/server/TNonblockingServer.cpp.i
@@ -726,7 +726,7 @@ src/thrift/server/TNonblockingServer.i: src/thrift/server/TNonblockingServer.cpp
 
 # target to preprocess a source file
 src/thrift/server/TNonblockingServer.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/server/TNonblockingServer.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/server/TNonblockingServer.cpp.i
 .PHONY : src/thrift/server/TNonblockingServer.cpp.i
 
 src/thrift/server/TNonblockingServer.s: src/thrift/server/TNonblockingServer.cpp.s
@@ -734,7 +734,7 @@ src/thrift/server/TNonblockingServer.s: src/thrift/server/TNonblockingServer.cpp
 
 # target to generate assembly for a file
 src/thrift/server/TNonblockingServer.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/server/TNonblockingServer.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/server/TNonblockingServer.cpp.s
 .PHONY : src/thrift/server/TNonblockingServer.cpp.s
 
 src/thrift/server/TServer.o: src/thrift/server/TServer.cpp.o
@@ -742,7 +742,7 @@ src/thrift/server/TServer.o: src/thrift/server/TServer.cpp.o
 
 # target to build an object file
 src/thrift/server/TServer.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServer.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServer.cpp.o
 .PHONY : src/thrift/server/TServer.cpp.o
 
 src/thrift/server/TServer.i: src/thrift/server/TServer.cpp.i
@@ -750,7 +750,7 @@ src/thrift/server/TServer.i: src/thrift/server/TServer.cpp.i
 
 # target to preprocess a source file
 src/thrift/server/TServer.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServer.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServer.cpp.i
 .PHONY : src/thrift/server/TServer.cpp.i
 
 src/thrift/server/TServer.s: src/thrift/server/TServer.cpp.s
@@ -758,7 +758,7 @@ src/thrift/server/TServer.s: src/thrift/server/TServer.cpp.s
 
 # target to generate assembly for a file
 src/thrift/server/TServer.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServer.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServer.cpp.s
 .PHONY : src/thrift/server/TServer.cpp.s
 
 src/thrift/server/TServerFramework.o: src/thrift/server/TServerFramework.cpp.o
@@ -766,7 +766,7 @@ src/thrift/server/TServerFramework.o: src/thrift/server/TServerFramework.cpp.o
 
 # target to build an object file
 src/thrift/server/TServerFramework.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServerFramework.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServerFramework.cpp.o
 .PHONY : src/thrift/server/TServerFramework.cpp.o
 
 src/thrift/server/TServerFramework.i: src/thrift/server/TServerFramework.cpp.i
@@ -774,7 +774,7 @@ src/thrift/server/TServerFramework.i: src/thrift/server/TServerFramework.cpp.i
 
 # target to preprocess a source file
 src/thrift/server/TServerFramework.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServerFramework.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServerFramework.cpp.i
 .PHONY : src/thrift/server/TServerFramework.cpp.i
 
 src/thrift/server/TServerFramework.s: src/thrift/server/TServerFramework.cpp.s
@@ -782,7 +782,7 @@ src/thrift/server/TServerFramework.s: src/thrift/server/TServerFramework.cpp.s
 
 # target to generate assembly for a file
 src/thrift/server/TServerFramework.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServerFramework.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TServerFramework.cpp.s
 .PHONY : src/thrift/server/TServerFramework.cpp.s
 
 src/thrift/server/TSimpleServer.o: src/thrift/server/TSimpleServer.cpp.o
@@ -790,7 +790,7 @@ src/thrift/server/TSimpleServer.o: src/thrift/server/TSimpleServer.cpp.o
 
 # target to build an object file
 src/thrift/server/TSimpleServer.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TSimpleServer.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TSimpleServer.cpp.o
 .PHONY : src/thrift/server/TSimpleServer.cpp.o
 
 src/thrift/server/TSimpleServer.i: src/thrift/server/TSimpleServer.cpp.i
@@ -798,7 +798,7 @@ src/thrift/server/TSimpleServer.i: src/thrift/server/TSimpleServer.cpp.i
 
 # target to preprocess a source file
 src/thrift/server/TSimpleServer.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TSimpleServer.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TSimpleServer.cpp.i
 .PHONY : src/thrift/server/TSimpleServer.cpp.i
 
 src/thrift/server/TSimpleServer.s: src/thrift/server/TSimpleServer.cpp.s
@@ -806,7 +806,7 @@ src/thrift/server/TSimpleServer.s: src/thrift/server/TSimpleServer.cpp.s
 
 # target to generate assembly for a file
 src/thrift/server/TSimpleServer.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TSimpleServer.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TSimpleServer.cpp.s
 .PHONY : src/thrift/server/TSimpleServer.cpp.s
 
 src/thrift/server/TThreadPoolServer.o: src/thrift/server/TThreadPoolServer.cpp.o
@@ -814,7 +814,7 @@ src/thrift/server/TThreadPoolServer.o: src/thrift/server/TThreadPoolServer.cpp.o
 
 # target to build an object file
 src/thrift/server/TThreadPoolServer.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadPoolServer.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadPoolServer.cpp.o
 .PHONY : src/thrift/server/TThreadPoolServer.cpp.o
 
 src/thrift/server/TThreadPoolServer.i: src/thrift/server/TThreadPoolServer.cpp.i
@@ -822,7 +822,7 @@ src/thrift/server/TThreadPoolServer.i: src/thrift/server/TThreadPoolServer.cpp.i
 
 # target to preprocess a source file
 src/thrift/server/TThreadPoolServer.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadPoolServer.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadPoolServer.cpp.i
 .PHONY : src/thrift/server/TThreadPoolServer.cpp.i
 
 src/thrift/server/TThreadPoolServer.s: src/thrift/server/TThreadPoolServer.cpp.s
@@ -830,7 +830,7 @@ src/thrift/server/TThreadPoolServer.s: src/thrift/server/TThreadPoolServer.cpp.s
 
 # target to generate assembly for a file
 src/thrift/server/TThreadPoolServer.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadPoolServer.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadPoolServer.cpp.s
 .PHONY : src/thrift/server/TThreadPoolServer.cpp.s
 
 src/thrift/server/TThreadedServer.o: src/thrift/server/TThreadedServer.cpp.o
@@ -838,7 +838,7 @@ src/thrift/server/TThreadedServer.o: src/thrift/server/TThreadedServer.cpp.o
 
 # target to build an object file
 src/thrift/server/TThreadedServer.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadedServer.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadedServer.cpp.o
 .PHONY : src/thrift/server/TThreadedServer.cpp.o
 
 src/thrift/server/TThreadedServer.i: src/thrift/server/TThreadedServer.cpp.i
@@ -846,7 +846,7 @@ src/thrift/server/TThreadedServer.i: src/thrift/server/TThreadedServer.cpp.i
 
 # target to preprocess a source file
 src/thrift/server/TThreadedServer.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadedServer.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadedServer.cpp.i
 .PHONY : src/thrift/server/TThreadedServer.cpp.i
 
 src/thrift/server/TThreadedServer.s: src/thrift/server/TThreadedServer.cpp.s
@@ -854,7 +854,7 @@ src/thrift/server/TThreadedServer.s: src/thrift/server/TThreadedServer.cpp.s
 
 # target to generate assembly for a file
 src/thrift/server/TThreadedServer.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadedServer.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/server/TThreadedServer.cpp.s
 .PHONY : src/thrift/server/TThreadedServer.cpp.s
 
 src/thrift/transport/TBufferTransports.o: src/thrift/transport/TBufferTransports.cpp.o
@@ -862,7 +862,7 @@ src/thrift/transport/TBufferTransports.o: src/thrift/transport/TBufferTransports
 
 # target to build an object file
 src/thrift/transport/TBufferTransports.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.o
 .PHONY : src/thrift/transport/TBufferTransports.cpp.o
 
 src/thrift/transport/TBufferTransports.i: src/thrift/transport/TBufferTransports.cpp.i
@@ -870,7 +870,7 @@ src/thrift/transport/TBufferTransports.i: src/thrift/transport/TBufferTransports
 
 # target to preprocess a source file
 src/thrift/transport/TBufferTransports.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.i
 .PHONY : src/thrift/transport/TBufferTransports.cpp.i
 
 src/thrift/transport/TBufferTransports.s: src/thrift/transport/TBufferTransports.cpp.s
@@ -878,7 +878,7 @@ src/thrift/transport/TBufferTransports.s: src/thrift/transport/TBufferTransports
 
 # target to generate assembly for a file
 src/thrift/transport/TBufferTransports.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TBufferTransports.cpp.s
 .PHONY : src/thrift/transport/TBufferTransports.cpp.s
 
 src/thrift/transport/TFDTransport.o: src/thrift/transport/TFDTransport.cpp.o
@@ -886,7 +886,7 @@ src/thrift/transport/TFDTransport.o: src/thrift/transport/TFDTransport.cpp.o
 
 # target to build an object file
 src/thrift/transport/TFDTransport.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFDTransport.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFDTransport.cpp.o
 .PHONY : src/thrift/transport/TFDTransport.cpp.o
 
 src/thrift/transport/TFDTransport.i: src/thrift/transport/TFDTransport.cpp.i
@@ -894,7 +894,7 @@ src/thrift/transport/TFDTransport.i: src/thrift/transport/TFDTransport.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/TFDTransport.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFDTransport.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFDTransport.cpp.i
 .PHONY : src/thrift/transport/TFDTransport.cpp.i
 
 src/thrift/transport/TFDTransport.s: src/thrift/transport/TFDTransport.cpp.s
@@ -902,7 +902,7 @@ src/thrift/transport/TFDTransport.s: src/thrift/transport/TFDTransport.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/TFDTransport.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFDTransport.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFDTransport.cpp.s
 .PHONY : src/thrift/transport/TFDTransport.cpp.s
 
 src/thrift/transport/TFileTransport.o: src/thrift/transport/TFileTransport.cpp.o
@@ -910,7 +910,7 @@ src/thrift/transport/TFileTransport.o: src/thrift/transport/TFileTransport.cpp.o
 
 # target to build an object file
 src/thrift/transport/TFileTransport.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFileTransport.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFileTransport.cpp.o
 .PHONY : src/thrift/transport/TFileTransport.cpp.o
 
 src/thrift/transport/TFileTransport.i: src/thrift/transport/TFileTransport.cpp.i
@@ -918,7 +918,7 @@ src/thrift/transport/TFileTransport.i: src/thrift/transport/TFileTransport.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/TFileTransport.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFileTransport.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFileTransport.cpp.i
 .PHONY : src/thrift/transport/TFileTransport.cpp.i
 
 src/thrift/transport/TFileTransport.s: src/thrift/transport/TFileTransport.cpp.s
@@ -926,7 +926,7 @@ src/thrift/transport/TFileTransport.s: src/thrift/transport/TFileTransport.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/TFileTransport.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFileTransport.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TFileTransport.cpp.s
 .PHONY : src/thrift/transport/TFileTransport.cpp.s
 
 src/thrift/transport/THttpClient.o: src/thrift/transport/THttpClient.cpp.o
@@ -934,7 +934,7 @@ src/thrift/transport/THttpClient.o: src/thrift/transport/THttpClient.cpp.o
 
 # target to build an object file
 src/thrift/transport/THttpClient.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpClient.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpClient.cpp.o
 .PHONY : src/thrift/transport/THttpClient.cpp.o
 
 src/thrift/transport/THttpClient.i: src/thrift/transport/THttpClient.cpp.i
@@ -942,7 +942,7 @@ src/thrift/transport/THttpClient.i: src/thrift/transport/THttpClient.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/THttpClient.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpClient.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpClient.cpp.i
 .PHONY : src/thrift/transport/THttpClient.cpp.i
 
 src/thrift/transport/THttpClient.s: src/thrift/transport/THttpClient.cpp.s
@@ -950,7 +950,7 @@ src/thrift/transport/THttpClient.s: src/thrift/transport/THttpClient.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/THttpClient.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpClient.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpClient.cpp.s
 .PHONY : src/thrift/transport/THttpClient.cpp.s
 
 src/thrift/transport/THttpServer.o: src/thrift/transport/THttpServer.cpp.o
@@ -958,7 +958,7 @@ src/thrift/transport/THttpServer.o: src/thrift/transport/THttpServer.cpp.o
 
 # target to build an object file
 src/thrift/transport/THttpServer.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpServer.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpServer.cpp.o
 .PHONY : src/thrift/transport/THttpServer.cpp.o
 
 src/thrift/transport/THttpServer.i: src/thrift/transport/THttpServer.cpp.i
@@ -966,7 +966,7 @@ src/thrift/transport/THttpServer.i: src/thrift/transport/THttpServer.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/THttpServer.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpServer.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpServer.cpp.i
 .PHONY : src/thrift/transport/THttpServer.cpp.i
 
 src/thrift/transport/THttpServer.s: src/thrift/transport/THttpServer.cpp.s
@@ -974,7 +974,7 @@ src/thrift/transport/THttpServer.s: src/thrift/transport/THttpServer.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/THttpServer.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpServer.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpServer.cpp.s
 .PHONY : src/thrift/transport/THttpServer.cpp.s
 
 src/thrift/transport/THttpTransport.o: src/thrift/transport/THttpTransport.cpp.o
@@ -982,7 +982,7 @@ src/thrift/transport/THttpTransport.o: src/thrift/transport/THttpTransport.cpp.o
 
 # target to build an object file
 src/thrift/transport/THttpTransport.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpTransport.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpTransport.cpp.o
 .PHONY : src/thrift/transport/THttpTransport.cpp.o
 
 src/thrift/transport/THttpTransport.i: src/thrift/transport/THttpTransport.cpp.i
@@ -990,7 +990,7 @@ src/thrift/transport/THttpTransport.i: src/thrift/transport/THttpTransport.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/THttpTransport.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpTransport.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpTransport.cpp.i
 .PHONY : src/thrift/transport/THttpTransport.cpp.i
 
 src/thrift/transport/THttpTransport.s: src/thrift/transport/THttpTransport.cpp.s
@@ -998,7 +998,7 @@ src/thrift/transport/THttpTransport.s: src/thrift/transport/THttpTransport.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/THttpTransport.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpTransport.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/THttpTransport.cpp.s
 .PHONY : src/thrift/transport/THttpTransport.cpp.s
 
 src/thrift/transport/TNonblockingSSLServerSocket.o: src/thrift/transport/TNonblockingSSLServerSocket.cpp.o
@@ -1006,7 +1006,7 @@ src/thrift/transport/TNonblockingSSLServerSocket.o: src/thrift/transport/TNonblo
 
 # target to build an object file
 src/thrift/transport/TNonblockingSSLServerSocket.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingSSLServerSocket.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingSSLServerSocket.cpp.o
 .PHONY : src/thrift/transport/TNonblockingSSLServerSocket.cpp.o
 
 src/thrift/transport/TNonblockingSSLServerSocket.i: src/thrift/transport/TNonblockingSSLServerSocket.cpp.i
@@ -1014,7 +1014,7 @@ src/thrift/transport/TNonblockingSSLServerSocket.i: src/thrift/transport/TNonblo
 
 # target to preprocess a source file
 src/thrift/transport/TNonblockingSSLServerSocket.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingSSLServerSocket.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingSSLServerSocket.cpp.i
 .PHONY : src/thrift/transport/TNonblockingSSLServerSocket.cpp.i
 
 src/thrift/transport/TNonblockingSSLServerSocket.s: src/thrift/transport/TNonblockingSSLServerSocket.cpp.s
@@ -1022,7 +1022,7 @@ src/thrift/transport/TNonblockingSSLServerSocket.s: src/thrift/transport/TNonblo
 
 # target to generate assembly for a file
 src/thrift/transport/TNonblockingSSLServerSocket.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingSSLServerSocket.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingSSLServerSocket.cpp.s
 .PHONY : src/thrift/transport/TNonblockingSSLServerSocket.cpp.s
 
 src/thrift/transport/TNonblockingServerSocket.o: src/thrift/transport/TNonblockingServerSocket.cpp.o
@@ -1030,7 +1030,7 @@ src/thrift/transport/TNonblockingServerSocket.o: src/thrift/transport/TNonblocki
 
 # target to build an object file
 src/thrift/transport/TNonblockingServerSocket.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingServerSocket.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingServerSocket.cpp.o
 .PHONY : src/thrift/transport/TNonblockingServerSocket.cpp.o
 
 src/thrift/transport/TNonblockingServerSocket.i: src/thrift/transport/TNonblockingServerSocket.cpp.i
@@ -1038,7 +1038,7 @@ src/thrift/transport/TNonblockingServerSocket.i: src/thrift/transport/TNonblocki
 
 # target to preprocess a source file
 src/thrift/transport/TNonblockingServerSocket.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingServerSocket.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingServerSocket.cpp.i
 .PHONY : src/thrift/transport/TNonblockingServerSocket.cpp.i
 
 src/thrift/transport/TNonblockingServerSocket.s: src/thrift/transport/TNonblockingServerSocket.cpp.s
@@ -1046,7 +1046,7 @@ src/thrift/transport/TNonblockingServerSocket.s: src/thrift/transport/TNonblocki
 
 # target to generate assembly for a file
 src/thrift/transport/TNonblockingServerSocket.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingServerSocket.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/src/thrift/transport/TNonblockingServerSocket.cpp.s
 .PHONY : src/thrift/transport/TNonblockingServerSocket.cpp.s
 
 src/thrift/transport/TPipe.o: src/thrift/transport/TPipe.cpp.o
@@ -1054,7 +1054,7 @@ src/thrift/transport/TPipe.o: src/thrift/transport/TPipe.cpp.o
 
 # target to build an object file
 src/thrift/transport/TPipe.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipe.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipe.cpp.o
 .PHONY : src/thrift/transport/TPipe.cpp.o
 
 src/thrift/transport/TPipe.i: src/thrift/transport/TPipe.cpp.i
@@ -1062,7 +1062,7 @@ src/thrift/transport/TPipe.i: src/thrift/transport/TPipe.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/TPipe.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipe.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipe.cpp.i
 .PHONY : src/thrift/transport/TPipe.cpp.i
 
 src/thrift/transport/TPipe.s: src/thrift/transport/TPipe.cpp.s
@@ -1070,7 +1070,7 @@ src/thrift/transport/TPipe.s: src/thrift/transport/TPipe.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/TPipe.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipe.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipe.cpp.s
 .PHONY : src/thrift/transport/TPipe.cpp.s
 
 src/thrift/transport/TPipeServer.o: src/thrift/transport/TPipeServer.cpp.o
@@ -1078,7 +1078,7 @@ src/thrift/transport/TPipeServer.o: src/thrift/transport/TPipeServer.cpp.o
 
 # target to build an object file
 src/thrift/transport/TPipeServer.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipeServer.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipeServer.cpp.o
 .PHONY : src/thrift/transport/TPipeServer.cpp.o
 
 src/thrift/transport/TPipeServer.i: src/thrift/transport/TPipeServer.cpp.i
@@ -1086,7 +1086,7 @@ src/thrift/transport/TPipeServer.i: src/thrift/transport/TPipeServer.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/TPipeServer.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipeServer.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipeServer.cpp.i
 .PHONY : src/thrift/transport/TPipeServer.cpp.i
 
 src/thrift/transport/TPipeServer.s: src/thrift/transport/TPipeServer.cpp.s
@@ -1094,7 +1094,7 @@ src/thrift/transport/TPipeServer.s: src/thrift/transport/TPipeServer.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/TPipeServer.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipeServer.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TPipeServer.cpp.s
 .PHONY : src/thrift/transport/TPipeServer.cpp.s
 
 src/thrift/transport/TSSLServerSocket.o: src/thrift/transport/TSSLServerSocket.cpp.o
@@ -1102,7 +1102,7 @@ src/thrift/transport/TSSLServerSocket.o: src/thrift/transport/TSSLServerSocket.c
 
 # target to build an object file
 src/thrift/transport/TSSLServerSocket.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLServerSocket.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLServerSocket.cpp.o
 .PHONY : src/thrift/transport/TSSLServerSocket.cpp.o
 
 src/thrift/transport/TSSLServerSocket.i: src/thrift/transport/TSSLServerSocket.cpp.i
@@ -1110,7 +1110,7 @@ src/thrift/transport/TSSLServerSocket.i: src/thrift/transport/TSSLServerSocket.c
 
 # target to preprocess a source file
 src/thrift/transport/TSSLServerSocket.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLServerSocket.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLServerSocket.cpp.i
 .PHONY : src/thrift/transport/TSSLServerSocket.cpp.i
 
 src/thrift/transport/TSSLServerSocket.s: src/thrift/transport/TSSLServerSocket.cpp.s
@@ -1118,7 +1118,7 @@ src/thrift/transport/TSSLServerSocket.s: src/thrift/transport/TSSLServerSocket.c
 
 # target to generate assembly for a file
 src/thrift/transport/TSSLServerSocket.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLServerSocket.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLServerSocket.cpp.s
 .PHONY : src/thrift/transport/TSSLServerSocket.cpp.s
 
 src/thrift/transport/TSSLSocket.o: src/thrift/transport/TSSLSocket.cpp.o
@@ -1126,7 +1126,7 @@ src/thrift/transport/TSSLSocket.o: src/thrift/transport/TSSLSocket.cpp.o
 
 # target to build an object file
 src/thrift/transport/TSSLSocket.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLSocket.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLSocket.cpp.o
 .PHONY : src/thrift/transport/TSSLSocket.cpp.o
 
 src/thrift/transport/TSSLSocket.i: src/thrift/transport/TSSLSocket.cpp.i
@@ -1134,7 +1134,7 @@ src/thrift/transport/TSSLSocket.i: src/thrift/transport/TSSLSocket.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/TSSLSocket.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLSocket.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLSocket.cpp.i
 .PHONY : src/thrift/transport/TSSLSocket.cpp.i
 
 src/thrift/transport/TSSLSocket.s: src/thrift/transport/TSSLSocket.cpp.s
@@ -1142,7 +1142,7 @@ src/thrift/transport/TSSLSocket.s: src/thrift/transport/TSSLSocket.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/TSSLSocket.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLSocket.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSSLSocket.cpp.s
 .PHONY : src/thrift/transport/TSSLSocket.cpp.s
 
 src/thrift/transport/TServerSocket.o: src/thrift/transport/TServerSocket.cpp.o
@@ -1150,7 +1150,7 @@ src/thrift/transport/TServerSocket.o: src/thrift/transport/TServerSocket.cpp.o
 
 # target to build an object file
 src/thrift/transport/TServerSocket.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TServerSocket.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TServerSocket.cpp.o
 .PHONY : src/thrift/transport/TServerSocket.cpp.o
 
 src/thrift/transport/TServerSocket.i: src/thrift/transport/TServerSocket.cpp.i
@@ -1158,7 +1158,7 @@ src/thrift/transport/TServerSocket.i: src/thrift/transport/TServerSocket.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/TServerSocket.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TServerSocket.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TServerSocket.cpp.i
 .PHONY : src/thrift/transport/TServerSocket.cpp.i
 
 src/thrift/transport/TServerSocket.s: src/thrift/transport/TServerSocket.cpp.s
@@ -1166,7 +1166,7 @@ src/thrift/transport/TServerSocket.s: src/thrift/transport/TServerSocket.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/TServerSocket.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TServerSocket.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TServerSocket.cpp.s
 .PHONY : src/thrift/transport/TServerSocket.cpp.s
 
 src/thrift/transport/TSimpleFileTransport.o: src/thrift/transport/TSimpleFileTransport.cpp.o
@@ -1174,7 +1174,7 @@ src/thrift/transport/TSimpleFileTransport.o: src/thrift/transport/TSimpleFileTra
 
 # target to build an object file
 src/thrift/transport/TSimpleFileTransport.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSimpleFileTransport.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSimpleFileTransport.cpp.o
 .PHONY : src/thrift/transport/TSimpleFileTransport.cpp.o
 
 src/thrift/transport/TSimpleFileTransport.i: src/thrift/transport/TSimpleFileTransport.cpp.i
@@ -1182,7 +1182,7 @@ src/thrift/transport/TSimpleFileTransport.i: src/thrift/transport/TSimpleFileTra
 
 # target to preprocess a source file
 src/thrift/transport/TSimpleFileTransport.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSimpleFileTransport.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSimpleFileTransport.cpp.i
 .PHONY : src/thrift/transport/TSimpleFileTransport.cpp.i
 
 src/thrift/transport/TSimpleFileTransport.s: src/thrift/transport/TSimpleFileTransport.cpp.s
@@ -1190,7 +1190,7 @@ src/thrift/transport/TSimpleFileTransport.s: src/thrift/transport/TSimpleFileTra
 
 # target to generate assembly for a file
 src/thrift/transport/TSimpleFileTransport.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSimpleFileTransport.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSimpleFileTransport.cpp.s
 .PHONY : src/thrift/transport/TSimpleFileTransport.cpp.s
 
 src/thrift/transport/TSocket.o: src/thrift/transport/TSocket.cpp.o
@@ -1198,7 +1198,7 @@ src/thrift/transport/TSocket.o: src/thrift/transport/TSocket.cpp.o
 
 # target to build an object file
 src/thrift/transport/TSocket.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocket.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocket.cpp.o
 .PHONY : src/thrift/transport/TSocket.cpp.o
 
 src/thrift/transport/TSocket.i: src/thrift/transport/TSocket.cpp.i
@@ -1206,7 +1206,7 @@ src/thrift/transport/TSocket.i: src/thrift/transport/TSocket.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/TSocket.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocket.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocket.cpp.i
 .PHONY : src/thrift/transport/TSocket.cpp.i
 
 src/thrift/transport/TSocket.s: src/thrift/transport/TSocket.cpp.s
@@ -1214,7 +1214,7 @@ src/thrift/transport/TSocket.s: src/thrift/transport/TSocket.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/TSocket.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocket.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocket.cpp.s
 .PHONY : src/thrift/transport/TSocket.cpp.s
 
 src/thrift/transport/TSocketPool.o: src/thrift/transport/TSocketPool.cpp.o
@@ -1222,7 +1222,7 @@ src/thrift/transport/TSocketPool.o: src/thrift/transport/TSocketPool.cpp.o
 
 # target to build an object file
 src/thrift/transport/TSocketPool.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocketPool.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocketPool.cpp.o
 .PHONY : src/thrift/transport/TSocketPool.cpp.o
 
 src/thrift/transport/TSocketPool.i: src/thrift/transport/TSocketPool.cpp.i
@@ -1230,7 +1230,7 @@ src/thrift/transport/TSocketPool.i: src/thrift/transport/TSocketPool.cpp.i
 
 # target to preprocess a source file
 src/thrift/transport/TSocketPool.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocketPool.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocketPool.cpp.i
 .PHONY : src/thrift/transport/TSocketPool.cpp.i
 
 src/thrift/transport/TSocketPool.s: src/thrift/transport/TSocketPool.cpp.s
@@ -1238,7 +1238,7 @@ src/thrift/transport/TSocketPool.s: src/thrift/transport/TSocketPool.cpp.s
 
 # target to generate assembly for a file
 src/thrift/transport/TSocketPool.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocketPool.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TSocketPool.cpp.s
 .PHONY : src/thrift/transport/TSocketPool.cpp.s
 
 src/thrift/transport/TTransportException.o: src/thrift/transport/TTransportException.cpp.o
@@ -1246,7 +1246,7 @@ src/thrift/transport/TTransportException.o: src/thrift/transport/TTransportExcep
 
 # target to build an object file
 src/thrift/transport/TTransportException.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportException.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportException.cpp.o
 .PHONY : src/thrift/transport/TTransportException.cpp.o
 
 src/thrift/transport/TTransportException.i: src/thrift/transport/TTransportException.cpp.i
@@ -1254,7 +1254,7 @@ src/thrift/transport/TTransportException.i: src/thrift/transport/TTransportExcep
 
 # target to preprocess a source file
 src/thrift/transport/TTransportException.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportException.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportException.cpp.i
 .PHONY : src/thrift/transport/TTransportException.cpp.i
 
 src/thrift/transport/TTransportException.s: src/thrift/transport/TTransportException.cpp.s
@@ -1262,7 +1262,7 @@ src/thrift/transport/TTransportException.s: src/thrift/transport/TTransportExcep
 
 # target to generate assembly for a file
 src/thrift/transport/TTransportException.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportException.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportException.cpp.s
 .PHONY : src/thrift/transport/TTransportException.cpp.s
 
 src/thrift/transport/TTransportUtils.o: src/thrift/transport/TTransportUtils.cpp.o
@@ -1270,7 +1270,7 @@ src/thrift/transport/TTransportUtils.o: src/thrift/transport/TTransportUtils.cpp
 
 # target to build an object file
 src/thrift/transport/TTransportUtils.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportUtils.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportUtils.cpp.o
 .PHONY : src/thrift/transport/TTransportUtils.cpp.o
 
 src/thrift/transport/TTransportUtils.i: src/thrift/transport/TTransportUtils.cpp.i
@@ -1278,7 +1278,7 @@ src/thrift/transport/TTransportUtils.i: src/thrift/transport/TTransportUtils.cpp
 
 # target to preprocess a source file
 src/thrift/transport/TTransportUtils.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportUtils.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportUtils.cpp.i
 .PHONY : src/thrift/transport/TTransportUtils.cpp.i
 
 src/thrift/transport/TTransportUtils.s: src/thrift/transport/TTransportUtils.cpp.s
@@ -1286,7 +1286,7 @@ src/thrift/transport/TTransportUtils.s: src/thrift/transport/TTransportUtils.cpp
 
 # target to generate assembly for a file
 src/thrift/transport/TTransportUtils.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportUtils.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/transport/TTransportUtils.cpp.s
 .PHONY : src/thrift/transport/TTransportUtils.cpp.s
 
 # Help Target
@@ -1451,6 +1451,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,8 +1,8 @@
 lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/VirtualProfiling.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/VirtualProfiling.cpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/VirtualProfiling.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/Thrift.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/PlatformSocket.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/Thrift.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/transport/PlatformSocket.h \
  /usr/include/errno.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -13,8 +13,8 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/VirtualProfiling.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/thrift-config.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/thrift/config.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/thrift-config.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/thrift/config.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
@@ -201,5 +201,5 @@ lib/cpp/CMakeFiles/thrift_static.dir/src/thrift/VirtualProfiling.cpp.o: \
  /usr/include/boost/type_traits/is_abstract.hpp \
  /usr/include/boost/type_traits/add_lvalue_reference.hpp \
  /usr/include/boost/type_traits/add_reference.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TLogging.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TOutput.h
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TLogging.h \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/lib/cpp/src/thrift/TOutput.h

@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2" ABSOLUTE)
-get_filename_component(directory "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep" ABSOLUTE)
+get_filename_component(filename "/home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_1_69_0.tar.bz2" ABSOLUTE)
+get_filename_component(directory "/home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

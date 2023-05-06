@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/svemula/Waffle/waffle_test/waffleClient/server/../libstorage/src -I/home/svemula/Waffle/waffle_test/waffleClient/server/../proxy/src -I/home/svemula/Waffle/waffle_test/waffleClient/server/../service/src -I/home/svemula/Waffle/waffle_test/waffleClient/server/src -isystem /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include -isystem /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include -isystem /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/boost_ep/include -isystem /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/libevent_ep/include -isystem /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/thrift_ep/include -isystem /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include
+CXX_INCLUDES = -I/home/svemula/waffle_test/waffleClient/server/../libstorage/src -I/home/svemula/waffle_test/waffleClient/server/../proxy/src -I/home/svemula/waffle_test/waffleClient/server/../service/src -I/home/svemula/waffle_test/waffleClient/server/src -isystem /home/svemula/waffle_test/waffleClient/cmakebuild/external/openssl/include -isystem /home/svemula/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include -isystem /home/svemula/waffle_test/waffleClient/cmakebuild/external/boost_ep/include -isystem /home/svemula/waffle_test/waffleClient/cmakebuild/external/libevent_ep/include -isystem /home/svemula/waffle_test/waffleClient/cmakebuild/external/thrift_ep/include -isystem /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include
 
 CXX_FLAGS = -std=c++11 -pthread
 

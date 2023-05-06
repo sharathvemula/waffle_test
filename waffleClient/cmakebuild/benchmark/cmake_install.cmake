@@ -1,4 +1,4 @@
-# Install script for directory: /home/svemula/Waffle/waffle_test/waffleClient/benchmark
+# Install script for directory: /home/svemula/waffle_test/waffleClient/benchmark
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

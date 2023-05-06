@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift-0.12.0.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep" ABSOLUTE)
+get_filename_component(filename "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift-0.12.0.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

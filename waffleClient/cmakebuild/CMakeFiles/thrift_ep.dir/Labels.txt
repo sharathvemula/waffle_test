@@ -1,13 +1,13 @@
 # Target labels
  thrift_ep
 # Source files and their labels
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep.rule
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep-complete.rule
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-build.rule
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure.rule
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-download.rule
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-install.rule
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-mkdir.rule
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-patch.rule
-/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-update.rule
+/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep
+/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep.rule
+/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/thrift_ep-complete.rule
+/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-build.rule
+/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure.rule
+/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-download.rule
+/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-install.rule
+/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-mkdir.rule
+/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-patch.rule
+/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-update.rule

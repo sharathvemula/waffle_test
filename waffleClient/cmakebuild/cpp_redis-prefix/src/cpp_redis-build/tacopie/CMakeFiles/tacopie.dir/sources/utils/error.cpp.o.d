@@ -1,7 +1,7 @@
 tacopie/CMakeFiles/tacopie.dir/sources/utils/error.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/utils/error.cpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/utils/error.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/error.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/error.hpp \
  /usr/include/c++/9/cstdint \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -128,7 +128,7 @@ tacopie/CMakeFiles/tacopie.dir/sources/utils/error.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/9/bits/functional_hash.h \
  /usr/include/c++/9/bits/basic_string.tcc \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/logger.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/logger.hpp \
  /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_tempbuf.h \

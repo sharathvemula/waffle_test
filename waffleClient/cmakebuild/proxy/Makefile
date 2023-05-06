@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/proxy//CMakeFiles/progress.marks
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proxy/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles /home/svemula/waffle_test/waffleClient/cmakebuild/proxy//CMakeFiles/progress.marks
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proxy/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proxy/clean
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proxy/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,17 +148,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proxy/preinstall
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proxy/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proxy/preinstall
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proxy/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -184,6 +184,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

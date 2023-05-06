@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/3.26.0-rc3/CompilerIdC/a.out
+        /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/3.26.0-rc3/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -50,7 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/3.26.0-rc3/CompilerIdCXX/a.out
+        /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/3.26.0-rc3/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_WARN_DEPRECATED: "FALSE"
@@ -70,13 +70,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ecced/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C'
-        /usr/bin/make  -f CMakeFiles/cmTC_ecced.dir/build.make CMakeFiles/cmTC_ecced.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C'
-        Building C object CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cf2eb/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6'
+        /usr/bin/make  -f CMakeFiles/cmTC_cf2eb.dir/build.make CMakeFiles/cmTC_cf2eb.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6'
+        Building C object CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -85,8 +85,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccCLejBk.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccAFwDFJ.s
         GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -106,15 +106,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o /tmp/ccCLejBk.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o /tmp/ccAFwDFJ.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_ecced
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecced.dir/link.txt --verbose=1
-        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o -o cmTC_ecced 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_cf2eb
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf2eb.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o -o cmTC_cf2eb 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -126,11 +126,11 @@ events:
         gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ecced' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cceEPiAK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ecced /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ecced' '-mtune=generic' '-march=x86-64'
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_cf2eb' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cczApiUb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_cf2eb /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_cf2eb' '-mtune=generic' '-march=x86-64'
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6'
         
       exitCode: 0
   -
@@ -164,13 +164,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C]
+        ignore line: [Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ecced/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C']
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_ecced.dir/build.make CMakeFiles/cmTC_ecced.dir/build]
-        ignore line: [make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-NR590C']
-        ignore line: [Building C object CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cf2eb/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_cf2eb.dir/build.make CMakeFiles/cmTC_cf2eb.dir/build]
+        ignore line: [make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-SH9fX6']
+        ignore line: [Building C object CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -179,8 +179,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccCLejBk.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccAFwDFJ.s]
         ignore line: [GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -200,15 +200,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o /tmp/ccCLejBk.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o /tmp/ccAFwDFJ.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_ecced]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecced.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o -o cmTC_ecced ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_cf2eb]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf2eb.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o -o cmTC_cf2eb ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -220,13 +220,13 @@ events:
         ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ecced' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cceEPiAK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ecced /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_cf2eb' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cczApiUb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_cf2eb /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cceEPiAK.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cczApiUb.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -245,7 +245,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_ecced] ==> ignore
+          arg [cmTC_cf2eb] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -257,7 +257,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_ecced.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_cf2eb.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -297,8 +297,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_WARN_DEPRECATED: "FALSE"
@@ -306,13 +306,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_009a8/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG'
-        /usr/bin/make  -f CMakeFiles/cmTC_009a8.dir/build.make CMakeFiles/cmTC_009a8.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG'
-        Building CXX object CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_adc59/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8'
+        /usr/bin/make  -f CMakeFiles/cmTC_adc59.dir/build.make CMakeFiles/cmTC_adc59.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8'
+        Building CXX object CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -321,8 +321,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccrV6Ils.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccKov7KT.s
         GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -346,15 +346,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrV6Ils.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccKov7KT.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_009a8
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_009a8.dir/link.txt --verbose=1
-        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_009a8 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_adc59
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc59.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_adc59 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -366,11 +366,11 @@ events:
         gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_009a8' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUBVbGS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_009a8 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_009a8' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_adc59' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZQyATk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_adc59 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_adc59' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8'
         
       exitCode: 0
   -
@@ -410,13 +410,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG]
+        ignore line: [Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_009a8/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG']
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_009a8.dir/build.make CMakeFiles/cmTC_009a8.dir/build]
-        ignore line: [make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-Jw6EBG']
-        ignore line: [Building CXX object CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_adc59/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_adc59.dir/build.make CMakeFiles/cmTC_adc59.dir/build]
+        ignore line: [make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-8YabO8']
+        ignore line: [Building CXX object CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -425,8 +425,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccrV6Ils.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccKov7KT.s]
         ignore line: [GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -450,15 +450,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrV6Ils.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccKov7KT.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_009a8]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_009a8.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_009a8 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_adc59]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc59.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_adc59 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -470,13 +470,13 @@ events:
         ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_009a8' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUBVbGS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_009a8 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_adc59' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZQyATk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_adc59 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccUBVbGS.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccZQyATk.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -495,7 +495,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_009a8] ==> ignore
+          arg [cmTC_adc59] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -507,7 +507,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_009a8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_adc59.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -545,8 +545,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-dGX48F"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-dGX48F"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-wQ12g6"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-wQ12g6"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_WARN_DEPRECATED: "FALSE"
@@ -554,26 +554,26 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-dGX48F
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-wQ12g6
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b4e9b/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-dGX48F'
-        /usr/bin/make  -f CMakeFiles/cmTC_b4e9b.dir/build.make CMakeFiles/cmTC_b4e9b.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-dGX48F'
-        Building C object CMakeFiles/cmTC_b4e9b.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b4e9b.dir/src.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-dGX48F/src.c
-        Linking C executable cmTC_b4e9b
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4e9b.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_b4e9b.dir/src.c.o -o cmTC_b4e9b 
-        /usr/bin/ld: CMakeFiles/cmTC_b4e9b.dir/src.c.o: in function `main':
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_16611/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-wQ12g6'
+        /usr/bin/make  -f CMakeFiles/cmTC_16611.dir/build.make CMakeFiles/cmTC_16611.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-wQ12g6'
+        Building C object CMakeFiles/cmTC_16611.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_16611.dir/src.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-wQ12g6/src.c
+        Linking C executable cmTC_16611
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16611.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_16611.dir/src.c.o -o cmTC_16611 
+        /usr/bin/ld: CMakeFiles/cmTC_16611.dir/src.c.o: in function `main':
         src.c:(.text+0x46): undefined reference to `pthread_create'
         /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
         /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
         /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
         collect2: error: ld returned 1 exit status
-        make[4]: *** [CMakeFiles/cmTC_b4e9b.dir/build.make:99: cmTC_b4e9b] Error 1
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-dGX48F'
-        make[3]: *** [Makefile:127: cmTC_b4e9b/fast] Error 2
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-dGX48F'
+        make[4]: *** [CMakeFiles/cmTC_16611.dir/build.make:99: cmTC_16611] Error 1
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-wQ12g6'
+        make[3]: *** [Makefile:127: cmTC_16611/fast] Error 2
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-wQ12g6'
         
       exitCode: 2
   -
@@ -585,8 +585,8 @@ events:
     checks:
       - "Check if compiler accepts -pthread"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-pD9sTC"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-pD9sTC"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-aNbft7"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-aNbft7"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_WARN_DEPRECATED: "FALSE"
@@ -594,18 +594,18 @@ events:
       variable: "THREADS_HAVE_PTHREAD_ARG"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-pD9sTC
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-aNbft7
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98b7e/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-pD9sTC'
-        /usr/bin/make  -f CMakeFiles/cmTC_98b7e.dir/build.make CMakeFiles/cmTC_98b7e.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-pD9sTC'
-        Building C object CMakeFiles/cmTC_98b7e.dir/CheckForPthreads.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_98b7e.dir/CheckForPthreads.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-pD9sTC/CheckForPthreads.c
-        Linking C executable cmTC_98b7e
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98b7e.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_98b7e.dir/CheckForPthreads.c.o -o cmTC_98b7e  -pthread 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-pD9sTC'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-pD9sTC'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_55a49/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-aNbft7'
+        /usr/bin/make  -f CMakeFiles/cmTC_55a49.dir/build.make CMakeFiles/cmTC_55a49.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-aNbft7'
+        Building C object CMakeFiles/cmTC_55a49.dir/CheckForPthreads.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_55a49.dir/CheckForPthreads.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-aNbft7/CheckForPthreads.c
+        Linking C executable cmTC_55a49
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55a49.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_55a49.dir/CheckForPthreads.c.o -o cmTC_55a49  -pthread 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-aNbft7'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/CMakeFiles/CMakeScratch/TryCompile-aNbft7'
         
       exitCode: 0
 ...

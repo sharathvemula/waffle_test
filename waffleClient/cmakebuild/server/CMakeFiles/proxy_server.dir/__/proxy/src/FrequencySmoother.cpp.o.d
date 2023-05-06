@@ -1,7 +1,7 @@
 server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/FrequencySmoother.cpp \
+ /home/svemula/waffle_test/waffleClient/proxy/src/FrequencySmoother.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/FrequencySmoother.hpp \
+ /home/svemula/waffle_test/waffleClient/proxy/src/FrequencySmoother.hpp \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

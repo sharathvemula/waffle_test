@@ -1,7 +1,7 @@
 CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/core/reply.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/core/reply.hpp \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -147,4 +147,4 @@ CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o: \
  /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/misc/error.hpp
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/misc/error.hpp

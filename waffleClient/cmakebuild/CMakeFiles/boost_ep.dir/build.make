@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild
 
 # Utility rule file for boost_ep.
 
@@ -76,48 +76,48 @@ CMakeFiles/boost_ep-complete: boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch
 CMakeFiles/boost_ep-complete: boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure
 CMakeFiles/boost_ep-complete: boost_ep-prefix/src/boost_ep-stamp/boost_ep-build
 CMakeFiles/boost_ep-complete: boost_ep-prefix/src/boost_ep-stamp/boost_ep-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'boost_ep'"
-	/usr/local/bin/cmake -E make_directory /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep-complete
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'boost_ep'"
+	/usr/local/bin/cmake -E make_directory /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep-complete
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-done
 
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-build: boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'boost_ep'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'boost_ep'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build
 
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure: boost_ep-prefix/tmp/boost_ep-cfgcmd.txt
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure: boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'boost_ep'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'boost_ep'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-configure
 
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-download: boost_ep-prefix/src/boost_ep-stamp/download-boost_ep.cmake
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-download: boost_ep-prefix/src/boost_ep-stamp/boost_ep-urlinfo.txt
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-download: boost_ep-prefix/src/boost_ep-stamp/boost_ep-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'boost_ep'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'boost_ep'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-download
 
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-install: boost_ep-prefix/src/boost_ep-stamp/boost_ep-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'boost_ep'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E echo_append
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'boost_ep'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E echo_append
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-install
 
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'boost_ep'"
-	/usr/local/bin/cmake -Dcfgdir= -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/tmp/boost_ep-mkdirs.cmake
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'boost_ep'"
+	/usr/local/bin/cmake -Dcfgdir= -P /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/tmp/boost_ep-mkdirs.cmake
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-mkdir
 
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch: boost_ep-prefix/src/boost_ep-stamp/boost_ep-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'boost_ep'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'boost_ep'"
 	/usr/local/bin/cmake -E echo_append
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-patch
 
 boost_ep-prefix/src/boost_ep-stamp/boost_ep-update: boost_ep-prefix/src/boost_ep-stamp/boost_ep-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'boost_ep'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E echo_append
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-update
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'boost_ep'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E echo_append
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-update
 
 boost_ep: CMakeFiles/boost_ep
 boost_ep: CMakeFiles/boost_ep-complete
@@ -140,6 +140,6 @@ CMakeFiles/boost_ep.dir/clean:
 .PHONY : CMakeFiles/boost_ep.dir/clean
 
 CMakeFiles/boost_ep.dir/depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/Waffle/waffle_test/waffleClient /home/svemula/Waffle/waffle_test/waffleClient /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/waffle_test/waffleClient /home/svemula/waffle_test/waffleClient /home/svemula/waffle_test/waffleClient/cmakebuild /home/svemula/waffle_test/waffleClient/cmakebuild /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/boost_ep.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/boost_ep.dir/depend
 

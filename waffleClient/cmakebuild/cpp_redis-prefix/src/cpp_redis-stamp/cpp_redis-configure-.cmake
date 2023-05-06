@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "/usr/local/bin/cmake;-Wno-dev;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-DCMAKE_C_COMPILER=/usr/bin/cc;-DCMAKE_CXX_FLAGS=;-DCMAKE_C_FLAGS=;-DCMAKE_BUILD_TYPE=;-DCMAKE_INSTALL_PREFIX=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis;-DBUILD_EXAMPLES=OFF;-DBUILD_TESTS=OFF;-DBUILD_SHARED_LIBS=OFF;-GUnix Makefiles;-S;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis;-B;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build")
+set(command "/usr/local/bin/cmake;-Wno-dev;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-DCMAKE_C_COMPILER=/usr/bin/cc;-DCMAKE_CXX_FLAGS=;-DCMAKE_C_FLAGS=;-DCMAKE_BUILD_TYPE=;-DCMAKE_INSTALL_PREFIX=/home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis;-DBUILD_EXAMPLES=OFF;-DBUILD_TESTS=OFF;-DBUILD_SHARED_LIBS=OFF;-GUnix Makefiles;-S;/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis;-B;/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build")
 set(log_merged "")
 set(log_output_on_failure "")
-set(stdout_log "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-out.log")
-set(stderr_log "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-err.log")
+set(stdout_log "/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-out.log")
+set(stderr_log "/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-*.log")
+    set(msg "${msg}\nSee also\n  /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Unix Makefiles" MATCHES "Ninja")
-    set(msg "cpp_redis configure command succeeded.  See also /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-*.log")
+    set(msg "cpp_redis configure command succeeded.  See also /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-stamp/cpp_redis-configure-*.log")
     message(STATUS "${msg}")
   endif()
 endif()

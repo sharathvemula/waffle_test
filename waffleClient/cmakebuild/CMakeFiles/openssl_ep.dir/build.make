@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild
 
 # Utility rule file for openssl_ep.
 
@@ -76,48 +76,48 @@ CMakeFiles/openssl_ep-complete: openssl_ep-prefix/src/openssl_ep-stamp/openssl_e
 CMakeFiles/openssl_ep-complete: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure
 CMakeFiles/openssl_ep-complete: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build
 CMakeFiles/openssl_ep-complete: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'openssl_ep'"
-	/usr/local/bin/cmake -E make_directory /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep-complete
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'openssl_ep'"
+	/usr/local/bin/cmake -E make_directory /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep-complete
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-done
 
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'openssl_ep'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'openssl_ep'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build
 
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure: openssl_ep-prefix/tmp/openssl_ep-cfgcmd.txt
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'openssl_ep'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'openssl_ep'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-configure
 
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download: openssl_ep-prefix/src/openssl_ep-stamp/download-openssl_ep.cmake
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-urlinfo.txt
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'openssl_ep'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'openssl_ep'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download
 
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'openssl_ep'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'openssl_ep'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-install
 
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'openssl_ep'"
-	/usr/local/bin/cmake -Dcfgdir= -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/tmp/openssl_ep-mkdirs.cmake
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'openssl_ep'"
+	/usr/local/bin/cmake -Dcfgdir= -P /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/tmp/openssl_ep-mkdirs.cmake
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-mkdir
 
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'openssl_ep'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'openssl_ep'"
 	/usr/local/bin/cmake -E echo_append
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-patch
 
 openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update: openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'openssl_ep'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'openssl_ep'"
 	/usr/local/bin/cmake -E echo_append
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/openssl_ep-update
 
 openssl_ep: CMakeFiles/openssl_ep
 openssl_ep: CMakeFiles/openssl_ep-complete
@@ -140,6 +140,6 @@ CMakeFiles/openssl_ep.dir/clean:
 .PHONY : CMakeFiles/openssl_ep.dir/clean
 
 CMakeFiles/openssl_ep.dir/depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/Waffle/waffle_test/waffleClient /home/svemula/Waffle/waffle_test/waffleClient /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/waffle_test/waffleClient /home/svemula/waffle_test/waffleClient /home/svemula/waffle_test/waffleClient/cmakebuild /home/svemula/waffle_test/waffleClient/cmakebuild /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/openssl_ep.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/openssl_ep.dir/depend
 

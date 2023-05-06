@@ -1,7 +1,7 @@
 server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/Cache.cpp \
+ /home/svemula/waffle_test/waffleClient/proxy/src/Cache.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/proxy/src/Cache.hpp \
+ /home/svemula/waffle_test/waffleClient/proxy/src/Cache.hpp \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

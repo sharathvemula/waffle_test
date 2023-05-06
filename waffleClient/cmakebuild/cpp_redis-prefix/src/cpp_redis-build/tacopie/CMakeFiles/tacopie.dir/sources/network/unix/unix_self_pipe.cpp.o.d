@@ -1,9 +1,9 @@
 tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_self_pipe.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/network/unix/unix_self_pipe.cpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/sources/network/unix/unix_self_pipe.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/self_pipe.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/typedefs.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/error.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/self_pipe.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/typedefs.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/error.hpp \
  /usr/include/c++/9/cstdint \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -130,7 +130,7 @@ tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_self_pipe.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/9/bits/functional_hash.h \
  /usr/include/c++/9/bits/basic_string.tcc \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/logger.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/logger.hpp \
  /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_tempbuf.h \

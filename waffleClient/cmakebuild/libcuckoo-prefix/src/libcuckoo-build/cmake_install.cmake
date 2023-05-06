@@ -1,8 +1,8 @@
-# Install script for directory: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo
+# Install script for directory: /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/libcuckoo")
+  set(CMAKE_INSTALL_PREFIX "/home/svemula/waffle_test/waffleClient/cmakebuild/external/libcuckoo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/libcuckoo/cmake_install.cmake")
-  include("/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/libcuckoo-c/cmake_install.cmake")
-  include("/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/tests/cmake_install.cmake")
+  include("/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/libcuckoo/cmake_install.cmake")
+  include("/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/libcuckoo-c/cmake_install.cmake")
+  include("/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/tests/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

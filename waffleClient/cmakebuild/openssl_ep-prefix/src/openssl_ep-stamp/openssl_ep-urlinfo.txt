@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=url
-command=/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/download-openssl_ep.cmake;COMMAND;/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/verify-openssl_ep.cmake;COMMAND;/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/extract-openssl_ep.cmake
-source_dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep
-work_dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src
+command=/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/download-openssl_ep.cmake;COMMAND;/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/verify-openssl_ep.cmake;COMMAND;/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep-stamp/extract-openssl_ep.cmake
+source_dir=/home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep
+work_dir=/home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src
 url(s)=https://www.openssl.org/source/openssl-1.1.1-pre7.tar.gz
 hash=
 no_extract=

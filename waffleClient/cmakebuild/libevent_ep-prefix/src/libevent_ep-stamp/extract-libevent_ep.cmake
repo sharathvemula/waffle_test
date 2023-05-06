@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/release-2.1.8-stable.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep" ABSOLUTE)
+get_filename_component(filename "/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/release-2.1.8-stable.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

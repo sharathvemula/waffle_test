@@ -1,4 +1,4 @@
-# Install script for directory: /home/svemula/Waffle/waffle_test/waffleClient/proxy
+# Install script for directory: /home/svemula/waffle_test/waffleClient/proxy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

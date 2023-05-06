@@ -1,5 +1,8 @@
+-- File already exists but no hash specified (use URL_HASH):
+  file='/home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl-1.1.1-pre7.tar.gz'
+Old file will be removed and new file downloaded from URL.
 -- Downloading...
-   dst='/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl-1.1.1-pre7.tar.gz'
+   dst='/home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl-1.1.1-pre7.tar.gz'
    timeout='none'
    inactivity timeout='none'
 -- Using src='https://www.openssl.org/source/openssl-1.1.1-pre7.tar.gz'
@@ -8,9 +11,14 @@
 -- [download 2% complete]
 -- [download 3% complete]
 -- [download 4% complete]
+-- [download 5% complete]
+-- [download 6% complete]
 -- [download 7% complete]
+-- [download 8% complete]
+-- [download 9% complete]
 -- [download 10% complete]
 -- [download 11% complete]
+-- [download 12% complete]
 -- [download 13% complete]
 -- [download 14% complete]
 -- [download 15% complete]
@@ -101,8 +109,8 @@
 -- [download 100% complete]
 -- Downloading... done
 -- extracting...
-     src='/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl-1.1.1-pre7.tar.gz'
-     dst='/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep'
+     src='/home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl-1.1.1-pre7.tar.gz'
+     dst='/home/svemula/waffle_test/waffleClient/cmakebuild/openssl_ep-prefix/src/openssl_ep'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]

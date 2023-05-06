@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server"
-  "/home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_server.pdb"
+  "/home/svemula/waffle_test/waffleClient/bin/proxy_server"
+  "/home/svemula/waffle_test/waffleClient/bin/proxy_server.pdb"
   "CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o"
   "CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o.d"
   "CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o"

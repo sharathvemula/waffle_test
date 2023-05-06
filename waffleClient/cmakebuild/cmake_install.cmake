@@ -1,4 +1,4 @@
-# Install script for directory: /home/svemula/Waffle/waffle_test/waffleClient
+# Install script for directory: /home/svemula/waffle_test/waffleClient
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,22 +44,22 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
-    "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib/libssl.a"
-    "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/lib/libcrypto.a"
+    "/home/svemula/waffle_test/waffleClient/cmakebuild/external/openssl/lib/libssl.a"
+    "/home/svemula/waffle_test/waffleClient/cmakebuild/external/openssl/lib/libcrypto.a"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/svemula/waffle_test/waffleClient/cmakebuild/external/openssl/include/openssl")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libclient/cmake_install.cmake")
-  include("/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libstorage/cmake_install.cmake")
-  include("/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/proxy/cmake_install.cmake")
-  include("/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/benchmark/cmake_install.cmake")
-  include("/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/server/cmake_install.cmake")
+  include("/home/svemula/waffle_test/waffleClient/cmakebuild/libclient/cmake_install.cmake")
+  include("/home/svemula/waffle_test/waffleClient/cmakebuild/libstorage/cmake_install.cmake")
+  include("/home/svemula/waffle_test/waffleClient/cmakebuild/proxy/cmake_install.cmake")
+  include("/home/svemula/waffle_test/waffleClient/cmakebuild/benchmark/cmake_install.cmake")
+  include("/home/svemula/waffle_test/waffleClient/cmakebuild/server/cmake_install.cmake")
 
 endif()
 
@@ -71,5 +71,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/svemula/waffle_test/waffleClient/cmakebuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

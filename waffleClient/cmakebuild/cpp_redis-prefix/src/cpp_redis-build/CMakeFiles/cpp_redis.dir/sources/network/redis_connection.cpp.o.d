@@ -1,7 +1,7 @@
 CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/misc/error.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/misc/error.hpp \
  /usr/include/c++/9/stdexcept /usr/include/c++/9/exception \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -128,7 +128,7 @@ CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/9/bits/functional_hash.h \
  /usr/include/c++/9/bits/basic_string.tcc \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/misc/logger.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/misc/logger.hpp \
  /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_tempbuf.h \
@@ -153,15 +153,15 @@ CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/network/redis_connection.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/network/redis_connection.hpp \
  /usr/include/c++/9/functional /usr/include/c++/9/bits/std_function.h \
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/builders/reply_builder.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/builders/reply_builder.hpp \
  /usr/include/c++/9/deque /usr/include/c++/9/bits/stl_deque.h \
  /usr/include/c++/9/bits/deque.tcc \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/builders/builder_iface.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/core/reply.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/builders/builder_iface.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/core/reply.hpp \
  /usr/include/c++/9/iostream /usr/include/c++/9/ostream \
  /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
@@ -177,24 +177,24 @@ CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/network/tcp_client_iface.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/network/tcp_client.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/tacopie \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/error.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/logger.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/typedefs.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/io_service.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/network/tcp_client_iface.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/includes/cpp_redis/network/tcp_client.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/tacopie \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/error.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/logger.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/typedefs.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/io_service.hpp \
  /usr/include/c++/9/atomic /usr/include/c++/9/condition_variable \
  /usr/include/c++/9/thread /usr/include/c++/9/unordered_map \
  /usr/include/c++/9/bits/hashtable.h \
  /usr/include/c++/9/bits/hashtable_policy.h \
  /usr/include/c++/9/bits/unordered_map.h \
  /usr/include/c++/9/bits/erase_if.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/self_pipe.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/tcp_socket.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/thread_pool.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/self_pipe.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/tcp_socket.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/utils/thread_pool.hpp \
  /usr/include/c++/9/list /usr/include/c++/9/bits/stl_list.h \
  /usr/include/c++/9/bits/list.tcc /usr/include/c++/9/queue \
  /usr/include/c++/9/bits/stl_heap.h /usr/include/c++/9/bits/stl_queue.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/tcp_server.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/tcp_client.hpp
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/tcp_server.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/tacopie/includes/tacopie/network/tcp_client.hpp

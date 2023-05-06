@@ -1,8 +1,8 @@
 server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o: \
- /home/svemula/Waffle/waffle_test/waffleClient/libstorage/src/redis.cpp \
+ /home/svemula/waffle_test/waffleClient/libstorage/src/redis.cpp \
  /usr/include/stdc-predef.h \
- /home/svemula/Waffle/waffle_test/waffleClient/libstorage/src/redis.h \
- /home/svemula/Waffle/waffle_test/waffleClient/libstorage/src/storage_interface.h \
+ /home/svemula/waffle_test/waffleClient/libstorage/src/redis.h \
+ /home/svemula/waffle_test/waffleClient/libstorage/src/storage_interface.h \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -140,8 +140,8 @@ server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o: \
  /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/limits \
  /usr/include/c++/9/bits/unordered_map.h \
  /usr/include/c++/9/bits/erase_if.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/cpp_redis \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/core/client.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/cpp_redis \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/core/client.hpp \
  /usr/include/c++/9/atomic /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/condition_variable /usr/include/c++/9/chrono \
@@ -165,12 +165,12 @@ server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o: \
  /usr/include/c++/9/bits/atomic_futex.h /usr/include/c++/9/map \
  /usr/include/c++/9/bits/stl_tree.h /usr/include/c++/9/bits/stl_map.h \
  /usr/include/c++/9/bits/stl_multimap.h \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/core/sentinel.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/misc/logger.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/network/redis_connection.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/builders/reply_builder.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/builders/builder_iface.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/core/reply.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/core/sentinel.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/misc/logger.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/network/redis_connection.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/builders/reply_builder.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/builders/builder_iface.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/core/reply.hpp \
  /usr/include/c++/9/iostream /usr/include/c++/9/ostream \
  /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
@@ -186,21 +186,21 @@ server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/network/tcp_client_iface.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/helpers/variadic_template.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/impl/client.ipp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/core/subscriber.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/misc/error.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/network/tcp_client.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/tacopie \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/error.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/logger.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/typedefs.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/io_service.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/self_pipe.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/tcp_socket.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/thread_pool.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/network/tcp_client_iface.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/helpers/variadic_template.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/impl/client.ipp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/core/subscriber.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/misc/error.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/cpp_redis/network/tcp_client.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/tacopie \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/error.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/logger.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/typedefs.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/io_service.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/self_pipe.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/tcp_socket.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/utils/thread_pool.hpp \
  /usr/include/c++/9/list /usr/include/c++/9/bits/stl_list.h \
  /usr/include/c++/9/bits/list.tcc \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/tcp_server.hpp \
- /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/tcp_client.hpp
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/tcp_server.hpp \
+ /home/svemula/waffle_test/waffleClient/cmakebuild/external/cpp_redis/include/tacopie/network/tcp_client.hpp

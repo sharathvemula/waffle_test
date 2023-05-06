@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "/usr/local/bin/cmake;-Wno-dev;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-DCMAKE_C_COMPILER=/usr/bin/cc;-DCMAKE_BUILD_TYPE=;-DCMAKE_INSTALL_PREFIX=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/thrift_ep;-DCMAKE_INSTALL_RPATH=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/thrift_ep/lib;-DBUILD_COMPILER=;-DBUILD_TESTING=OFF;-DWITH_SHARED_LIB=OFF;-DWITH_QT4=OFF;-DWITH_QT5=OFF;-DWITH_C_GLIB=OFF;-DWITH_HASKELL=OFF;-DWITH_LIBEVENT=ON;-DWITH_ZLIB=OFF;-DWITH_JAVA=OFF;-DWITH_PYTHON=OFF;-DWITH_CPP=ON;-DWITH_STDTHREADS=OFF;-DWITH_BOOSTTHREADS=OFF;-DWITH_STATIC_LIB=ON;-DCMAKE_PREFIX_PATH=\;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/boost_ep\;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/libevent_ep;-GUnix Makefiles;-S;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep;-B;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build")
+set(command "/usr/local/bin/cmake;-Wno-dev;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-DCMAKE_C_COMPILER=/usr/bin/cc;-DCMAKE_BUILD_TYPE=;-DCMAKE_INSTALL_PREFIX=/home/svemula/waffle_test/waffleClient/cmakebuild/external/thrift_ep;-DCMAKE_INSTALL_RPATH=/home/svemula/waffle_test/waffleClient/cmakebuild/external/thrift_ep/lib;-DBUILD_COMPILER=;-DBUILD_TESTING=OFF;-DWITH_SHARED_LIB=OFF;-DWITH_QT4=OFF;-DWITH_QT5=OFF;-DWITH_C_GLIB=OFF;-DWITH_HASKELL=OFF;-DWITH_LIBEVENT=ON;-DWITH_ZLIB=OFF;-DWITH_JAVA=OFF;-DWITH_PYTHON=OFF;-DWITH_CPP=ON;-DWITH_STDTHREADS=OFF;-DWITH_BOOSTTHREADS=OFF;-DWITH_STATIC_LIB=ON;-DCMAKE_PREFIX_PATH=\;/home/svemula/waffle_test/waffleClient/cmakebuild/external/boost_ep\;/home/svemula/waffle_test/waffleClient/cmakebuild/external/libevent_ep;-GUnix Makefiles;-S;/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep;-B;/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build")
 set(log_merged "")
 set(log_output_on_failure "")
-set(stdout_log "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure-out.log")
-set(stderr_log "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure-err.log")
+set(stdout_log "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure-out.log")
+set(stderr_log "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure-*.log")
+    set(msg "${msg}\nSee also\n  /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Unix Makefiles" MATCHES "Ninja")
-    set(msg "thrift_ep configure command succeeded.  See also /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure-*.log")
+    set(msg "thrift_ep configure command succeeded.  See also /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-stamp/thrift_ep-configure-*.log")
     message(STATUS "${msg}")
   endif()
 endif()

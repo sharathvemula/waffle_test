@@ -13,7 +13,7 @@
 # and add symbolic links to their hash values.
 
 my $dir = "";
-my $prefix = "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/openssl";
+my $prefix = "/home/svemula/waffle_test/waffleClient/cmakebuild/external/openssl";
 
 my $errorcount = 0;
 my $openssl = $ENV{OPENSSL} || "openssl";

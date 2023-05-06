@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ lib/cpp/clean: lib/cpp/CMakeFiles/thriftnb_static.dir/clean
 lib/cpp/CMakeFiles/thrift_static.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thrift_static.dir/build.make lib/cpp/CMakeFiles/thrift_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target thrift_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target thrift_static"
 .PHONY : lib/cpp/CMakeFiles/thrift_static.dir/all
 
 # Build rule for subdir invocation for target.
 lib/cpp/CMakeFiles/thrift_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/CMakeFiles/thrift_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 0
 .PHONY : lib/cpp/CMakeFiles/thrift_static.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ lib/cpp/CMakeFiles/thrift_static.dir/clean:
 lib/cpp/CMakeFiles/thriftnb_static.dir/all: lib/cpp/CMakeFiles/thrift_static.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/cpp/CMakeFiles/thriftnb_static.dir/build.make lib/cpp/CMakeFiles/thriftnb_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles --progress-num=42,43,44,45,46,47 "Built target thriftnb_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles --progress-num=42,43,44,45,46,47 "Built target thriftnb_static"
 .PHONY : lib/cpp/CMakeFiles/thriftnb_static.dir/all
 
 # Build rule for subdir invocation for target.
 lib/cpp/CMakeFiles/thriftnb_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 47
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/cpp/CMakeFiles/thriftnb_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles 0
 .PHONY : lib/cpp/CMakeFiles/thriftnb_static.dir/rule
 
 # Convenience name for target.

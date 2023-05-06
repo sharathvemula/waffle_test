@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/server//CMakeFiles/progress.marks
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles /home/svemula/waffle_test/waffleClient/cmakebuild/server//CMakeFiles/progress.marks
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/clean
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/preinstall
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/preinstall
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 server/CMakeFiles/proxy_server.dir/rule:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/proxy_server.dir/rule
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/proxy_server.dir/rule
 .PHONY : server/CMakeFiles/proxy_server.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ proxy_server: server/CMakeFiles/proxy_server.dir/rule
 
 # fast build rule for target.
 proxy_server/fast:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/build
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/build
 .PHONY : proxy_server/fast
 
 __/libstorage/src/redis.o: __/libstorage/src/redis.cpp.o
@@ -180,7 +180,7 @@ __/libstorage/src/redis.o: __/libstorage/src/redis.cpp.o
 
 # target to build an object file
 __/libstorage/src/redis.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.o
 .PHONY : __/libstorage/src/redis.cpp.o
 
 __/libstorage/src/redis.i: __/libstorage/src/redis.cpp.i
@@ -188,7 +188,7 @@ __/libstorage/src/redis.i: __/libstorage/src/redis.cpp.i
 
 # target to preprocess a source file
 __/libstorage/src/redis.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.i
 .PHONY : __/libstorage/src/redis.cpp.i
 
 __/libstorage/src/redis.s: __/libstorage/src/redis.cpp.s
@@ -196,7 +196,7 @@ __/libstorage/src/redis.s: __/libstorage/src/redis.cpp.s
 
 # target to generate assembly for a file
 __/libstorage/src/redis.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/libstorage/src/redis.cpp.s
 .PHONY : __/libstorage/src/redis.cpp.s
 
 __/proxy/src/Cache.o: __/proxy/src/Cache.cpp.o
@@ -204,7 +204,7 @@ __/proxy/src/Cache.o: __/proxy/src/Cache.cpp.o
 
 # target to build an object file
 __/proxy/src/Cache.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.o
 .PHONY : __/proxy/src/Cache.cpp.o
 
 __/proxy/src/Cache.i: __/proxy/src/Cache.cpp.i
@@ -212,7 +212,7 @@ __/proxy/src/Cache.i: __/proxy/src/Cache.cpp.i
 
 # target to preprocess a source file
 __/proxy/src/Cache.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.i
 .PHONY : __/proxy/src/Cache.cpp.i
 
 __/proxy/src/Cache.s: __/proxy/src/Cache.cpp.s
@@ -220,7 +220,7 @@ __/proxy/src/Cache.s: __/proxy/src/Cache.cpp.s
 
 # target to generate assembly for a file
 __/proxy/src/Cache.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/Cache.cpp.s
 .PHONY : __/proxy/src/Cache.cpp.s
 
 __/proxy/src/FrequencySmoother.o: __/proxy/src/FrequencySmoother.cpp.o
@@ -228,7 +228,7 @@ __/proxy/src/FrequencySmoother.o: __/proxy/src/FrequencySmoother.cpp.o
 
 # target to build an object file
 __/proxy/src/FrequencySmoother.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.o
 .PHONY : __/proxy/src/FrequencySmoother.cpp.o
 
 __/proxy/src/FrequencySmoother.i: __/proxy/src/FrequencySmoother.cpp.i
@@ -236,7 +236,7 @@ __/proxy/src/FrequencySmoother.i: __/proxy/src/FrequencySmoother.cpp.i
 
 # target to preprocess a source file
 __/proxy/src/FrequencySmoother.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.i
 .PHONY : __/proxy/src/FrequencySmoother.cpp.i
 
 __/proxy/src/FrequencySmoother.s: __/proxy/src/FrequencySmoother.cpp.s
@@ -244,7 +244,7 @@ __/proxy/src/FrequencySmoother.s: __/proxy/src/FrequencySmoother.cpp.s
 
 # target to generate assembly for a file
 __/proxy/src/FrequencySmoother.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/FrequencySmoother.cpp.s
 .PHONY : __/proxy/src/FrequencySmoother.cpp.s
 
 __/proxy/src/encryption_engine.o: __/proxy/src/encryption_engine.cpp.o
@@ -252,7 +252,7 @@ __/proxy/src/encryption_engine.o: __/proxy/src/encryption_engine.cpp.o
 
 # target to build an object file
 __/proxy/src/encryption_engine.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.o
 .PHONY : __/proxy/src/encryption_engine.cpp.o
 
 __/proxy/src/encryption_engine.i: __/proxy/src/encryption_engine.cpp.i
@@ -260,7 +260,7 @@ __/proxy/src/encryption_engine.i: __/proxy/src/encryption_engine.cpp.i
 
 # target to preprocess a source file
 __/proxy/src/encryption_engine.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.i
 .PHONY : __/proxy/src/encryption_engine.cpp.i
 
 __/proxy/src/encryption_engine.s: __/proxy/src/encryption_engine.cpp.s
@@ -268,7 +268,7 @@ __/proxy/src/encryption_engine.s: __/proxy/src/encryption_engine.cpp.s
 
 # target to generate assembly for a file
 __/proxy/src/encryption_engine.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/encryption_engine.cpp.s
 .PHONY : __/proxy/src/encryption_engine.cpp.s
 
 __/proxy/src/util.o: __/proxy/src/util.cpp.o
@@ -276,7 +276,7 @@ __/proxy/src/util.o: __/proxy/src/util.cpp.o
 
 # target to build an object file
 __/proxy/src/util.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.o
 .PHONY : __/proxy/src/util.cpp.o
 
 __/proxy/src/util.i: __/proxy/src/util.cpp.i
@@ -284,7 +284,7 @@ __/proxy/src/util.i: __/proxy/src/util.cpp.i
 
 # target to preprocess a source file
 __/proxy/src/util.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.i
 .PHONY : __/proxy/src/util.cpp.i
 
 __/proxy/src/util.s: __/proxy/src/util.cpp.s
@@ -292,7 +292,7 @@ __/proxy/src/util.s: __/proxy/src/util.cpp.s
 
 # target to generate assembly for a file
 __/proxy/src/util.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/util.cpp.s
 .PHONY : __/proxy/src/util.cpp.s
 
 __/proxy/src/waffle_proxy.o: __/proxy/src/waffle_proxy.cpp.o
@@ -300,7 +300,7 @@ __/proxy/src/waffle_proxy.o: __/proxy/src/waffle_proxy.cpp.o
 
 # target to build an object file
 __/proxy/src/waffle_proxy.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/waffle_proxy.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/waffle_proxy.cpp.o
 .PHONY : __/proxy/src/waffle_proxy.cpp.o
 
 __/proxy/src/waffle_proxy.i: __/proxy/src/waffle_proxy.cpp.i
@@ -308,7 +308,7 @@ __/proxy/src/waffle_proxy.i: __/proxy/src/waffle_proxy.cpp.i
 
 # target to preprocess a source file
 __/proxy/src/waffle_proxy.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/waffle_proxy.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/waffle_proxy.cpp.i
 .PHONY : __/proxy/src/waffle_proxy.cpp.i
 
 __/proxy/src/waffle_proxy.s: __/proxy/src/waffle_proxy.cpp.s
@@ -316,7 +316,7 @@ __/proxy/src/waffle_proxy.s: __/proxy/src/waffle_proxy.cpp.s
 
 # target to generate assembly for a file
 __/proxy/src/waffle_proxy.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/waffle_proxy.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/proxy/src/waffle_proxy.cpp.s
 .PHONY : __/proxy/src/waffle_proxy.cpp.s
 
 __/service/src/proxy_types.o: __/service/src/proxy_types.cpp.o
@@ -324,7 +324,7 @@ __/service/src/proxy_types.o: __/service/src/proxy_types.cpp.o
 
 # target to build an object file
 __/service/src/proxy_types.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/proxy_types.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/proxy_types.cpp.o
 .PHONY : __/service/src/proxy_types.cpp.o
 
 __/service/src/proxy_types.i: __/service/src/proxy_types.cpp.i
@@ -332,7 +332,7 @@ __/service/src/proxy_types.i: __/service/src/proxy_types.cpp.i
 
 # target to preprocess a source file
 __/service/src/proxy_types.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/proxy_types.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/proxy_types.cpp.i
 .PHONY : __/service/src/proxy_types.cpp.i
 
 __/service/src/proxy_types.s: __/service/src/proxy_types.cpp.s
@@ -340,7 +340,7 @@ __/service/src/proxy_types.s: __/service/src/proxy_types.cpp.s
 
 # target to generate assembly for a file
 __/service/src/proxy_types.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/proxy_types.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/proxy_types.cpp.s
 .PHONY : __/service/src/proxy_types.cpp.s
 
 __/service/src/thrift_handler.o: __/service/src/thrift_handler.cpp.o
@@ -348,7 +348,7 @@ __/service/src/thrift_handler.o: __/service/src/thrift_handler.cpp.o
 
 # target to build an object file
 __/service/src/thrift_handler.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler.cpp.o
 .PHONY : __/service/src/thrift_handler.cpp.o
 
 __/service/src/thrift_handler.i: __/service/src/thrift_handler.cpp.i
@@ -356,7 +356,7 @@ __/service/src/thrift_handler.i: __/service/src/thrift_handler.cpp.i
 
 # target to preprocess a source file
 __/service/src/thrift_handler.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler.cpp.i
 .PHONY : __/service/src/thrift_handler.cpp.i
 
 __/service/src/thrift_handler.s: __/service/src/thrift_handler.cpp.s
@@ -364,7 +364,7 @@ __/service/src/thrift_handler.s: __/service/src/thrift_handler.cpp.s
 
 # target to generate assembly for a file
 __/service/src/thrift_handler.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler.cpp.s
 .PHONY : __/service/src/thrift_handler.cpp.s
 
 __/service/src/thrift_handler_factory.o: __/service/src/thrift_handler_factory.cpp.o
@@ -372,7 +372,7 @@ __/service/src/thrift_handler_factory.o: __/service/src/thrift_handler_factory.c
 
 # target to build an object file
 __/service/src/thrift_handler_factory.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler_factory.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler_factory.cpp.o
 .PHONY : __/service/src/thrift_handler_factory.cpp.o
 
 __/service/src/thrift_handler_factory.i: __/service/src/thrift_handler_factory.cpp.i
@@ -380,7 +380,7 @@ __/service/src/thrift_handler_factory.i: __/service/src/thrift_handler_factory.c
 
 # target to preprocess a source file
 __/service/src/thrift_handler_factory.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler_factory.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler_factory.cpp.i
 .PHONY : __/service/src/thrift_handler_factory.cpp.i
 
 __/service/src/thrift_handler_factory.s: __/service/src/thrift_handler_factory.cpp.s
@@ -388,7 +388,7 @@ __/service/src/thrift_handler_factory.s: __/service/src/thrift_handler_factory.c
 
 # target to generate assembly for a file
 __/service/src/thrift_handler_factory.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler_factory.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_handler_factory.cpp.s
 .PHONY : __/service/src/thrift_handler_factory.cpp.s
 
 __/service/src/thrift_response_client.o: __/service/src/thrift_response_client.cpp.o
@@ -396,7 +396,7 @@ __/service/src/thrift_response_client.o: __/service/src/thrift_response_client.c
 
 # target to build an object file
 __/service/src/thrift_response_client.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client.cpp.o
 .PHONY : __/service/src/thrift_response_client.cpp.o
 
 __/service/src/thrift_response_client.i: __/service/src/thrift_response_client.cpp.i
@@ -404,7 +404,7 @@ __/service/src/thrift_response_client.i: __/service/src/thrift_response_client.c
 
 # target to preprocess a source file
 __/service/src/thrift_response_client.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client.cpp.i
 .PHONY : __/service/src/thrift_response_client.cpp.i
 
 __/service/src/thrift_response_client.s: __/service/src/thrift_response_client.cpp.s
@@ -412,7 +412,7 @@ __/service/src/thrift_response_client.s: __/service/src/thrift_response_client.c
 
 # target to generate assembly for a file
 __/service/src/thrift_response_client.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client.cpp.s
 .PHONY : __/service/src/thrift_response_client.cpp.s
 
 __/service/src/thrift_response_client_map.o: __/service/src/thrift_response_client_map.cpp.o
@@ -420,7 +420,7 @@ __/service/src/thrift_response_client_map.o: __/service/src/thrift_response_clie
 
 # target to build an object file
 __/service/src/thrift_response_client_map.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client_map.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client_map.cpp.o
 .PHONY : __/service/src/thrift_response_client_map.cpp.o
 
 __/service/src/thrift_response_client_map.i: __/service/src/thrift_response_client_map.cpp.i
@@ -428,7 +428,7 @@ __/service/src/thrift_response_client_map.i: __/service/src/thrift_response_clie
 
 # target to preprocess a source file
 __/service/src/thrift_response_client_map.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client_map.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client_map.cpp.i
 .PHONY : __/service/src/thrift_response_client_map.cpp.i
 
 __/service/src/thrift_response_client_map.s: __/service/src/thrift_response_client_map.cpp.s
@@ -436,7 +436,7 @@ __/service/src/thrift_response_client_map.s: __/service/src/thrift_response_clie
 
 # target to generate assembly for a file
 __/service/src/thrift_response_client_map.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client_map.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_response_client_map.cpp.s
 .PHONY : __/service/src/thrift_response_client_map.cpp.s
 
 __/service/src/thrift_server.o: __/service/src/thrift_server.cpp.o
@@ -444,7 +444,7 @@ __/service/src/thrift_server.o: __/service/src/thrift_server.cpp.o
 
 # target to build an object file
 __/service/src/thrift_server.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_server.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_server.cpp.o
 .PHONY : __/service/src/thrift_server.cpp.o
 
 __/service/src/thrift_server.i: __/service/src/thrift_server.cpp.i
@@ -452,7 +452,7 @@ __/service/src/thrift_server.i: __/service/src/thrift_server.cpp.i
 
 # target to preprocess a source file
 __/service/src/thrift_server.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_server.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_server.cpp.i
 .PHONY : __/service/src/thrift_server.cpp.i
 
 __/service/src/thrift_server.s: __/service/src/thrift_server.cpp.s
@@ -460,7 +460,7 @@ __/service/src/thrift_server.s: __/service/src/thrift_server.cpp.s
 
 # target to generate assembly for a file
 __/service/src/thrift_server.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_server.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/thrift_server.cpp.s
 .PHONY : __/service/src/thrift_server.cpp.s
 
 __/service/src/waffle_thrift.o: __/service/src/waffle_thrift.cpp.o
@@ -468,7 +468,7 @@ __/service/src/waffle_thrift.o: __/service/src/waffle_thrift.cpp.o
 
 # target to build an object file
 __/service/src/waffle_thrift.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift.cpp.o
 .PHONY : __/service/src/waffle_thrift.cpp.o
 
 __/service/src/waffle_thrift.i: __/service/src/waffle_thrift.cpp.i
@@ -476,7 +476,7 @@ __/service/src/waffle_thrift.i: __/service/src/waffle_thrift.cpp.i
 
 # target to preprocess a source file
 __/service/src/waffle_thrift.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift.cpp.i
 .PHONY : __/service/src/waffle_thrift.cpp.i
 
 __/service/src/waffle_thrift.s: __/service/src/waffle_thrift.cpp.s
@@ -484,7 +484,7 @@ __/service/src/waffle_thrift.s: __/service/src/waffle_thrift.cpp.s
 
 # target to generate assembly for a file
 __/service/src/waffle_thrift.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift.cpp.s
 .PHONY : __/service/src/waffle_thrift.cpp.s
 
 __/service/src/waffle_thrift_response.o: __/service/src/waffle_thrift_response.cpp.o
@@ -492,7 +492,7 @@ __/service/src/waffle_thrift_response.o: __/service/src/waffle_thrift_response.c
 
 # target to build an object file
 __/service/src/waffle_thrift_response.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift_response.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift_response.cpp.o
 .PHONY : __/service/src/waffle_thrift_response.cpp.o
 
 __/service/src/waffle_thrift_response.i: __/service/src/waffle_thrift_response.cpp.i
@@ -500,7 +500,7 @@ __/service/src/waffle_thrift_response.i: __/service/src/waffle_thrift_response.c
 
 # target to preprocess a source file
 __/service/src/waffle_thrift_response.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift_response.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift_response.cpp.i
 .PHONY : __/service/src/waffle_thrift_response.cpp.i
 
 __/service/src/waffle_thrift_response.s: __/service/src/waffle_thrift_response.cpp.s
@@ -508,7 +508,7 @@ __/service/src/waffle_thrift_response.s: __/service/src/waffle_thrift_response.c
 
 # target to generate assembly for a file
 __/service/src/waffle_thrift_response.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift_response.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/__/service/src/waffle_thrift_response.cpp.s
 .PHONY : __/service/src/waffle_thrift_response.cpp.s
 
 src/proxy_server.o: src/proxy_server.cpp.o
@@ -516,7 +516,7 @@ src/proxy_server.o: src/proxy_server.cpp.o
 
 # target to build an object file
 src/proxy_server.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/src/proxy_server.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/src/proxy_server.cpp.o
 .PHONY : src/proxy_server.cpp.o
 
 src/proxy_server.i: src/proxy_server.cpp.i
@@ -524,7 +524,7 @@ src/proxy_server.i: src/proxy_server.cpp.i
 
 # target to preprocess a source file
 src/proxy_server.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/src/proxy_server.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/src/proxy_server.cpp.i
 .PHONY : src/proxy_server.cpp.i
 
 src/proxy_server.s: src/proxy_server.cpp.s
@@ -532,7 +532,7 @@ src/proxy_server.s: src/proxy_server.cpp.s
 
 # target to generate assembly for a file
 src/proxy_server.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/src/proxy_server.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/src/proxy_server.cpp.s
 .PHONY : src/proxy_server.cpp.s
 
 # Help Target
@@ -604,6 +604,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

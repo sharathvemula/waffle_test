@@ -86,12 +86,18 @@ public:
     std::string output_directory_bst_latency;
     std::string output_directory_redis_latency;
     std::string output_directory_cache_miss;
-    std::string output_directory_monitoring_alpha_beta;
+    std::string output_directory_monitoring_alpha;
+    std::string output_directory_monitoring_beta;
+    std::string output_test;
+
 
     std::ofstream out_bst_latency;
     std::ofstream out_redis_latency;
     std::ofstream out_cache_miss;
-    std::ofstream out_alpha_beta;
+    std::ofstream out_alpha;
+    std::ofstream out_beta;
+    std::ofstream out_frequency;
+    std::ofstream out_test;
 
     double ticks_per_ns;
     // System parameters
@@ -99,12 +105,16 @@ public:
     int B = 50;
     int F = 25;
     int D = 50;
+    int cacheBatches = 2;
     int redisBulkLength = 524287;
     std::unordered_map<std::string, std::string> keyValueMap;
     int num_cores = 1;
     std::atomic<int> timeStamp{0};
     int monitoringKeysSize = 10;
     std::unordered_set<std::string> monitoringKeys;
+    std::unordered_map<std::string, int> alphaMap;
+    std::unordered_map<std::string, int> betaMap;
+
 
 private:
     void create_security_batch(std::shared_ptr<queue <std::pair<operation, std::shared_ptr<std::promise<std::string>>>>> &op_queue,

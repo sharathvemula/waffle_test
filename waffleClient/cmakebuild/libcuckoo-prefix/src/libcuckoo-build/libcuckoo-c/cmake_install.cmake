@@ -1,8 +1,8 @@
-# Install script for directory: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo/libcuckoo-c
+# Install script for directory: /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo/libcuckoo-c
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/libcuckoo")
+  set(CMAKE_INSTALL_PREFIX "/home/svemula/waffle_test/waffleClient/cmakebuild/external/libcuckoo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,16 +44,16 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c/cuckoo_table_template.h;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c/cuckoo_table_template.cc")
+   "/home/svemula/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c/cuckoo_table_template.h;/home/svemula/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c/cuckoo_table_template.cc")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c" TYPE FILE FILES
-    "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo/libcuckoo-c/cuckoo_table_template.h"
-    "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo/libcuckoo-c/cuckoo_table_template.cc"
+  file(INSTALL DESTINATION "/home/svemula/waffle_test/waffleClient/cmakebuild/external/libcuckoo/include/libcuckoo-c" TYPE FILE FILES
+    "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo/libcuckoo-c/cuckoo_table_template.h"
+    "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo/libcuckoo-c/cuckoo_table_template.cc"
     )
 endif()
 

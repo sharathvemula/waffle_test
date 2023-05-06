@@ -1,4 +1,4 @@
-set(command "/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/download-boost_ep.cmake")
+set(command "/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/download-boost_ep.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -8,7 +8,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/verify-boost_ep.cmake")
+set(command "/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/verify-boost_ep.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -18,7 +18,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/extract-boost_ep.cmake")
+set(command "/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/extract-boost_ep.cmake")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)

@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/3.26.0-rc3/CompilerIdC/a.out
+        /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/3.26.0-rc3/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -50,7 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/3.26.0-rc3/CompilerIdCXX/a.out
+        /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/3.26.0-rc3/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_WARN_DEPRECATED: "FALSE"
@@ -70,13 +70,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_361fd/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL'
-        /usr/bin/make  -f CMakeFiles/cmTC_361fd.dir/build.make CMakeFiles/cmTC_361fd.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL'
-        Building C object CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_57cba/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS'
+        /usr/bin/make  -f CMakeFiles/cmTC_57cba.dir/build.make CMakeFiles/cmTC_57cba.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS'
+        Building C object CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -85,8 +85,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cck0UMHp.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccs0L5hu.s
         GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -106,15 +106,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o /tmp/cck0UMHp.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o /tmp/ccs0L5hu.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_361fd
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_361fd.dir/link.txt --verbose=1
-        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o -o cmTC_361fd 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_57cba
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57cba.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o -o cmTC_57cba 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -126,11 +126,11 @@ events:
         gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_361fd' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbZvqnS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_361fd /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_361fd' '-mtune=generic' '-march=x86-64'
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_57cba' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqrD1ZX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_57cba /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_57cba' '-mtune=generic' '-march=x86-64'
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS'
         
       exitCode: 0
   -
@@ -164,13 +164,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL]
+        ignore line: [Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_361fd/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL']
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_361fd.dir/build.make CMakeFiles/cmTC_361fd.dir/build]
-        ignore line: [make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TAraiL']
-        ignore line: [Building C object CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_57cba/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_57cba.dir/build.make CMakeFiles/cmTC_57cba.dir/build]
+        ignore line: [make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ew4OjS']
+        ignore line: [Building C object CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -179,8 +179,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cck0UMHp.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccs0L5hu.s]
         ignore line: [GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -200,15 +200,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o /tmp/cck0UMHp.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o /tmp/ccs0L5hu.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_361fd]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_361fd.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o -o cmTC_361fd ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_57cba]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57cba.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o -o cmTC_57cba ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -220,13 +220,13 @@ events:
         ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_361fd' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbZvqnS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_361fd /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_57cba' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqrD1ZX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_57cba /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccbZvqnS.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccqrD1ZX.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -245,7 +245,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_361fd] ==> ignore
+          arg [cmTC_57cba] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -257,7 +257,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_361fd.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_57cba.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -297,8 +297,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_WARN_DEPRECATED: "FALSE"
@@ -306,13 +306,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a5799/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI'
-        /usr/bin/make  -f CMakeFiles/cmTC_a5799.dir/build.make CMakeFiles/cmTC_a5799.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI'
-        Building CXX object CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_38484/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR'
+        /usr/bin/make  -f CMakeFiles/cmTC_38484.dir/build.make CMakeFiles/cmTC_38484.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR'
+        Building CXX object CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -321,8 +321,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjnRcTy.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5bao0C.s
         GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -346,15 +346,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjnRcTy.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5bao0C.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_a5799
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5799.dir/link.txt --verbose=1
-        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a5799 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_38484
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38484.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_38484 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -366,11 +366,11 @@ events:
         gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a5799' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDfeDz0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a5799 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a5799' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_38484' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccl3Vqb5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_38484 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_38484' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR'
         
       exitCode: 0
   -
@@ -410,13 +410,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI]
+        ignore line: [Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a5799/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI']
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_a5799.dir/build.make CMakeFiles/cmTC_a5799.dir/build]
-        ignore line: [make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-HNraSI']
-        ignore line: [Building CXX object CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_38484/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_38484.dir/build.make CMakeFiles/cmTC_38484.dir/build]
+        ignore line: [make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-0PDYnR']
+        ignore line: [Building CXX object CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -425,8 +425,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjnRcTy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc5bao0C.s]
         ignore line: [GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -450,15 +450,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjnRcTy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5bao0C.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_a5799]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5799.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a5799 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_38484]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38484.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_38484 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -470,13 +470,13 @@ events:
         ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a5799' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDfeDz0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a5799 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_38484' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccl3Vqb5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_38484 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccDfeDz0.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccl3Vqb5.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -495,7 +495,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_a5799] ==> ignore
+          arg [cmTC_38484] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -507,7 +507,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_a5799.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_38484.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -543,28 +543,28 @@ events:
     checks:
       - "Looking for arpa/inet.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ibTOJL"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ibTOJL"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-cM7MnR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-cM7MnR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_ARPA_INET_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ibTOJL
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-cM7MnR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f31fc/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ibTOJL'
-        /usr/bin/make  -f CMakeFiles/cmTC_f31fc.dir/build.make CMakeFiles/cmTC_f31fc.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ibTOJL'
-        Building C object CMakeFiles/cmTC_f31fc.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_f31fc.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ibTOJL/CheckIncludeFile.c
-        Linking C executable cmTC_f31fc
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f31fc.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_f31fc.dir/CheckIncludeFile.c.o -o cmTC_f31fc 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ibTOJL'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ibTOJL'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_92a55/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-cM7MnR'
+        /usr/bin/make  -f CMakeFiles/cmTC_92a55.dir/build.make CMakeFiles/cmTC_92a55.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-cM7MnR'
+        Building C object CMakeFiles/cmTC_92a55.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_92a55.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-cM7MnR/CheckIncludeFile.c
+        Linking C executable cmTC_92a55
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92a55.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_92a55.dir/CheckIncludeFile.c.o -o cmTC_92a55 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-cM7MnR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-cM7MnR'
         
       exitCode: 0
   -
@@ -576,28 +576,28 @@ events:
     checks:
       - "Looking for fcntl.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-4v3qYI"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-4v3qYI"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NUXUuR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NUXUuR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_FCNTL_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-4v3qYI
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NUXUuR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b3f27/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-4v3qYI'
-        /usr/bin/make  -f CMakeFiles/cmTC_b3f27.dir/build.make CMakeFiles/cmTC_b3f27.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-4v3qYI'
-        Building C object CMakeFiles/cmTC_b3f27.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_b3f27.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-4v3qYI/CheckIncludeFile.c
-        Linking C executable cmTC_b3f27
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3f27.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_b3f27.dir/CheckIncludeFile.c.o -o cmTC_b3f27 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-4v3qYI'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-4v3qYI'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_66e69/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NUXUuR'
+        /usr/bin/make  -f CMakeFiles/cmTC_66e69.dir/build.make CMakeFiles/cmTC_66e69.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NUXUuR'
+        Building C object CMakeFiles/cmTC_66e69.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_66e69.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NUXUuR/CheckIncludeFile.c
+        Linking C executable cmTC_66e69
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66e69.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_66e69.dir/CheckIncludeFile.c.o -o cmTC_66e69 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NUXUuR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NUXUuR'
         
       exitCode: 0
   -
@@ -609,28 +609,28 @@ events:
     checks:
       - "Looking for getopt.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-9imvpK"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-9imvpK"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T9eAmP"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T9eAmP"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_GETOPT_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-9imvpK
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T9eAmP
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_82cea/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-9imvpK'
-        /usr/bin/make  -f CMakeFiles/cmTC_82cea.dir/build.make CMakeFiles/cmTC_82cea.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-9imvpK'
-        Building C object CMakeFiles/cmTC_82cea.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_82cea.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-9imvpK/CheckIncludeFile.c
-        Linking C executable cmTC_82cea
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82cea.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_82cea.dir/CheckIncludeFile.c.o -o cmTC_82cea 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-9imvpK'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-9imvpK'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5dda6/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T9eAmP'
+        /usr/bin/make  -f CMakeFiles/cmTC_5dda6.dir/build.make CMakeFiles/cmTC_5dda6.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T9eAmP'
+        Building C object CMakeFiles/cmTC_5dda6.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_5dda6.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T9eAmP/CheckIncludeFile.c
+        Linking C executable cmTC_5dda6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5dda6.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_5dda6.dir/CheckIncludeFile.c.o -o cmTC_5dda6 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T9eAmP'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T9eAmP'
         
       exitCode: 0
   -
@@ -642,28 +642,28 @@ events:
     checks:
       - "Looking for inttypes.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ax0ogK"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ax0ogK"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-QmhTmS"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-QmhTmS"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_INTTYPES_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ax0ogK
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-QmhTmS
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1f55/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ax0ogK'
-        /usr/bin/make  -f CMakeFiles/cmTC_f1f55.dir/build.make CMakeFiles/cmTC_f1f55.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ax0ogK'
-        Building C object CMakeFiles/cmTC_f1f55.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_f1f55.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ax0ogK/CheckIncludeFile.c
-        Linking C executable cmTC_f1f55
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1f55.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_f1f55.dir/CheckIncludeFile.c.o -o cmTC_f1f55 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ax0ogK'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Ax0ogK'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_58546/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-QmhTmS'
+        /usr/bin/make  -f CMakeFiles/cmTC_58546.dir/build.make CMakeFiles/cmTC_58546.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-QmhTmS'
+        Building C object CMakeFiles/cmTC_58546.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_58546.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-QmhTmS/CheckIncludeFile.c
+        Linking C executable cmTC_58546
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58546.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_58546.dir/CheckIncludeFile.c.o -o cmTC_58546 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-QmhTmS'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-QmhTmS'
         
       exitCode: 0
   -
@@ -675,28 +675,28 @@ events:
     checks:
       - "Looking for netdb.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CDl9FJ"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CDl9FJ"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-OuRuFS"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-OuRuFS"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_NETDB_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CDl9FJ
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-OuRuFS
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_81ed3/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CDl9FJ'
-        /usr/bin/make  -f CMakeFiles/cmTC_81ed3.dir/build.make CMakeFiles/cmTC_81ed3.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CDl9FJ'
-        Building C object CMakeFiles/cmTC_81ed3.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_81ed3.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CDl9FJ/CheckIncludeFile.c
-        Linking C executable cmTC_81ed3
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81ed3.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_81ed3.dir/CheckIncludeFile.c.o -o cmTC_81ed3 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CDl9FJ'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CDl9FJ'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_42a16/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-OuRuFS'
+        /usr/bin/make  -f CMakeFiles/cmTC_42a16.dir/build.make CMakeFiles/cmTC_42a16.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-OuRuFS'
+        Building C object CMakeFiles/cmTC_42a16.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_42a16.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-OuRuFS/CheckIncludeFile.c
+        Linking C executable cmTC_42a16
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42a16.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_42a16.dir/CheckIncludeFile.c.o -o cmTC_42a16 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-OuRuFS'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-OuRuFS'
         
       exitCode: 0
   -
@@ -708,28 +708,28 @@ events:
     checks:
       - "Looking for netinet/in.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T98w4J"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T98w4J"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-v9rK7O"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-v9rK7O"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_NETINET_IN_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T98w4J
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-v9rK7O
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_20148/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T98w4J'
-        /usr/bin/make  -f CMakeFiles/cmTC_20148.dir/build.make CMakeFiles/cmTC_20148.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T98w4J'
-        Building C object CMakeFiles/cmTC_20148.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_20148.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T98w4J/CheckIncludeFile.c
-        Linking C executable cmTC_20148
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20148.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_20148.dir/CheckIncludeFile.c.o -o cmTC_20148 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T98w4J'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-T98w4J'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_848f7/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-v9rK7O'
+        /usr/bin/make  -f CMakeFiles/cmTC_848f7.dir/build.make CMakeFiles/cmTC_848f7.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-v9rK7O'
+        Building C object CMakeFiles/cmTC_848f7.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_848f7.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-v9rK7O/CheckIncludeFile.c
+        Linking C executable cmTC_848f7
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_848f7.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_848f7.dir/CheckIncludeFile.c.o -o cmTC_848f7 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-v9rK7O'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-v9rK7O'
         
       exitCode: 0
   -
@@ -741,28 +741,28 @@ events:
     checks:
       - "Looking for signal.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-MAmECI"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-MAmECI"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-05jcXO"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-05jcXO"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SIGNAL_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-MAmECI
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-05jcXO
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_911c1/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-MAmECI'
-        /usr/bin/make  -f CMakeFiles/cmTC_911c1.dir/build.make CMakeFiles/cmTC_911c1.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-MAmECI'
-        Building C object CMakeFiles/cmTC_911c1.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_911c1.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-MAmECI/CheckIncludeFile.c
-        Linking C executable cmTC_911c1
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_911c1.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_911c1.dir/CheckIncludeFile.c.o -o cmTC_911c1 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-MAmECI'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-MAmECI'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_aa94f/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-05jcXO'
+        /usr/bin/make  -f CMakeFiles/cmTC_aa94f.dir/build.make CMakeFiles/cmTC_aa94f.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-05jcXO'
+        Building C object CMakeFiles/cmTC_aa94f.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_aa94f.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-05jcXO/CheckIncludeFile.c
+        Linking C executable cmTC_aa94f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa94f.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_aa94f.dir/CheckIncludeFile.c.o -o cmTC_aa94f 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-05jcXO'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-05jcXO'
         
       exitCode: 0
   -
@@ -774,28 +774,28 @@ events:
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-6oDm2L"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-6oDm2L"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kMm5pR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kMm5pR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-6oDm2L
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kMm5pR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b91b0/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-6oDm2L'
-        /usr/bin/make  -f CMakeFiles/cmTC_b91b0.dir/build.make CMakeFiles/cmTC_b91b0.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-6oDm2L'
-        Building C object CMakeFiles/cmTC_b91b0.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_b91b0.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-6oDm2L/CheckIncludeFile.c
-        Linking C executable cmTC_b91b0
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b91b0.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_b91b0.dir/CheckIncludeFile.c.o -o cmTC_b91b0 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-6oDm2L'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-6oDm2L'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5af5f/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kMm5pR'
+        /usr/bin/make  -f CMakeFiles/cmTC_5af5f.dir/build.make CMakeFiles/cmTC_5af5f.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kMm5pR'
+        Building C object CMakeFiles/cmTC_5af5f.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_5af5f.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kMm5pR/CheckIncludeFile.c
+        Linking C executable cmTC_5af5f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5af5f.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_5af5f.dir/CheckIncludeFile.c.o -o cmTC_5af5f 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kMm5pR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kMm5pR'
         
       exitCode: 0
   -
@@ -807,28 +807,28 @@ events:
     checks:
       - "Looking for unistd.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-jexaeI"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-jexaeI"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7M9KjS"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7M9KjS"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_UNISTD_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-jexaeI
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7M9KjS
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a040c/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-jexaeI'
-        /usr/bin/make  -f CMakeFiles/cmTC_a040c.dir/build.make CMakeFiles/cmTC_a040c.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-jexaeI'
-        Building C object CMakeFiles/cmTC_a040c.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_a040c.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-jexaeI/CheckIncludeFile.c
-        Linking C executable cmTC_a040c
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a040c.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_a040c.dir/CheckIncludeFile.c.o -o cmTC_a040c 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-jexaeI'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-jexaeI'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f8dfb/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7M9KjS'
+        /usr/bin/make  -f CMakeFiles/cmTC_f8dfb.dir/build.make CMakeFiles/cmTC_f8dfb.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7M9KjS'
+        Building C object CMakeFiles/cmTC_f8dfb.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_f8dfb.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7M9KjS/CheckIncludeFile.c
+        Linking C executable cmTC_f8dfb
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8dfb.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_f8dfb.dir/CheckIncludeFile.c.o -o cmTC_f8dfb 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7M9KjS'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7M9KjS'
         
       exitCode: 0
   -
@@ -840,28 +840,28 @@ events:
     checks:
       - "Looking for pthread.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-3dT38J"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-3dT38J"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-V6kz0P"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-V6kz0P"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_PTHREAD_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-3dT38J
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-V6kz0P
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b34e8/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-3dT38J'
-        /usr/bin/make  -f CMakeFiles/cmTC_b34e8.dir/build.make CMakeFiles/cmTC_b34e8.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-3dT38J'
-        Building C object CMakeFiles/cmTC_b34e8.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_b34e8.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-3dT38J/CheckIncludeFile.c
-        Linking C executable cmTC_b34e8
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b34e8.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_b34e8.dir/CheckIncludeFile.c.o -o cmTC_b34e8 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-3dT38J'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-3dT38J'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a4e3d/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-V6kz0P'
+        /usr/bin/make  -f CMakeFiles/cmTC_a4e3d.dir/build.make CMakeFiles/cmTC_a4e3d.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-V6kz0P'
+        Building C object CMakeFiles/cmTC_a4e3d.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_a4e3d.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-V6kz0P/CheckIncludeFile.c
+        Linking C executable cmTC_a4e3d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4e3d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_a4e3d.dir/CheckIncludeFile.c.o -o cmTC_a4e3d 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-V6kz0P'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-V6kz0P'
         
       exitCode: 0
   -
@@ -873,28 +873,28 @@ events:
     checks:
       - "Looking for sys/ioctl.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Kbb4yJ"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Kbb4yJ"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AHxtwP"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AHxtwP"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SYS_IOCTL_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Kbb4yJ
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AHxtwP
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_38827/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Kbb4yJ'
-        /usr/bin/make  -f CMakeFiles/cmTC_38827.dir/build.make CMakeFiles/cmTC_38827.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Kbb4yJ'
-        Building C object CMakeFiles/cmTC_38827.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_38827.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Kbb4yJ/CheckIncludeFile.c
-        Linking C executable cmTC_38827
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38827.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_38827.dir/CheckIncludeFile.c.o -o cmTC_38827 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Kbb4yJ'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Kbb4yJ'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f6b07/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AHxtwP'
+        /usr/bin/make  -f CMakeFiles/cmTC_f6b07.dir/build.make CMakeFiles/cmTC_f6b07.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AHxtwP'
+        Building C object CMakeFiles/cmTC_f6b07.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_f6b07.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AHxtwP/CheckIncludeFile.c
+        Linking C executable cmTC_f6b07
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6b07.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_f6b07.dir/CheckIncludeFile.c.o -o cmTC_f6b07 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AHxtwP'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AHxtwP'
         
       exitCode: 0
   -
@@ -906,28 +906,28 @@ events:
     checks:
       - "Looking for sys/param.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kpJcOH"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kpJcOH"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-rCQwHS"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-rCQwHS"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SYS_PARAM_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kpJcOH
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-rCQwHS
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2971c/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kpJcOH'
-        /usr/bin/make  -f CMakeFiles/cmTC_2971c.dir/build.make CMakeFiles/cmTC_2971c.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kpJcOH'
-        Building C object CMakeFiles/cmTC_2971c.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_2971c.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kpJcOH/CheckIncludeFile.c
-        Linking C executable cmTC_2971c
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2971c.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_2971c.dir/CheckIncludeFile.c.o -o cmTC_2971c 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kpJcOH'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-kpJcOH'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1acd/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-rCQwHS'
+        /usr/bin/make  -f CMakeFiles/cmTC_f1acd.dir/build.make CMakeFiles/cmTC_f1acd.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-rCQwHS'
+        Building C object CMakeFiles/cmTC_f1acd.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_f1acd.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-rCQwHS/CheckIncludeFile.c
+        Linking C executable cmTC_f1acd
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1acd.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_f1acd.dir/CheckIncludeFile.c.o -o cmTC_f1acd 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-rCQwHS'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-rCQwHS'
         
       exitCode: 0
   -
@@ -939,28 +939,28 @@ events:
     checks:
       - "Looking for sys/resource.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-eDPXOK"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-eDPXOK"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-2RaKdR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-2RaKdR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SYS_RESOURCE_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-eDPXOK
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-2RaKdR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e14c2/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-eDPXOK'
-        /usr/bin/make  -f CMakeFiles/cmTC_e14c2.dir/build.make CMakeFiles/cmTC_e14c2.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-eDPXOK'
-        Building C object CMakeFiles/cmTC_e14c2.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_e14c2.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-eDPXOK/CheckIncludeFile.c
-        Linking C executable cmTC_e14c2
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e14c2.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_e14c2.dir/CheckIncludeFile.c.o -o cmTC_e14c2 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-eDPXOK'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-eDPXOK'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_04bcc/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-2RaKdR'
+        /usr/bin/make  -f CMakeFiles/cmTC_04bcc.dir/build.make CMakeFiles/cmTC_04bcc.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-2RaKdR'
+        Building C object CMakeFiles/cmTC_04bcc.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_04bcc.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-2RaKdR/CheckIncludeFile.c
+        Linking C executable cmTC_04bcc
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04bcc.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_04bcc.dir/CheckIncludeFile.c.o -o cmTC_04bcc 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-2RaKdR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-2RaKdR'
         
       exitCode: 0
   -
@@ -972,28 +972,28 @@ events:
     checks:
       - "Looking for sys/socket.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7VOl8K"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7VOl8K"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ivul5P"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ivul5P"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SYS_SOCKET_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7VOl8K
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ivul5P
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7e035/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7VOl8K'
-        /usr/bin/make  -f CMakeFiles/cmTC_7e035.dir/build.make CMakeFiles/cmTC_7e035.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7VOl8K'
-        Building C object CMakeFiles/cmTC_7e035.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_7e035.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7VOl8K/CheckIncludeFile.c
-        Linking C executable cmTC_7e035
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e035.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_7e035.dir/CheckIncludeFile.c.o -o cmTC_7e035 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7VOl8K'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-7VOl8K'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4748d/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ivul5P'
+        /usr/bin/make  -f CMakeFiles/cmTC_4748d.dir/build.make CMakeFiles/cmTC_4748d.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ivul5P'
+        Building C object CMakeFiles/cmTC_4748d.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_4748d.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ivul5P/CheckIncludeFile.c
+        Linking C executable cmTC_4748d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4748d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_4748d.dir/CheckIncludeFile.c.o -o cmTC_4748d 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ivul5P'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ivul5P'
         
       exitCode: 0
   -
@@ -1005,28 +1005,28 @@ events:
     checks:
       - "Looking for sys/stat.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JdxtYI"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JdxtYI"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Pf9GHR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Pf9GHR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SYS_STAT_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JdxtYI
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Pf9GHR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0bc8b/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JdxtYI'
-        /usr/bin/make  -f CMakeFiles/cmTC_0bc8b.dir/build.make CMakeFiles/cmTC_0bc8b.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JdxtYI'
-        Building C object CMakeFiles/cmTC_0bc8b.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_0bc8b.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JdxtYI/CheckIncludeFile.c
-        Linking C executable cmTC_0bc8b
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bc8b.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_0bc8b.dir/CheckIncludeFile.c.o -o cmTC_0bc8b 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JdxtYI'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JdxtYI'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6e5fa/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Pf9GHR'
+        /usr/bin/make  -f CMakeFiles/cmTC_6e5fa.dir/build.make CMakeFiles/cmTC_6e5fa.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Pf9GHR'
+        Building C object CMakeFiles/cmTC_6e5fa.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_6e5fa.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Pf9GHR/CheckIncludeFile.c
+        Linking C executable cmTC_6e5fa
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e5fa.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_6e5fa.dir/CheckIncludeFile.c.o -o cmTC_6e5fa 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Pf9GHR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Pf9GHR'
         
       exitCode: 0
   -
@@ -1038,28 +1038,28 @@ events:
     checks:
       - "Looking for sys/time.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-zlmTLK"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-zlmTLK"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-y4C4vP"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-y4C4vP"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SYS_TIME_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-zlmTLK
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-y4C4vP
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_efa1a/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-zlmTLK'
-        /usr/bin/make  -f CMakeFiles/cmTC_efa1a.dir/build.make CMakeFiles/cmTC_efa1a.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-zlmTLK'
-        Building C object CMakeFiles/cmTC_efa1a.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_efa1a.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-zlmTLK/CheckIncludeFile.c
-        Linking C executable cmTC_efa1a
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efa1a.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_efa1a.dir/CheckIncludeFile.c.o -o cmTC_efa1a 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-zlmTLK'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-zlmTLK'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_57fb7/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-y4C4vP'
+        /usr/bin/make  -f CMakeFiles/cmTC_57fb7.dir/build.make CMakeFiles/cmTC_57fb7.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-y4C4vP'
+        Building C object CMakeFiles/cmTC_57fb7.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_57fb7.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-y4C4vP/CheckIncludeFile.c
+        Linking C executable cmTC_57fb7
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57fb7.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_57fb7.dir/CheckIncludeFile.c.o -o cmTC_57fb7 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-y4C4vP'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-y4C4vP'
         
       exitCode: 0
   -
@@ -1071,28 +1071,28 @@ events:
     checks:
       - "Looking for sys/un.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-aGV5OJ"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-aGV5OJ"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NHNUmS"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NHNUmS"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SYS_UN_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-aGV5OJ
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NHNUmS
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ea0dc/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-aGV5OJ'
-        /usr/bin/make  -f CMakeFiles/cmTC_ea0dc.dir/build.make CMakeFiles/cmTC_ea0dc.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-aGV5OJ'
-        Building C object CMakeFiles/cmTC_ea0dc.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_ea0dc.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-aGV5OJ/CheckIncludeFile.c
-        Linking C executable cmTC_ea0dc
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea0dc.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_ea0dc.dir/CheckIncludeFile.c.o -o cmTC_ea0dc 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-aGV5OJ'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-aGV5OJ'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e896c/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NHNUmS'
+        /usr/bin/make  -f CMakeFiles/cmTC_e896c.dir/build.make CMakeFiles/cmTC_e896c.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NHNUmS'
+        Building C object CMakeFiles/cmTC_e896c.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_e896c.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NHNUmS/CheckIncludeFile.c
+        Linking C executable cmTC_e896c
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e896c.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_e896c.dir/CheckIncludeFile.c.o -o cmTC_e896c 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NHNUmS'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NHNUmS'
         
       exitCode: 0
   -
@@ -1104,28 +1104,28 @@ events:
     checks:
       - "Looking for poll.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Cnu0qJ"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Cnu0qJ"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Lp3nuP"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Lp3nuP"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_POLL_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Cnu0qJ
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Lp3nuP
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e86d0/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Cnu0qJ'
-        /usr/bin/make  -f CMakeFiles/cmTC_e86d0.dir/build.make CMakeFiles/cmTC_e86d0.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Cnu0qJ'
-        Building C object CMakeFiles/cmTC_e86d0.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_e86d0.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Cnu0qJ/CheckIncludeFile.c
-        Linking C executable cmTC_e86d0
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e86d0.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_e86d0.dir/CheckIncludeFile.c.o -o cmTC_e86d0 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Cnu0qJ'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Cnu0qJ'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8fcc0/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Lp3nuP'
+        /usr/bin/make  -f CMakeFiles/cmTC_8fcc0.dir/build.make CMakeFiles/cmTC_8fcc0.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Lp3nuP'
+        Building C object CMakeFiles/cmTC_8fcc0.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_8fcc0.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Lp3nuP/CheckIncludeFile.c
+        Linking C executable cmTC_8fcc0
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fcc0.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_8fcc0.dir/CheckIncludeFile.c.o -o cmTC_8fcc0 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Lp3nuP'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Lp3nuP'
         
       exitCode: 0
   -
@@ -1137,28 +1137,28 @@ events:
     checks:
       - "Looking for sys/poll.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AQFPxL"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AQFPxL"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-L0EjtP"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-L0EjtP"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SYS_POLL_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AQFPxL
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-L0EjtP
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_746aa/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AQFPxL'
-        /usr/bin/make  -f CMakeFiles/cmTC_746aa.dir/build.make CMakeFiles/cmTC_746aa.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AQFPxL'
-        Building C object CMakeFiles/cmTC_746aa.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_746aa.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AQFPxL/CheckIncludeFile.c
-        Linking C executable cmTC_746aa
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_746aa.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_746aa.dir/CheckIncludeFile.c.o -o cmTC_746aa 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AQFPxL'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AQFPxL'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8024d/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-L0EjtP'
+        /usr/bin/make  -f CMakeFiles/cmTC_8024d.dir/build.make CMakeFiles/cmTC_8024d.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-L0EjtP'
+        Building C object CMakeFiles/cmTC_8024d.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_8024d.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-L0EjtP/CheckIncludeFile.c
+        Linking C executable cmTC_8024d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8024d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_8024d.dir/CheckIncludeFile.c.o -o cmTC_8024d 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-L0EjtP'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-L0EjtP'
         
       exitCode: 0
   -
@@ -1170,28 +1170,28 @@ events:
     checks:
       - "Looking for sys/select.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CotpNI"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CotpNI"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M5Bk5O"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M5Bk5O"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SYS_SELECT_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CotpNI
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M5Bk5O
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1b46b/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CotpNI'
-        /usr/bin/make  -f CMakeFiles/cmTC_1b46b.dir/build.make CMakeFiles/cmTC_1b46b.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CotpNI'
-        Building C object CMakeFiles/cmTC_1b46b.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_1b46b.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CotpNI/CheckIncludeFile.c
-        Linking C executable cmTC_1b46b
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b46b.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_1b46b.dir/CheckIncludeFile.c.o -o cmTC_1b46b 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CotpNI'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-CotpNI'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9a8c6/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M5Bk5O'
+        /usr/bin/make  -f CMakeFiles/cmTC_9a8c6.dir/build.make CMakeFiles/cmTC_9a8c6.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M5Bk5O'
+        Building C object CMakeFiles/cmTC_9a8c6.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_9a8c6.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M5Bk5O/CheckIncludeFile.c
+        Linking C executable cmTC_9a8c6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a8c6.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_9a8c6.dir/CheckIncludeFile.c.o -o cmTC_9a8c6 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M5Bk5O'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M5Bk5O'
         
       exitCode: 0
   -
@@ -1203,28 +1203,28 @@ events:
     checks:
       - "Looking for sched.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-o9mWuJ"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-o9mWuJ"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AjgS3Q"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AjgS3Q"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SCHED_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-o9mWuJ
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AjgS3Q
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_86285/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-o9mWuJ'
-        /usr/bin/make  -f CMakeFiles/cmTC_86285.dir/build.make CMakeFiles/cmTC_86285.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-o9mWuJ'
-        Building C object CMakeFiles/cmTC_86285.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_86285.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-o9mWuJ/CheckIncludeFile.c
-        Linking C executable cmTC_86285
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86285.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_86285.dir/CheckIncludeFile.c.o -o cmTC_86285 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-o9mWuJ'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-o9mWuJ'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_03486/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AjgS3Q'
+        /usr/bin/make  -f CMakeFiles/cmTC_03486.dir/build.make CMakeFiles/cmTC_03486.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AjgS3Q'
+        Building C object CMakeFiles/cmTC_03486.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_03486.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AjgS3Q/CheckIncludeFile.c
+        Linking C executable cmTC_03486
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03486.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_03486.dir/CheckIncludeFile.c.o -o cmTC_03486 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AjgS3Q'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-AjgS3Q'
         
       exitCode: 0
   -
@@ -1236,28 +1236,28 @@ events:
     checks:
       - "Looking for string.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VWfWtK"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VWfWtK"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-lobzTR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-lobzTR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_STRING_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VWfWtK
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-lobzTR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3f6f5/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VWfWtK'
-        /usr/bin/make  -f CMakeFiles/cmTC_3f6f5.dir/build.make CMakeFiles/cmTC_3f6f5.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VWfWtK'
-        Building C object CMakeFiles/cmTC_3f6f5.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_3f6f5.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VWfWtK/CheckIncludeFile.c
-        Linking C executable cmTC_3f6f5
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f6f5.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_3f6f5.dir/CheckIncludeFile.c.o -o cmTC_3f6f5 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VWfWtK'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VWfWtK'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_310ea/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-lobzTR'
+        /usr/bin/make  -f CMakeFiles/cmTC_310ea.dir/build.make CMakeFiles/cmTC_310ea.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-lobzTR'
+        Building C object CMakeFiles/cmTC_310ea.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_310ea.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-lobzTR/CheckIncludeFile.c
+        Linking C executable cmTC_310ea
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_310ea.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_310ea.dir/CheckIncludeFile.c.o -o cmTC_310ea 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-lobzTR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-lobzTR'
         
       exitCode: 0
   -
@@ -1269,28 +1269,28 @@ events:
     checks:
       - "Looking for strings.h"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-io1ceM"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-io1ceM"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VS6htQ"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VS6htQ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_STRINGS_H"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-io1ceM
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VS6htQ
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ba5f7/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-io1ceM'
-        /usr/bin/make  -f CMakeFiles/cmTC_ba5f7.dir/build.make CMakeFiles/cmTC_ba5f7.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-io1ceM'
-        Building C object CMakeFiles/cmTC_ba5f7.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_ba5f7.dir/CheckIncludeFile.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-io1ceM/CheckIncludeFile.c
-        Linking C executable cmTC_ba5f7
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba5f7.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_ba5f7.dir/CheckIncludeFile.c.o -o cmTC_ba5f7 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-io1ceM'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-io1ceM'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a6d7c/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VS6htQ'
+        /usr/bin/make  -f CMakeFiles/cmTC_a6d7c.dir/build.make CMakeFiles/cmTC_a6d7c.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VS6htQ'
+        Building C object CMakeFiles/cmTC_a6d7c.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_a6d7c.dir/CheckIncludeFile.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VS6htQ/CheckIncludeFile.c
+        Linking C executable cmTC_a6d7c
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6d7c.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_a6d7c.dir/CheckIncludeFile.c.o -o cmTC_a6d7c 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VS6htQ'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-VS6htQ'
         
       exitCode: 0
   -
@@ -1302,28 +1302,28 @@ events:
     checks:
       - "Looking for gethostbyname"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NfmpOH"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NfmpOH"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlVXIR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlVXIR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_GETHOSTBYNAME"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NfmpOH
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlVXIR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_104a9/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NfmpOH'
-        /usr/bin/make  -f CMakeFiles/cmTC_104a9.dir/build.make CMakeFiles/cmTC_104a9.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NfmpOH'
-        Building C object CMakeFiles/cmTC_104a9.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_104a9.dir/CheckFunctionExists.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NfmpOH/CheckFunctionExists.c
-        Linking C executable cmTC_104a9
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_104a9.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -rdynamic CMakeFiles/cmTC_104a9.dir/CheckFunctionExists.c.o -o cmTC_104a9 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NfmpOH'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-NfmpOH'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dfb91/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlVXIR'
+        /usr/bin/make  -f CMakeFiles/cmTC_dfb91.dir/build.make CMakeFiles/cmTC_dfb91.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlVXIR'
+        Building C object CMakeFiles/cmTC_dfb91.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_dfb91.dir/CheckFunctionExists.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlVXIR/CheckFunctionExists.c
+        Linking C executable cmTC_dfb91
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfb91.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -rdynamic CMakeFiles/cmTC_dfb91.dir/CheckFunctionExists.c.o -o cmTC_dfb91 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlVXIR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlVXIR'
         
       exitCode: 0
   -
@@ -1335,28 +1335,28 @@ events:
     checks:
       - "Looking for gethostbyname_r"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-wg6C8I"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-wg6C8I"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JQJVrT"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JQJVrT"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_GETHOSTBYNAME_R"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-wg6C8I
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JQJVrT
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9f421/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-wg6C8I'
-        /usr/bin/make  -f CMakeFiles/cmTC_9f421.dir/build.make CMakeFiles/cmTC_9f421.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-wg6C8I'
-        Building C object CMakeFiles/cmTC_9f421.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname_r -o CMakeFiles/cmTC_9f421.dir/CheckFunctionExists.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-wg6C8I/CheckFunctionExists.c
-        Linking C executable cmTC_9f421
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f421.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname_r -rdynamic CMakeFiles/cmTC_9f421.dir/CheckFunctionExists.c.o -o cmTC_9f421 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-wg6C8I'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-wg6C8I'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_53bc5/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JQJVrT'
+        /usr/bin/make  -f CMakeFiles/cmTC_53bc5.dir/build.make CMakeFiles/cmTC_53bc5.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JQJVrT'
+        Building C object CMakeFiles/cmTC_53bc5.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname_r -o CMakeFiles/cmTC_53bc5.dir/CheckFunctionExists.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JQJVrT/CheckFunctionExists.c
+        Linking C executable cmTC_53bc5
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53bc5.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname_r -rdynamic CMakeFiles/cmTC_53bc5.dir/CheckFunctionExists.c.o -o cmTC_53bc5 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JQJVrT'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-JQJVrT'
         
       exitCode: 0
   -
@@ -1368,28 +1368,28 @@ events:
     checks:
       - "Looking for strerror_r"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Q7aVoI"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Q7aVoI"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Flj2xQ"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Flj2xQ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_STRERROR_R"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Q7aVoI
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Flj2xQ
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1a7e1/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Q7aVoI'
-        /usr/bin/make  -f CMakeFiles/cmTC_1a7e1.dir/build.make CMakeFiles/cmTC_1a7e1.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Q7aVoI'
-        Building C object CMakeFiles/cmTC_1a7e1.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strerror_r -o CMakeFiles/cmTC_1a7e1.dir/CheckFunctionExists.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Q7aVoI/CheckFunctionExists.c
-        Linking C executable cmTC_1a7e1
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a7e1.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strerror_r -rdynamic CMakeFiles/cmTC_1a7e1.dir/CheckFunctionExists.c.o -o cmTC_1a7e1 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Q7aVoI'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Q7aVoI'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6c4f8/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Flj2xQ'
+        /usr/bin/make  -f CMakeFiles/cmTC_6c4f8.dir/build.make CMakeFiles/cmTC_6c4f8.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Flj2xQ'
+        Building C object CMakeFiles/cmTC_6c4f8.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strerror_r -o CMakeFiles/cmTC_6c4f8.dir/CheckFunctionExists.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Flj2xQ/CheckFunctionExists.c
+        Linking C executable cmTC_6c4f8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c4f8.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strerror_r -rdynamic CMakeFiles/cmTC_6c4f8.dir/CheckFunctionExists.c.o -o cmTC_6c4f8 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Flj2xQ'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Flj2xQ'
         
       exitCode: 0
   -
@@ -1401,28 +1401,28 @@ events:
     checks:
       - "Looking for sched_get_priority_max"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-THmg6K"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-THmg6K"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TWTZZR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TWTZZR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SCHED_GET_PRIORITY_MAX"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-THmg6K
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TWTZZR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3a380/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-THmg6K'
-        /usr/bin/make  -f CMakeFiles/cmTC_3a380.dir/build.make CMakeFiles/cmTC_3a380.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-THmg6K'
-        Building C object CMakeFiles/cmTC_3a380.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sched_get_priority_max -o CMakeFiles/cmTC_3a380.dir/CheckFunctionExists.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-THmg6K/CheckFunctionExists.c
-        Linking C executable cmTC_3a380
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a380.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sched_get_priority_max -rdynamic CMakeFiles/cmTC_3a380.dir/CheckFunctionExists.c.o -o cmTC_3a380 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-THmg6K'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-THmg6K'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0451c/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TWTZZR'
+        /usr/bin/make  -f CMakeFiles/cmTC_0451c.dir/build.make CMakeFiles/cmTC_0451c.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TWTZZR'
+        Building C object CMakeFiles/cmTC_0451c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sched_get_priority_max -o CMakeFiles/cmTC_0451c.dir/CheckFunctionExists.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TWTZZR/CheckFunctionExists.c
+        Linking C executable cmTC_0451c
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0451c.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sched_get_priority_max -rdynamic CMakeFiles/cmTC_0451c.dir/CheckFunctionExists.c.o -o cmTC_0451c 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TWTZZR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-TWTZZR'
         
       exitCode: 0
   -
@@ -1434,28 +1434,28 @@ events:
     checks:
       - "Looking for sched_get_priority_min"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-RiUChK"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-RiUChK"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlaaSR"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlaaSR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "HAVE_SCHED_GET_PRIORITY_MIN"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-RiUChK
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlaaSR
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb8b8/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-RiUChK'
-        /usr/bin/make  -f CMakeFiles/cmTC_fb8b8.dir/build.make CMakeFiles/cmTC_fb8b8.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-RiUChK'
-        Building C object CMakeFiles/cmTC_fb8b8.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sched_get_priority_min -o CMakeFiles/cmTC_fb8b8.dir/CheckFunctionExists.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-RiUChK/CheckFunctionExists.c
-        Linking C executable cmTC_fb8b8
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb8b8.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sched_get_priority_min -rdynamic CMakeFiles/cmTC_fb8b8.dir/CheckFunctionExists.c.o -o cmTC_fb8b8 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-RiUChK'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-RiUChK'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6f75e/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlaaSR'
+        /usr/bin/make  -f CMakeFiles/cmTC_6f75e.dir/build.make CMakeFiles/cmTC_6f75e.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlaaSR'
+        Building C object CMakeFiles/cmTC_6f75e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sched_get_priority_min -o CMakeFiles/cmTC_6f75e.dir/CheckFunctionExists.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlaaSR/CheckFunctionExists.c
+        Linking C executable cmTC_6f75e
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f75e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sched_get_priority_min -rdynamic CMakeFiles/cmTC_6f75e.dir/CheckFunctionExists.c.o -o cmTC_6f75e 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlaaSR'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-GlaaSR'
         
       exitCode: 0
   -
@@ -1468,28 +1468,28 @@ events:
     checks:
       - "Performing Test STRERROR_R_CHAR_P"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Gl4RmL"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Gl4RmL"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-yHy9jP"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-yHy9jP"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -Wno-variadic-macros -Wno-long-long"
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "STRERROR_R_CHAR_P"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Gl4RmL
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-yHy9jP
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d3a6a/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Gl4RmL'
-        /usr/bin/make  -f CMakeFiles/cmTC_d3a6a.dir/build.make CMakeFiles/cmTC_d3a6a.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Gl4RmL'
-        Building CXX object CMakeFiles/cmTC_d3a6a.dir/src.cxx.o
-        /usr/bin/c++ -DSTRERROR_R_CHAR_P  -Wno-variadic-macros -Wno-long-long  -o CMakeFiles/cmTC_d3a6a.dir/src.cxx.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Gl4RmL/src.cxx
-        Linking CXX executable cmTC_d3a6a
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3a6a.dir/link.txt --verbose=1
-        /usr/bin/c++  -Wno-variadic-macros -Wno-long-long  -rdynamic CMakeFiles/cmTC_d3a6a.dir/src.cxx.o -o cmTC_d3a6a 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Gl4RmL'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-Gl4RmL'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_175c8/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-yHy9jP'
+        /usr/bin/make  -f CMakeFiles/cmTC_175c8.dir/build.make CMakeFiles/cmTC_175c8.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-yHy9jP'
+        Building CXX object CMakeFiles/cmTC_175c8.dir/src.cxx.o
+        /usr/bin/c++ -DSTRERROR_R_CHAR_P  -Wno-variadic-macros -Wno-long-long  -o CMakeFiles/cmTC_175c8.dir/src.cxx.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-yHy9jP/src.cxx
+        Linking CXX executable cmTC_175c8
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_175c8.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-variadic-macros -Wno-long-long  -rdynamic CMakeFiles/cmTC_175c8.dir/src.cxx.o -o cmTC_175c8 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-yHy9jP'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-yHy9jP'
         
       exitCode: 0
   -
@@ -1503,36 +1503,36 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-LTjyVL"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-LTjyVL"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-tPjt7P"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-tPjt7P"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-LTjyVL
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-tPjt7P
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d725a/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-LTjyVL'
-        /usr/bin/make  -f CMakeFiles/cmTC_d725a.dir/build.make CMakeFiles/cmTC_d725a.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-LTjyVL'
-        Building C object CMakeFiles/cmTC_d725a.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d725a.dir/src.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-LTjyVL/src.c
-        Linking C executable cmTC_d725a
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d725a.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_d725a.dir/src.c.o -o cmTC_d725a 
-        /usr/bin/ld: CMakeFiles/cmTC_d725a.dir/src.c.o: in function `main':
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fa8ef/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-tPjt7P'
+        /usr/bin/make  -f CMakeFiles/cmTC_fa8ef.dir/build.make CMakeFiles/cmTC_fa8ef.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-tPjt7P'
+        Building C object CMakeFiles/cmTC_fa8ef.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_fa8ef.dir/src.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-tPjt7P/src.c
+        Linking C executable cmTC_fa8ef
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa8ef.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_fa8ef.dir/src.c.o -o cmTC_fa8ef 
+        /usr/bin/ld: CMakeFiles/cmTC_fa8ef.dir/src.c.o: in function `main':
         src.c:(.text+0x46): undefined reference to `pthread_create'
         /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
         /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
         /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
         collect2: error: ld returned 1 exit status
-        make[4]: *** [CMakeFiles/cmTC_d725a.dir/build.make:99: cmTC_d725a] Error 1
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-LTjyVL'
-        make[3]: *** [Makefile:127: cmTC_d725a/fast] Error 2
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-LTjyVL'
+        make[4]: *** [CMakeFiles/cmTC_fa8ef.dir/build.make:99: cmTC_fa8ef] Error 1
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-tPjt7P'
+        make[3]: *** [Makefile:127: cmTC_fa8ef/fast] Error 2
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-tPjt7P'
         
       exitCode: 2
   -
@@ -1545,32 +1545,32 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-5miBGH"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-5miBGH"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-EN1lzS"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-EN1lzS"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-5miBGH
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-EN1lzS
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f4a10/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-5miBGH'
-        /usr/bin/make  -f CMakeFiles/cmTC_f4a10.dir/build.make CMakeFiles/cmTC_f4a10.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-5miBGH'
-        Building C object CMakeFiles/cmTC_f4a10.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_f4a10.dir/CheckFunctionExists.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-5miBGH/CheckFunctionExists.c
-        Linking C executable cmTC_f4a10
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4a10.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_f4a10.dir/CheckFunctionExists.c.o -o cmTC_f4a10  -lpthreads 
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8f4ba/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-EN1lzS'
+        /usr/bin/make  -f CMakeFiles/cmTC_8f4ba.dir/build.make CMakeFiles/cmTC_8f4ba.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-EN1lzS'
+        Building C object CMakeFiles/cmTC_8f4ba.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_8f4ba.dir/CheckFunctionExists.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-EN1lzS/CheckFunctionExists.c
+        Linking C executable cmTC_8f4ba
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f4ba.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_8f4ba.dir/CheckFunctionExists.c.o -o cmTC_8f4ba  -lpthreads 
         /usr/bin/ld: cannot find -lpthreads
         collect2: error: ld returned 1 exit status
-        make[4]: *** [CMakeFiles/cmTC_f4a10.dir/build.make:99: cmTC_f4a10] Error 1
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-5miBGH'
-        make[3]: *** [Makefile:127: cmTC_f4a10/fast] Error 2
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-5miBGH'
+        make[4]: *** [CMakeFiles/cmTC_8f4ba.dir/build.make:99: cmTC_8f4ba] Error 1
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-EN1lzS'
+        make[3]: *** [Makefile:127: cmTC_8f4ba/fast] Error 2
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-EN1lzS'
         
       exitCode: 2
   -
@@ -1583,28 +1583,28 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ImpAVK"
-      binary: "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ImpAVK"
+      source: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M8ZPpT"
+      binary: "/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M8ZPpT"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_MODULE_PATH: ";/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
+      CMAKE_MODULE_PATH: ";/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep/build/cmake"
       CMAKE_WARN_DEPRECATED: "FALSE"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ImpAVK
+        Change Dir: /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M8ZPpT
         
-        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cea73/fast && make[3]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ImpAVK'
-        /usr/bin/make  -f CMakeFiles/cmTC_cea73.dir/build.make CMakeFiles/cmTC_cea73.dir/build
-        make[4]: Entering directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ImpAVK'
-        Building C object CMakeFiles/cmTC_cea73.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_cea73.dir/CheckFunctionExists.c.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ImpAVK/CheckFunctionExists.c
-        Linking C executable cmTC_cea73
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cea73.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_cea73.dir/CheckFunctionExists.c.o -o cmTC_cea73  -lpthread 
-        make[4]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ImpAVK'
-        make[3]: Leaving directory '/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-ImpAVK'
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_75e25/fast && make[3]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M8ZPpT'
+        /usr/bin/make  -f CMakeFiles/cmTC_75e25.dir/build.make CMakeFiles/cmTC_75e25.dir/build
+        make[4]: Entering directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M8ZPpT'
+        Building C object CMakeFiles/cmTC_75e25.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_75e25.dir/CheckFunctionExists.c.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M8ZPpT/CheckFunctionExists.c
+        Linking C executable cmTC_75e25
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75e25.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_75e25.dir/CheckFunctionExists.c.o -o cmTC_75e25  -lpthread 
+        make[4]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M8ZPpT'
+        make[3]: Leaving directory '/home/svemula/waffle_test/waffleClient/cmakebuild/thrift_ep-prefix/src/thrift_ep-build/CMakeFiles/CMakeScratch/TryCompile-M8ZPpT'
         
       exitCode: 0
 ...

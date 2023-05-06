@@ -59,21 +59,21 @@ add_library(event_core STATIC IMPORTED)
 set_property(TARGET event APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(event PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C"
-  IMPORTED_LOCATION_RELEASE "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/lib/libevent.a"
+  IMPORTED_LOCATION_RELEASE "/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/lib/libevent.a"
   )
 
 # Import target "event_extra" for configuration "Release"
 set_property(TARGET event_extra APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(event_extra PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C"
-  IMPORTED_LOCATION_RELEASE "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/lib/libevent_extra.a"
+  IMPORTED_LOCATION_RELEASE "/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/lib/libevent_extra.a"
   )
 
 # Import target "event_core" for configuration "Release"
 set_property(TARGET event_core APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(event_core PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C"
-  IMPORTED_LOCATION_RELEASE "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/lib/libevent_core.a"
+  IMPORTED_LOCATION_RELEASE "/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-build/lib/libevent_core.a"
   )
 
 # This file does not depend on other imported targets which have

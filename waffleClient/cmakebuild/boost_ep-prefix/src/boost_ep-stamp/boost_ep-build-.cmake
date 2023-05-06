@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "./b2;link=static;variant=release;cxxflags=-fPIC;cflags=-fPIC;--prefix=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/external/boost_ep;--with-program_options;install")
+set(command "./b2;link=static;variant=release;cxxflags=-fPIC;cflags=-fPIC;--prefix=/home/svemula/waffle_test/waffleClient/cmakebuild/external/boost_ep;--with-program_options;install")
 set(log_merged "")
 set(log_output_on_failure "")
-set(stdout_log "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-out.log")
-set(stderr_log "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-err.log")
+set(stdout_log "/home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-out.log")
+set(stderr_log "/home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-*.log")
+    set(msg "${msg}\nSee also\n  /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Unix Makefiles" MATCHES "Ninja")
-    set(msg "boost_ep build command succeeded.  See also /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-*.log")
+    set(msg "boost_ep build command succeeded.  See also /home/svemula/waffle_test/waffleClient/cmakebuild/boost_ep-prefix/src/boost_ep-stamp/boost_ep-build-*.log")
     message(STATUS "${msg}")
   endif()
 endif()

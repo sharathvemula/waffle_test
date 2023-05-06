@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build
 
 #=============================================================================
 # Directory level rules for the build root directory

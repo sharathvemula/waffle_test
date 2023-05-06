@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild
 
 # Utility rule file for libcuckoo.
 
@@ -76,46 +76,46 @@ CMakeFiles/libcuckoo-complete: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-pa
 CMakeFiles/libcuckoo-complete: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure
 CMakeFiles/libcuckoo-complete: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build
 CMakeFiles/libcuckoo-complete: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libcuckoo'"
-	/usr/local/bin/cmake -E make_directory /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo-complete
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libcuckoo'"
+	/usr/local/bin/cmake -E make_directory /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo-complete
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-done
 
 libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'libcuckoo'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'libcuckoo'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build
 
 libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure: libcuckoo-prefix/tmp/libcuckoo-cfgcmd.txt
 libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'libcuckoo'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'libcuckoo'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-configure
 
 libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-gitinfo.txt
 libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'libcuckoo'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'libcuckoo'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download
 
 libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'libcuckoo'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install-.cmake
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'libcuckoo'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -Dmake=$(MAKE) -P /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install-.cmake
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-build && /usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-install
 
 libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libcuckoo'"
-	/usr/local/bin/cmake -Dcfgdir= -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/tmp/libcuckoo-mkdirs.cmake
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libcuckoo'"
+	/usr/local/bin/cmake -Dcfgdir= -P /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/tmp/libcuckoo-mkdirs.cmake
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-mkdir
 
 libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-patch: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libcuckoo'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libcuckoo'"
 	/usr/local/bin/cmake -E echo_append
-	/usr/local/bin/cmake -E touch /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-patch
+	/usr/local/bin/cmake -E touch /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-patch
 
 libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-update: libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'libcuckoo'"
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo && /usr/local/bin/cmake -P /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/tmp/libcuckoo-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'libcuckoo'"
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo && /usr/local/bin/cmake -P /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/tmp/libcuckoo-gitupdate.cmake
 
 libcuckoo: CMakeFiles/libcuckoo
 libcuckoo: CMakeFiles/libcuckoo-complete
@@ -138,6 +138,6 @@ CMakeFiles/libcuckoo.dir/clean:
 .PHONY : CMakeFiles/libcuckoo.dir/clean
 
 CMakeFiles/libcuckoo.dir/depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/Waffle/waffle_test/waffleClient /home/svemula/Waffle/waffle_test/waffleClient /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/waffle_test/waffleClient /home/svemula/waffle_test/waffleClient /home/svemula/waffle_test/waffleClient/cmakebuild /home/svemula/waffle_test/waffleClient/cmakebuild /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles/libcuckoo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libcuckoo.dir/depend
 

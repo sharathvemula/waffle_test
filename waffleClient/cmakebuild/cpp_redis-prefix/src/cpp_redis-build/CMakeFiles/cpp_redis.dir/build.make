@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cpp_redis.dir/depend.make
@@ -70,200 +70,200 @@ include CMakeFiles/cpp_redis.dir/progress.make
 include CMakeFiles/cpp_redis.dir/flags.make
 
 CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/array_builder.cpp
+CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/array_builder.cpp
 CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/array_builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/array_builder.cpp
 
 CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/array_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/array_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/array_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/array_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/array_builder.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/builders_factory.cpp
+CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/builders_factory.cpp
 CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/builders_factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/builders_factory.cpp
 
 CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/builders_factory.cpp > CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/builders_factory.cpp > CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/builders_factory.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/builders_factory.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/builders_factory.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/bulk_string_builder.cpp
+CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/bulk_string_builder.cpp
 CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/bulk_string_builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/bulk_string_builder.cpp
 
 CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/bulk_string_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/bulk_string_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/bulk_string_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/bulk_string_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/bulk_string_builder.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/error_builder.cpp
+CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/error_builder.cpp
 CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/error_builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/error_builder.cpp
 
 CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/error_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/error_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/error_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/error_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/error_builder.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/integer_builder.cpp
+CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/integer_builder.cpp
 CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/integer_builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/integer_builder.cpp
 
 CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/integer_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/integer_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/integer_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/integer_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/integer_builder.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/reply_builder.cpp
+CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/reply_builder.cpp
 CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/reply_builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/reply_builder.cpp
 
 CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/reply_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/reply_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/reply_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/reply_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/reply_builder.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/simple_string_builder.cpp
+CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/simple_string_builder.cpp
 CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/simple_string_builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/simple_string_builder.cpp
 
 CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/simple_string_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/simple_string_builder.cpp > CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/simple_string_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/builders/simple_string_builder.cpp -o CMakeFiles/cpp_redis.dir/sources/builders/simple_string_builder.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/client.cpp
+CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/client.cpp
 CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/core/client.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/client.cpp
 
 CMakeFiles/cpp_redis.dir/sources/core/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/core/client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/client.cpp > CMakeFiles/cpp_redis.dir/sources/core/client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/client.cpp > CMakeFiles/cpp_redis.dir/sources/core/client.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/core/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/core/client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/client.cpp -o CMakeFiles/cpp_redis.dir/sources/core/client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/client.cpp -o CMakeFiles/cpp_redis.dir/sources/core/client.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp
+CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp
 CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp
 
 CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp > CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp > CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp -o CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/reply.cpp -o CMakeFiles/cpp_redis.dir/sources/core/reply.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/sentinel.cpp
+CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/sentinel.cpp
 CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/sentinel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/sentinel.cpp
 
 CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/sentinel.cpp > CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/sentinel.cpp > CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/sentinel.cpp -o CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/sentinel.cpp -o CMakeFiles/cpp_redis.dir/sources/core/sentinel.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/subscriber.cpp
+CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/subscriber.cpp
 CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/subscriber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/subscriber.cpp
 
 CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/subscriber.cpp > CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/subscriber.cpp > CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/subscriber.cpp -o CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/core/subscriber.cpp -o CMakeFiles/cpp_redis.dir/sources/core/subscriber.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/misc/logger.cpp
+CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/misc/logger.cpp
 CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/misc/logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/misc/logger.cpp
 
 CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/misc/logger.cpp > CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/misc/logger.cpp > CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/misc/logger.cpp -o CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/misc/logger.cpp -o CMakeFiles/cpp_redis.dir/sources/misc/logger.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp
+CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp
 CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp
 
 CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp > CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp > CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp -o CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/redis_connection.cpp -o CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cpp.s
 
 CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o: CMakeFiles/cpp_redis.dir/flags.make
-CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o: /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/tcp_client.cpp
+CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o: /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/tcp_client.cpp
 CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o: CMakeFiles/cpp_redis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o -c /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/tcp_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o -MF CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o.d -o CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o -c /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/tcp_client.cpp
 
 CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/tcp_client.cpp > CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/tcp_client.cpp > CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.i
 
 CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/tcp_client.cpp -o CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis/sources/network/tcp_client.cpp -o CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.s
 
 # Object files for target cpp_redis
 cpp_redis_OBJECTS = \
@@ -301,7 +301,7 @@ lib/libcpp_redis.a: CMakeFiles/cpp_redis.dir/sources/network/redis_connection.cp
 lib/libcpp_redis.a: CMakeFiles/cpp_redis.dir/sources/network/tcp_client.cpp.o
 lib/libcpp_redis.a: CMakeFiles/cpp_redis.dir/build.make
 lib/libcpp_redis.a: CMakeFiles/cpp_redis.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library lib/libcpp_redis.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library lib/libcpp_redis.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/cpp_redis.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_redis.dir/link.txt --verbose=$(VERBOSE)
 
@@ -314,6 +314,6 @@ CMakeFiles/cpp_redis.dir/clean:
 .PHONY : CMakeFiles/cpp_redis.dir/clean
 
 CMakeFiles/cpp_redis.dir/depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles/cpp_redis.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles/cpp_redis.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cpp_redis.dir/depend
 

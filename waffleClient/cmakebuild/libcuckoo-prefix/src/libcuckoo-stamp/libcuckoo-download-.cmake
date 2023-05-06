@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/tmp/libcuckoo-gitclone.cmake")
+set(command "/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/tmp/libcuckoo-gitclone.cmake")
 set(log_merged "")
 set(log_output_on_failure "")
-set(stdout_log "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-out.log")
-set(stderr_log "/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-err.log")
+set(stdout_log "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-out.log")
+set(stderr_log "/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-*.log")
+    set(msg "${msg}\nSee also\n  /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Unix Makefiles" MATCHES "Ninja")
-    set(msg "libcuckoo download command succeeded.  See also /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-*.log")
+    set(msg "libcuckoo download command succeeded.  See also /home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo-stamp/libcuckoo-download-*.log")
     message(STATUS "${msg}")
   endif()
 endif()

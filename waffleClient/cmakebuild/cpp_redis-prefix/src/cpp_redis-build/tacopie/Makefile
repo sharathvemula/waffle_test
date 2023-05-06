@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/tacopie//CMakeFiles/progress.marks
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles 0
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/tacopie//CMakeFiles/progress.marks
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/clean
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/preinstall
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/preinstall
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tacopie/CMakeFiles/tacopie.dir/rule:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/CMakeFiles/tacopie.dir/rule
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tacopie/CMakeFiles/tacopie.dir/rule
 .PHONY : tacopie/CMakeFiles/tacopie.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ tacopie: tacopie/CMakeFiles/tacopie.dir/rule
 
 # fast build rule for target.
 tacopie/fast:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/build
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/build
 .PHONY : tacopie/fast
 
 sources/network/common/tcp_socket.o: sources/network/common/tcp_socket.cpp.o
@@ -180,7 +180,7 @@ sources/network/common/tcp_socket.o: sources/network/common/tcp_socket.cpp.o
 
 # target to build an object file
 sources/network/common/tcp_socket.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/common/tcp_socket.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/common/tcp_socket.cpp.o
 .PHONY : sources/network/common/tcp_socket.cpp.o
 
 sources/network/common/tcp_socket.i: sources/network/common/tcp_socket.cpp.i
@@ -188,7 +188,7 @@ sources/network/common/tcp_socket.i: sources/network/common/tcp_socket.cpp.i
 
 # target to preprocess a source file
 sources/network/common/tcp_socket.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/common/tcp_socket.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/common/tcp_socket.cpp.i
 .PHONY : sources/network/common/tcp_socket.cpp.i
 
 sources/network/common/tcp_socket.s: sources/network/common/tcp_socket.cpp.s
@@ -196,7 +196,7 @@ sources/network/common/tcp_socket.s: sources/network/common/tcp_socket.cpp.s
 
 # target to generate assembly for a file
 sources/network/common/tcp_socket.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/common/tcp_socket.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/common/tcp_socket.cpp.s
 .PHONY : sources/network/common/tcp_socket.cpp.s
 
 sources/network/io_service.o: sources/network/io_service.cpp.o
@@ -204,7 +204,7 @@ sources/network/io_service.o: sources/network/io_service.cpp.o
 
 # target to build an object file
 sources/network/io_service.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/io_service.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/io_service.cpp.o
 .PHONY : sources/network/io_service.cpp.o
 
 sources/network/io_service.i: sources/network/io_service.cpp.i
@@ -212,7 +212,7 @@ sources/network/io_service.i: sources/network/io_service.cpp.i
 
 # target to preprocess a source file
 sources/network/io_service.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/io_service.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/io_service.cpp.i
 .PHONY : sources/network/io_service.cpp.i
 
 sources/network/io_service.s: sources/network/io_service.cpp.s
@@ -220,7 +220,7 @@ sources/network/io_service.s: sources/network/io_service.cpp.s
 
 # target to generate assembly for a file
 sources/network/io_service.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/io_service.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/io_service.cpp.s
 .PHONY : sources/network/io_service.cpp.s
 
 sources/network/tcp_client.o: sources/network/tcp_client.cpp.o
@@ -228,7 +228,7 @@ sources/network/tcp_client.o: sources/network/tcp_client.cpp.o
 
 # target to build an object file
 sources/network/tcp_client.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_client.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_client.cpp.o
 .PHONY : sources/network/tcp_client.cpp.o
 
 sources/network/tcp_client.i: sources/network/tcp_client.cpp.i
@@ -236,7 +236,7 @@ sources/network/tcp_client.i: sources/network/tcp_client.cpp.i
 
 # target to preprocess a source file
 sources/network/tcp_client.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_client.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_client.cpp.i
 .PHONY : sources/network/tcp_client.cpp.i
 
 sources/network/tcp_client.s: sources/network/tcp_client.cpp.s
@@ -244,7 +244,7 @@ sources/network/tcp_client.s: sources/network/tcp_client.cpp.s
 
 # target to generate assembly for a file
 sources/network/tcp_client.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_client.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_client.cpp.s
 .PHONY : sources/network/tcp_client.cpp.s
 
 sources/network/tcp_server.o: sources/network/tcp_server.cpp.o
@@ -252,7 +252,7 @@ sources/network/tcp_server.o: sources/network/tcp_server.cpp.o
 
 # target to build an object file
 sources/network/tcp_server.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_server.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_server.cpp.o
 .PHONY : sources/network/tcp_server.cpp.o
 
 sources/network/tcp_server.i: sources/network/tcp_server.cpp.i
@@ -260,7 +260,7 @@ sources/network/tcp_server.i: sources/network/tcp_server.cpp.i
 
 # target to preprocess a source file
 sources/network/tcp_server.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_server.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_server.cpp.i
 .PHONY : sources/network/tcp_server.cpp.i
 
 sources/network/tcp_server.s: sources/network/tcp_server.cpp.s
@@ -268,7 +268,7 @@ sources/network/tcp_server.s: sources/network/tcp_server.cpp.s
 
 # target to generate assembly for a file
 sources/network/tcp_server.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_server.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/tcp_server.cpp.s
 .PHONY : sources/network/tcp_server.cpp.s
 
 sources/network/unix/unix_self_pipe.o: sources/network/unix/unix_self_pipe.cpp.o
@@ -276,7 +276,7 @@ sources/network/unix/unix_self_pipe.o: sources/network/unix/unix_self_pipe.cpp.o
 
 # target to build an object file
 sources/network/unix/unix_self_pipe.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_self_pipe.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_self_pipe.cpp.o
 .PHONY : sources/network/unix/unix_self_pipe.cpp.o
 
 sources/network/unix/unix_self_pipe.i: sources/network/unix/unix_self_pipe.cpp.i
@@ -284,7 +284,7 @@ sources/network/unix/unix_self_pipe.i: sources/network/unix/unix_self_pipe.cpp.i
 
 # target to preprocess a source file
 sources/network/unix/unix_self_pipe.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_self_pipe.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_self_pipe.cpp.i
 .PHONY : sources/network/unix/unix_self_pipe.cpp.i
 
 sources/network/unix/unix_self_pipe.s: sources/network/unix/unix_self_pipe.cpp.s
@@ -292,7 +292,7 @@ sources/network/unix/unix_self_pipe.s: sources/network/unix/unix_self_pipe.cpp.s
 
 # target to generate assembly for a file
 sources/network/unix/unix_self_pipe.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_self_pipe.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_self_pipe.cpp.s
 .PHONY : sources/network/unix/unix_self_pipe.cpp.s
 
 sources/network/unix/unix_tcp_socket.o: sources/network/unix/unix_tcp_socket.cpp.o
@@ -300,7 +300,7 @@ sources/network/unix/unix_tcp_socket.o: sources/network/unix/unix_tcp_socket.cpp
 
 # target to build an object file
 sources/network/unix/unix_tcp_socket.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_tcp_socket.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_tcp_socket.cpp.o
 .PHONY : sources/network/unix/unix_tcp_socket.cpp.o
 
 sources/network/unix/unix_tcp_socket.i: sources/network/unix/unix_tcp_socket.cpp.i
@@ -308,7 +308,7 @@ sources/network/unix/unix_tcp_socket.i: sources/network/unix/unix_tcp_socket.cpp
 
 # target to preprocess a source file
 sources/network/unix/unix_tcp_socket.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_tcp_socket.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_tcp_socket.cpp.i
 .PHONY : sources/network/unix/unix_tcp_socket.cpp.i
 
 sources/network/unix/unix_tcp_socket.s: sources/network/unix/unix_tcp_socket.cpp.s
@@ -316,7 +316,7 @@ sources/network/unix/unix_tcp_socket.s: sources/network/unix/unix_tcp_socket.cpp
 
 # target to generate assembly for a file
 sources/network/unix/unix_tcp_socket.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_tcp_socket.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/network/unix/unix_tcp_socket.cpp.s
 .PHONY : sources/network/unix/unix_tcp_socket.cpp.s
 
 sources/utils/error.o: sources/utils/error.cpp.o
@@ -324,7 +324,7 @@ sources/utils/error.o: sources/utils/error.cpp.o
 
 # target to build an object file
 sources/utils/error.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/error.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/error.cpp.o
 .PHONY : sources/utils/error.cpp.o
 
 sources/utils/error.i: sources/utils/error.cpp.i
@@ -332,7 +332,7 @@ sources/utils/error.i: sources/utils/error.cpp.i
 
 # target to preprocess a source file
 sources/utils/error.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/error.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/error.cpp.i
 .PHONY : sources/utils/error.cpp.i
 
 sources/utils/error.s: sources/utils/error.cpp.s
@@ -340,7 +340,7 @@ sources/utils/error.s: sources/utils/error.cpp.s
 
 # target to generate assembly for a file
 sources/utils/error.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/error.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/error.cpp.s
 .PHONY : sources/utils/error.cpp.s
 
 sources/utils/logger.o: sources/utils/logger.cpp.o
@@ -348,7 +348,7 @@ sources/utils/logger.o: sources/utils/logger.cpp.o
 
 # target to build an object file
 sources/utils/logger.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/logger.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/logger.cpp.o
 .PHONY : sources/utils/logger.cpp.o
 
 sources/utils/logger.i: sources/utils/logger.cpp.i
@@ -356,7 +356,7 @@ sources/utils/logger.i: sources/utils/logger.cpp.i
 
 # target to preprocess a source file
 sources/utils/logger.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/logger.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/logger.cpp.i
 .PHONY : sources/utils/logger.cpp.i
 
 sources/utils/logger.s: sources/utils/logger.cpp.s
@@ -364,7 +364,7 @@ sources/utils/logger.s: sources/utils/logger.cpp.s
 
 # target to generate assembly for a file
 sources/utils/logger.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/logger.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/logger.cpp.s
 .PHONY : sources/utils/logger.cpp.s
 
 sources/utils/thread_pool.o: sources/utils/thread_pool.cpp.o
@@ -372,7 +372,7 @@ sources/utils/thread_pool.o: sources/utils/thread_pool.cpp.o
 
 # target to build an object file
 sources/utils/thread_pool.cpp.o:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/thread_pool.cpp.o
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/thread_pool.cpp.o
 .PHONY : sources/utils/thread_pool.cpp.o
 
 sources/utils/thread_pool.i: sources/utils/thread_pool.cpp.i
@@ -380,7 +380,7 @@ sources/utils/thread_pool.i: sources/utils/thread_pool.cpp.i
 
 # target to preprocess a source file
 sources/utils/thread_pool.cpp.i:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/thread_pool.cpp.i
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/thread_pool.cpp.i
 .PHONY : sources/utils/thread_pool.cpp.i
 
 sources/utils/thread_pool.s: sources/utils/thread_pool.cpp.s
@@ -388,7 +388,7 @@ sources/utils/thread_pool.s: sources/utils/thread_pool.cpp.s
 
 # target to generate assembly for a file
 sources/utils/thread_pool.cpp.s:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/thread_pool.cpp.s
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(MAKE) $(MAKESILENT) -f tacopie/CMakeFiles/tacopie.dir/build.make tacopie/CMakeFiles/tacopie.dir/sources/utils/thread_pool.cpp.s
 .PHONY : sources/utils/thread_pool.cpp.s
 
 # Help Target
@@ -442,6 +442,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/svemula/waffle_test/waffleClient/cmakebuild/cpp_redis-prefix/src/cpp_redis-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

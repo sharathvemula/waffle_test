@@ -25,6 +25,8 @@ public:
 	int size();
 	int getFrequency(std::string key);
 	void setFrequency(std::string key, int value);
+	int getMaxFrequency();
+	void resetFrequency(int value);
 	std::set<std::pair<std::string, int>, decltype(&freqCmp)>::iterator getIterator();
 
 };

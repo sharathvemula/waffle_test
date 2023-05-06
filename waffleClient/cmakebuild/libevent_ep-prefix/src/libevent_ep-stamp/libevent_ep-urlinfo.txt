@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=url
-command=/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/download-libevent_ep.cmake;COMMAND;/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/verify-libevent_ep.cmake;COMMAND;/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/extract-libevent_ep.cmake
-source_dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep
-work_dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src
+command=/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/download-libevent_ep.cmake;COMMAND;/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/verify-libevent_ep.cmake;COMMAND;/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep-stamp/extract-libevent_ep.cmake
+source_dir=/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src/libevent_ep
+work_dir=/home/svemula/waffle_test/waffleClient/cmakebuild/libevent_ep-prefix/src
 url(s)=https://github.com/nmathewson/Libevent/archive/release-2.1.8-stable.tar.gz
 hash=
 no_extract=

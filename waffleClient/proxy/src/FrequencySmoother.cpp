@@ -48,10 +48,14 @@ std::set<std::pair<std::string, int>, decltype(&freqCmp)>::iterator FrequencySmo
 	return accessTree.begin();
 }
 
-// void FrequencySmoother::printFreqs() {
-// 	std::cout << "Printing frequencies ";
-// 	for(auto& it: accessFreqs) {
-// 		std::cout << "Key: " << it.first << " Value: " << it.second << " ";
-// 	}
-// 	std::cout << std::endl;
-// }
+int FrequencySmoother::getMaxFrequency() {
+	return std::prev(accessTree.end())->second;
+}
+
+void FrequencySmoother::resetFrequency(int value) {
+	for (auto& it: accessFreqs) {
+    	accessTree.erase({it.first, accessFreqs[it.first]});
+		accessFreqs[it.first] = value;
+		accessTree.insert({it.first, accessFreqs[it.first]});
+	} 
+}

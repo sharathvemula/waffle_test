@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/usr/local/bin/cmake;-P;/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/tmp/libcuckoo-gitclone.cmake
-source_dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo
-work_dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src
+command=/usr/local/bin/cmake;-P;/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/tmp/libcuckoo-gitclone.cmake
+source_dir=/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src/libcuckoo
+work_dir=/home/svemula/waffle_test/waffleClient/cmakebuild/libcuckoo-prefix/src
 repository=https://github.com/efficient/libcuckoo.git
 remote=origin
 init_submodules=TRUE

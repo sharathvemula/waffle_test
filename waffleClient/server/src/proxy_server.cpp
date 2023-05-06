@@ -69,6 +69,7 @@ void usage() {
     // Other parameters
     std::cout << "\t -o: Output location for sizing thread\n";
     std::cout << "\t -d: Core to run on\n";
+    std::cout << "\t -e: File extention for security analysis\n";
 };
 
 int main(int argc, char *argv[]) {
@@ -80,7 +81,7 @@ int main(int argc, char *argv[]) {
     std::shared_ptr<proxy> proxy_ = std::make_shared<waffle_proxy>();
     int o;
     std::string proxy_type_ = "waffle";
-    while ((o = getopt(argc, argv, "h:p:s:n:v:b:c:t:o:d:z:q:l:m:r:y:f:a")) != -1) {
+    while ((o = getopt(argc, argv, "h:p:s:n:v:b:c:t:o:d:z:q:l:m:r:y:f:a:e")) != -1) {
         switch (o) {
             case 'h':
                 dynamic_cast<waffle_proxy&>(*proxy_).server_host_name_ = std::string(optarg);
@@ -104,8 +105,11 @@ int main(int argc, char *argv[]) {
                 dynamic_cast<waffle_proxy&>(*proxy_).security_batch_size_ = std::atoi(optarg);
                 break;
             case 'c':
-                dynamic_cast<waffle_proxy&>(*proxy_).storage_batch_size_ = std::atoi(optarg);
+                dynamic_cast<waffle_proxy&>(*proxy_).cacheBatches = std::atoi(optarg);
                 break;
+            // case 'e':
+            //     dynamic_cast<waffle_proxy&>(*proxy_).file_ext_ = std::string(optarg);
+            //     break;
             case 't':
                 dynamic_cast<waffle_proxy&>(*proxy_).p_threads_ = std::atoi(optarg);
                 break;
@@ -151,7 +155,7 @@ int main(int argc, char *argv[]) {
     auto proxy_server = thrift_server::create(proxy_, "waffle", id_to_client, PROXY_PORT, 1);
     std::thread proxy_serve_thread([&proxy_server] { proxy_server->serve(); });
     std::cout << "Proxy server is reachable" << std::endl;
-    sleep(300);
+    sleep(3000);
     //flush_thread(proxy_);
     //proxy_->close();
     //proxy_server->stop();

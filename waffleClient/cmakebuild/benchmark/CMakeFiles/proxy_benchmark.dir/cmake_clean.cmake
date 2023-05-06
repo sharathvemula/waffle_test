@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark"
-  "/home/svemula/Waffle/waffle_test/waffleClient/bin/proxy_benchmark.pdb"
+  "/home/svemula/waffle_test/waffleClient/bin/proxy_benchmark"
+  "/home/svemula/waffle_test/waffleClient/bin/proxy_benchmark.pdb"
   "CMakeFiles/proxy_benchmark.dir/__/libclient/src/async_proxy_client.cpp.o"
   "CMakeFiles/proxy_benchmark.dir/__/libclient/src/async_proxy_client.cpp.o.d"
   "CMakeFiles/proxy_benchmark.dir/__/libclient/src/command_response_reader.cpp.o"

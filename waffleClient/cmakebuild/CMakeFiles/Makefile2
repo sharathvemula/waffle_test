@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/svemula/Waffle/waffle_test/waffleClient
+CMAKE_SOURCE_DIR = /home/svemula/waffle_test/waffleClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild
+CMAKE_BINARY_DIR = /home/svemula/waffle_test/waffleClient/cmakebuild
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -180,14 +180,14 @@ server/clean: server/CMakeFiles/proxy_server.dir/clean
 CMakeFiles/openssl_ep.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openssl_ep.dir/build.make CMakeFiles/openssl_ep.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openssl_ep.dir/build.make CMakeFiles/openssl_ep.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=33,34,35,36,37,38,39,40 "Built target openssl_ep"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=33,34,35,36,37,38,39,40 "Built target openssl_ep"
 .PHONY : CMakeFiles/openssl_ep.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/openssl_ep.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/openssl_ep.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : CMakeFiles/openssl_ep.dir/rule
 
 # Convenience name for target.
@@ -206,14 +206,14 @@ CMakeFiles/openssl_ep.dir/clean:
 CMakeFiles/libcuckoo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libcuckoo.dir/build.make CMakeFiles/libcuckoo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libcuckoo.dir/build.make CMakeFiles/libcuckoo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=17,18,19,20,21,22,23,24 "Built target libcuckoo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=17,18,19,20,21,22,23,24 "Built target libcuckoo"
 .PHONY : CMakeFiles/libcuckoo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libcuckoo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/libcuckoo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : CMakeFiles/libcuckoo.dir/rule
 
 # Convenience name for target.
@@ -232,14 +232,14 @@ CMakeFiles/libcuckoo.dir/clean:
 CMakeFiles/boost_ep.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_ep.dir/build.make CMakeFiles/boost_ep.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_ep.dir/build.make CMakeFiles/boost_ep.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target boost_ep"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target boost_ep"
 .PHONY : CMakeFiles/boost_ep.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/boost_ep.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/boost_ep.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : CMakeFiles/boost_ep.dir/rule
 
 # Convenience name for target.
@@ -258,14 +258,14 @@ CMakeFiles/boost_ep.dir/clean:
 CMakeFiles/libevent_ep.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libevent_ep.dir/build.make CMakeFiles/libevent_ep.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libevent_ep.dir/build.make CMakeFiles/libevent_ep.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=25,26,27,28,29,30,31,32 "Built target libevent_ep"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=25,26,27,28,29,30,31,32 "Built target libevent_ep"
 .PHONY : CMakeFiles/libevent_ep.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libevent_ep.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/libevent_ep.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : CMakeFiles/libevent_ep.dir/rule
 
 # Convenience name for target.
@@ -286,14 +286,14 @@ CMakeFiles/thrift_ep.dir/all: CMakeFiles/boost_ep.dir/all
 CMakeFiles/thrift_ep.dir/all: CMakeFiles/libevent_ep.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thrift_ep.dir/build.make CMakeFiles/thrift_ep.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thrift_ep.dir/build.make CMakeFiles/thrift_ep.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=76,77,78,79,80,81,82,83 "Built target thrift_ep"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=76,77,78,79,80,81,82,83 "Built target thrift_ep"
 .PHONY : CMakeFiles/thrift_ep.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/thrift_ep.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/thrift_ep.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : CMakeFiles/thrift_ep.dir/rule
 
 # Convenience name for target.
@@ -312,14 +312,14 @@ CMakeFiles/thrift_ep.dir/clean:
 CMakeFiles/cpp_redis.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_redis.dir/build.make CMakeFiles/cpp_redis.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_redis.dir/build.make CMakeFiles/cpp_redis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target cpp_redis"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target cpp_redis"
 .PHONY : CMakeFiles/cpp_redis.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cpp_redis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpp_redis.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : CMakeFiles/cpp_redis.dir/rule
 
 # Convenience name for target.
@@ -341,14 +341,14 @@ benchmark/CMakeFiles/proxy_benchmark.dir/all: CMakeFiles/thrift_ep.dir/all
 benchmark/CMakeFiles/proxy_benchmark.dir/all: CMakeFiles/cpp_redis.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/proxy_benchmark.dir/build.make benchmark/CMakeFiles/proxy_benchmark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59 "Built target proxy_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59 "Built target proxy_benchmark"
 .PHONY : benchmark/CMakeFiles/proxy_benchmark.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/proxy_benchmark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 67
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/proxy_benchmark.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/proxy_benchmark.dir/rule
 
 # Convenience name for target.
@@ -368,14 +368,14 @@ server/CMakeFiles/proxy_server.dir/all: CMakeFiles/libcuckoo.dir/all
 server/CMakeFiles/proxy_server.dir/all: CMakeFiles/thrift_ep.dir/all
 	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/proxy_server.dir/build.make server/CMakeFiles/proxy_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75 "Built target proxy_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles --progress-num=60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75 "Built target proxy_server"
 .PHONY : server/CMakeFiles/proxy_server.dir/all
 
 # Build rule for subdir invocation for target.
 server/CMakeFiles/proxy_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/proxy_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/Waffle/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svemula/waffle_test/waffleClient/cmakebuild/CMakeFiles 0
 .PHONY : server/CMakeFiles/proxy_server.dir/rule
 
 # Convenience name for target.
