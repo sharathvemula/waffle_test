@@ -22,6 +22,8 @@ inside waffleClient folder
 
 ## Running 
 
+**NOTE**: Although Waffle is intended & recommended to run on 3 different machines, we can still run all the three processes on the same machine.
+
 Running Waffle requires atleast 3 machines:
 
 1. Client with a CLIENT_IP and CLIENT_PORT
