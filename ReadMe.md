@@ -1,5 +1,7 @@
 # Waffle
 
+**NOTE**: Although Waffle is intended & recommended to run on 3 different machines, we can still run all the three processes on the same machine.
+
 Waffle is the first system to hide data access patterns adaptively, without requiring to
 known the input data access distribution, under a passive persistent
 adversary. Waffle incurs a constant bandwidth and client-side storage
@@ -21,8 +23,6 @@ sh build.sh
 inside waffleClient folder
 
 ## Running 
-
-**NOTE**: Although Waffle is intended & recommended to run on 3 different machines, we can still run all the three processes on the same machine.
 
 Running Waffle requires atleast 3 machines:
 
