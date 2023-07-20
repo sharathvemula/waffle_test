@@ -49,3 +49,5 @@ Waffle will now initialize. After the proxy says it's reachable launch the bench
 ```
 
 After completion the benchmark will display the throughput during the run. There will be a new folder in the data folder that contains one file for each client displaying the latency of each operation in nanoseconds.
+
+Note that although it is expected that each of these processes run on different machine, they can all be run on a single machine on different ports using the localhost ip.
