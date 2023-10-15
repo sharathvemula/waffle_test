@@ -1,1 +1,0 @@
-cmd='./config;-fPIC;--prefix=/home/svemula/waffle_test/waffleClient/cmakebuild/external/openssl;no-comp;no-shared;no-tests;CXX=/usr/bin/c++;CC=/usr/bin/cc'
