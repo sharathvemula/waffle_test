@@ -149,9 +149,9 @@ int main(int argc, char *argv[]) {
     auto id_to_client = std::make_shared<thrift_response_client_map>();
     arguments[0] = &id_to_client;
     std::string dummy(object_size_, '0');
-    std::cout <<"Initializing pancake" << std::endl;
+    std::cout <<"Initializing Waffle" << std::endl;
     dynamic_cast<waffle_proxy&>(*proxy_).init(keys, values, arguments);
-    std::cout << "Initialized pancake" << std::endl;
+    std::cout << "Initialized Waffle" << std::endl;
     auto proxy_server = thrift_server::create(proxy_, "waffle", id_to_client, PROXY_PORT, 1);
     std::thread proxy_serve_thread([&proxy_server] { proxy_server->serve(); });
     std::cout << "Proxy server is reachable" << std::endl;
